@@ -1,0 +1,29 @@
+.container{
+	display: flex;
+	flex-direction: column;
+}
+
+.heroTop{
+	width: auto;
+	height: 293px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-image: url(../../../assets/heroPic1.png);
+}
+
+.heroText {
+	width: 975px;
+	font-weight: bold;
+	font-family: "Arial";
+	font-size: 40px;
+	color: #6C6D70;
+	text-align: center;
+}
+
+.heroBottom{
+	width: auto;
+	height: 15px;
+	background-color: #C69214;
+}

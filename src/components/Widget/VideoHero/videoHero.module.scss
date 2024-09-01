@@ -1,0 +1,27 @@
+.container {
+	width: auto;
+	height: 670px;
+	background-image: url(../../../assets/videHero.svg);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.titleContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 210px;
+}
+
+.title {
+	width: 785px;
+	font-weight: bold;
+	font-size: 34px;
+	color: #FFFFFF;
+	font-family: Arial;
+	padding-bottom: 30px;
+	line-height: 50px;
+	text-align: center;
+}
+
