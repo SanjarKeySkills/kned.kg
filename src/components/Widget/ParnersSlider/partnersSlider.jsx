@@ -1,9 +1,9 @@
 import React from "react";
-import style from "./sliderMainPage.module.scss";
+import style from "./partnersSlider.module.scss";
 import image1 from "../../../assets/grantTorthon.svg";
 import image2 from "../../../assets/ibc.svg";
 import image3 from "../../../assets/ifc.svg";
-import Button from "../../Widget/Button/Button.jsx";
+import Button from "../Button/Button.jsx";
 
 const sliderMainPage = () => {
     return (

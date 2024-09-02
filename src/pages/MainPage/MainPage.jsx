@@ -5,7 +5,7 @@ import WelcomeBlock from "../../components/Widget/WelcomeBlock/index.jsx";
 import InfoTableBlock from "../../components/Widget/InfoTableBlock/infoTableBlock.jsx";
 import NewsBlock from "../../components/Widget/NewsBlock/newsBlock.jsx";
 import CriteriaMember from "../../components/Widget/CriteriaMember/criteriaMember.jsx";
-import Slider from "../../components/Widget/MainPageSlider/sliderMainPage.jsx";
+import PartnersSlider from "../../components/Widget/ParnersSlider/partnersSlider.jsx";
 
 const MainPage = () => {
     return (
@@ -15,7 +15,7 @@ const MainPage = () => {
             <BannerCourse />
             <InfoTableBlock />
             <NewsBlock />
-            <Slider />
+            <PartnersSlider />
             <CriteriaMember />
         </div>
     );

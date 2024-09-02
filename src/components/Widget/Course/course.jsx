@@ -4,7 +4,7 @@ import Button from "../Button/Button";
 import imageLeft from "../../../assets/courseLeft.svg";
 import imageRight from "../../../assets/courseRight.svg";
 
-const index = () => {
+const Course = () => {
     return (
         <div className={styles.container}>
             <div className={styles.courseInfo}>
@@ -45,4 +45,4 @@ const index = () => {
     );
 };
 
-export default index;
+export default Course;

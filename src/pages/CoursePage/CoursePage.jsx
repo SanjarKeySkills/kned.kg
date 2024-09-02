@@ -1,7 +1,7 @@
 import React from "react";
-import Course from "../../components/Widget/Course/index.jsx";
+import Course from "../../components/Widget/Course/course.jsx";
 
-const AboutPage = () => {
+const CoursePage = () => {
     return (
         <div>
             <Course />
@@ -9,4 +9,4 @@ const AboutPage = () => {
     );
 };
 
-export default AboutPage;
+export default CoursePage;
