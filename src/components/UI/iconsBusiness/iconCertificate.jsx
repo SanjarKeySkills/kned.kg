@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./icon.module.scss";
-import logo_certificate from "../../../assets/icon_certificate.svg";
+import logo_certificate from "../../UI/IconsBusiness/iconCertificate.jsx";
 
 const icon_certificate = () => {
     return (

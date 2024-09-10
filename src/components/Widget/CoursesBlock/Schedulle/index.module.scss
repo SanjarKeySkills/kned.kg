@@ -1,0 +1,127 @@
+.container {
+	background-color: #D9D9D9;
+	width: auto;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	h2 {
+		margin-top: 30px;
+		font-size: 29px;
+	}
+	span {
+		font-size: 29px;
+	}
+}
+.wrapper {
+	margin: 50px 0 60px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 35px;
+	ul {
+		text-align: center;
+	}
+
+	li {
+		margin-bottom: 15px;
+		list-style-type: none;
+		width: 182px;
+		height: 160px;
+		padding: 0 20px;
+		background-color: #C69214;
+		color: #FFFFFF;
+		font-size: 25px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+		.li2 {background-color: #5D6267}
+
+		.li3 {
+			background-color: #5D6267;
+			filter: opacity(70%);
+		} 
+
+		.li4 {background-color: #FFC72C} 
+
+		.li5 {
+			background-color: #5D6267;
+			filter: opacity(70%);
+		}
+		.item {
+			height: 160px;
+			width: 910px;
+			margin-bottom: 15px;
+			padding-left: 50px;
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			background-image: url('../../../../assets/schedulle1.svg');
+			background-size: cover;
+			p {
+				font-size: 25px;
+				color: #FFFFFF;
+			}
+		}
+		.item2 {
+			height: 160px;
+			width: 910px;
+			margin-bottom: 15px;
+			padding-left: 50px;
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			background-image: url('../../../../assets/schedulle2.svg');
+			background-size: cover;
+			p {
+					font-size: 25px;
+					color: #FFFFFF;
+				}
+		}
+		.item3 {
+			height: 160px;
+			width: 910px;
+			margin-bottom: 15px;
+			padding-left: 50px;
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			background-image: url('../../../../assets/schedulle3.svg');
+			background-size: cover;
+			p {
+					font-size: 25px;
+					color: #FFFFFF;
+				}
+		}
+		.item4 {
+			height: 160px;
+			width: 910px;
+			margin-bottom: 15px;
+			padding-left: 50px;
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			background-image: url('../../../../assets/schedulle4.svg');
+			background-size: cover;
+			p {
+					font-size: 25px;
+					color: #FFFFFF;
+				}
+		}
+		.item5 {
+			height: 160px;
+			width: 910px;
+			margin-bottom: 15px;
+			padding-left: 50px;
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			background-image: url('../../../../assets/schedulle5.svg');
+			background-size: cover;
+			p {
+					font-size: 25px;
+					color: #FFFFFF;
+				}
+		}
+	}	

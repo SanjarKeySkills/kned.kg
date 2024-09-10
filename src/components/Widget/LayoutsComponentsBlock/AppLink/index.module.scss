@@ -1,0 +1,47 @@
+.link {
+	display: inline;
+	list-style-type: none;
+	cursor: pointer;
+	margin-right: 32px;
+	font-family: "Arial";
+	font-weight: 600;
+	font-size: 14px;
+	text-decoration: none;
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.link:last-of-type {
+	margin-right: 80px;
+}
+
+.activatedHeader {
+	&:hover {
+		// text-decoration: underline;
+		text-decoration-thickness: 1.7px;
+		color: #447ac6;
+	}
+}
+
+.activatedFooter {
+	&:hover {
+		text-decoration: underline;
+		text-decoration-thickness: 1.7px;
+	}
+}
+
+.headerTop {
+	color: #395071;
+
+}
+
+.headerBottom {
+	color: #000000;
+
+}
+
+.footer {
+	font-size: 18px;
+	color: #ffffff;
+}

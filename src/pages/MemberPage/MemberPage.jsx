@@ -1,11 +1,8 @@
 import React from "react";
+// import Member from "../../components/Widget";
 
 const MemberPage = () => {
-    return (
-        <div>
-            <p>Hello I am Member!</p>
-        </div>
-    );
+    return <div>{/* <Member /> */}</div>;
 };
 
 export default MemberPage;

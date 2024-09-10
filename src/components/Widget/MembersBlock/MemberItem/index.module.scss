@@ -1,0 +1,47 @@
+.container {
+	width: 408px;
+	height: 274px;
+	background-image: url(../../../../assets/cardbackground.svg);
+	cursor: pointer;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding: 50px 0 0 40px;
+	position: relative;
+}
+
+.memberName {
+	color: #5A3C62;
+	font-size: 30px;
+	width: 125px;
+	height: 74px;
+	font-weight: bold;
+		&:hover {
+				color: #b574c7;
+				cursor: pointer;
+			}
+}
+
+.annotationName {
+	color: #000000;
+	font-weight: 200;
+	font-size: 14px;
+	width: 205px;
+	height: 57px;
+	&:hover {
+			color: #5D6267;
+			cursor: pointer;
+		}
+}
+
+.memberImg {
+	width: 200px;
+	max-height: 230px;
+	height: auto;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	object-fit: cover;
+	object-position: center;
+}

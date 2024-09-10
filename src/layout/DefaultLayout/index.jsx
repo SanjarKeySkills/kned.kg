@@ -1,8 +1,8 @@
 import React from "react";
-import Header from "../../components/Widget/Header/header";
+import Header from "../../components/Widget/LayoutsComponentsBlock/Header/index.jsx";
 import { Outlet } from "react-router-dom";
-import MemberButton from "../../components/Widget/MemberButton/memberButton.jsx";
-import Footer from "../../components/Widget/Footer/footer";
+import MemberButton from "../../components/Widget/LayoutsComponentsBlock/MemberButton/index.jsx";
+import Footer from "../../components/Widget/LayoutsComponentsBlock/Footer/index.jsx";
 
 const DefaultLayout = () => {
     return (
