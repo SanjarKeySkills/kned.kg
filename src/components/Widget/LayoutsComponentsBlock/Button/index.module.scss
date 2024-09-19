@@ -3,22 +3,6 @@
     cursor: pointer;
 }
 
-.lanRuOutlined {
-    &:hover {
-        background: #7aadf4;
-		color: #000000;
-		font-weight: bold;
-    }
-}
-
-.lanEnOutlined {
-	&:hover {
-		background: #C69214;
-		color: #FFFFFF;
-		font-weight: bold;
-	}
-}
-
 .mOutlined {
 	&:hover {
 		background-color: #C69214;
@@ -106,32 +90,6 @@
 	font-family: "Arial", "Open Sans";
 	color: #ffffff;
 	border-radius: 7px;
-}
-
-.lanRu {
-	padding: 1px;
-	border: none;
-	background-color: #002345;
-	width: 27px;
-	height: 20px;
-	font-size: 12px;
-	text-align: center;
-	font-weight: bold;
-	font-family: "Arial", "Open Sans";
-	color: #ffffff;
-}
-
-.lanEn {
-	padding: 1px;
-	border: none;
-	background-color: #FFC72C;
-	width: 27px;
-	height: 20px;
-	font-size: 12px;
-	text-align: center;
-	font-weight: bold;
-	font-family: "Arial", "Open Sans";
-	color: #002345;
 }
 
 .arrowLeft {
