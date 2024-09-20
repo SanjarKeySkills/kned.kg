@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../../assets/logoKnedMain.svg";
+import logo from "../../../assets/imageMainHeader.png";
 
 const mainLogo = () => {
     return (

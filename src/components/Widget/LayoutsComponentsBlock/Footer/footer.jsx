@@ -1,7 +1,7 @@
 import React from "react";
 import AppLink from "../AppLink/index.jsx";
 import styles from "./footer.module.scss";
-import MainLogo from "../../../UI/MainLogo/index.jsx";
+import logo from "../../../../assets/imageMainHeader.png";
 import Instagram from "../../../UI/SocialLogo/InstLogo/index.jsx";
 import Facebook from "../../../UI/SocialLogo/FaceLogo/index.jsx";
 
@@ -10,7 +10,7 @@ const Footer = () => {
         <div className={styles.container}>
             <div className={styles.footerTop}>
                 <div className={styles.info}>
-                    <MainLogo />
+                    <img src={logo} alt="main" />
                     <div className={styles.infoLeft}>
                         <p>
                             Кыргызская Республика г.Бишкек ул.Исанова 105/1, 6
@@ -19,11 +19,10 @@ const Footer = () => {
                         <p>
                             +996 509 425 995
                             <tr />
+                            <a href="#">kned.org@gmail.com</a>
                             <AppLink
                                 position="footer"
-                                variant="activatedFooter">
-                                kned.org@gmail.com
-                            </AppLink>
+                                variant="activatedFooter"></AppLink>
                         </p>
                     </div>
                 </div>

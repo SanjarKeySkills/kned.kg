@@ -1,40 +1,47 @@
 import React from "react";
-import AppLink from "../AppLink/index.jsx";
 import Button from "../Button/index.jsx";
 import styles from "./header.module.scss";
-import MainLogo from "../../../UI/MainLogo/index.jsx";
-import LineDecor from "../../../UI/LineDecor/index.jsx";
+import logo from "../../../../assets/imageMainHeader.png";
+import burgerButton from "../../../../assets/burgerButton.svg";
+import arrowPopUp from "../../../../assets/arrowPopUp.svg";
+import { useState } from "react";
 
 const Header = () => {
+    const [isOpenPopUp, setOpenPopUp] = useState("none");
+    const changeStyle = () => {
+        console.log("asdf");
+        if (isOpenPopUp == "none") {
+            setOpenPopUp("block");
+        } else setOpenPopUp("none");
+    };
+
     return (
         <>
             <div className={styles.headerTop}>
                 <ul className={styles.listTop}>
                     <li>
-                        <a href="#" className={styles.link}>
+                        <a href="#" className={styles.linkTop}>
                             ЧЛЕНЫ ПАЛАТЫ
                         </a>
                     </li>
                     <li>
-                        <a href="#" className={styles.link}>
+                        <a href="#" className={styles.linkTop}>
                             О ПАЛАТЕ
                         </a>
                     </li>
                     <li>
-                        <a href="#" className={styles.link}>
+                        <a href="#" className={styles.linkTop}>
                             УСЛУГИ
                         </a>
                     </li>
                     <li>
-                        <a href="#" className={styles.link}>
+                        <a href="#" className={styles.linkTop}>
                             КОНТАКТЫ
                         </a>
                     </li>
                 </ul>
                 <div>
-                    <a
-                        href="#"
-                        className={styles.lanRu}>
+                    <a href="#" className={styles.lanRu}>
                         RU
                     </a>
                     <a href="#" className={(styles.lanBlock, styles.lanEn)}>
@@ -43,21 +50,112 @@ const Header = () => {
                 </div>
             </div>
             <div className={styles.headerBottom}>
-                <MainLogo />
-                <div>
-                    <div>
-                        <AppLink position="headerBottom">
-                            КУРСЫ И ТРЕНИНГИ
-                        </AppLink>
-                        <AppLink position="headerBottom">НОВОСТИ</AppLink>
-                        <AppLink position="headerBottom">СТАТЬИ</AppLink>
-                        <AppLink position="headerBottom">ГАЛЛЕРЕЯ</AppLink>
+                <a href="#">
+                    <img src={logo} alt="main" />
+                </a>
+                <div className={styles.wrapperBottom}>
+                    <ul className={styles.listBottom}>
+                        <li>
+                            <a href="#" className={styles.linkBottom}>
+                                КУРСЫ И ТРЕНИНГИ
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" className={styles.linkBottom}>
+                                НОВОСТИ
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" className={styles.linkBottom}>
+                                СТАТЬИ
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" className={styles.linkBottom}>
+                                ГАЛЛЕРЕЯ
+                            </a>
+                        </li>
+                    </ul>
+                    <Button size="s" variant="outlined">
+                        Стать членом
+                    </Button>
+                </div>
+            </div>
+            <div className={styles.headerMobile}>
+                <a href="#">
+                    <img src={logo} alt="main" />
+                </a>
+
+                <img src={burgerButton} alt="burger" onClick={changeStyle} />
+
+                <div
+                    className={styles.containerPopUp}
+                    style={{ display: isOpenPopUp }}>
+                    <div className={styles.wrapperTopPopUp}>
+                        <div className={styles.arrowWrapper}>
+                            <img
+                                src={arrowPopUp}
+                                alt="arrow"
+                                onClick={changeStyle}
+                            />
+                        </div>
+                        <ul className={styles.listTopPopUp}>
+                            <li>
+                                <a href="#">КУРСЫ И ТРЕНИНГИ</a>
+                            </li>
+                            <li>
+                                <a href="#" className={styles.link}>
+                                    НОВОСТИ
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" className={styles.link}>
+                                    СТАТЬИ
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" className={styles.link}>
+                                    ГАЛЛЕРЕЯ
+                                </a>
+                            </li>
+                        </ul>
                         <Button size="s" variant="outlined">
                             Стать членом
                         </Button>
                     </div>
-                    <div>
-                        <LineDecor />
+                    <div className={styles.headerBottomPopUp}>
+                        <ul className={styles.listBottomPopUp}>
+                            <li>
+                                <a href="#" className={styles.link}>
+                                    ЧЛЕНЫ ПАЛАТЫ
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" className={styles.link}>
+                                    О ПАЛАТЕ
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" className={styles.link}>
+                                    УСЛУГИ
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" className={styles.link}>
+                                    КОНТАКТЫ
+                                </a>
+                            </li>
+                        </ul>
+                        <div>
+                            <a href="#" className={styles.lanRu}>
+                                RU
+                            </a>
+                            <a
+                                href="#"
+                                className={(styles.lanBlock, styles.lanEn)}>
+                                EN
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
