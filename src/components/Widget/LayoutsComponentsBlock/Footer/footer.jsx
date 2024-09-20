@@ -1,75 +1,85 @@
 import React from "react";
 import AppLink from "../AppLink/index.jsx";
 import styles from "./footer.module.scss";
-import logo from "../../../../assets/imageMainHeader.png";
-import Instagram from "../../../UI/SocialLogo/InstLogo/index.jsx";
-import Facebook from "../../../UI/SocialLogo/FaceLogo/index.jsx";
+import footerLogo from "../../../../assets/footerLogo.svg";
+import instLogo from "../../../../assets/instagram-logo.svg";
+import facebookLogo from "../../../../assets/facebook-logo.svg";
 
 const Footer = () => {
     return (
-        <div className={styles.container}>
-            <div className={styles.footerTop}>
-                <div className={styles.info}>
-                    <img src={logo} alt="main" />
-                    <div className={styles.infoLeft}>
-                        <p>
-                            Кыргызская Республика г.Бишкек ул.Исанова 105/1, 6
-                            этаж, кабинет 2
-                        </p>
-                        <p>
-                            +996 509 425 995
-                            <tr />
-                            <a href="#">kned.org@gmail.com</a>
-                            <AppLink
-                                position="footer"
-                                variant="activatedFooter"></AppLink>
-                        </p>
-                    </div>
+        <div className={styles.footer}>
+            <div className={styles.footerWrapper}>
+                <div className={styles.footerContacts}>
+                    <img
+                        src={footerLogo}
+                        alt="Footer Logo"
+                        className={styles.footerLogo}
+                    />
+                    <p>
+                        Кыргызская Республика г.Бишкек ул.Исанова 105/1, 6 этаж,
+                        кабинет 2
+                    </p>
+                    <p>
+                        +996 509 425 995
+                        <tr />
+                        <a href="#">kned.org@gmail.com</a>
+                    </p>
                 </div>
-                <div className={styles.linkContainer}>
-                    <div className={styles.links}>
-                        <AppLink position="footer" variant="activatedFooter">
-                            О ПАЛАТЕ
-                        </AppLink>
-                        <AppLink position="footer" variant="activatedFooter">
-                            ЧЛЕНЫ ПАЛАТЫ
-                        </AppLink>
-                        <AppLink position="footer" variant="activatedFooter">
-                            УСЛУГИ
-                        </AppLink>
-                        <AppLink position="footer" variant="activatedFooter">
-                            КОНТАКТЫ
-                        </AppLink>
-                    </div>
-                    <div className={styles.links}>
-                        <AppLink position="footer" variant="activatedFooter">
-                            КУРСЫ И ТРЕНИНГИ
-                        </AppLink>
-                        <AppLink position="footer" variant="activatedFooter">
-                            НОВОСТИ
-                        </AppLink>
-                        <AppLink position="footer" variant="activatedFooter">
-                            СТАТЬИ
-                        </AppLink>
-                        <AppLink position="footer" variant="activatedFooter">
-                            ГАЛЛЕРЕЯ
-                        </AppLink>
-                    </div>
+                <div className={styles.footerList}>
+                    <ul>
+                        <li>
+                            <a href="#">О ПАЛАТЕ</a>
+                        </li>
+                        <li>
+                            <a href="#">ЧЛЕНЫ ПАЛАТЫ</a>
+                        </li>
+                        <li>
+                            <a href="#">УСЛУГИ</a>
+                        </li>
+                        <li>
+                            <a href="#">КОНТАКТЫ</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="#">КУРСЫ И ТРЕНИНГИ</a>
+                        </li>
+                        <li>
+                            <a href="#">НОВОСТИ</a>
+                        </li>
+                        <li>
+                            <a href="#">СТАТЬИ</a>
+                        </li>
+                        <li>
+                            <a href="#">ГАЛЛЕРЕЯ</a>
+                        </li>
+                    </ul>
                 </div>
-                <div className={styles.infoRightContainer}>
-                    <p className={styles.infoRight}>
+                <div className={styles.footerInfo}>
+                    <p>
                         ПНД КР является профессиональной организацией,
                         добровольно объединяющей физических лиц, в лице
                         национальных и международных независимых директоров и
                         экспертов в области корпоративного управления.
                     </p>
-                    <div className={styles.socialLogoContainer}>
-                        <Instagram />
-                        <Facebook />
+                    <div className={styles.footerSocial}>
+                        <a href="#">
+                            <img
+                                src={instLogo}
+                                alt="Instagram"
+                                className={styles.socialLogo}
+                            />
+                        </a>
+                        <a href="#">
+                            <img
+                                src={facebookLogo}
+                                alt="Facebook"
+                                className={styles.socialLogo}
+                            />
+                        </a>
                     </div>
                 </div>
             </div>
-            <div className={styles.footerBottom}></div>
         </div>
     );
 };

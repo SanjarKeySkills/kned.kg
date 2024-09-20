@@ -9,7 +9,6 @@ import { useState } from "react";
 const Header = () => {
     const [isOpenPopUp, setOpenPopUp] = useState("none");
     const changeStyle = () => {
-        console.log("asdf");
         if (isOpenPopUp == "none") {
             setOpenPopUp("block");
         } else setOpenPopUp("none");
@@ -50,35 +49,37 @@ const Header = () => {
                 </div>
             </div>
             <div className={styles.headerBottom}>
-                <a href="#">
-                    <img src={logo} alt="main" />
-                </a>
-                <div className={styles.wrapperBottom}>
-                    <ul className={styles.listBottom}>
-                        <li>
-                            <a href="#" className={styles.linkBottom}>
-                                КУРСЫ И ТРЕНИНГИ
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" className={styles.linkBottom}>
-                                НОВОСТИ
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" className={styles.linkBottom}>
-                                СТАТЬИ
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" className={styles.linkBottom}>
-                                ГАЛЛЕРЕЯ
-                            </a>
-                        </li>
-                    </ul>
-                    <Button size="s" variant="outlined">
-                        Стать членом
-                    </Button>
+                <div className={styles.headerBottomWrapper}>
+                    <a href="#">
+                        <img src={logo} alt="main" />
+                    </a>
+                    <div className={styles.wrapperBottom}>
+                        <ul className={styles.listBottom}>
+                            <li>
+                                <a href="#" className={styles.linkBottom}>
+                                    КУРСЫ И ТРЕНИНГИ
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" className={styles.linkBottom}>
+                                    НОВОСТИ
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" className={styles.linkBottom}>
+                                    СТАТЬИ
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" className={styles.linkBottom}>
+                                    ГАЛЛЕРЕЯ
+                                </a>
+                            </li>
+                        </ul>
+                        <Button size="s" variant="outlined">
+                            Стать членом
+                        </Button>
+                    </div>
                 </div>
             </div>
             <div className={styles.headerMobile}>
