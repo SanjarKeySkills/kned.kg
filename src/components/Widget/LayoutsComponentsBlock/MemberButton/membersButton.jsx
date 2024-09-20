@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "../Button/index.jsx";
-import styles from "./index.module.scss";
+import styles from "./membersButton.module.scss";
 
 const memberButton = () => {
     return (

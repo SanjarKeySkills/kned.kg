@@ -1,10 +1,10 @@
 import React from "react";
 import Button from "../../LayoutsComponentsBlock/Button/index.jsx";
-import styles from "./index.module.scss";
+import styles from "./mainHero.module.scss";
 
 const videoHero = () => {
     return (
-        <div className={styles.container}>
+        <div className={styles.mainHeroWrapper}>
             <div className={styles.titleContainer}>
                 <h1 className={styles.title}>
                     ПАЛАТА НЕЗАВИСИМЫХ ДИРЕКТОРОВ КЫРГЫЗСКОЙ РЕСПУБЛИКИ

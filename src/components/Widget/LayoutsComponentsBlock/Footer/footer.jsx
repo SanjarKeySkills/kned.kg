@@ -1,5 +1,4 @@
 import React from "react";
-import AppLink from "../AppLink/index.jsx";
 import styles from "./footer.module.scss";
 import footerLogo from "../../../../assets/footerLogo.svg";
 import instLogo from "../../../../assets/instagram-logo.svg";
