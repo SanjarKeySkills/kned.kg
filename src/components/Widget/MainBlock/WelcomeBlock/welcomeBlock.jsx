@@ -1,18 +1,15 @@
 import React from "react";
-import styles from "./index.module.scss";
-import IconCertificate from "../../../UI/IconsBusiness/iconCertificate.jsx";
-import IconQuality from "../../../UI/IconsBusiness/iconQuality.jsx";
-import IconMembers from "../../../UI/IconsBusiness/iconMembers.jsx";
-import IconConsult from "../../../UI/IconsBusiness/iconConsult.jsx";
+import styles from "./welcomeBlock.module.scss";
+import iconCertificate from "../../../../assets/icon_certificate.svg";
+import iconQuality from "../../../../assets/icon_quality.svg";
+import iconMembers from "../../../../assets/icon_member.svg";
+import iconConsult from "../../../../assets/icon_consult.svg";
 
 const index = () => {
     return (
-        <div className={styles.container}>
+        <div className={styles.wrapperWelcome}>
             <div className={styles.welcomeWrapper}>
-                <h4>
-                    ДОБРО ПОЖАЛОВАТЬ В ПАЛАТУ НЕЗАВИСИМЫХ ДИРЕКТОРОВ КЫРГЫЗСКОЙ
-                    РЕСПУБЛИКИ
-                </h4>
+                <h4>ДОБРО ПОЖАЛОВАТЬ В ПАЛАТУ НЕЗАВИСИМЫХ ДИРЕКТОРОВ</h4>
                 <p>
                     <b>Палата Независимых Директоров Кыргызской Республики</b> -
                     это экспертное сообщество, объединение руководителей и
@@ -25,10 +22,9 @@ const index = () => {
                     и интересов акционеров.
                 </p>
             </div>
-
             <div className={styles.cardsWrapper}>
                 <div className={styles.card}>
-                    <IconCertificate />
+                    <img src={iconCertificate} alt="IconCertificate" />
                     <h3>
                         ПОВЫШЕНИЕ КВАЛИФИКАЦИИ В ОБЛАСТИ КОРПОРАТИВНОГО
                         УПРАВЛЕНИЯ
@@ -39,7 +35,7 @@ const index = () => {
                     </p>
                 </div>
                 <div className={styles.card}>
-                    <IconQuality />
+                    <img src={iconQuality} alt="IconQuality" />
                     <h3>ПОВЫШЕНИЕ КАЧЕСТВА КОРПОРАТИВНОГО УПРАВЛЕНИЯ</h3>
                     <p>
                         Консультации собственников компаний на соответствие
@@ -48,7 +44,7 @@ const index = () => {
                     </p>
                 </div>
                 <div className={styles.card}>
-                    <IconMembers />
+                    <img src={iconMembers} alt="IconMembers" />
                     <h3>ПРОДВИЖЕНИЕ РЕЗИДЕНТОВ ПАЛАТЫ</h3>
                     <p>
                         Выдвижение и представление компетентных профессионалов с
@@ -57,7 +53,7 @@ const index = () => {
                     </p>
                 </div>
                 <div className={styles.card}>
-                    <IconConsult />
+                    <img src={iconConsult} alt="IconConsult" />
                     <h3>КОНСУЛЬТАЦИИ ДЛЯ СОБСТВЕННИКОВ БИЗНЕСА</h3>
                     <p>
                         Консультируем собствеников компаний, советы директоров и

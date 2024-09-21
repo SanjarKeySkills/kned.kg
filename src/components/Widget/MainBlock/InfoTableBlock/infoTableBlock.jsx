@@ -1,7 +1,7 @@
 import React from "react";
-import style from "./index.module.scss";
+import style from "./infoTableBlock.module.scss";
 
-const membersBlock = () => {
+const infoTableBlock = () => {
     return (
         <div className={style.container}>
             <div className={style.infoList}>
@@ -61,4 +61,4 @@ const membersBlock = () => {
     );
 };
 
-export default membersBlock;
+export default infoTableBlock;

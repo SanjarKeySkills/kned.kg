@@ -1,27 +1,86 @@
+.mainHero {
+    width: 100%;
+    padding: 0 24px;
+}
+
 .mainHeroWrapper {
-    width: 1440px;
-    height: 670px;
-    margin: 144 auto 0;
-    background-image: url(../../../../assets/videHero.svg);
+    position: relative;
+    max-width: 1440px;
+    height: 480px;
+    margin: 144px auto 40px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    z-index: -1;
+    video {
+        width: 100%;
+        height: 480px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
 }
 
-.titleContainer {
+.mainHeroContent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 210px;
+    padding: 144px 0 0 0;
+    h1 {
+        max-width: 785px;
+        font-weight: bold;
+        font-size: 32px;
+        color: #ffffff;
+        font-family: "Lato", sans-serif;
+        padding-bottom: 28px;
+        text-align: center;
+    }
 }
 
-.title {
-    width: 785px;
-    font-weight: bold;
-    font-size: 34px;
-    color: #ffffff;
-    font-family: Arial;
-    padding-bottom: 30px;
-    line-height: 50px;
-    text-align: center;
+@media (max-width: 1024px) {
+    .mainHeroContent h1 {
+        max-width: 640px;
+        font-size: 24px;
+    }
+    .mainHeroWrapper {
+        height: 400px;
+        video {
+            height: 400px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .mainHeroWrapper {
+        margin: 120px auto 40px;
+    }
+    .mainHeroContent h1 {
+        max-width: 500px;
+    }
+    .mainHeroContent {
+        padding: 144px 32px 0;
+    }
+}
+
+@media (max-width: 425px) {
+    .mainHero {
+        padding: 0;
+    }
+    .mainHeroContent h1 {
+        font-size: 20px;
+        max-width: 400px;
+    }
+    .mainHeroContent {
+        padding: 80px 16px 0;
+    }
+    .mainHeroWrapper {
+        height: 360px;
+        video {
+            height: 360px;
+        }
+    }
 }
