@@ -1,12 +1,12 @@
 import React, { useState, useRef } from "react";
 import styles from "./sliderCourse.module.scss";
-import banner1 from "../../../../assets/banner1.png";
-import banner2 from "../../../../assets/banner2.png";
-import banner3 from "../../../../assets/banner3.png";
+import partnerBanner1 from "../../../../assets/banner1.png";
+import partnerBanner2 from "../../../../assets/banner2.png";
+import partnerBanner3 from "../../../../assets/banner3.png";
 
-const images = [banner1, banner2, banner3];
+const images = [partnerBanner1, partnerBanner2, partnerBanner3];
 
-const SliderCourse = () => {
+const CourseSlider = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const touchStartX = useRef(0);
     const touchEndX = useRef(0);
@@ -58,4 +58,4 @@ const SliderCourse = () => {
     );
 };
 
-export default SliderCourse;
+export default CourseSlider;

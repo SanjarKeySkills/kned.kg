@@ -4,7 +4,7 @@ import WelcomeBlock from "../../components/Widget/MainBlock/WelcomeBlock/welcome
 import SliderCourse from "../../components/Widget/MainBlock/SliderCourse/sliderCourse.jsx";
 import InfoTableBlock from "../../components/Widget/MainBlock/InfoTableBlock/infoTableBlock.jsx";
 import NewsBlock from "../../components/Widget/MainBlock/NewsBlock/newsBlock.jsx";
-// import PartnersSlider from "../../components/Widget/MainBlock/PartnersSlider/index.jsx";
+import PartnersSlider from "../../components/Widget/MainBlock/PartnersSlider/partnersSlider.jsx";
 // import CriteriaMember from "../../components/Widget/MainBlock/CriteriaMember/index.jsx";
 
 const MainPage = () => {
@@ -15,7 +15,7 @@ const MainPage = () => {
             <SliderCourse />
             <InfoTableBlock />
             <NewsBlock />
-            {/* <PartnersSlider /> */}
+            <PartnersSlider />
             {/* <CriteriaMember /> */}
         </div>
     );

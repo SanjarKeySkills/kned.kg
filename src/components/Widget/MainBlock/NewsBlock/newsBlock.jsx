@@ -1,7 +1,5 @@
 import React from "react";
 import styles from "./newsBlock.module.scss";
-// import Button from "../../LayoutsComponentsBlock/Button/index.jsx";
-// import image from "../../../../assets/imgNews.svg";
 
 const newsBlock = () => {
     return (
