@@ -36,14 +36,21 @@
         height: 360px;
     }
     p {
-        margin: 16px 0;
-        font-weight: bold;
+        height: 96px;
+        font-family: "Lato", sans-serif;
+        font-style: normal;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin: 16px 0 24px;
         color: #5a5a5a;
     }
 }
 .buttomAllNews {
-    background-color: #5d6267;
-    color: #000000;
+    background-color: #a7bacb;
+    color: #ffffff;
     text-align: center;
     padding: 8px 16px;
     text-decoration: none;
@@ -55,22 +62,35 @@
     width: fit-content;
     margin: 0 auto;
     &:hover {
-        background-color: #e7ecef;
+        background-color: #b6cbd6;
         color: #ffffff;
     }
 }
 
 .buttonReadNews {
     border-radius: 8px;
+    padding: 8px 16px;
     background-color: #c69214;
     color: #ffffff;
+    text-decoration: none;
     font-size: 14px;
     text-align: center;
     font-weight: bold;
     font-family: "Lato", sans-serif;
     font-style: normal;
     &:hover {
-        background: #ffbb29;
+        background: #e7ae34;
         color: #ffffff;
+    }
+}
+
+@media (max-width: 768px) {
+    .newsCards {
+        flex-direction: column;
+    }
+    .newsCard {
+        p {
+            height: auto;
+        }
     }
 }

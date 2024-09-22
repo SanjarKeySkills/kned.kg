@@ -24,14 +24,11 @@ const newsBlock = () => {
                         <div className={styles.imgNews}></div>
                         <p className={styles.newsText}>
                             Размышления о корпоративном секретаре. Градислава
-                            Ахметова, МА, MBA, к. э. н. Генеральный директор
-                            Governance & Management Consulting. Казахстан.
+                            Ахметова, МА, MBA, к. э. н.
                         </p>
-                        <Button
-                            size="s"
-                            variant="outlined"
-                            children="Читать дальше"
-                        />
+                        <a href="#" className={styles.buttonReadNews}>
+                            Читать дальше
+                        </a>
                     </div>
                     <div className={styles.newsCard}>
                         <div className={styles.imgNews}></div>
@@ -39,12 +36,13 @@ const newsBlock = () => {
                             Размышления о корпоративном секретаре. Градислава
                             Ахметова, МА, MBA, к. э. н. Генеральный директор
                             Governance & Management Consulting. Казахстан.
+                            Размышления о корпоративном секретаре. Градислава
+                            Ахметова, МА, MBA, к. э. н. Генеральный директор
+                            Governance & Management Consulting. Казахстан.
                         </p>
-                        <Button
-                            size="s"
-                            variant="outlined"
-                            children="Читать дальше"
-                        />
+                        <a href="#" className={styles.buttonReadNews}>
+                            Читать дальше
+                        </a>
                     </div>
                 </div>
                 <a href="#" className={styles.buttomAllNews}>
