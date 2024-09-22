@@ -15,7 +15,7 @@ const Header = () => {
     };
 
     return (
-        <>
+        <div className={styles.header}>
             <div className={styles.headerTop}>
                 <ul className={styles.listTop}>
                     <li>
@@ -160,7 +160,7 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 };
 
