@@ -8,7 +8,6 @@ const DefaultLayout = () => {
         <div>
             <Header />
             <Outlet />
-            <div style={{ height: "1000px" }}></div>
             <Footer />
         </div>
     );
