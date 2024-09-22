@@ -1,0 +1,43 @@
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 900px;
+    height: 250px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.slide {
+    width: 100%;
+    height: auto;
+}
+
+.leftArrow {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: rgb(105, 43, 43);
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    left: 8px;
+}
+
+.rightArrow {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: rgb(105, 43, 43);
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    right: 8px;
+}

@@ -1,11 +1,12 @@
-// .header {
-//     width: 100%;
-// }
-
-.headerTop {
+.header {
+    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 7;
+}
+
+.headerTop {
     width: 100%;
     padding: 8px 0;
     display: flex;
@@ -79,7 +80,6 @@
 
 .headerBottom {
     width: 100%;
-    position: fixed;
     top: 40px;
     left: 0;
     background-color: white;
