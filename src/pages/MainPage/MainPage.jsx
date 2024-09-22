@@ -3,7 +3,7 @@ import MainHero from "../../components/Widget/MainBlock/MainHero/mainHero.jsx";
 import WelcomeBlock from "../../components/Widget/MainBlock/WelcomeBlock/welcomeBlock.jsx";
 import SliderCourse from "../../components/Widget/MainBlock/SliderCourse/sliderCourse.jsx";
 import InfoTableBlock from "../../components/Widget/MainBlock/InfoTableBlock/infoTableBlock.jsx";
-// import NewsBlock from "../../components/Widget/MainBlock/NewsBlock/index.jsx";
+import NewsBlock from "../../components/Widget/MainBlock/NewsBlock/newsBlock.scss";
 // import PartnersSlider from "../../components/Widget/MainBlock/PartnersSlider/index.jsx";
 // import CriteriaMember from "../../components/Widget/MainBlock/CriteriaMember/index.jsx";
 
@@ -14,7 +14,7 @@ const MainPage = () => {
             <WelcomeBlock />
             <SliderCourse />
             <InfoTableBlock />
-            {/* <NewsBlock /> */}
+            <NewsBlock />
             {/* <PartnersSlider /> */}
             {/* <CriteriaMember /> */}
         </div>

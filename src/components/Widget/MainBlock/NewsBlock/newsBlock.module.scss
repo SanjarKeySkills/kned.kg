@@ -1,0 +1,76 @@
+.newsBlock {
+    width: 100%;
+}
+
+.newsWrapper {
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    margin: 0 auto;
+    padding: 40px 24px;
+    h2 {
+        text-align: center;
+        font-size: 32px;
+        font-weight: bold;
+        font-family: "Lato", sans-serif;
+        font-style: normal;
+    }
+}
+
+.newsCards {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.newsCard {
+    width: 100%;
+    .imgNews {
+        background: url("../../../../assets/imgNews.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 8px;
+        height: 360px;
+    }
+    p {
+        margin: 16px 0;
+        font-weight: bold;
+        color: #5a5a5a;
+    }
+}
+.buttomAllNews {
+    background-color: #5d6267;
+    color: #000000;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    border-radius: 8px;
+    width: fit-content;
+    margin: 0 auto;
+    &:hover {
+        background-color: #e7ecef;
+        color: #ffffff;
+    }
+}
+
+.buttonReadNews {
+    border-radius: 8px;
+    background-color: #c69214;
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    &:hover {
+        background: #ffbb29;
+        color: #ffffff;
+    }
+}
