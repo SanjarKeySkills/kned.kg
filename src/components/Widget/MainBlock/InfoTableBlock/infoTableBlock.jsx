@@ -1,13 +1,16 @@
 import React from "react";
-import style from "./infoTableBlock.module.scss";
+import styles from "./infoTableBlock.module.scss";
 
 const infoTableBlock = () => {
     return (
-        <div className={style.container}>
-            <div className={style.infoList}>
-                <div>
-                    <h3 className={style.headList}>ИНДУСТРИИ</h3>
-                    <div className={style.industryBlock}>
+        <div className={styles.infoTableBlock}>
+            <div className={styles.infoList}>
+                <div className={styles.infoCard}>
+                    <h3 className={styles.headList}>
+                        ДЕЯТЕЛЬНОСТЬ
+                        <br />В ИНДУСТРИЯХ
+                    </h3>
+                    <div className={styles.industryBlock}>
                         <ul>
                             <li>Финансовый сектор</li>
                             <li>Транспорт и логистика</li>
@@ -20,9 +23,13 @@ const infoTableBlock = () => {
                         </ul>
                     </div>
                 </div>
-                <div>
-                    <h3 className={style.headList}>КОМПЕТЕНЦИИ</h3>
-                    <div className={style.competenceBlock}>
+                <div className={styles.infoCard}>
+                    <h3 className={styles.headList}>
+                        КОМПЕТЕНЦИИ
+                        <br />
+                        ЧЛЕНОВ ПАЛАТЫ
+                    </h3>
+                    <div className={styles.industryBlock}>
                         <ul>
                             <li>Корпоративное управление</li>
                             <li>Финансы и инвестиции</li>
@@ -34,12 +41,13 @@ const infoTableBlock = () => {
                         </ul>
                     </div>
                 </div>
-
-                <div>
-                    <h3 className={style.headList}>
-                        ВЫПУСКНИКИ СЕРТИФИКАЦИОННЫХ ПРОГРАММ
+                <div className={styles.infoCard}>
+                    <h3 className={styles.headList}>
+                        ВЫПУСКНИКИ
+                        <br />
+                        СЕРТИФИКАЦИОННЫХ ПРОГРАММ
                     </h3>
-                    <div className={style.alumnyBlock}>
+                    <div className={styles.alumnyBlock}>
                         <ul>
                             <li>
                                 Программа "Независимый директор. Успешная
