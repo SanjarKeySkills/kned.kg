@@ -3,9 +3,8 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    width: 900px;
+    max-width: 900px;
     height: 250px;
-
     margin: 64px auto;
     img {
         border-radius: 8px;
@@ -47,4 +46,20 @@
     right: -40px;
     border-radius: 8px;
     // border: 2px solid #f2f2f2;
+}
+
+@media (max-width: 1024px) {
+    .leftArrow {
+        left: 16px;
+    }
+
+    .rightArrow {
+        right: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .slider {
+        display: none;
+    }
 }
