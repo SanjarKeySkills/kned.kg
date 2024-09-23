@@ -1,5 +1,5 @@
 import React from "react";
-import MemberItem from "../MemberItem/index.jsx";
+import MemberItem from "../MembersItem/membersItem.jsx";
 import styles from "./members.module.scss";
 
 function Members(props) {

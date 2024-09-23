@@ -1,0 +1,47 @@
+.welcome {
+    width: 100%;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Lato", sans-serif;
+    font-weight: 200;
+    padding: 24px;
+    margin: 40px 0;
+}
+
+.welcomeWrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    text-align: center;
+    padding: 16px 24px;
+    h4 {
+        margin: 16px 0;
+    }
+    p {
+        margin: 16px 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    .welcomeWrapper {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cardsWrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+    }
+}
+
+@media (max-width: 425px) {
+    .welcomeWrapper {
+        padding: 16px 8px 40px;
+    }
+}
