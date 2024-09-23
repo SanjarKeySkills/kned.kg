@@ -32,14 +32,6 @@
     }
 }
 
-@media (max-width: 768px) {
-    .cardsWrapper {
-        display: flex;
-        flex-direction: column;
-        gap: 80px;
-    }
-}
-
 @media (max-width: 425px) {
     .welcomeWrapper {
         padding: 16px 8px 40px;
