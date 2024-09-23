@@ -1,6 +1,6 @@
 import React from "react";
-import MemberItem from "../../MembersBlock/MemberItem/index.jsx";
-import styles from "./index.module.scss";
+import MemberItem from "../MemberItem/index.jsx";
+import styles from "./members.module.scss";
 
 function Members(props) {
     return (

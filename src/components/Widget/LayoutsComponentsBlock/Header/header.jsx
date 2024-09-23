@@ -19,7 +19,7 @@ const Header = () => {
             <div className={styles.headerTop}>
                 <ul className={styles.listTop}>
                     <li>
-                        <a href="#" className={styles.linkTop}>
+                        <a href="/members" className={styles.linkTop}>
                             ЧЛЕНЫ ПАЛАТЫ
                         </a>
                     </li>
@@ -50,7 +50,7 @@ const Header = () => {
             </div>
             <div className={styles.headerBottom}>
                 <div className={styles.headerBottomWrapper}>
-                    <a href="#">
+                    <a href="/">
                         <img src={logo} alt="main" />
                     </a>
                     <div className={styles.wrapperBottom}>

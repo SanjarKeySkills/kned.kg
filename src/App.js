@@ -1,22 +1,38 @@
 import React, { Suspense } from "react";
-import DefaultLayout from "./layout/DefaultLayout";
-// import LayoutWithHero from "./layout/LayoutWithHero";
-import { MainPage } from "./pages/MainPage/MainPage.async";
 import { Routes, Route } from "react-router-dom";
-import { MemberPage } from "./pages/MemberPage/MemberPage.async";
+import DefaultLayout from "./layout/DefaultLayout";
+import { MainPage } from "./pages/MainPage/MainPage.async";
+import MembersPage from "./pages/MembersPage/MembersPage.jsx";
 import { ErrorPage } from "./pages/ErrorPage/ErrorPage.async";
 // import { AboutPage } from "./pages/AboutPage/AboutPage.async";
 // import { CoursePage } from "./pages/CoursePage/CoursePage.async";
 // import { GovernancePage } from "./pages/GovernancePage/GovernancePage.async";
-// import { MembershipPage } from "./pages/MembershipPage/MembershipPage.async";
+// import { MembersPage } from "./pages/MembersPage/MembersPage.async";
 
 const App = () => {
     return (
-        <div>
+        <>
             <Routes>
-                <Route element={<DefaultLayout />}>
-                    <Route path="/" element={<MainPage />} />
-                    <Route path="/members/:id" element={<MemberPage />} />
+                <Route path="/" element={<DefaultLayout />}>
+                    <Route
+                        index
+                        element={
+                            <MainPage />
+                            // <Suspense fallback={<div>Loading...</div>}>
+                            //     <MainPage />
+                            // </Suspense>
+                        }
+                    />
+                    <Route
+                        path="/members"
+                        element={
+                            <MembersPage />
+                            // <Suspense fallback={<div>Loading...</div>}>
+
+                            // </Suspense>
+                        }
+                    />
+
                     <Route
                         path="*"
                         element={
@@ -27,6 +43,7 @@ const App = () => {
                     />
                 </Route>
                 {/* <Route element={<LayoutWithHero />}>
+					<Route path="/members/:id" element={<MemberPage />} />
                     <Route
                         path="/about"
                         element={
@@ -37,10 +54,9 @@ const App = () => {
                     />
                     <Route path="/courses" element={<CoursePage />} />
                     <Route path="/board" element={<GovernancePage />} />
-                    <Route path="/members" element={<MembershipPage />} />
                 </Route> */}
             </Routes>
-        </div>
+        </>
     );
 };
 

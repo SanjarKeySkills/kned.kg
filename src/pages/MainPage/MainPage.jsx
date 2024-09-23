@@ -9,7 +9,7 @@ import CriteriaMember from "../../components/Widget/MainBlock/CriteriaMember/cri
 
 const MainPage = () => {
     return (
-        <div>
+        <>
             <MainHero />
             <WelcomeBlock />
             <SliderCourse />
@@ -17,7 +17,7 @@ const MainPage = () => {
             <NewsBlock />
             <PartnersSlider />
             <CriteriaMember />
-        </div>
+        </>
     );
 };
 
