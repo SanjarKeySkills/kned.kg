@@ -1,121 +1,18 @@
-// import React, { useEffect, useRef, useState } from "react";
-// import style from "./criteriaMembers.module.scss";
-
-// const criteriaMember = () => {
-//     const data = [
-//         {
-//             title: "ДЛЯ ДЕЙСТВИТЕЛЬНЫХ ЧЛЕНОВ ПАЛАТЫ:",
-//             text: [
-//                 "Наличие высшего образования в области финансов/ экономики/менеджмента/ бизнес-администрирование (мба) / права, либо иное высшее образование;",
-//                 "опыт предпринимательской деятельности более 5 лет;",
-//                 "опыт работы в советах директоров, наблюдательных советах или на руководящих позициях национальных или международных компаний не менее 3 лет;",
-//                 "наличие положительной профессиональной репутации.",
-//             ],
-//             annotation: "",
-//         },
-//         {
-//             title: " ДЛЯ АССОЦИИРОВАННЫХ ЧЛЕНОВ ПАЛАТЫ:",
-//             text: [
-//                 "Наличие высшего образования в области финансов/ экономики/ менеджмента/ права либо высшее техническое образование;",
-//                 "опыт работы на руководящих позициях среднего звена (менеджер/начальник отдела/дирекция/управление/департамента национальных или международных компаний) не менее 2 лет;",
-//                 "наличие положительной профессиональной репутации;",
-//                 "желание расширить свои знания и навыки в области корпоративного управления в кыргызской республике.",
-//             ],
-//             annotation:
-//                 "ассоциированный член палаты имеет право после трехлетнего членства в палате подать заявку совету палаты с просьбой о пересмотре статуса члена палаты.",
-//         },
-//         {
-//             title: "ДЛЯ ПОЧЕТНЫХ ЧЛЕНОВ ПАЛАТЫ:",
-//             text: [
-//                 "Присваивается за существенный вклад в развитие корпоративного управления.",
-//             ],
-//             annotation: "",
-//         },
-//     ];
-
-//     const [active, setActive] = useState(false);
-//     const content = useRef(null);
-//     const [height, setHeight] = useState("0px");
-
-//     useEffect(() => {
-//         console.log("Height for ", props.title, ": ", height);
-//     }, [height]);
-
-//     function toggleAccordion() {
-//         setActive(!active);
-//         setHeight(active ? "0px" : `${content.current.scrollHeight}px`);
-//     }
-
-//     return (
-//         <div className={style.container}>
-//             <h1 className={style.title}>КРИТЕРИИ ЧЛЕНСТВА ПАЛАТЫ</h1>
-//             <h2 className={style.criteriaTitle}>
-//                 ДЛЯ ДЕЙСТВИТЕЛЬНЫХ ЧЛЕНОВ ПАЛАТЫ:
-//             </h2>
-//             <ul>
-//                 <li>
-//                     НАЛИЧИЕ ВЫСШЕГО ОБРАЗОВАНИЯ В ОБЛАСТИ ФИНАНСОВ/ ЭКОНОМИКИ/
-//                     МЕНЕДЖМЕНТА/ БИЗНЕС-АДМИНИСТРИРОВАНИЕ (МБА) / ПРАВА, ЛИБО
-//                     ИНОЕ ВЫСШЕЕ ОБРАЗОВАНИЕ;
-//                 </li>
-//                 <li>ОПЫТ ПРЕДПРИНИМАТЕЛЬСКОЙ ДЕЯТЕЛЬНОСТИ БОЛЕЕ 5 ЛЕТ; </li>
-//                 <li>
-//                     ОПЫТ РАБОТЫ В СОВЕТАХ ДИРЕКТОРОВ, НАБЛЮДАТЕЛЬНЫХ СОВЕТАХ ИЛИ
-//                     НА РУКОВОДЯЩИХ ПОЗИЦИЯХ НАЦИОНАЛЬНЫХ ИЛИ МЕЖДУНАРОДНЫХ
-//                     КОМПАНИЙ НЕ МЕНЕЕ 3 ЛЕТ;
-//                 </li>
-//                 <li>НАЛИЧИЕ ПОЛОЖИТЕЛЬНОЙ ПРОФЕССИОНАЛЬНОЙ РЕПУТАЦИИ.</li>
-//             </ul>
-
-//             <h2 className={style.criteriaTitle}>
-//                 ДЛЯ АССОЦИИРОВАННЫХ ЧЛЕНОВ ПАЛАТЫ:
-//             </h2>
-//             <ul>
-//                 <li>
-//                     НАЛИЧИЕ ВЫСШЕГО ОБРАЗОВАНИЯ В ОБЛАСТИ ФИНАНСОВ/ ЭКОНОМИКИ/
-//                     МЕНЕДЖМЕНТА/ ПРАВА ЛИБО ВЫСШЕЕ ТЕХНИЧЕСКОЕ ОБРАЗОВАНИЕ;
-//                 </li>
-//                 <li>
-//                     ОПЫТ РАБОТЫ НА РУКОВОДЯЩИХ ПОЗИЦИЯХ СРЕДНЕГО ЗВЕНА
-//                     (МЕНЕДЖЕР/НАЧАЛЬНИК ОТДЕЛА/ДИРЕКЦИЯ/УПРАВЛЕНИЕ/ДЕПАРТАМЕНТА
-//                     НАЦИОНАЛЬНЫХ ИЛИ МЕЖДУНАРОДНЫХ КОМПАНИЙ) НЕ МЕНЕЕ 2 ЛЕТ;
-//                 </li>
-//                 <li>НАЛИЧИЕ ПОЛОЖИТЕЛЬНОЙ ПРОФЕССИОНАЛЬНОЙ РЕПУТАЦИИ; </li>
-//                 <li>
-//                     ЖЕЛАНИЕ РАСШИРИТЬ СВОИ ЗНАНИЯ И НАВЫКИ В ОБЛАСТИ
-//                     КОРПОРАТИВНОГО УПРАВЛЕНИЯ В КЫРГЫЗСКОЙ РЕСПУБЛИКЕ.
-//                 </li>
-//                 <p>
-//                     АССОЦИИРОВАННЫЙ ЧЛЕН ПАЛАТЫ ИМЕЕТ ПРАВО ПОСЛЕ ТРЕХЛЕТНЕГО
-//                     ЧЛЕНСТВА В ПАЛАТЕ ПОДАТЬ ЗАЯВКУ СОВЕТУ ПАЛАТЫ С ПРОСЬБОЙ О
-//                     ПЕРЕСМОТРЕ СТАТУСА ЧЛЕНА ПАЛАТЫ.
-//                 </p>
-//             </ul>
-//             <h2 className={style.criteriaTitle}>ДЛЯ ПОЧЕТНЫХ ЧЛЕНОВ ПАЛАТЫ:</h2>
-//             <p>
-//                 ПРИСВАИВАЕТСЯ ЗА СУЩЕСТВЕННЫЙ ВКЛАД В РАЗВИТИЕ КОРПОРАТИВНОГО
-//                 УПРАВЛЕНИЯ.
-//             </p>
-//         </div>
-//     );
-// };
-
 import React, { useState } from "react";
-import style from "./criteriaMembers.module.scss";
-// import "./Accordion.css";
+import styles from "./criteriaMembers.module.scss";
 
-const AccordionItem = ({ title, text, annotation, isOpen, onToggle }) => {
+const AccordionItem = ({ title, text, isOpen, onToggle }) => {
     return (
-        <div className={style.accordionItem}>
-            <div className={style.accordionTitle} onClick={onToggle}>
+        <div className={styles.accordionItem}>
+            <div className={styles.accordionTitle} onClick={onToggle}>
                 {title}
-                <span className={style.arrowAccordeon}>
-                    {isOpen ? "▼" : "►"}
+                <span className={styles.arrowAccordeon}>
+                    {isOpen ? "➖" : "➕"}
                 </span>
             </div>
             {isOpen &&
                 text.map((item, index) => (
-                    <div key={index} className={style.accordionContent}>
+                    <div key={index} className={styles.accordionContent}>
                         {item}
                     </div>
                 ))}
@@ -125,7 +22,6 @@ const AccordionItem = ({ title, text, annotation, isOpen, onToggle }) => {
 
 const Accordion = () => {
     const [openIndex, setOpenIndex] = useState(null);
-
     const items = [
         {
             title: "ДЛЯ ДЕЙСТВИТЕЛЬНЫХ ЧЛЕНОВ ПАЛАТЫ:",
@@ -143,7 +39,7 @@ const Accordion = () => {
                 "Опыт работы на руководящих позициях среднего звена (менеджер/начальник отдела/дирекция/управление/департамента национальных или международных компаний) не менее 2 лет;",
                 "Наличие положительной профессиональной репутации;",
                 "Желание расширить свои знания и навыки в области корпоративного управления в кыргызской республике.",
-                "Ассоциированный член палаты имеет право после трехлетнего членства в палате подать заявку совету палаты с просьбой о пересмотре статуса члена палаты.",
+                "❗️Ассоциированный член палаты имеет право после трехлетнего членства в палате подать заявку совету палаты с просьбой о пересмотре статуса члена палаты.",
             ],
         },
         {
@@ -154,28 +50,23 @@ const Accordion = () => {
         },
     ];
 
-    // const items = [
-    //     { title: "Section 1", content: "Content for section 1" },
-    //     { title: "Section 2", content: "Content for section 2" },
-    //     { title: "Section 3", content: "Content for section 3" },
-    // ];
-
     const handleToggle = (index) => {
         setOpenIndex(openIndex === index ? null : index);
     };
 
     return (
-        <div className={style.accordion}>
-            {items.map((item, index) => (
-                <AccordionItem
-                    key={index}
-                    title={item.title}
-                    text={item.text}
-                    annotation={item.annotation}
-                    isOpen={openIndex === index}
-                    onToggle={() => handleToggle(index)}
-                />
-            ))}
+        <div className={styles.accordionWrapper}>
+            <div className={styles.accordion}>
+                {items.map((item, index) => (
+                    <AccordionItem
+                        key={index}
+                        title={item.title}
+                        text={item.text}
+                        isOpen={openIndex === index}
+                        onToggle={() => handleToggle(index)}
+                    />
+                ))}
+            </div>
         </div>
     );
 };
