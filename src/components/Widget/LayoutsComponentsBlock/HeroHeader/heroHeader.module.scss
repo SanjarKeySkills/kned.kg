@@ -1,0 +1,39 @@
+.heroHeader {
+    width: 100%;
+    padding: 144px 24px 0;
+}
+
+.heroTop {
+    max-width: 1440px;
+    min-height: 200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(../../../../assets/heroPic1.png);
+    border-radius: 8px;
+    border-bottom: 8px solid #c69214;
+}
+
+.heroText {
+    font-weight: bold;
+    font-family: "Lato", sans-serif;
+    font-size: 32px;
+    color: #6c6d70;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .heroHeader {
+        padding: 104px 24px 0;
+    }
+    .heroTop {
+        min-height: 120px;
+        padding: 16px;
+    }
+
+    .heroText {
+        font-size: 24px;
+    }
+}
