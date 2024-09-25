@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./MembersPage.module.scss";
 import HeroHeader from "../../components/Widget/LayoutsComponentsBlock/HeroHeader/heroHeader.jsx";
-import MembersItem from "../../components/Widget/MembersBlock/MembersContent/membersItem.jsx";
+import MemberCards from "../../components/Widget/MembersBlock/MemberCard/MemberCards.jsx";
 // import MemberCard from "../../components/Widget/MembersBlock/MemberCard/memberCard.jsx";
 // import Members from "../../components/Widget/MembersBlock/Members/members.jsx";
 // import membersData from "./MembersData.jsx";
@@ -25,7 +25,7 @@ const MembersPage = () => {
                 </div>
             </div>
 
-            <MembersItem />
+            <MemberCards />
             {/* <MemberCard /> */}
             {/* <Members membersData={membersData} /> */}
 
