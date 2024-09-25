@@ -1,11 +1,10 @@
 import React from "react";
 import styles from "./membersGenerator.module.scss";
-import membersData from "./MembersData.jsx";
 
-function MembersGenerator() {
+function MembersGenerator({ props }) {
     return (
         <div className={styles.cardList}>
-            {membersData.map((member) => (
+            {props.map((member) => (
                 <div key={member.id} className={styles.cardContainer}>
                     <div className={styles.cardText}>
                         <h2 className={styles.memberName}>{member.name}</h2>
