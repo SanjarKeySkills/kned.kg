@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./memberCards.module.scss";
 import MembersGenerator from "../membersGenerator/membersGenerator.jsx";
-import membersData from "./HonorMembersData.jsx";
+import HonorMembersData from "./HonorMembersData.jsx";
 // import ActiveMembersData from "./ActiveMembersData.jsx";
 // import AssociatedMembersData from "./AssociatedMembersData.jsx";
 
@@ -13,7 +13,7 @@ function MemberCards() {
                     ПОЧЕТНЫЕ ЧЛЕНЫ ПАЛАТЫ
                 </h4>
                 <div className={styles.cardList}>
-                    <MembersGenerator props={membersData} />
+                    <MembersGenerator props={HonorMembersData} />
                 </div>
             </div>
             {/* <div className={styles.membersItem}>
