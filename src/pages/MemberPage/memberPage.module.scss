@@ -1,0 +1,34 @@
+.memberPage {
+    width: 100%;
+    padding: 144px 24px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.memberPageWrapper {
+    width: 1440px;
+}
+
+.memberTitle {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 64px;
+    img {
+        width: 280px;
+        height: 280px;
+    }
+}
+
+.memberName {
+    width: 100%;
+    height: fit-content;
+    border-bottom: 4px solid #ffbb29;
+    font-weight: bold;
+    font-family: "Lato", sans-serif;
+    font-size: 32px;
+    color: #5a3c62;
+    font-size: 50px;
+}

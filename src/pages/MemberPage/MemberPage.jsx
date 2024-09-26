@@ -1,8 +1,18 @@
 import React from "react";
-// import Member from "../../components/Widget";
+import styles from "./memberPage.module.scss";
+import memberImage from "../../assets/seitek_dushenaliev.png";
 
 const MemberPage = () => {
-    return <div>{/* <Member /> */}</div>;
+    return (
+        <div className={styles.memberPage}>
+            <div className={styles.memberPageWrapper}>
+                <div className={styles.memberTitle}>
+                    <img src={memberImage} alt="memberPageImage" />
+                    <h2 className={styles.memberName}>Сейтек Душеналиев</h2>
+                </div>
+            </div>
+        </div>
+    );
 };
 
 export default MemberPage;

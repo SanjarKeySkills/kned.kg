@@ -26,12 +26,6 @@ const MembersPage = () => {
             </div>
 
             <MemberCards />
-            {/* <MemberCard /> */}
-            {/* <Members membersData={membersData} /> */}
-
-            {/* 
-                <h4>ДЕЙСТВИТЕЛЬНЫЕ ЧЛЕНЫ ПАЛАТЫ</h4>
-                <h4>АССОЦИАТИВНЫЕ ЧЛЕНЫ ПАЛАТЫ</h4> */}
         </>
     );
 };

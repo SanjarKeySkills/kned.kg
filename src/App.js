@@ -7,7 +7,7 @@ import { ErrorPage } from "./pages/ErrorPage/ErrorPage.async";
 // import { AboutPage } from "./pages/AboutPage/AboutPage.async";
 // import { CoursePage } from "./pages/CoursePage/CoursePage.async";
 // import { GovernancePage } from "./pages/GovernancePage/GovernancePage.async";
-// import { MembersPage } from "./pages/MembersPage/MembersPage.async";
+import { MemberPage } from "./pages/MemberPage/MemberPage.async.jsx";
 
 const App = () => {
     return (
@@ -41,6 +41,10 @@ const App = () => {
                             </Suspense>
                         }
                     />
+                    <Route path="/member" element={<MemberPage />} />
+                    {/* <Suspense fallback={<div>Loading...</div>}>
+                               
+                            </Suspense> */}
                 </Route>
                 {/* <Route element={<LayoutWithHero />}>
 					<Route path="/members/:id" element={<MemberPage />} />
