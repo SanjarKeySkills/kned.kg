@@ -28,7 +28,20 @@
     border-bottom: 4px solid #ffbb29;
     font-weight: bold;
     font-family: "Lato", sans-serif;
-    font-size: 32px;
+    font-size: 40px;
+    line-height: normal;
+    padding-bottom: 16px;
     color: #5a3c62;
-    font-size: 50px;
+}
+
+@media (max-width: 768px) {
+    .memberTitle {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        img {
+            width: 240px;
+            height: 240px;
+        }
+    }
 }
