@@ -1,7 +1,7 @@
 const membersData = [
     {
-        id: 1,
-        name: "Арзыбек проапрар",
+        id: "1",
+        name: "Арзыбеенааорок Кожошев",
         annotation:
             "Член Коллегии (министр) по энергетике и инфраструктуре Евразийской экономической комиссии",
         image: require("../../../../assets/kozhoshev.png"),
@@ -11,17 +11,17 @@ const membersData = [
         sertif: "fqwerqwer",
     },
     {
-        id: 2,
-        name: "Толкунбек Абдыгулов",
+        id: "2",
+        name: "Санжар Абакиров",
         annotation: "Консультант по стратегическому развитию",
-        image: require("../../../../assets/abdygulov.png"),
-        jobExp: "fasdfadf",
-        edu: "fasdfaf",
-        competence: "fasfewrljj234",
-        sertif: "fqwerqwer",
+        image: require("../../../../assets/icon_quality.svg"),
+        jobExp: "IT",
+        edu: "Codify",
+        competence: "React",
+        sertif: "none",
     },
     {
-        id: 3,
+        id: "3",
         name: "Улан Сарбанов",
         annotation:
             "Председатель Правления Венгерско-Кыргызского Фонда развития (с мая 2023 г. - по настоящее время)",

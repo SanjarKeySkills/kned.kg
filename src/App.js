@@ -17,10 +17,9 @@ const App = () => {
                     <Route
                         index
                         element={
-                            <MainPage />
-                            // <Suspense fallback={<div>Loading...</div>}>
-                            //     <MainPage />
-                            // </Suspense>
+                            <Suspense fallback={<div>Loading...</div>}>
+                                <MainPage />
+                            </Suspense>
                         }
                     />
                     <Route
@@ -41,7 +40,9 @@ const App = () => {
                         }
                     />
                     <Route
-                        path="/member/:id"
+                        path="/member/:type/:id"
+                        // в таком виде to useParams будет приходить строка в виде
+                        // ключа с теми значениями
                         element={
                             <Suspense fallback={<div>Loading...</div>}>
                                 <MemberPage />
