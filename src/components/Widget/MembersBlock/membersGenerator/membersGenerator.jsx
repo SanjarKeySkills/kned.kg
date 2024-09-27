@@ -1,9 +1,12 @@
 import React from "react";
 import styles from "./membersGenerator.module.scss";
+import { Link } from "react-router-dom";
+import clsx from "clsx";
 
 function MembersGenerator({ props }) {
     return (
         <div className={styles.cardList}>
+            {/* // <div className={clsx(styles.cardList, styles.img, { [styles.active]: true })}> */}
             {props.map((member) => (
                 <div key={member.id} className={styles.cardContainer}>
                     <div className={styles.cardText}>
@@ -11,7 +14,7 @@ function MembersGenerator({ props }) {
                         <p className={styles.annotationName}>
                             {member.annotation}
                         </p>
-                        <a href="#">РЕЗЮМЕ</a>
+                        <Link to={`/member/${member.id}`}>РЕЗЮМЕ</Link>
                     </div>
                     <img
                         className={styles.memberImg}
@@ -23,26 +26,5 @@ function MembersGenerator({ props }) {
         </div>
     );
 }
+
 export default MembersGenerator;
-
-// ----
-
-// <div className={styles.cardContainer}>
-//     <div className={styles.cardText}>
-//         <h2 className={styles.memberName}>
-//             {/* {props.name} */}
-//             Арзыбек Кожошев
-//         </h2>
-//         <p className={styles.annotationName}>
-//             {/* {props.annotation} */}
-//             Член Коллегии (министр) по энергетике и инфраструктуре Евразийской
-//             экономической комиссии
-//         </p>
-//         <a href="#">РЕЗЮМЕ</a>
-//     </div>
-//     <img
-//         className={styles.memberImg}
-//         src={image}
-//         // {props.image}
-//     />
-// </div>;

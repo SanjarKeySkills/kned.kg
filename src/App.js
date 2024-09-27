@@ -26,10 +26,9 @@ const App = () => {
                     <Route
                         path="/members"
                         element={
-                            <MembersPage />
-                            // <Suspense fallback={<div>Loading...</div>}>
-
-                            // </Suspense>
+                            <Suspense fallback={<div>Loading...</div>}>
+                                <MembersPage />
+                            </Suspense>
                         }
                     />
 
@@ -41,10 +40,14 @@ const App = () => {
                             </Suspense>
                         }
                     />
-                    <Route path="/member" element={<MemberPage />} />
-                    {/* <Suspense fallback={<div>Loading...</div>}>
-                               
-                            </Suspense> */}
+                    <Route
+                        path="/member/:id"
+                        element={
+                            <Suspense fallback={<div>Loading...</div>}>
+                                <MemberPage />
+                            </Suspense>
+                        }
+                    />
                 </Route>
                 {/* <Route element={<LayoutWithHero />}>
 					<Route path="/members/:id" element={<MemberPage />} />
