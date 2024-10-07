@@ -1,0 +1,56 @@
+.aboutBlock {
+    width: 100%;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+// Services
+.activeWrapper {
+    width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        color: #6c6d70;
+        font-size: 30px;
+        margin: 40px 0 50px;
+        width: auto;
+        text-align: center;
+        width: 70%;
+    }
+}
+
+.activityBlock {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.activityImg {
+    width: 650px;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.activityItem {
+    width: 620px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-bottom: 30px;
+    h3 {
+        color: #6c6d70;
+        font-size: 26px;
+        font-weight: bold;
+    }
+    p {
+        color: #6c6d70;
+        font-weight: 200;
+        line-height: 1.8;
+    }
+}

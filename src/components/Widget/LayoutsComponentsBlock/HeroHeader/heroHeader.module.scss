@@ -34,6 +34,12 @@
     }
 
     .heroText {
-        font-size: 24px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 425px) {
+    .heroText {
+        font-size: 16px;
     }
 }

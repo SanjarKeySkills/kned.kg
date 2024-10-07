@@ -1,16 +1,18 @@
 import React from "react";
-import Course from "../../components/Widget/CoursesBlock/Course/index.jsx";
-import Trainings from "../../components/Widget/CoursesBlock/Trainings/index.jsx";
-import Schedulle from "../../components/Widget/CoursesBlock/Schedulle/index.jsx";
-import BannerCourse from "../../components/Widget/CoursesBlock/BannerCourse/index.jsx";
+import HeroHeader from "../../components/Widget/LayoutsComponentsBlock/HeroHeader/heroHeader.jsx";
+import Schedulle from "../../components/Widget/CoursesBlock/Schedulle/Schedulle.jsx";
+import SliderCourse from "../../components/Widget/MainBlock/SliderCourse/sliderCourse.jsx";
+import Course from "../../components/Widget/CoursesBlock/Course/Course.jsx";
+// import Trainings from "../../components/Widget/CoursesBlock/Trainings/index.jsx";
 
 const CoursePage = () => {
     return (
         <div>
+            <HeroHeader />
             <Schedulle />
-            <BannerCourse />
+            <SliderCourse />
             <Course />
-            <Trainings />
+            {/* <Trainings /> */}
         </div>
     );
 };

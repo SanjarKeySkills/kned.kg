@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./membersGenerator.module.scss";
 import { Link } from "react-router-dom";
-import clsx from "clsx";
+// import clsx from "clsx";
 
 function MembersGenerator({ data, type }) {
     //деструктуризируем из объекта сам объект props

@@ -1,0 +1,180 @@
+.aboutBlock {
+    width: 100%;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+// Mission
+.missonWrapper {
+    max-width: 1440px;
+    padding: 32px 96px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    h3 {
+        font-family: "Lato", sans-serif;
+        font-weight: bold;
+        font-size: 32px;
+        color: #6c6d70;
+        line-height: 2;
+    }
+    p {
+        font-family: "Lato", sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        color: #6c6d70;
+    }
+}
+
+.imgAboutWrapper {
+    max-width: 1440px;
+    padding: 32px 32px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+    img {
+        max-width: 400px;
+    }
+}
+
+// Goals
+.goalsWrapper {
+    max-width: 1440px;
+    padding: 24px;
+    font-family: "Lato", sans-serif;
+    font-weight: 200;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h2 {
+        font-family: "Lato", sans-serif;
+        font-weight: bold;
+        font-size: 32px;
+        color: #6c6d70;
+        margin: 0 auto;
+        line-height: 2.8;
+    }
+}
+
+.goalsItemsWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.goals {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 64px;
+    margin-bottom: 64px;
+    p {
+        font-size: 20px;
+        color: #6c6d70;
+    }
+}
+
+.goal {
+    max-width: 576px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 16px;
+    h3 {
+        color: #ffbb29;
+    }
+    p {
+        line-height: 1.8;
+        text-align: justify;
+    }
+}
+
+.logoAndTitle {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 15px;
+    align-items: flex-end;
+}
+
+// Adaptive
+@media (max-width: 1400px) {
+    .imgAboutWrapper {
+        img {
+            max-width: 360px;
+        }
+    }
+}
+
+@media (max-width: 1250px) {
+    .imgAboutWrapper {
+        display: flex;
+        flex-direction: column;
+        img {
+            max-width: 342px;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .goals {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .missonWrapper {
+        padding: 8px;
+        h3 {
+            font-size: 24px;
+        }
+        p {
+            font-size: 16px;
+            text-align: justify;
+        }
+    }
+    .goalsWrapper {
+        h2 {
+            font-size: 24px;
+        }
+    }
+}
+
+@media (max-width: 544px) {
+    .imgAboutWrapper {
+        // padding: 32px;
+        gap: 16px;
+        img {
+            width: 320px;
+        }
+    }
+    .goals {
+        h3 {
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: 448px) {
+    .imgAboutWrapper {
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        img {
+            width: 240px;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .imgAboutWrapper {
+        padding: 8px;
+        display: flex;
+        flex-direction: column;
+    }
+}

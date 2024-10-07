@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import Button from "../../LayoutsComponentsBlock/Button/index.jsx";
+import Button from "../../../UI/Button/button.jsx";
 import styles from "./mainHero.module.scss";
 import videoBg from "../../../../assets/Business _ stock video footage by FINDSTORY.mp4";
 
@@ -8,7 +8,7 @@ const VideoHero = () => {
     useEffect(() => {
         videoRef.current.play();
     }, []);
-    // нативно запускает видео
+    // хук нативно запускает видео
 
     return (
         <div className={styles.mainHero}>

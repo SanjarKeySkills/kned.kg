@@ -10,7 +10,8 @@ const MemberPage = () => {
         window.scrollTo(0, 0);
     }, []);
 
-    const { id, type } = useParams(); // возвращает объект в к-р есть информация из УРЛ, там id,
+    const { id, type } = useParams();
+    // возвращает объект в к-р есть информация из УРЛ, там id,
     // по id будет тот, придет id того мембера на кого кликнули
 
     const mapData = {

@@ -1,22 +1,22 @@
 import React from "react";
-import styles from "./index.module.scss";
-import Button from "../../LayoutsComponentsBlock/Button/index.jsx";
+import styles from "./course.module.scss";
 import imageLeft from "../../../../assets/courseLeft.svg";
 import imageRight from "../../../../assets/courseRight.svg";
+import Button from "../../../UI/Button/button.jsx";
 
 const Course = () => {
     return (
-        <div className={styles.container}>
+        <div className={styles.course}>
             <div className={styles.courseInfo}>
                 <img
                     className={styles.image}
                     src={imageLeft}
                     alt="img_of_course_IFC"
                 />
+                <h2 className={styles.courseTitle}>
+                    СЕРТИФИКАЦИОННЫЙ КУРС <br /> КОРПОРАТИВНЫЙ ДИРЕКТОР
+                </h2>
                 <div className={styles.courseTitleButton}>
-                    <h2 className={styles.courseTitle}>
-                        СЕРТИФИКАЦИОННЫЙ КУРС КОРПОРАТИВНЫЙ ДИРЕКТОР
-                    </h2>
                     <Button size="course" variant="outlined">
                         ЗАПИСАТЬСЯ НА КУРС
                     </Button>
@@ -28,10 +28,10 @@ const Course = () => {
                     src={imageRight}
                     alt="img_of_course_IFC"
                 />
+                <h2 className={styles.courseTitle}>
+                    СЕРТИФИКАЦИОННЫЙ КУРС <br /> КОРПОРАТИВНЫЙ СЕКРЕТАРЬ
+                </h2>
                 <div className={styles.courseTitleButton}>
-                    <h2 className={styles.courseTitle}>
-                        СЕРТИФИКАЦИОННЫЙ КУРС КОРПОРАТИВНЫЙ СЕКРЕТАРЬ
-                    </h2>
                     <Button size="course" variant="outlined">
                         ЗАПИСАТЬСЯ НА КУРС
                     </Button>

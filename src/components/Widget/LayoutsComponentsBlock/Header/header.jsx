@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../Button/index.jsx";
+import Button from "../../../UI/Button/button.jsx";
 import styles from "./header.module.scss";
 import logo from "../../../../assets/imageMainHeader.png";
 import burgerButton from "../../../../assets/burgerButton.svg";
@@ -24,12 +24,17 @@ const Header = () => {
                         </a>
                     </li>
                     <li>
-                        <a href="#" className={styles.linkTop}>
+                        <a href="/about" className={styles.linkTop}>
                             О ПАЛАТЕ
                         </a>
                     </li>
                     <li>
-                        <a href="#" className={styles.linkTop}>
+                        <a href="/board" className={styles.linkTop}>
+                            ОРГАНЫ УПРАВЛЕНИЯ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/services" className={styles.linkTop}>
                             УСЛУГИ
                         </a>
                     </li>
@@ -56,7 +61,9 @@ const Header = () => {
                     <div className={styles.wrapperBottom}>
                         <ul className={styles.listBottom}>
                             <li>
-                                <a href="#" className={styles.linkBottom}>
+                                <a
+                                    href="/courses"
+                                    className={styles.linkBottom}>
                                     КУРСЫ И ТРЕНИНГИ
                                 </a>
                             </li>

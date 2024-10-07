@@ -1,0 +1,196 @@
+.schedulle {
+    width: 100%;
+    padding: 32px 32px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+        font-family: "Lato", sans-serif;
+        font-weight: bold;
+        font-size: 32px;
+        color: #6c6d70;
+        line-height: 2em;
+        text-transform: uppercase;
+    }
+    span {
+        font-family: "Lato", sans-serif;
+        font-weight: bold;
+        font-size: 32px;
+        color: #6c6d70;
+        line-height: 3em;
+    }
+    p {
+        font-family: "Lato", sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        color: #6c6d70;
+    }
+}
+
+.titleSchedulle {
+    max-width: 1440px;
+    padding: 16px 24px 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+// Table title
+.wrapperSchdulle {
+    max-width: 1440px;
+    padding: 24px 32px 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #d9d9d9;
+    border-radius: 8px;
+}
+
+// Table
+.infoSchedulle {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    p {
+        font-size: 24px;
+        color: #ffffff;
+    }
+}
+
+.infoSchedulle {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 20% 60%;
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+}
+
+.div1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #c69214;
+    border-radius: 8px;
+    padding: 32px;
+}
+.div2 {
+    display: flex;
+    align-items: center;
+    background-image: url("../../../../assets/schedulle1.svg");
+    background-size: cover;
+    border-radius: 8px;
+    padding: 24px;
+}
+.div3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5d6267;
+    border-radius: 8px;
+    padding: 32px;
+}
+.div4 {
+    display: flex;
+    align-items: center;
+    background-image: url("../../../../assets/schedulle2.svg");
+    background-size: cover;
+    border-radius: 8px;
+    padding: 24px;
+}
+.div5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #919aa3;
+    border-radius: 8px;
+    padding: 32px;
+}
+.div6 {
+    display: flex;
+    align-items: center;
+    background-image: url("../../../../assets/schedulle3.svg");
+    background-size: cover;
+    border-radius: 8px;
+    padding: 24px;
+}
+.div7 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffc72c;
+    border-radius: 8px;
+    padding: 32px;
+}
+.div8 {
+    display: flex;
+    align-items: center;
+    background-image: url("../../../../assets/schedulle4.svg");
+    background-size: cover;
+    border-radius: 8px;
+    padding: 24px;
+}
+.div9 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5d6267;
+    border-radius: 8px;
+    padding: 32px;
+}
+.div10 {
+    display: flex;
+    align-items: center;
+    background-image: url("../../../../assets/schedulle5.svg");
+    background-size: cover;
+    border-radius: 8px;
+    padding: 24px;
+}
+
+// Responcive
+@media (max-width: 768px) {
+    .schedulle {
+        padding: 24px;
+        h2 {
+            font-size: 20px;
+        }
+        span {
+            font-size: 20px;
+        }
+        p {
+            font-size: 20px;
+        }
+    }
+
+    // .wrapperSchdulle {
+    //     padding: 16px 24px 24px;
+    // }
+
+    .infoSchedulle {
+        grid-template-columns: 30% 50%;
+        grid-template-rows: repeat(1, 1fr);
+        grid-column-gap: 16px;
+        grid-row-gap: 16px;
+        p {
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .schedulle {
+        h2 {
+            font-size: 16px;
+        }
+        span {
+            font-size: 16px;
+        }
+    }
+
+    .infoSchedulle {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+}

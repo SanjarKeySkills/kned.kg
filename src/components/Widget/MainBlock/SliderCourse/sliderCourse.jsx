@@ -2,9 +2,8 @@ import React, { useState, useRef } from "react";
 import styles from "./sliderCourse.module.scss";
 import partnerBanner1 from "../../../../assets/banner1.png";
 import partnerBanner2 from "../../../../assets/banner2.png";
-import partnerBanner3 from "../../../../assets/banner3.png";
 
-const images = [partnerBanner1, partnerBanner2, partnerBanner3];
+const images = [partnerBanner1, partnerBanner2];
 
 const CourseSlider = () => {
     const [currentIndex, setCurrentIndex] = useState(0);

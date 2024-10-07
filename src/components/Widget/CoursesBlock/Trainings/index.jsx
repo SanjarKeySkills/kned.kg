@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./index.module.scss";
-import Button from "../../LayoutsComponentsBlock/Button/index.jsx";
+import Button from "../../../UI/Button/button.jsx";
 
 const trainings = () => {
     return (
