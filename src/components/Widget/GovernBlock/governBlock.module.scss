@@ -1,0 +1,105 @@
+.governBlock {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.governBlockContainer {
+    max-width: 1440px;
+    padding: 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    color: #787878;
+    text-align: center;
+    h1 {
+        text-align: start;
+    }
+    h3 {
+        font-size: 24px;
+        padding-top: 24px;
+    }
+    img {
+        max-width: 240px;
+    }
+}
+
+.councilWrapper {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: auto;
+    grid-gap: 32px;
+}
+
+.div1 {
+    grid-area: 1 / 1 / 1 / 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // max-width: 240px;
+}
+
+.governMember {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.corpsecAndAuditorWrapper {
+    display: flex;
+    justify-content: initial;
+}
+
+.presidiumWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: initial;
+    gap: 32px;
+}
+
+// Responce
+@media (max-width: 1152px) {
+    .councilWrapper {
+        grid-template-columns: repeat(3, auto);
+    }
+}
+
+@media (max-width: 880px) {
+    .governBlockContainer {
+        h1 {
+            margin: 0 auto;
+        }
+    }
+    .councilWrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        justify-content: center;
+        align-items: center;
+    }
+    .corpsecAndAuditorWrapper {
+        justify-content: center;
+    }
+    .presidiumWrapper {
+        flex-direction: column;
+        gap: 32px;
+    }
+}
+
+@media (max-width: 776px) {
+    .governBlockContainer {
+        gap: 32px;
+        h1 {
+            font-size: 16px;
+        }
+        h3 {
+            font-size: 20px;
+            padding-top: 20px;
+        }
+        img {
+            max-width: 160px;
+        }
+    }
+}

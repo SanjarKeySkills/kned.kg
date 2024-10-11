@@ -1,12 +1,12 @@
 import React from "react";
-import Governance from "../../components/Widget/GovernBlock/index.jsx";
 import HeroHeader from "../../components/Widget/LayoutsComponentsBlock/HeroHeader/heroHeader.jsx";
+import GovernBlock from "../../components/Widget/GovernBlock/GovernBlock.jsx";
 
 const GovernancePage = () => {
     return (
         <div>
             <HeroHeader />
-            <Governance />
+            <GovernBlock />
         </div>
     );
 };
