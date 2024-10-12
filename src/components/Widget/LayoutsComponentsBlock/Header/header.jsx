@@ -109,7 +109,7 @@ const Header = () => {
                         </div>
                         <ul className={styles.listTopPopUp}>
                             <li>
-                                <a href="#">КУРСЫ И ТРЕНИНГИ</a>
+                                <a href="/courses">КУРСЫ И ТРЕНИНГИ</a>
                             </li>
                             <li>
                                 <a href="#" className={styles.link}>
@@ -134,17 +134,22 @@ const Header = () => {
                     <div className={styles.headerBottomPopUp}>
                         <ul className={styles.listBottomPopUp}>
                             <li>
-                                <a href="#" className={styles.link}>
+                                <a href="/members" className={styles.link}>
                                     ЧЛЕНЫ ПАЛАТЫ
                                 </a>
                             </li>
                             <li>
-                                <a href="#" className={styles.link}>
+                                <a href="/about" className={styles.link}>
                                     О ПАЛАТЕ
                                 </a>
                             </li>
                             <li>
-                                <a href="#" className={styles.link}>
+                                <a href="/board" className={styles.linkTop}>
+                                    ОРГАНЫ УПРАВЛЕНИЯ
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/services" className={styles.link}>
                                     УСЛУГИ
                                 </a>
                             </li>

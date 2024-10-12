@@ -13,8 +13,7 @@
 }
 {
     /* <Hero />
-            <Outlet />
-            <MemberButton /> */
+            <Outlet />*/
 }
 {
     /* <Footer /> */
