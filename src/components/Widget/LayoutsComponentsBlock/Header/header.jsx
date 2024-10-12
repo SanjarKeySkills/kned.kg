@@ -90,7 +90,7 @@ const Header = () => {
                 </div>
             </div>
             <div className={styles.headerMobile}>
-                <a href="">
+                <a href="/">
                     <img src={logo} alt="main" />
                 </a>
 
