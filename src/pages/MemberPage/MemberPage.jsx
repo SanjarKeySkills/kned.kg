@@ -19,7 +19,7 @@ const MemberPage = () => {
         active: activeMembersData,
         associated: associatedMembersData,
     };
-    // создали об. чтоб получить нудный массив
+    // создали об. чтоб получить нужный массив
     // теперь нужно найти нужного мембера
 
     const member = mapData[type].find((member) => member.id === id);
@@ -46,12 +46,14 @@ const MemberPage = () => {
                         {member.edu}
                     </div>
                 </div>
+
                 <div className={styles.memberData}>
                     <div className={styles.memberDataTitle}>Компетенции</div>
                     <div className={styles.memberDataDescription}>
                         {member.competence}
                     </div>
                 </div>
+
                 <div className={styles.memberData}>
                     <div className={styles.memberDataTitle}>Сертификаты</div>
                     <div className={styles.memberDataDescription}>

@@ -10,7 +10,7 @@ function MemberCards() {
         <>
             <div className={styles.membersItem}>
                 <h4 className={styles.membersItemWrapper}>
-                    ПОЧЕТНЫЕ ЧЛЕНЫ ПАЛАТЫ
+                    Почетные члены палаты
                 </h4>
                 <div className={styles.cardList}>
                     <MembersGenerator data={HonorMembersData} type="honor" />

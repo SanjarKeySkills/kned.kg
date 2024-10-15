@@ -78,7 +78,9 @@ const Header = () => {
                                 </a>
                             </li>
                             <li>
-                                <a href="#" className={styles.linkBottom}>
+                                <a
+                                    href="/gallery"
+                                    className={styles.linkBottom}>
                                     ГАЛЛЕРЕЯ
                                 </a>
                             </li>
@@ -123,7 +125,7 @@ const Header = () => {
                                 </a>
                             </li>
                             <li>
-                                <a href="#" className={styles.link}>
+                                <a href="/gallery" className={styles.link}>
                                     ГАЛЛЕРЕЯ
                                 </a>
                             </li>

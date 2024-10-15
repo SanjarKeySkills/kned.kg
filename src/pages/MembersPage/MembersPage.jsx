@@ -2,10 +2,6 @@ import React from "react";
 import styles from "./MembersPage.module.scss";
 import HeroHeader from "../../components/Widget/LayoutsComponentsBlock/HeroHeader/heroHeader.jsx";
 import MemberCards from "../../components/Widget/MembersBlock/MemberCard/MemberCards.jsx";
-// import MemberCard from "../../components/Widget/MembersBlock/MemberCard/memberCard.jsx";
-// import Members from "../../components/Widget/MembersBlock/Members/members.jsx";
-// import membersData from "./MembersData.jsx";
-// import Members from "../../components/Widget/MembersBlock/Members/members.jsx";
 
 const MembersPage = () => {
     return (
