@@ -9,6 +9,7 @@ import { AboutPage } from "./pages/AboutPage/AboutPage.async";
 import { ServicesPage } from "./pages/ServicesPage/ServicesPage.async";
 import { CoursePage } from "./pages/CoursePage/CoursePage.async";
 import { GovernancePage } from "./pages/GovernancePage/GovernancePage.async";
+import { ContactPage } from "./pages/ContactPage/ContactPage.async";
 
 const App = () => {
     return (
@@ -73,6 +74,15 @@ const App = () => {
                             </Suspense>
                         }
                     />
+                    <Route
+                        path="/contact"
+                        element={
+                            <Suspense fallback={<div>Loading...</div>}>
+                                <ContactPage />
+                            </Suspense>
+                        }
+                    />
+
                     <Route
                         path="*"
                         element={

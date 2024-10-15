@@ -1,0 +1,107 @@
+.contact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contactWrapper {
+    max-width: 1440px;
+    padding: 24px;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    font-family: "Lato", sans-serif;
+    color: #787878;
+    text-align: initial;
+}
+
+.contactForm {
+    width: 100%;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+    h2 {
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 24px;
+        text-align: center;
+        line-height: 1.5;
+    }
+    p {
+        font-size: 20px;
+    }
+    img {
+        width: 64px;
+    }
+}
+
+.contactFormInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.contactFormButtonsAndSocial {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    justify-content: center;
+}
+
+.contactSocial {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+}
+
+.contactInput {
+    width: 100%;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: initial;
+    gap: 32px;
+    border: 1.5px solid #787878;
+    border-radius: 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: initial;
+    gap: 32px;
+}
+
+input {
+    height: 40px;
+    width: 100%;
+    outline: none;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+input:focus,
+input:valid {
+    border-color: #787878;
+}
+
+.textareaBox {
+    textarea {
+        width: 100%;
+        padding: 8px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        color: #787878;
+        transition: all 0.3s ease;
+    }
+}
+
+.buttonWrapper {
+    margin: 0 auto;
+}

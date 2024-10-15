@@ -39,7 +39,7 @@ const Header = () => {
                         </a>
                     </li>
                     <li>
-                        <a href="#" className={styles.linkTop}>
+                        <a href="/contact" className={styles.linkTop}>
                             КОНТАКТЫ
                         </a>
                     </li>
@@ -89,6 +89,7 @@ const Header = () => {
                     </div>
                 </div>
             </div>
+
             <div className={styles.headerMobile}>
                 <a href="/">
                     <img src={logo} alt="main" />
@@ -131,6 +132,7 @@ const Header = () => {
                             Стать членом
                         </Button>
                     </div>
+
                     <div className={styles.headerBottomPopUp}>
                         <ul className={styles.listBottomPopUp}>
                             <li>
@@ -154,7 +156,7 @@ const Header = () => {
                                 </a>
                             </li>
                             <li>
-                                <a href="#" className={styles.link}>
+                                <a href="/contact" className={styles.link}>
                                     КОНТАКТЫ
                                 </a>
                             </li>

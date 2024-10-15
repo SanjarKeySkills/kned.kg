@@ -3,7 +3,7 @@ import styles from "./criteriaMembers.module.scss";
 
 const AccordionItem = ({ title, text, isOpen, onToggle }) => {
     return (
-        <div className={styles.accordionItem}>
+        <div className={styles.accordionItem} id="crireriaSection">
             <div className={styles.accordionTitle} onClick={onToggle}>
                 {title}
                 <span className={styles.arrowAccordeon}>

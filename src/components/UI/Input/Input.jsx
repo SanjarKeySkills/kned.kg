@@ -1,4 +1,5 @@
-import styles from "./Input.module.css";
+import React from "react";
+import styles from "./input.module.scss";
 
 const Input = (props) => {
     const { type = "text" } = props;
