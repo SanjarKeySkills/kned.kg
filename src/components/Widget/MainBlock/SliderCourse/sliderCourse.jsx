@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import styles from "./sliderCourse.module.scss";
-import partnerBanner1 from "../../../../assets/banner1.png";
-import partnerBanner2 from "../../../../assets/banner2.png";
+import partnerBanner1 from "../../../../assets/bannerAnnoncement_kd.png";
+import partnerBanner2 from "../../../../assets/bannerAnnoncement_ks.png";
 
 const images = [partnerBanner1, partnerBanner2];
 
