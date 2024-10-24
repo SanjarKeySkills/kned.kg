@@ -1,31 +1,37 @@
 import React from "react";
 import styles from "./galleryCards.module.scss";
 import GalleryGenerator from "../GalleryGenerator/GalleryGenerator.jsx";
-import eventData from "../GalleryCards/eventData.js";
+import BusinessSaturdayData from "./businessSaturdayData.js";
+import BusinessBreakfastData from "./businessBreakfastData.js";
+import EventData from "./eventData.js";
 
 const GalleryCards = () => {
     return (
         <>
             <div className={styles.galleryItem}>
-                <h4 className={styles.galleryItemWrapper}>События и новости</h4>
-                <div>
-                    <GalleryGenerator data={eventData} type="event" />
+                <h4 className={styles.galleryItemWrapper}>Деловые субботы</h4>
+                <div className={styles.eventList}>
+                    <GalleryGenerator
+                        data={BusinessSaturdayData}
+                        type="event"
+                    />
                 </div>
             </div>
-            {/* <div className={styles.galleryItem}>
+            <div className={styles.galleryItem}>
                 <h4 className={styles.galleryItemWrapper}>Деловые завтраки</h4>
                 <div className={styles.eventList}>
-                    <GalleryGenerator data={BusinessSaturdayData} type='breakfast' />
+                    <GalleryGenerator
+                        data={BusinessBreakfastData}
+                        type="event"
+                    />
                 </div>
-            </div> */}
-            {/* <div className={styles.galleryItem}>
-                <h4 className={styles.galleryItemWrapper}>
-                    Мероприятия Палаты
-                </h4>
+            </div>
+            <div className={styles.galleryItem}>
+                <h4 className={styles.galleryItemWrapper}>Мероприятия</h4>
                 <div className={styles.eventList}>
-                    <GalleryGenerator data={EventData} type='event' />
+                    <GalleryGenerator data={EventData} type="event" />
                 </div>
-            </div> */}
+            </div>
         </>
     );
 };

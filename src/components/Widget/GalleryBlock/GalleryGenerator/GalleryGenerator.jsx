@@ -7,7 +7,7 @@ function GalleryGenerator({ data, type }) {
         <div className={styles.eventList}>
             {data.map((event) => (
                 <div key={event.id} className={styles.eventContainer}>
-                    <div className={styles.eventText}>
+                    <div className={styles.eventInfo}>
                         <a href={`/event/${type}/${event.id}`}>
                             <h2 className={styles.eventName}>{event.name}</h2>
                         </a>
