@@ -85,9 +85,13 @@ const Header = () => {
                                 </a>
                             </li>
                         </ul>
-                        <Button size="s" variant="outlined">
+                        {/* <Button size="s" variant="outlined">
                             Стать членом
-                        </Button>
+                        </Button> */}
+
+                        <a className={styles.buttonHero} href="/contact">
+                            Стать членом
+                        </a>
                     </div>
                 </div>
             </div>

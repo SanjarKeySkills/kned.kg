@@ -15,9 +15,12 @@ const VideoHero = () => {
             <div className={styles.mainHeroWrapper}>
                 <div className={styles.mainHeroContent}>
                     <h1>ПАЛАТАНЕ ЗАВИСИМЫХ ДИРЕКТОРОВ КЫРГЫЗСКОЙ РЕСПУБЛИКИ</h1>
-                    <Button size="heroButton" variant="heroOutlined">
+                    {/* <Button size="heroButton" variant="heroOutlined">
                         ЧЛЕНЫ ПАЛАТЫ
-                    </Button>
+                    </Button> */}
+                    <a className={styles.mainHeroButton} href="/contact">
+                        СТАТЬ ЧЛЕНОМ
+                    </a>
                 </div>
                 <video src={videoBg} loop muted ref={videoRef}></video>
             </div>

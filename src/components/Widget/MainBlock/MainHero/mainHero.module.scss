@@ -21,6 +21,23 @@
     }
 }
 
+.mainHeroButton {
+    padding: 16px;
+    background-color: #ffffff;
+    width: 180px;
+    font-size: 16px;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    color: #000000;
+    border-radius: 7px;
+    z-index: 2;
+    &:hover {
+        background-color: #f5f5f5;
+    }
+}
+
 .mainHeroContent {
     position: absolute;
     top: 0;

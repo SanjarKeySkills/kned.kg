@@ -16,6 +16,24 @@
     background-color: #e7ecef;
 }
 
+.buttonHero {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    background-color: #c69214;
+    width: 124px;
+    font-size: 14px;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    color: #ffffff;
+    &:hover {
+        background: #ffbb29;
+        color: #ffffff;
+    }
+}
+
 @media (max-width: 768px) {
     .headerTop {
         display: none;
