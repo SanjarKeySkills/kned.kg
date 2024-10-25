@@ -54,7 +54,7 @@
     width: 480px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 960px) {
     .eventList {
         grid-template-columns: repeat(1, 1fr);
     }
