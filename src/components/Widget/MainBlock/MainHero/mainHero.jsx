@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import Button from "../../../UI/Button/button.jsx";
+// import Button from "../../../UI/Button/button.jsx";
 import styles from "./mainHero.module.scss";
 import videoBg from "../../../../assets/Business _ stock video footage by FINDSTORY.mp4";
 
@@ -19,7 +19,7 @@ const VideoHero = () => {
                         ЧЛЕНЫ ПАЛАТЫ
                     </Button> */}
                     <a className={styles.mainHeroButton} href="/contact">
-                        СТАТЬ ЧЛЕНОМ
+                        ЧЛЕНЫ ПАЛАТЫ
                     </a>
                 </div>
                 <video src={videoBg} loop muted ref={videoRef}></video>
