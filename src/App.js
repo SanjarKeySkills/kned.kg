@@ -11,6 +11,7 @@ import { CoursePage } from "./pages/CoursePage/CoursePage.async";
 import { GovernancePage } from "./pages/GovernancePage/GovernancePage.async";
 import { ContactPage } from "./pages/ContactPage/ContactPage.async";
 import { GalleryPage } from "./pages/GalleryPage/GalleryPage.async";
+import { ImageCollectionPage } from "./pages/ImageCollectionPage/ImageCollectionPage.async";
 
 const App = () => {
     return (
@@ -35,7 +36,7 @@ const App = () => {
                     />
                     <Route
                         path="/member/:type/:id"
-                        // в таком виде to useParams будет приходить строка в виде
+                        // в таком виде to useParams будет приходить строках в виде
                         // ключа с теми значениями
                         element={
                             <Suspense fallback={<div>Loading...</div>}>
@@ -91,6 +92,16 @@ const App = () => {
                             </Suspense>
                         }
                     />
+                    <Route
+                        path="/event/:type/:id"
+                        // в таком виде to useParams будет приходить строках в виде
+                        // ключа с теми значениями
+                        element={
+                            <Suspense fallback={<div>Loading...</div>}>
+                                <ImageCollectionPage />
+                            </Suspense>
+                        }
+                    />
 
                     <Route
                         path="*"
@@ -101,15 +112,6 @@ const App = () => {
                         }
                     />
                 </Route>
-                {/* <Route element={<LayoutWithHero />}>
-					<Route path="/members/:id" element={<MemberPage />} />
-                    <Route path="/about" element={
-                            <Suspense fallback={<div>Loading...</div>}>
-                                <AboutPage />
-                            </Suspense>
-                        }
-                    />
-                </Route> */}
             </Routes>
         </>
     );

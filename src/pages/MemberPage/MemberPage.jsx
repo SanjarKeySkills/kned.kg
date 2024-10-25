@@ -19,7 +19,7 @@ const MemberPage = () => {
         active: activeMembersData,
         associated: associatedMembersData,
     };
-    // создали об. чтоб получить нужный массив
+    // создали объект чтоб получить нужный массив
     // теперь нужно найти нужного мембера
 
     const member = mapData[type].find((member) => member.id === id);

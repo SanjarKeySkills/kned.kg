@@ -1,0 +1,26 @@
+.imageCollectionPage {
+    width: 100%;
+    padding: 144px 24px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.imageCollectionPageWrapper {
+    width: 1440px;
+    display: flex;
+    justify-content: center;
+}
+
+.imgWrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    grid-column-gap: 32px;
+    grid-row-gap: 32px;
+}
+
+@media (max-width: 768px) {
+    .imgWrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

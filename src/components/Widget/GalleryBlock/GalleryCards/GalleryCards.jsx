@@ -3,7 +3,7 @@ import styles from "./galleryCards.module.scss";
 import GalleryGenerator from "../GalleryGenerator/GalleryGenerator.jsx";
 import BusinessSaturdayData from "./businessSaturdayData.js";
 import BusinessBreakfastData from "./businessBreakfastData.js";
-import EventData from "./eventData.js";
+import BusinessEventData from "./businessEventData.js";
 
 const GalleryCards = () => {
     return (
@@ -13,7 +13,7 @@ const GalleryCards = () => {
                 <div className={styles.eventList}>
                     <GalleryGenerator
                         data={BusinessSaturdayData}
-                        type="event"
+                        type="saturday"
                     />
                 </div>
             </div>
@@ -22,14 +22,17 @@ const GalleryCards = () => {
                 <div className={styles.eventList}>
                     <GalleryGenerator
                         data={BusinessBreakfastData}
-                        type="event"
+                        type="breakfast"
                     />
                 </div>
             </div>
             <div className={styles.galleryItem}>
                 <h4 className={styles.galleryItemWrapper}>Мероприятия</h4>
                 <div className={styles.eventList}>
-                    <GalleryGenerator data={EventData} type="event" />
+                    <GalleryGenerator
+                        data={BusinessEventData}
+                        type="happening"
+                    />
                 </div>
             </div>
         </>

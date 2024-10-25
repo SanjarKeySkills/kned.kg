@@ -10,7 +10,7 @@
 .eventContainer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     // background-image: url(../../../../assets/cardbackground.svg);
     background-color: #f5f5f5;
     background-size: cover;
@@ -23,7 +23,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    gap: 16px;
+    gap: 24px;
     padding: 40px;
     a {
         text-decoration: none;
@@ -31,7 +31,7 @@
 }
 
 .eventName {
-    min-height: 56px;
+    min-height: 64px;
     font-size: 24px;
     font-weight: bold;
     font-family: "Lato", sans-serif;
@@ -44,7 +44,7 @@
 .eventAnnotationName {
     min-height: 48px;
     text-align: justify;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
     font-family: "Lato", sans-serif;
     font-weight: 400;
