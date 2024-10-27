@@ -16,7 +16,11 @@ function MembersGenerator({ data, type }) {
                         <p className={styles.annotationName}>
                             {member.annotation}
                         </p>
-                        <Link to={`/member/${type}/${member.id}`}>РЕЗЮМЕ</Link>
+                        <Link
+                            to={`/member/${type}/${member.id}`}
+                            className={styles.linkMember}>
+                            РЕЗЮМЕ
+                        </Link>
                         {/* при клике перекидвает сначала на member потом на type 
 						потом по id и после этого вся информция записывается в URL
 						и после этого начинается подгружаться компонент memberPage

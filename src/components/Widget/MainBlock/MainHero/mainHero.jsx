@@ -14,7 +14,7 @@ const VideoHero = () => {
         <div className={styles.mainHero}>
             <div className={styles.mainHeroWrapper}>
                 <div className={styles.mainHeroContent}>
-                    <h1>ПАЛАТАНЕ ЗАВИСИМЫХ ДИРЕКТОРОВ КЫРГЫЗСКОЙ РЕСПУБЛИКИ</h1>
+                    <h1>ПАЛАТА НЕЗАВИСИМЫХ ДИРЕКТОРОВ КЫРГЫЗСКОЙ РЕСПУБЛИКИ</h1>
                     {/* <Button size="heroButton" variant="heroOutlined">
                         ЧЛЕНЫ ПАЛАТЫ
                     </Button> */}
