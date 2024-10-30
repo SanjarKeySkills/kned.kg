@@ -18,7 +18,7 @@ const VideoHero = () => {
                     {/* <Button size="heroButton" variant="heroOutlined">
                         ЧЛЕНЫ ПАЛАТЫ
                     </Button> */}
-                    <a className={styles.mainHeroButton} href="/contact">
+                    <a className={styles.mainHeroButton} href="/members">
                         ЧЛЕНЫ ПАЛАТЫ
                     </a>
                 </div>
