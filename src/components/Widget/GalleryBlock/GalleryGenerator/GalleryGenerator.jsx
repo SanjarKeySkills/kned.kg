@@ -8,23 +8,20 @@ function GalleryGenerator({ data, type }) {
     // - и его ключи data, и type.
     return (
         <div className={styles.eventList}>
-            {/* <></> */}
             {data.map((event) => (
                 <div key={event.id} className={styles.eventContainer}>
                     <div className={styles.eventInfo}>
-                        {/* <a href={`/event/${type}/${event.id}`}> */}
                         <h2 className={styles.eventName}>{event.name}</h2>
-                        {/* </a> */}
                         <p className={styles.eventAnnotationName}>
                             {event.annotation}
                         </p>
-                        {/* <a href={`/event/${type}/${event.id}`}> */}
-                        <img
-                            className={styles.eventImg}
-                            src={event.image}
-                            alt={event.name}
-                        />
-                        {/* </a> */}
+                        <a href={`/event/${type}/${event.id}`}>
+                            <img
+                                className={styles.eventImg}
+                                src={event.image}
+                                alt={event.name}
+                            />
+                        </a>
                         <Link to={`/event/${type}/${event.id}`}>
                             ОТКРЫТЬ АЛЬБОМ
                         </Link>
