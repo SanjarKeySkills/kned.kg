@@ -67,20 +67,20 @@ const businessSaturdayData = [
         image: require("../../../../assets/businessSaturdayData/bs_270424/hall_gradislav2.png"),
         images: [
             {
-                url: "../../../../assets/businessSaturdayData/bs_270424/hall_gradislav2.png",
+                url: require("../../../../assets/businessSaturdayData/bs_270424/hall_gradislav2.png"),
                 title: "img1",
             },
             {
-                url: "../../../../assets/businessSaturdayData/bs_270424/hall_gradislav.png",
+                url: require("../../../../assets/businessSaturdayData/bs_270424/hall_gradislav.png"),
                 title: "img2",
             },
             {
-                url: "../../../../assets/businessSaturdayData/bs_270424/hall_gradislav3.png",
+                url: require("../../../../assets/businessSaturdayData/bs_270424/hall_gradislav3.png"),
                 title: "img3",
             },
             ,
             {
-                url: "../../../../assets/businessSaturdayData/bs_270424/hall_gradislav4.png",
+                url: require("../../../../assets/businessSaturdayData/bs_270424/hall_gradislav4.png"),
                 title: "img4",
             },
         ],
@@ -93,20 +93,20 @@ const businessSaturdayData = [
         image: require("../../../../assets/businessSaturdayData/bs_270124/bs_zhardem_2.png"),
         images: [
             {
-                url: "../../../../assets/businessSaturdayData/bs_270124/bs_zhardem_2.png",
+                url: require("../../../../assets/businessSaturdayData/bs_270124/bs_zhardem_2.png"),
                 title: "img1",
             },
             {
-                url: "../../../../assets/businessSaturdayData/bs_270124/bs_zhardem_1.png",
+                url: require("../../../../assets/businessSaturdayData/bs_270124/bs_zhardem_1.png"),
                 title: "img2",
             },
             {
-                url: "../../../../assets/businessSaturdayData/bs_270124/bs_zhardem_3.png",
+                url: require("../../../../assets/businessSaturdayData/bs_270124/bs_zhardem_3.png"),
                 title: "img3",
             },
             ,
             {
-                url: "../../../../assets/businessSaturdayData/bs_270124/bs_zhardem_4.png",
+                url: require("../../../../assets/businessSaturdayData/bs_270124/bs_zhardem_4.png"),
                 title: "img4",
             },
         ],
