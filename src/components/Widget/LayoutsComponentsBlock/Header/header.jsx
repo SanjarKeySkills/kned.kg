@@ -85,17 +85,12 @@ const Header = () => {
                                 </a>
                             </li>
                         </ul>
-                        {/* <Button size="s" variant="outlined">
-                            Стать членом
-                        </Button> */}
-
                         <a className={styles.buttonHero} href="/contact">
                             Стать членом
                         </a>
                     </div>
                 </div>
             </div>
-
             <div className={styles.headerMobile}>
                 <a href="/">
                     <img src={logo} alt="main" />

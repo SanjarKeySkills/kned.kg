@@ -19,7 +19,6 @@ const businessSaturdayData = [
                 url: require("../../../../assets/businessSaturdayData/bs_280924/volynetz_3_11zon.png"),
                 title: "img3",
             },
-            ,
             {
                 url: require("../../../../assets/businessSaturdayData/bs_280924/volynetz_4_11zon.png"),
                 title: "img4",
@@ -78,7 +77,6 @@ const businessSaturdayData = [
                 url: require("../../../../assets/businessSaturdayData/bs_270424/hall_gradislav3.png"),
                 title: "img3",
             },
-            ,
             {
                 url: require("../../../../assets/businessSaturdayData/bs_270424/hall_gradislav4.png"),
                 title: "img4",
@@ -104,7 +102,6 @@ const businessSaturdayData = [
                 url: require("../../../../assets/businessSaturdayData/bs_270124/bs_zhardem_3.png"),
                 title: "img3",
             },
-            ,
             {
                 url: require("../../../../assets/businessSaturdayData/bs_270124/bs_zhardem_4.png"),
                 title: "img4",

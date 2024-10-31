@@ -19,6 +19,51 @@
     grid-row-gap: 32px;
 }
 
+.leftArrow {
+    // background: none;
+    // border: none;
+    font-size: 32px;
+    // cursor: pointer;
+    // color: rgb(54, 54, 54);
+    // background-color: #bfced6;
+    // position: absolute;
+    // top: 50%;
+    // transform: translateY(-50%);
+    // z-index: 1;
+    // left: -40px;
+    border-radius: 8px;
+}
+
+.rightArrow {
+    // background: none;
+    // border: none;
+    font-size: 32px;
+    // cursor: pointer;
+    // color: rgb(54, 54, 54);
+    // background-color: #bfced6;
+    // position: absolute;
+    // top: 50%;
+    // transform: translateY(-50%);
+    // z-index: 1;
+    // right: -40px;
+    border-radius: 8px;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 900px;
+    height: 250px;
+    margin: 64px auto;
+}
+
+// .imgWrapper {
+//     display: flex;
+//     transition: transform 0.4s ease;
+// }
+
 @media (max-width: 960px) {
     .imgWrapper {
         grid-template-columns: repeat(1, 1fr);
