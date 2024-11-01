@@ -37,7 +37,7 @@ const Contact = () => {
                                 Реквизиты
                             </Button>
                         </a>
-                        <a href="/#crireriaSection">
+                        <a href="/">
                             <Button size="sDark" variant="outlined">
                                 Критерии членства
                             </Button>
@@ -48,6 +48,7 @@ const Contact = () => {
                             </Button>
                         </a>
                     </div>
+
                     <div className={styles.contactSocial}>
                         <a href="https://www.instagram.com/">
                             <img
@@ -111,7 +112,7 @@ const Contact = () => {
                         </div>
                         <div className={styles.buttonWrapper}>
                             <Button size="s" variant="outlined">
-                                Submit
+                                ОТПРАВИТЬ
                             </Button>
                         </div>
                     </form>
