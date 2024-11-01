@@ -1,32 +1,37 @@
 .membersItem {
-    // width: 100%;
+    width: 100%;
+    padding: 32px 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: "Lato", sans-serif;
     font-weight: 400;
-    margin: 32px 24px;
 }
 
 .membersItemWrapper {
     max-width: 1024px;
+    padding: 32px 0;
     margin: 0 auto;
     font-size: 24px;
-    text-align: center;
-    margin: 32px 0;
 }
 
 @media (max-width: 1024px) {
+    .membersItem {
+        padding: 48px 32px;
+    }
     .membersItemWrapper {
         font-size: 20px;
     }
 }
 
 @media (max-width: 425px) {
+    .membersItem {
+        padding: 48px 32px;
+    }
     .membersItemWrapper {
         padding: 16px 8px 40px;
     }
     .membersItem {
-        margin: 8px;
+        padding: 8px;
     }
 }
