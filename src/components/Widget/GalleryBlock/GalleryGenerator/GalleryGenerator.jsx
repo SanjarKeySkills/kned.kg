@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./galleryGenerator.module.scss";
 import { Link } from "react-router-dom";
-// import
 
 function GalleryGenerator({ data, type }) {
     //деструктуризируем из объекта сам объект props

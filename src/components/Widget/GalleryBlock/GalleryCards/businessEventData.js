@@ -19,7 +19,6 @@ const eventData = [
                 url: require("../../../../assets/eventData/ks_290924/ks_ifc_3_11zon.png"),
                 title: "img3",
             },
-            ,
             {
                 url: require("../../../../assets/eventData/ks_290924/ks_ifc_4_11zon.png"),
                 title: "img4",
@@ -46,7 +45,6 @@ const eventData = [
                 url: require("../../../../assets/eventData/ks_060924/ks_tot_3_11zon.png"),
                 title: "img3",
             },
-            ,
             {
                 url: require("../../../../assets/eventData/ks_060924/ks_tot_4_11zon.png"),
                 title: "img4",
@@ -73,7 +71,6 @@ const eventData = [
                 url: require("../../../../assets/eventData/kd_190724/kd_sertifProg_2_11zon.png"),
                 title: "img3",
             },
-            ,
             {
                 url: require("../../../../assets/eventData/kd_190724/kd_sertifProg_3_11zon.png"),
                 title: "img4",
@@ -100,7 +97,6 @@ const eventData = [
                 url: require("../../../../assets/eventData/kd_220524/kd_kurs_3_11zon.png"),
                 title: "img3",
             },
-            ,
             {
                 url: require("../../../../assets/eventData/kd_220524/kd_kurs_4_11zon.png"),
                 title: "img4",
@@ -127,7 +123,6 @@ const eventData = [
                 url: require("../../../../assets/eventData/nduk_190424/nduk_3.png"),
                 title: "img3",
             },
-            ,
             {
                 url: require("../../../../assets/eventData/nduk_190424/nduk_4.png"),
                 title: "img4",
@@ -154,7 +149,6 @@ const eventData = [
                 url: require("../../../../assets/eventData/ifc_metup_040324/ifc_meetup_3_11zon.png"),
                 title: "img3",
             },
-            ,
             {
                 url: require("../../../../assets/eventData/ifc_metup_040324/ifc_meetup_4_11zon.png"),
                 title: "img4",

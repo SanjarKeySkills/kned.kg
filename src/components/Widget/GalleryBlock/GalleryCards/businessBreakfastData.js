@@ -19,7 +19,6 @@ const businessBreakfastData = [
                 url: require("../../../../assets/businessBreakfastData/021024/esg_arym_2.png"),
                 title: "img3",
             },
-            ,
             {
                 url: require("../../../../assets/businessBreakfastData/021024/esg_arym_4.png"),
                 title: "img4",
@@ -94,7 +93,6 @@ const businessBreakfastData = [
                 url: require("../../../../assets/businessBreakfastData/010224/bb_abdraimov_moldokeeva_2_11zon.png"),
                 title: "img3",
             },
-            ,
             {
                 url: require("../../../../assets/businessBreakfastData/010224/bb_abdraimov_moldokeeva_4_11zon.png"),
                 title: "img4",

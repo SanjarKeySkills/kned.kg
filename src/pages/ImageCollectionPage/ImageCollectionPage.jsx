@@ -23,32 +23,29 @@ const ImageCollectionPage = () => {
 
     const event = mapEventData[type]?.find((item) => item.id === id);
     // ? - проверка корректного существования данных
-    // Мы добавим проверку на длину массива перед тем, как рендерить изображение.
+    // Проверка на длину массива до рендеринга изображений
     if (!event || !event.images || event.images.length === 0) {
-        // Проверка существования images[currentIndex] при рендере: Это предотвращает попытку доступа к несуществующим элементам, если currentIndex случайно выходит за пределы массива.
+        // Проверка существования images[currentIndex] при рендере:
+        // Предотвращает попытку доступа к несуществующим элементам,
+        // если currentIndex случайно выходит за пределы массива.
         return <p>Альбом не найден</p>;
     }
 
     console.log(event.images);
-
     const images = event.images;
 
     // для перехода к следующему изображению
     const nextSlide = () => {
-        setCurrentIndex((prevIndex) => {
-            const newIndex = (prevIndex + 1) % images.length;
-            console.log("Next slide index", newIndex);
-            return newIndex;
-        });
+        setCurrentIndex((prevIndex) =>
+            prevIndex === event.images.length - 1 ? 0 : prevIndex + 1
+        );
     };
 
     // для перехода к предыдущему изображению
     const prevSlide = () => {
-        setCurrentIndex((prevIndex) => {
-            const newIndex = (prevIndex - 1 + images.length) % images.length;
-            console.log("Previous slide index", newIndex);
-            return newIndex;
-        });
+        setCurrentIndex((prevIndex) =>
+            prevIndex === 0 ? event.images.length - 1 : prevIndex - 1
+        );
     };
 
     const handleTouchStart = (e) => {
@@ -82,32 +79,34 @@ const ImageCollectionPage = () => {
                         onTouchStart={handleTouchStart}
                         onTouchMove={handleTouchMove}
                         onTouchEnd={handleTouchEnd}>
-                        {images.length > 1 && (
-                            <button
-                                onClick={prevSlide}
-                                className={styles.leftArrow}>
-                                ❮
-                            </button>
-                        )}
-
-                        <div className={styles.slide}>
+                        <div className={styles.swipe}>
                             {images[currentIndex] ? (
                                 <img
                                     src={images[currentIndex].url}
                                     alt={images[currentIndex].title || "Album"}
                                 />
                             ) : (
-                                <p>Error</p>
+                                <p>Изображение не доступно</p>
                             )}
                         </div>
-
-                        {images.length > 1 && (
-                            <button
-                                onClick={nextSlide}
-                                className={styles.rightArrow}>
-                                ❯
-                            </button>
-                        )}
+                        <div>
+                            {images.length > 1 && (
+                                // чтобы избежать рендеринга пустого элемента
+                                <button
+                                    onClick={prevSlide}
+                                    className={styles.leftArrow}>
+                                    ❮
+                                </button>
+                            )}
+                            {images.length > 1 && (
+                                // чтобы избежать рендеринга пустого элемента.
+                                <button
+                                    onClick={nextSlide}
+                                    className={styles.rightArrow}>
+                                    ❯
+                                </button>
+                            )}
+                        </div>
                     </div>
                 </div>
             </div>
@@ -127,27 +126,26 @@ export default ImageCollectionPage;
 // const nextSlide = () => {
 //     setCurrentIndex((prevIndex) => (prevIndex + 1) % event.images.length);
 // };
-
-// -------------------------
-// setCurrentIndex((prevIndex) =>
-//     prevIndex === event.images.length - 1 ? 0 : prevIndex + 1
-// );
-// setCurrentIndex((prevIndex) =>
-//     prevIndex === 0 ? event.images.length - 1 : prevIndex - 1
-// );
 // ------------------------
-{
-    /* {event.images.map((image, index) => (
+// {
+/* {event.images.map((image, index) => (
                                 <img
                                     key={index}
                                     src={image.url}
                                     alt={image.title || "Album"}
                                 />
                             ))} */
-}
-// ---------------------------------------
-// setCurrentIndex((prevIndex) =>
-//     prevIndex === 0 ? images.length - 1 : prevIndex - 1)
-// setCurrentIndex((prevIndex) =>
-//     prevIndex === images.length - 1 ? 0 : prevIndex + 1
-// );
+// }
+// ---------------------------------
+// для перехода к следующему изображению
+// setCurrentIndex((prevIndex) => {
+//     const newIndex = (prevIndex + 1) % images.length;
+//     console.log("Next slide index", newIndex);
+//     return newIndex;
+// });
+// для перехода к предыдущему изображению
+// setCurrentIndex((prevIndex) => {
+//     const newIndex = (prevIndex - 1 + images.length) % images.length;
+//     console.log("Previous slide index", newIndex);
+//     return newIndex;
+// });
