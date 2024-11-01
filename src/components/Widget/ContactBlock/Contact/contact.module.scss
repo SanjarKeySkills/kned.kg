@@ -1,4 +1,5 @@
 .contact {
+    padding: 32px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -108,15 +109,16 @@ input:valid {
 
 @media (max-width: 880px) {
     .contactWrapper {
+        padding: 32px;
         flex-direction: column;
+        text-align: center;
     }
 }
 
-// @media (max-width: 425px) {
-//     .membersItem {
-//         padding: 48px 32px;
-//     }
-//     .membersItemWrapper {
-//         padding: 16px 8px 40px;
-//     }
-// }
+@media (max-width: 768px) {
+    .contactFormButtonsAndSocial {
+        // flex-direction: row;
+        gap: 8px;
+        justify-content: center;
+    }
+}
