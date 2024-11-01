@@ -113,12 +113,14 @@ input:valid {
         flex-direction: column;
         text-align: center;
     }
+    .contactFormButtonsAndSocial {
+        gap: 8px;
+    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 496px) {
     .contactFormButtonsAndSocial {
-        // flex-direction: row;
-        gap: 8px;
-        justify-content: center;
+        flex-direction: column;
+        gap: 24px;
     }
 }
