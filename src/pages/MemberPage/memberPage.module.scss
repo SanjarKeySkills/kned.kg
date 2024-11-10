@@ -6,7 +6,12 @@
 }
 
 .memberPageWrapper {
+    // padding: 0 56px 0 48px;
+    padding-left: 48px;
     width: 1440px;
+    // display: flex;
+    // flex-direction: column;
+    // gap: 24px;
 }
 
 .memberTitle {
@@ -15,7 +20,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 64px;
+    gap: 56px;
     img {
         width: 280px;
         height: 280px;
@@ -31,15 +36,15 @@
     font-size: 40px;
     line-height: normal;
     padding-bottom: 16px;
-    color: #5a3c62;
+    // color: #5a3c62;
 }
 
 .memberData {
     width: 100%;
     display: flex;
     flex-direction: row;
-    padding: 64px 0 0;
-    gap: 64px;
+    padding: 32px 0 0;
+    gap: 56px;
 }
 
 .memberDataTitle {
@@ -56,8 +61,8 @@
     background-color: #f5f5f5;
     font-weight: normal;
     font-family: "Lato", sans-serif;
-    font-size: 24px;
-    line-height: normal;
+    font-size: 20px;
+    line-height: 2;
     padding: 20px 24px;
     border-bottom: 4px solid #ffbb29;
     border-radius: 8px;
@@ -67,7 +72,6 @@
     .memberName {
         font-size: 32px;
     }
-
     .memberTitle {
         display: flex;
         flex-direction: column;
@@ -77,15 +81,10 @@
             height: 240px;
         }
     }
-
     .memberData {
         display: flex;
         flex-direction: column;
         gap: 16px;
         padding: 24px 0 0;
-    }
-
-    .memberDataDescription {
-        font-size: 16px;
     }
 }

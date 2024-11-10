@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 // import clsx from "clsx";
 
 function MembersGenerator({ data, type }) {
-    //деструктуризируем из объекта сам объект props
-    // - и его ключи data, и type.
+    //деструктуризируем из объекта сам объект props и его ключи data, и type.
+
     return (
         <div className={styles.cardList}>
             {/* // <div className={clsx(styles.cardList, styles.img, { [styles.active]: true })}> */}

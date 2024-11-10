@@ -66,6 +66,10 @@
     max-height: 120px;
 }
 
+.jobExp {
+    background-color: #5a3c62;
+}
+
 @media (max-width: 1024px) {
     .cardList {
         grid-template-columns: repeat(2, 1fr);

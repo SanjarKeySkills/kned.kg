@@ -15,7 +15,7 @@ const governance = () => {
     return (
         <div className={styles.governBlock}>
             <div className={styles.governBlockContainer}>
-                <h1>СОВЕТ ПАЛАТЫ</h1>
+                <h2>СОВЕТ ПАЛАТЫ</h2>
                 <div>
                     <div className={styles.councilWrapper}>
                         <div className={styles.div1}>
@@ -78,7 +78,7 @@ const governance = () => {
                     </div>
                 </div>
 
-                <h1>РЕВИЗОР ПАЛАТЫ</h1>
+                <h2>РЕВИЗОР ПАЛАТЫ</h2>
                 <div className={styles.corpsecAndAuditorWrapper}>
                     <div className={styles.governMember}>
                         <a href="#">
@@ -94,7 +94,7 @@ const governance = () => {
                     </div>
                 </div>
 
-                <h1>ПРЕЗИДИУМ ПАЛАТЫ</h1>
+                <h2>ПРЕЗИДИУМ ПАЛАТЫ</h2>
                 <div className={styles.presidiumWrapper}>
                     {/* <div className={styles.div2_1}> */}
                     <div className={styles.governMember}>
@@ -130,7 +130,7 @@ const governance = () => {
                     </div>
                 </div>
 
-                <h1>КОРПОРАТИВНЫЙ СЕКРЕТАРЬ ПАЛАТЫ</h1>
+                <h2>КОРПОРАТИВНЫЙ СЕКРЕТАРЬ ПАЛАТЫ</h2>
                 <div className={styles.corpsecAndAuditorWrapper}>
                     <div className={styles.governMember}>
                         <a href="#">

@@ -1,9 +1,20 @@
 import React, { useState, useRef } from "react";
-import styles from "./sliderCourse.module.scss";
-import partnerBanner1 from "../../../../assets/bannerAnnoncement_kd.png";
-import partnerBanner2 from "../../../../assets/bannerAnnoncement_ks.png";
 
-const images = [partnerBanner1, partnerBanner2];
+import styles from "./sliderCourse.module.scss";
+import bannerAnnoncement1 from "../../../../assets/bannerAnnoncement_kd.png";
+import bannerAnnoncement2 from "../../../../assets/bannerAnnoncement_ks.png";
+import bannerAnnoncement1_respocive from "../../../../assets/course_banners/banner_course_kd.png";
+import bannerAnnoncement2_respocive from "../../../../assets/course_banners/banner_course_ks.png";
+
+// window.innerWidth - определяет размер окна и условно рендерить нужное изображение в компоненте.
+// Использование медиазапросов CSS для скрытия нужных изображений.
+// условный рендеринг с использованием JavaScript.
+
+const images = [bannerAnnoncement1, bannerAnnoncement2];
+const images_responcive = [
+    bannerAnnoncement1_respocive,
+    bannerAnnoncement2_respocive,
+];
 
 const CourseSlider = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -45,11 +56,18 @@ const CourseSlider = () => {
             <button onClick={prevSlide} className={styles.leftArrow}>
                 ❮
             </button>
+
             <img
                 src={images[currentIndex]}
                 alt={`Slide ${currentIndex}`}
                 className={styles.slide}
             />
+            <img
+                src={images_responcive[currentIndex]}
+                alt={`Slide ${currentIndex}`}
+                className={styles.slide_responcive}
+            />
+
             <button onClick={nextSlide} className={styles.rightArrow}>
                 ❯
             </button>
