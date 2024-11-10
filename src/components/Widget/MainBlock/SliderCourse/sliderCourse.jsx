@@ -1,5 +1,4 @@
-import React, { useState, useRef } from "react";
-
+import React, { useState, useRef, useEffect } from "react";
 import styles from "./sliderCourse.module.scss";
 import bannerAnnoncement1 from "../../../../assets/bannerAnnoncement_kd.png";
 import bannerAnnoncement2 from "../../../../assets/bannerAnnoncement_ks.png";
@@ -18,8 +17,21 @@ const images_responcive = [
 
 const CourseSlider = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
+    // добавляем хук useState(false)
+    const [isMobile, setIsMobile] = useState(false);
+    //
     const touchStartX = useRef(0);
     const touchEndX = useRef(0);
+
+    // Проверяем размер окна и обновляем состояние
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 768); // для мобильных устройств
+        };
+        window.addEventListener("resize", handleResize);
+        handleResize(); // Сразу вызываем для начальной инициализации
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
 
     const nextSlide = () => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -56,16 +68,15 @@ const CourseSlider = () => {
             <button onClick={prevSlide} className={styles.leftArrow}>
                 ❮
             </button>
-
+            {/* Условный рендеринг изображения */}
             <img
-                src={images[currentIndex]}
+                src={
+                    isMobile
+                        ? images_responcive[currentIndex]
+                        : images[currentIndex]
+                }
                 alt={`Slide ${currentIndex}`}
-                className={styles.slide}
-            />
-            <img
-                src={images_responcive[currentIndex]}
-                alt={`Slide ${currentIndex}`}
-                className={styles.slide_responcive}
+                className={isMobile ? styles.slide_responcive : styles.slide}
             />
 
             <button onClick={nextSlide} className={styles.rightArrow}>
@@ -76,3 +87,14 @@ const CourseSlider = () => {
 };
 
 export default CourseSlider;
+
+/* <img
+                src={images[currentIndex]}
+                alt={`Slide ${currentIndex}`}
+                className={styles.slide}
+            />
+            <img
+                src={images_responcive[currentIndex]}
+                alt={`Slide ${currentIndex}`}
+                className={styles.slide_responcive}
+            /> */
