@@ -33,11 +33,19 @@
     }
 }
 
+.buttonWrapper {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+
 .leftArrow {
+    font-size: 32px;
+    cursor: pointer;
+    width: 80px;
+    border-radius: 8px;
     // background: none;
     // border: none;
-    font-size: 32px;
-    // cursor: pointer;
     // color: rgb(54, 54, 54);
     // background-color: #bfced6;
     // position: absolute;
@@ -45,14 +53,15 @@
     // transform: translateY(-50%);
     // z-index: 1;
     // left: -40px;
-    border-radius: 8px;
 }
 
 .rightArrow {
+    font-size: 32px;
+    cursor: pointer;
+    width: 80px;
+    border-radius: 8px;
     // background: none;
     // border: none;
-    font-size: 32px;
-    // cursor: pointer;
     // color: rgb(54, 54, 54);
     // background-color: #bfced6;
     // position: absolute;
@@ -60,7 +69,6 @@
     // transform: translateY(-50%);
     // z-index: 1;
     // right: -40px;
-    border-radius: 8px;
 }
 
 // .slider {
