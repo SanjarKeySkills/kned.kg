@@ -16,10 +16,13 @@ const images_responcive = [
 ];
 
 const CourseSlider = () => {
-    const [currentIndex, setCurrentIndex] = useState(0);
-    // добавляем хук useState(false)
-    const [isMobile, setIsMobile] = useState(false);
-    //
+    // Индекс для мобильной и десктопной версии
+    const [desktopIndex, setDesktopIndex] = useState(0);
+    const [mobileIndex, setMobileIndex] = useState(0);
+    const [isMobile, setIsMobile] = useState(false); // Для проверки, мобильное ли устройство
+
+    // const [currentIndex, setCurrentIndex] = useState(0); // добавляем хук useState(false)
+
     const touchStartX = useRef(0);
     const touchEndX = useRef(0);
 
@@ -33,20 +36,37 @@ const CourseSlider = () => {
         return () => window.removeEventListener("resize", handleResize);
     }, []);
 
+    // Логика для перехода к следующему слайду
     const nextSlide = () => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+        if (isMobile) {
+            setMobileIndex(
+                (prevIndex) => (prevIndex + 1) % images_responcive.length
+            );
+        } else {
+            setDesktopIndex((prevIndex) => (prevIndex + 1) % images.length);
+        }
     };
+
+    // Логика для перехода на предыдущий слайд
 
     const prevSlide = () => {
-        setCurrentIndex(
-            (prevIndex) => (prevIndex - 1 + images.length) % images.length
-        );
+        if (isMobile) {
+            setMobileIndex(
+                (prevIndex) =>
+                    (prevIndex - 1 + images_responcive.length) %
+                    images_responcive.length
+            );
+        } else {
+            setDesktopIndex(
+                (prevIndex) => (prevIndex - 1 + images.length) % images.length
+            );
+        }
     };
 
+    // Логика для обработки свайпов на мобильных устройствах
     const handleTouchStart = (e) => {
         touchStartX.current = e.touches[0].clientX;
     };
-
     const handleTouchMove = (e) => {
         touchEndX.current = e.touches[0].clientX;
     };
@@ -65,20 +85,19 @@ const CourseSlider = () => {
             onTouchStart={handleTouchStart}
             onTouchMove={handleTouchMove}
             onTouchEnd={handleTouchEnd}>
+            {/* Условный рендеринг изображения */}
             <button onClick={prevSlide} className={styles.leftArrow}>
                 ❮
             </button>
-            {/* Условный рендеринг изображения */}
             <img
                 src={
                     isMobile
-                        ? images_responcive[currentIndex]
-                        : images[currentIndex]
+                        ? images_responcive[mobileIndex] // Для мобильной версии
+                        : images[desktopIndex] // Для десктопной версии
                 }
-                alt={`Slide ${currentIndex}`}
+                alt={`Slide ${isMobile ? mobileIndex : desktopIndex}`}
                 className={isMobile ? styles.slide_responcive : styles.slide}
             />
-
             <button onClick={nextSlide} className={styles.rightArrow}>
                 ❯
             </button>
