@@ -1,11 +1,13 @@
 .slider {
+    padding: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
     max-width: 900px;
-    height: 250px;
-    margin: 64px auto;
+    height: 100%;
+    // margin: 64px auto;
+    // overflow: hidden; /* Чтобы изображение не выходило за пределы контейнера */
     img {
         border-radius: 8px;
     }
@@ -13,12 +15,14 @@
 
 .slide {
     width: 100%;
-    height: auto;
+    height: auto; /* Это работает для десктопа */
 }
 
 .slide_responcive {
-    width: 100%;
-    height: auto;
+    max-width: 320px;
+    height: 100%; /* Переходим на полную высоту контейнера */
+    object-fit: cover; /* Заполняет контейнер, сохраняя пропорции изображения */
+    object-position: center; /* Выравнивание изображения по центру */
 }
 
 .leftArrow {
@@ -63,6 +67,6 @@
 @media (max-width: 768px) {
     .slide_responcive {
         width: 100%;
-        height: auto;
+        height: 100%; /* Обеспечиваем 100% высоту для мобильной версии */
     }
 }
