@@ -28,7 +28,7 @@ const businessSaturdayData = [
                 title: "img5",
             },
             {
-                url: require("../../../../assets/businessSaturdayData/bs_280924/volynetz_6_11zon.png"),
+                url: require("../../../../assets/businessSaturdayData/bs_280924/volynetz_11_11zon.png"),
                 title: "img6",
             },
             {

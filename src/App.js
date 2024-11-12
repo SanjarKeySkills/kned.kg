@@ -12,6 +12,7 @@ import { GovernancePage } from "./pages/GovernancePage/GovernancePage.async";
 import { ContactPage } from "./pages/ContactPage/ContactPage.async";
 import { GalleryPage } from "./pages/GalleryPage/GalleryPage.async";
 import { ImageCollectionPage } from "./pages/ImageCollectionPage/ImageCollectionPage.async";
+import { NewsPage } from "./pages/NewsPage/NewsPage.async";
 
 const App = () => {
     return (
@@ -53,10 +54,26 @@ const App = () => {
                         }
                     />
                     <Route
+                        path="/board"
+                        element={
+                            <Suspense fallback={<div>Loading...</div>}>
+                                <GovernancePage />
+                            </Suspense>
+                        }
+                    />
+                    <Route
                         path="/services"
                         element={
                             <Suspense fallback={<div>Loading...</div>}>
                                 <ServicesPage />
+                            </Suspense>
+                        }
+                    />
+                    <Route
+                        path="/contact"
+                        element={
+                            <Suspense fallback={<div>Loading...</div>}>
+                                <ContactPage />
                             </Suspense>
                         }
                     />
@@ -69,21 +86,21 @@ const App = () => {
                         }
                     />
                     <Route
-                        path="/board"
+                        path="/news"
                         element={
                             <Suspense fallback={<div>Loading...</div>}>
-                                <GovernancePage />
+                                <NewsPage />
                             </Suspense>
                         }
                     />
-                    <Route
-                        path="/contact"
+                    {/* <Route
+                        path="/articles"
                         element={
                             <Suspense fallback={<div>Loading...</div>}>
-                                <ContactPage />
+                                <NewsPage />
                             </Suspense>
                         }
-                    />
+                    /> */}
                     <Route
                         path="/gallery"
                         element={
@@ -102,7 +119,6 @@ const App = () => {
                             </Suspense>
                         }
                     />
-
                     <Route
                         path="*"
                         element={

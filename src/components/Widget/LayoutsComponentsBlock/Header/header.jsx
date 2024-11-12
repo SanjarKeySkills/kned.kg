@@ -68,7 +68,7 @@ const Header = () => {
                                 </a>
                             </li>
                             <li>
-                                <a href="#" className={styles.linkBottom}>
+                                <a href="/news" className={styles.linkBottom}>
                                     НОВОСТИ
                                 </a>
                             </li>
@@ -114,7 +114,7 @@ const Header = () => {
                                 <a href="/courses">КУРСЫ И ТРЕНИНГИ</a>
                             </li>
                             <li>
-                                <a href="#" className={styles.link}>
+                                <a href="/news" className={styles.link}>
                                     НОВОСТИ
                                 </a>
                             </li>
