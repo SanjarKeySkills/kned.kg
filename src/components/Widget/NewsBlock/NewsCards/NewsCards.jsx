@@ -4,12 +4,15 @@ import NewsGenerator from "../NewsGenerator/NewsGenerator.jsx";
 import NewsData from "../NewsCards/newsData.js";
 
 const NewsCard = () => {
+    const type = "honor";
     return (
         <>
             <div className={styles.newsItem}>
-                <h4 className={styles.newsItemWrapper}>Новости</h4>
-                <div className={styles.newsCardList}>
-                    <NewsGenerator data={NewsData} />
+                <div className={styles.newsItemWrapper}>
+                    <p className={styles.newsTitle}>Новости</p>
+                    <div className={styles.newsCardList}>
+                        <NewsGenerator data={NewsData} type="type" />
+                    </div>
                 </div>
             </div>
         </>

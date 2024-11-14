@@ -1,0 +1,23 @@
+.newsItem {
+    width: 100%;
+    padding-top: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.newsItemWrapper {
+    width: 1440px;
+}
+
+.newsTitle {
+    text-align: center;
+}
+
+.newsCardList {
+    display: flex;
+    gap: 24px;
+}

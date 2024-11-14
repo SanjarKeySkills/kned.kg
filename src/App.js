@@ -13,6 +13,7 @@ import { ContactPage } from "./pages/ContactPage/ContactPage.async";
 import { GalleryPage } from "./pages/GalleryPage/GalleryPage.async";
 import { ImageCollectionPage } from "./pages/ImageCollectionPage/ImageCollectionPage.async";
 import { NewsPage } from "./pages/NewsPage/NewsPage.async";
+import { BulletinPage } from "./pages/BulletinPage/BulletinPage.async";
 
 const App = () => {
     return (
@@ -93,6 +94,15 @@ const App = () => {
                             </Suspense>
                         }
                     />
+                    <Route
+                        path="/bulletin/:type/:id"
+                        element={
+                            <Suspense fallback={<div>Loading...</div>}>
+                                <BulletinPage />
+                            </Suspense>
+                        }
+                    />
+
                     {/* <Route
                         path="/articles"
                         element={

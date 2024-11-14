@@ -3,7 +3,7 @@ import styles from "./NewsGenerator.module.scss";
 import { Link } from "react-router-dom";
 
 function NewsGenerator({ data, type }) {
-    //деструктуризируем из объекта сам объект props и его ключи data, и type.
+    //деструктуризируем из объекта сам объект props и его ключи, data, и type.
 
     return (
         <div className={styles.newsItem}>
@@ -16,13 +16,11 @@ function NewsGenerator({ data, type }) {
                     />
                     <div className={styles.newsInfo}>
                         <p className={styles.newsTitle}>{bulletin.title}</p>
-                        <p className={styles.bulletinAnnotation}>
-                            {bulletin.annotation}
-                        </p>
+                        <p>{bulletin.annotation}</p>
                         <Link
-                            to={`/news/${type}/${bulletin.id}`}
+                            to={`/bulletin/${type}/${bulletin.id}`}
                             className={styles.newslink}>
-                            Читать новость
+                            ЧИТАТЬ
                         </Link>
                         {/* при клике перекидвает сначала на bulletin потом на type 
 						потом по id и после этого вся информция записывается в URL

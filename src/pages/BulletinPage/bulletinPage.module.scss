@@ -1,0 +1,31 @@
+.newsPage {
+    width: 100%;
+    padding-top: 144px;
+    display: flex;
+    justify-content: center;
+}
+
+.newsPageContainer {
+    width: 1440px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsImg {
+    max-width: 320px;
+    height: auto;
+    margin: 32px auto;
+}
+
+.newsInfo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+}
+
+.newsInformation {
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+}
