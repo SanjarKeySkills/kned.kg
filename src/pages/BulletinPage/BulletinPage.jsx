@@ -3,55 +3,34 @@ import styles from "./bulletinPage.module.scss";
 import { useParams } from "react-router-dom";
 import HeroHeader from "../../components/Widget/LayoutsComponentsBlock/HeroHeader/heroHeader.jsx";
 import newsData from "../../components/Widget/NewsBlock/NewsCards/newsData.js";
+import FormatText from "./FormatText.jsx";
 
 const BulletinPage = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
 
-    const { id, type } = useParams();
-
-    // const mapData = {
-    //     type: type,
-    // };
-
-    // const bulletin = newsData.find(
-    //     (bulletin) => bulletin.id === id && bulletin.type === type
-    // );
-
-    // if (!bulletin) {
-    //     return <p>News absent</p>;
-    // }
-
+    const { id } = useParams();
     const bulletin = newsData.find((bulletin) => bulletin.id === id);
     // получаем тe новость с такой id и ту новость приводим на нашу константу
     // вместо type -  встанет массив newsData
-
-    const formatText = (text) => {
-        return text
-            .split("\n")
-            .map((line, index) => <p key={index}>{line.trim()}</p>);
-    };
 
     return (
         <>
             <HeroHeader />
             <div className={styles.newsPage}>
-                <div className={styles.newsPageContainer}>123</div>
-                <img
-                    src={bulletin.image}
-                    alt="newsImg"
-                    className={styles.newsImg}
-                />
-                <div className={styles.newsInfo}>
+                <div className={styles.newsPageContainer}>
                     <h2 className={styles.newsTitle}>
-                        {formatText(bulletin.title)}
+                        <FormatText text={bulletin.title} />
                     </h2>
-                    <p className={styles.newsAnnotation}>
-                        {formatText(bulletin.annotation)}
-                    </p>
+                    <span className={styles.newsDataInf}>{bulletin.date}</span>
+                    <img
+                        src={bulletin.image}
+                        alt="newsImg"
+                        className={styles.newsImg}
+                    />
                     <p className={styles.newsInformation}>
-                        {formatText(bulletin.information)}
+                        <FormatText text={bulletin.information} />
                     </p>
                 </div>
             </div>
@@ -60,3 +39,10 @@ const BulletinPage = () => {
 };
 
 export default BulletinPage;
+
+/* {FormatText(bulletin.title)} */
+// const formatText = (text) => {
+//     return text
+//         .split("\n")
+//         .map((line, index) => <p key={index}>{line.trim()}</p>);
+// };
