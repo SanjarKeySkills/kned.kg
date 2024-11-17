@@ -3,7 +3,7 @@ import styles from "./bulletinPage.module.scss";
 import { useParams } from "react-router-dom";
 import HeroHeader from "../../components/Widget/LayoutsComponentsBlock/HeroHeader/heroHeader.jsx";
 import newsData from "../../components/Widget/NewsBlock/NewsCards/newsData.js";
-import FormatText from "./FormatText.jsx";
+import FormatText from "../../components/Widget/FormatText/FormatText.jsx";
 
 const BulletinPage = () => {
     useEffect(() => {
@@ -20,17 +20,35 @@ const BulletinPage = () => {
             <HeroHeader />
             <div className={styles.newsPage}>
                 <div className={styles.newsPageContainer}>
-                    <h2 className={styles.newsTitle}>
-                        <FormatText text={bulletin.title} />
-                    </h2>
-                    <span className={styles.newsDataInf}>{bulletin.date}</span>
+                    <div className={styles.titleNewsWrapper}>
+                        <h2 className={styles.newsTitle}>
+                            <FormatText text={bulletin.title} />
+                        </h2>
+                        <p className={styles.newsDate}>{bulletin.date}</p>
+                    </div>
+                    <ul className={styles.newsAnnotationList}>
+                        <li>{bulletin.annotation}</li>
+                        <li>{bulletin.annotation2}</li>
+                        <li>{bulletin.annotation3}</li>
+                    </ul>
+                    <p className={styles.newsInformation}>
+                        <FormatText text={bulletin.information} />
+                    </p>
                     <img
                         src={bulletin.image}
                         alt="newsImg"
                         className={styles.newsImg}
                     />
+                    <span className={styles.newsInscript}>
+                        {bulletin.inscript}
+                    </span>
+                    <div className={styles.line_grey}></div>
                     <p className={styles.newsInformation}>
-                        <FormatText text={bulletin.information} />
+                        <FormatText text={bulletin.information2} />
+                    </p>
+                    <div className={styles.line_gold}></div>
+                    <p className={styles.newsInformation}>
+                        <FormatText text={bulletin.information3} />
                     </p>
                 </div>
             </div>
