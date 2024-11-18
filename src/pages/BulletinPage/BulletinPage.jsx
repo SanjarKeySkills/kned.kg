@@ -12,7 +12,7 @@ const BulletinPage = () => {
 
     const { id } = useParams();
     const bulletin = newsData.find((bulletin) => bulletin.id === id);
-    // получаем тe новость с такой id и ту новость приводим на нашу константу
+    // получаем ту news с такой id и ту новость приводим на нашу константу
     // вместо type -  встанет массив newsData
 
     return (
@@ -34,14 +34,18 @@ const BulletinPage = () => {
                     <p className={styles.newsInformation}>
                         <FormatText text={bulletin.information} />
                     </p>
-                    <img
-                        src={bulletin.image}
-                        alt="newsImg"
-                        className={styles.newsImg}
-                    />
-                    <span className={styles.newsInscript}>
-                        {bulletin.inscript}
-                    </span>
+
+                    <div className={styles.inlineList}>
+                        <img
+                            src={bulletin.image}
+                            alt="newsImg"
+                            className={styles.newsImg}
+                        />
+
+                        <span className={styles.newsInscript}>
+                            <FormatText text={bulletin.inscript} />
+                        </span>
+                    </div>
                     <div className={styles.line_grey}></div>
                     <p className={styles.newsInformation}>
                         <FormatText text={bulletin.information2} />
