@@ -1,6 +1,6 @@
 .newsItem {
     width: 100%;
-    padding-top: 16px;
+    padding: 16px 24px 0;
     font-family: "Lato", sans-serif;
     font-weight: bold;
     text-decoration: none;
@@ -14,10 +14,17 @@
 }
 
 .newsTitle {
+    padding: 24px 0;
     text-align: center;
 }
 
 .newsCardList {
     display: flex;
     gap: 24px;
+}
+
+@media (max-width: 992px) {
+    .newsTitle {
+        font-size: 24px;
+    }
 }

@@ -52,7 +52,6 @@
     margin: 24px auto 0;
 }
 .newsInscript {
-    width: 64%;
     margin: 0 auto;
     padding-bottom: 24px;
     font-size: 16px;
@@ -74,4 +73,10 @@
 //     font-size: 32px;
 //     color: #5d6267;
 //     text-align: justify;
+// }
+
+// @media (max-width: 960px) {
+//     .imgWrapper {
+//         grid-template-columns: repeat(1, 1fr);
+//     }
 // }

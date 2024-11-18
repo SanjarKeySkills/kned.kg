@@ -1,5 +1,4 @@
 import React from "react";
-// import Button from "../../../UI/Button/button.jsx";
 import styles from "./header.module.scss";
 import logo from "../../../../assets/imageMainHeader.png";
 import burgerButton from "../../../../assets/burgerButton.svg";

@@ -36,10 +36,6 @@ const businessSaturdayData = [
                 title: "img7",
             },
             {
-                url: require("../../../../assets/businessSaturdayData/bs_280924/volynetz_8_11zon.png"),
-                title: "img8",
-            },
-            {
                 url: require("../../../../assets/businessSaturdayData/bs_280924/volynetz_9_11zon.png"),
                 title: "img9",
             },
