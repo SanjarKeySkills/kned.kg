@@ -41,7 +41,6 @@ const BulletinPage = () => {
                             alt="newsImg"
                             className={styles.newsImg}
                         />
-
                         <span className={styles.newsInscript}>
                             <FormatText text={bulletin.inscript} />
                         </span>
@@ -61,10 +60,3 @@ const BulletinPage = () => {
 };
 
 export default BulletinPage;
-
-/* {FormatText(bulletin.title)} */
-// const formatText = (text) => {
-//     return text
-//         .split("\n")
-//         .map((line, index) => <p key={index}>{line.trim()}</p>);
-// };

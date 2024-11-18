@@ -8,7 +8,7 @@ import { useState } from "react";
 const Header = () => {
     const [isOpenPopUp, setOpenPopUp] = useState("none");
     const changeStyle = () => {
-        if (isOpenPopUp == "none") {
+        if (isOpenPopUp === "none") {
             setOpenPopUp("block");
         } else setOpenPopUp("none");
     };
@@ -72,7 +72,9 @@ const Header = () => {
                                 </a>
                             </li>
                             <li>
-                                <a href="#" className={styles.linkBottom}>
+                                <a
+                                    href="/articles"
+                                    className={styles.linkBottom}>
                                     СТАТЬИ
                                 </a>
                             </li>
@@ -118,7 +120,7 @@ const Header = () => {
                                 </a>
                             </li>
                             <li>
-                                <a href="#" className={styles.link}>
+                                <a href="/articles" className={styles.link}>
                                     СТАТЬИ
                                 </a>
                             </li>
@@ -128,14 +130,10 @@ const Header = () => {
                                 </a>
                             </li>
                         </ul>
-                        {/* <Button size="s" variant="outlined">
-                            Стать членом
-                        </Button> */}
                         <a className={styles.buttonHero} href="/contact">
                             Стать членом
                         </a>
                     </div>
-
                     <div className={styles.headerBottomPopUp}>
                         <ul className={styles.listBottomPopUp}>
                             <li>
