@@ -3,7 +3,6 @@ import styles from "./NewsGenerator.module.scss";
 
 function NewsGenerator({ data, type }) {
     //деструктуризируем из объекта сам объект props и его ключи, data, и type.
-
     return (
         <div className={styles.newsGenerator}>
             <div className={styles.newsItem}>

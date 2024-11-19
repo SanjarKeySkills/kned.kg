@@ -1,0 +1,45 @@
+.articleList {
+    width: 1440px;
+    padding: 24px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    color: #5d6267;
+    h2 {
+        font-size: 22px;
+    }
+    p {
+        font-size: 16px;
+    }
+}
+
+.articleText {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding-bottom: 16px;
+}
+
+.articleInfoWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.articleInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.authorImg {
+    max-width: 240px;
+}
+
+.linkArticle {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}

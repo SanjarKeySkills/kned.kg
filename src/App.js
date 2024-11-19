@@ -1,20 +1,21 @@
 import React, { Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import DefaultLayout from "./layout/DefaultLayout";
-import { MainPage } from "./pages/MainPage/MainPage.async";
+import { MainPage } from "./pages/MainPage/MainPage.async.jsx";
 import { MemberPage } from "./pages/MemberPage/MemberPage.async.jsx";
 import { MembersPage } from "./pages/MembersPage/MembersPage.async.jsx";
-import { ErrorPage } from "./pages/ErrorPage/ErrorPage.async";
-import { AboutPage } from "./pages/AboutPage/AboutPage.async";
-import { ServicesPage } from "./pages/ServicesPage/ServicesPage.async";
-import { CoursePage } from "./pages/CoursePage/CoursePage.async";
-import { GovernancePage } from "./pages/GovernancePage/GovernancePage.async";
-import { ContactPage } from "./pages/ContactPage/ContactPage.async";
-import { GalleryPage } from "./pages/GalleryPage/GalleryPage.async";
-import { ImageCollectionPage } from "./pages/ImageCollectionPage/ImageCollectionPage.async";
-import { NewsPage } from "./pages/NewsPage/NewsPage.async";
-import { BulletinPage } from "./pages/BulletinPage/BulletinPage.async";
-import { ArticlesPage } from "./pages/ArticlesPage/ArticlesPage.async";
+import { ErrorPage } from "./pages/ErrorPage/ErrorPage.async.jsx";
+import { AboutPage } from "./pages/AboutPage/AboutPage.async.jsx";
+import { ServicesPage } from "./pages/ServicesPage/ServicesPage.async.jsx";
+import { CoursePage } from "./pages/CoursePage/CoursePage.async.jsx";
+import { GovernancePage } from "./pages/GovernancePage/GovernancePage.async.jsx";
+import { ContactPage } from "./pages/ContactPage/ContactPage.async.jsx";
+import { GalleryPage } from "./pages/GalleryPage/GalleryPage.async.jsx";
+import { ImageCollectionPage } from "./pages/ImageCollectionPage/ImageCollectionPage.async.jsx";
+import { NewsPage } from "./pages/NewsPage/NewsPage.async.jsx";
+import { BulletinPage } from "./pages/BulletinPage/BulletinPage.async.jsx";
+import { ArticlesPage } from "./pages/ArticlesPage/ArticlesPage.async.jsx";
+import { ArticlePage } from "./pages/ArticlePage/ArticlePage.async.jsx";
 
 const App = () => {
     return (
@@ -111,15 +112,14 @@ const App = () => {
                             </Suspense>
                         }
                     />
-                    {/* <Route
+                    <Route
                         path="/article/:type/:id"
                         element={
                             <Suspense fallback={<div>Loading...</div>}>
                                 <ArticlePage />
                             </Suspense>
                         }
-                    /> */}
-
+                    />
                     <Route
                         path="/gallery"
                         element={
