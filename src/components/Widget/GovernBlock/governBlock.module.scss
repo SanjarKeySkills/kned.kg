@@ -2,6 +2,8 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
 }
 
 .governBlockContainer {
@@ -10,7 +12,6 @@
     display: flex;
     flex-direction: column;
     gap: 56px;
-    font-family: "Lato", sans-serif;
     font-weight: bold;
     color: #787878;
     text-align: center;
@@ -38,7 +39,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    // max-width: 240px;
 }
 
 .governMember {
@@ -49,6 +49,8 @@
 
 .corpsecAndAuditorWrapper {
     display: flex;
+    flex-direction: row;
+    gap: 240px;
     justify-content: initial;
 }
 

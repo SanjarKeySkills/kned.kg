@@ -77,8 +77,6 @@ const governance = () => {
                         </div>
                     </div>
                 </div>
-
-                <h2>РЕВИЗОР ПАЛАТЫ</h2>
                 <div className={styles.corpsecAndAuditorWrapper}>
                     <div className={styles.governMember}>
                         <a href="#">
@@ -92,11 +90,19 @@ const governance = () => {
                             <p>Ревизор Палаты</p>
                         </div>
                     </div>
+                    <div className={styles.governMember}>
+                        <a href="#">
+                            <img
+                                src={chUnursultan}
+                                alt="Cholponbay uulu Nursultan"
+                            />
+                        </a>
+                        <h3>Чолпонбай уулу Нурсултан</h3>
+                        <p>Корпоративный секретарь Палаты</p>
+                    </div>
                 </div>
-
                 <h2>ПРЕЗИДИУМ ПАЛАТЫ</h2>
                 <div className={styles.presidiumWrapper}>
-                    {/* <div className={styles.div2_1}> */}
                     <div className={styles.governMember}>
                         <a href="#">
                             <img
@@ -109,7 +115,6 @@ const governance = () => {
                             <p>Президент Палаты</p>
                         </div>
                     </div>
-                    {/* <div className={styles.div2_2}> */}
                     <div className={styles.governMember}>
                         <a href="#">
                             <img
@@ -120,27 +125,12 @@ const governance = () => {
                         <h3>Айжан Мамбеталиева</h3>
                         <p>Вице-Президент Палаты</p>
                     </div>
-                    {/* <div className={styles.div2_3}> */}
                     <div className={styles.governMember}>
                         <a href="#">
                             <img src={vacant} alt="vacant" />
                         </a>
                         <h3>Должность вакантна</h3>
                         <p>Вице-Президент Палаты</p>
-                    </div>
-                </div>
-
-                <h2>КОРПОРАТИВНЫЙ СЕКРЕТАРЬ ПАЛАТЫ</h2>
-                <div className={styles.corpsecAndAuditorWrapper}>
-                    <div className={styles.governMember}>
-                        <a href="#">
-                            <img
-                                src={chUnursultan}
-                                alt="Cholponbay uulu Nursultan"
-                            />
-                        </a>
-                        <h3>Чолпонбай уулу Нурсултан</h3>
-                        <p>Корпоративный секретарь Палаты</p>
                     </div>
                 </div>
             </div>
