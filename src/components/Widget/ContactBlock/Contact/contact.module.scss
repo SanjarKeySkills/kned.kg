@@ -103,6 +103,22 @@ input:valid {
     }
 }
 
+.inputContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 32px;
+    input {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+.inputWrapper {
+    display: flex;
+    gap: 8px;
+}
+
 .buttonWrapper {
     margin: 0 auto;
 }

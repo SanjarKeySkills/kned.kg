@@ -110,6 +110,31 @@ const Contact = () => {
                                 rows="10"
                                 placeholder="Комментарий"></textarea>
                         </div>
+                        <div className={styles.inputContainer}>
+                            <div className={styles.inputWrapper}>
+                                <input
+                                    type="radio"
+                                    id="active"
+                                    name="membership"
+                                    value="active"
+                                    checked
+                                />
+                                <label for="active">
+                                    Действительное членство
+                                </label>
+                            </div>
+                            <div className={styles.inputWrapper}>
+                                <input
+                                    type="radio"
+                                    id="associated"
+                                    name="membership"
+                                    value="associated"
+                                />
+                                <label for="associated">
+                                    Ассоциированное членство
+                                </label>
+                            </div>
+                        </div>
                         <div className={styles.buttonWrapper}>
                             <Button size="s" variant="outlined">
                                 ОТПРАВИТЬ
