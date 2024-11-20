@@ -19,7 +19,7 @@ const Header = () => {
                 <ul className={styles.listTop}>
                     <li>
                         <a href="/members" className={styles.linkTop}>
-                            ЧЛЕНЫ ПАЛАТЫ
+                            НАШИ ЭКСПЕРТЫ
                         </a>
                     </li>
                     <li>
@@ -85,9 +85,16 @@ const Header = () => {
                                     ГАЛЛЕРЕЯ
                                 </a>
                             </li>
+                            <li>
+                                <a
+                                    href="/gallery"
+                                    className={styles.linkBottom}>
+                                    ВИДЕОРОЛИКИ
+                                </a>
+                            </li>
                         </ul>
                         <a className={styles.buttonHero} href="/contact">
-                            Стать членом
+                            ВСТУПИТЬ В ПАЛАТУ
                         </a>
                     </div>
                 </div>
@@ -129,16 +136,23 @@ const Header = () => {
                                     ГАЛЛЕРЕЯ
                                 </a>
                             </li>
+                            <li>
+                                <a
+                                    href="/gallery"
+                                    className={styles.linkBottom}>
+                                    ВИДЕОРОЛИКИ
+                                </a>
+                            </li>
                         </ul>
                         <a className={styles.buttonHero} href="/contact">
-                            Стать членом
+                            ВСТУПИТЬ В ПАЛАТУ
                         </a>
                     </div>
                     <div className={styles.headerBottomPopUp}>
                         <ul className={styles.listBottomPopUp}>
                             <li>
                                 <a href="/members" className={styles.link}>
-                                    ЧЛЕНЫ ПАЛАТЫ
+                                    НАШИ ЭКСПЕРТЫ
                                 </a>
                             </li>
                             <li>

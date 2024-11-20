@@ -5,23 +5,21 @@
     flex-direction: column;
     align-items: center;
     font-family: "Lato", sans-serif;
-    font-weight: 200;
+    font-weight: 400;
     padding: 24px;
 }
 
 .welcomeWrapper {
-    max-width: 1024px;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
     font-size: 24px;
     text-align: center;
-    padding: 16px 24px 80px;
+    padding: 0px 120px 96px;
     h4 {
-        margin: 16px 0;
+        padding-top: 16px;
     }
     p {
-        margin: 16px 0;
+        padding-top: 16px;
     }
 }
 
@@ -48,7 +46,6 @@
         font-size: 16px;
     }
     p {
-        // padding: 16px 0;
         font-size: 16px;
     }
     img {
@@ -106,7 +103,6 @@
 
 @media (max-width: 425px) {
     .welcomeWrapper {
-        // font-size: 20px;
         padding: 16px 8px 40px;
     }
 }
