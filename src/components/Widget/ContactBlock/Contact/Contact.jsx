@@ -110,6 +110,7 @@ const Contact = () => {
                                 rows="10"
                                 placeholder="Комментарий"></textarea>
                         </div>
+                        <p>ВАРИАНТЫ ЧЛЕНСТВА</p>
                         <div className={styles.inputContainer}>
                             <div className={styles.inputWrapper}>
                                 <input
@@ -119,9 +120,7 @@ const Contact = () => {
                                     value="active"
                                     checked
                                 />
-                                <label for="active">
-                                    Действительное членство
-                                </label>
+                                <label for="active">Действительное</label>
                             </div>
                             <div className={styles.inputWrapper}>
                                 <input
@@ -130,9 +129,7 @@ const Contact = () => {
                                     name="membership"
                                     value="associated"
                                 />
-                                <label for="associated">
-                                    Ассоциированное членство
-                                </label>
+                                <label for="associated">Ассоциированное</label>
                             </div>
                         </div>
                         <div className={styles.buttonWrapper}>
