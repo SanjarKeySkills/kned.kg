@@ -41,12 +41,15 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
+    p {
+        text-align: center;
+    }
 }
 
 .contactFormButtonsAndSocial {
     display: flex;
     flex-direction: row;
-    gap: 24px;
+    gap: 64px;
     justify-content: center;
     .sDarkLink {
         padding: 16px;
@@ -65,7 +68,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 24px;
+    gap: 44px;
 }
 
 .contactInput {
@@ -135,6 +138,10 @@ input:valid {
 
 .buttonWrapper {
     margin: 0 auto;
+}
+
+.contactOfficial {
+    text-align: justify;
 }
 
 @media (max-width: 880px) {
