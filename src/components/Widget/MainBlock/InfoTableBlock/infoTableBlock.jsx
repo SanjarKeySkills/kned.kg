@@ -7,8 +7,7 @@ const infoTableBlock = () => {
             <div className={styles.infoList}>
                 <div className={styles.infoCard}>
                     <h3 className={styles.headList}>
-                        ДЕЯТЕЛЬНОСТЬ
-                        <br />В ИНДУСТРИЯХ
+                        ДЕЯТЕЛЬНОСТЬ <br /> ЭКСПЕРТОВ ПАЛАТЫ В ИНДУСТРИЯХ
                     </h3>
                     <div className={styles.industryBlock}>
                         <ul>
@@ -24,14 +23,14 @@ const infoTableBlock = () => {
                     </div>
                 </div>
                 <div className={styles.infoCard}>
-                    <h3 className={styles.headList}>
-                        КОМПЕТЕНЦИИ
-                        <br />
-                        ЧЛЕНОВ ПАЛАТЫ
-                    </h3>
+                    <h4 className={styles.headList}>
+                        КОМПЕТЕНЦИИ <br /> ЭКСПЕРТОВ ПАЛАТЫ
+                    </h4>
                     <div className={styles.industryBlock}>
                         <ul>
                             <li>Корпоративное управление</li>
+                            <li>IT и Финтех</li>
+                            <li>Технологии искусственного интеллекта</li>
                             <li>Финансы и инвестиции</li>
                             <li>Продажи</li>
                             <li>Аудит</li>
@@ -42,11 +41,11 @@ const infoTableBlock = () => {
                     </div>
                 </div>
                 <div className={styles.infoCard}>
-                    <h3 className={styles.headList}>
+                    <h4 className={styles.headList}>
                         ВЫПУСКНИКИ
                         <br />
                         СЕРТИФИКАЦИОННЫХ ПРОГРАММ
-                    </h3>
+                    </h4>
                     <div className={styles.alumnyBlock}>
                         <ul>
                             <li>

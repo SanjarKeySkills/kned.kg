@@ -1,6 +1,8 @@
 .infoTableBlock {
     width: 100%;
     padding: 40px 24px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
 }
 
 .infoList {
@@ -15,10 +17,8 @@
         list-style-type: "⟐";
     }
     li {
-        font-family: "Lato", sans-serif;
-        font-weight: 400;
-        font-size: 18px;
-        padding: 0 0 0 8px;
+        font-size: 16px;
+        padding: 0 0 8px 8px;
     }
 }
 
@@ -30,10 +30,8 @@
 }
 
 .headList {
-    height: 154px;
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    font-size: 24px;
+    font-size: 20px;
+    text-align: center;
 }
 
 .industryBlock {
@@ -47,9 +45,6 @@
     height: 100%;
     border-radius: 8px;
     background-color: #ffbb29;
-    ul {
-        list-style-type: "⟐";
-    }
 }
 
 @media (max-width: 768px) {
