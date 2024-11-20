@@ -16,24 +16,20 @@
     max-width: 1200px;
     display: flex;
     flex-direction: row;
-    gap: 40px;
-    padding-bottom: 16px;
-}
-
-.articleInfoWrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
+    gap: 32px;
+    padding-bottom: 24px;
 }
 
 .articleInfo {
+    padding-bottom: 16px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 24px;
+    border-bottom: 3px solid #e7ecef;
 }
 
 .authorImg {
-    max-width: 240px;
+    max-width: 320px;
 }
 
 .linkArticle {
