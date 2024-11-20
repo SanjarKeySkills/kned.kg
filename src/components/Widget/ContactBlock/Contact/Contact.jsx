@@ -32,20 +32,14 @@ const Contact = () => {
                     </div>
 
                     <div className={styles.contactFormButtonsAndSocial}>
-                        <a href="#">
-                            <Button size="sDark" variant="outlined">
-                                Реквизиты
-                            </Button>
+                        <a href="#" className={styles.sDarkLink}>
+                            Реквизиты
                         </a>
-                        <a href="/">
-                            <Button size="sDark" variant="outlined">
-                                Критерии членства
-                            </Button>
+                        <a href="/" className={styles.sDarkLink}>
+                            Критерии членства
                         </a>
-                        <a href="/about">
-                            <Button size="sDark" variant="outlined">
-                                О палате
-                            </Button>
+                        <a href="/about" className={styles.sDarkLink}>
+                            О палате
                         </a>
                     </div>
 

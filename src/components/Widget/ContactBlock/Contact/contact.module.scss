@@ -48,6 +48,17 @@
     flex-direction: row;
     gap: 24px;
     justify-content: center;
+    .sDarkLink {
+        padding: 16px;
+        border-radius: 8px;
+        background-color: #000;
+        font-size: 16px;
+        text-align: center;
+        font-family: "Lato", sans-serif;
+        font-weight: 400;
+        color: #ffffff;
+        text-decoration: none;
+    }
 }
 
 .contactSocial {
