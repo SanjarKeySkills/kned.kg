@@ -7,6 +7,16 @@ import { useState } from "react";
 
 const Header = () => {
     const [isOpenPopUp, setOpenPopUp] = useState("none");
+
+    const [isPndMenuOpen, setPndMenuOpen] = useState(false);
+    const togglePopUp = () => {
+        setOpenPopUp((prev) => (prev === "none" ? "block" : "none"));
+    };
+
+    const togglePndMenu = () => {
+        setPndMenuOpen((prev) => !prev);
+    };
+
     const changeStyle = () => {
         if (isOpenPopUp === "none") {
             setOpenPopUp("block");
@@ -22,21 +32,52 @@ const Header = () => {
                             НАШИ ЭКСПЕРТЫ
                         </a>
                     </li>
-                    <li>
+
+                    {/* Кнопка ПНД с выпадающим меню */}
+                    <li className={styles.dropdown}>
+                        <button
+                            className={styles.dropdownButton}
+                            onClick={togglePndMenu}>
+                            ПНД
+                        </button>
+                        {isPndMenuOpen && (
+                            <ul className={styles.dropdownMenu}>
+                                <li>
+                                    <a href="/about" className={styles.linkTop}>
+                                        О ПАЛАТЕ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/board" className={styles.linkTop}>
+                                        ОРГАНЫ УПРАВЛЕНИЯ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="/services"
+                                        className={styles.linkTop}>
+                                        УСЛУГИ
+                                    </a>
+                                </li>
+                            </ul>
+                        )}
+                    </li>
+
+                    {/* <li>
                         <a href="/about" className={styles.linkTop}>
                             О ПАЛАТЕ
                         </a>
-                    </li>
-                    <li>
+                    </li> */}
+                    {/* <li>
                         <a href="/board" className={styles.linkTop}>
                             ОРГАНЫ УПРАВЛЕНИЯ
                         </a>
-                    </li>
-                    <li>
+                    </li> */}
+                    {/* <li>
                         <a href="/services" className={styles.linkTop}>
                             УСЛУГИ
                         </a>
-                    </li>
+                    </li> */}
                     <li>
                         <a href="/contact" className={styles.linkTop}>
                             КОНТАКТЫ
