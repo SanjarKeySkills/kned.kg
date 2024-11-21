@@ -25,27 +25,6 @@ const Header = () => {
 
     return (
         <div className={styles.header}>
-            <div className={styles.headerTop}>
-                <ul className={styles.listTop}>
-                    {/* Кнопка ПНД с выпадающим меню */}
-
-                    {/* <li>
-                        <a href="/about" className={styles.linkTop}>
-                            О ПАЛАТЕ
-                        </a>
-                    </li> */}
-                    {/* <li>
-                        <a href="/board" className={styles.linkTop}>
-                            ОРГАНЫ УПРАВЛЕНИЯ
-                        </a>
-                    </li> */}
-                    {/* <li>
-                        <a href="/services" className={styles.linkTop}>
-                            УСЛУГИ
-                        </a>
-                    </li> */}
-                </ul>
-            </div>
             <div className={styles.headerBottom}>
                 <div className={styles.headerBottomWrapper}>
                     <a href="/">
@@ -92,37 +71,48 @@ const Header = () => {
                             </li>
 
                             <li>
-                                <a
-                                    href="/courses"
-                                    className={styles.linkBottom}>
+                                <a href="/courses" className={styles.navLink}>
                                     КУРСЫ И ТРЕНИНГИ
                                 </a>
                             </li>
-                            <li>
-                                <a href="/news" className={styles.linkBottom}>
-                                    НОВОСТИ
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href="/articles"
-                                    className={styles.linkBottom}>
-                                    СТАТЬИ
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href="/gallery"
-                                    className={styles.linkBottom}>
-                                    ГАЛЛЕРЕЯ
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href="/gallery"
-                                    className={styles.linkBottom}>
-                                    ВИДЕОРОЛИКИ
-                                </a>
+                            <li className={styles.dropdown}>
+                                <button
+                                    className={styles.dropdownButton}
+                                    onClick={togglePndMenu}>
+                                    НОВОСТИ И ПУБЛИКАЦИИ
+                                </button>
+                                {isPndMenuOpen && (
+                                    <ul className={styles.dropdownMenu}>
+                                        <li>
+                                            <a
+                                                href="/news"
+                                                className={styles.linkBottom}>
+                                                НОВОСТИ
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="/articles"
+                                                className={styles.linkBottom}>
+                                                ПУБЛИКАЦИИ
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="/gallery"
+                                                className={styles.linkBottom}>
+                                                ГАЛЛЕРЕЯ
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="/gallery"
+                                                className={styles.linkBottom}>
+                                                ВИДЕОРОЛИКИ
+                                            </a>
+                                        </li>
+                                    </ul>
+                                )}
                             </li>
                             <li>
                                 <a href="/contact" className={styles.linkTop}>
@@ -167,6 +157,9 @@ const Header = () => {
                         </div>
                         <ul className={styles.listTopPopUp}>
                             <li>
+                                <a href="/">НА ГЛАВНУЮ</a>
+                            </li>
+                            <li>
                                 <a href="/courses">КУРСЫ И ТРЕНИНГИ</a>
                             </li>
                             <li>
@@ -176,7 +169,7 @@ const Header = () => {
                             </li>
                             <li>
                                 <a href="/articles" className={styles.link}>
-                                    СТАТЬИ
+                                    ПУБЛИКАЦИИ
                                 </a>
                             </li>
                             <li>
@@ -242,3 +235,52 @@ const Header = () => {
 };
 
 export default Header;
+
+{
+    /* <div className={styles.headerTop}>
+                <ul className={styles.listTop}> */
+    /* Кнопка ПНД с выпадающим меню */
+    /* <li>
+                        <a href="/about" className={styles.linkTop}>
+                            О ПАЛАТЕ
+                        </a>
+                    </li> */
+    /* <li>
+                        <a href="/board" className={styles.linkTop}>
+                            ОРГАНЫ УПРАВЛЕНИЯ
+                        </a>
+                    </li> */
+    /* <li>
+                        <a href="/services" className={styles.linkTop}>
+                            УСЛУГИ
+                        </a>
+                    </li> */
+    /* </ul>
+            </div> */
+    /* <li>
+                                <a href="/news" className={styles.linkBottom}>
+                                    НОВОСТИ
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="/articles"
+                                    className={styles.linkBottom}>
+                                    СТАТЬИ
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="/gallery"
+                                    className={styles.linkBottom}>
+                                    ГАЛЛЕРЕЯ
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="/gallery"
+                                    className={styles.linkBottom}>
+                                    ВИДЕОРОЛИКИ
+                                </a>
+                            </li> */
+}

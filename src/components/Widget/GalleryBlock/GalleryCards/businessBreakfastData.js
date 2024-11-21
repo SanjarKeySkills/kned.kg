@@ -34,15 +34,15 @@ const businessBreakfastData = [
         image: require("../../../../assets/businessBreakfastData/180924/bb_arymkulova_1.png"),
         images: [
             {
-                url: require("../../../../assets/businessBreakfastData/180924/arymkulova_3.png"),
+                url: require("../../../../assets/businessBreakfastData/180924/bb_arymkulova_1.png"),
                 title: "img1",
             },
             {
-                url: require("../../../../assets/businessBreakfastData/180924/bb_arymkulova_1.png"),
+                url: require("../../../../assets/businessBreakfastData/180924/bb_arymkulova_2.png"),
                 title: "img2",
             },
             {
-                url: require("../../../../assets/businessBreakfastData/180924/bb_arymkulova_2.png"),
+                url: require("../../../../assets/businessBreakfastData/180924/bb_arymkulova_3.png"),
                 title: "img3",
             },
             {
