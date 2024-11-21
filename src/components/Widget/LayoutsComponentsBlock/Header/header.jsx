@@ -27,41 +27,7 @@ const Header = () => {
         <div className={styles.header}>
             <div className={styles.headerTop}>
                 <ul className={styles.listTop}>
-                    <li>
-                        <a href="/members" className={styles.linkTop}>
-                            НАШИ ЭКСПЕРТЫ
-                        </a>
-                    </li>
-
                     {/* Кнопка ПНД с выпадающим меню */}
-                    <li className={styles.dropdown}>
-                        <button
-                            className={styles.dropdownButton}
-                            onClick={togglePndMenu}>
-                            ПНД
-                        </button>
-                        {isPndMenuOpen && (
-                            <ul className={styles.dropdownMenu}>
-                                <li>
-                                    <a href="/about" className={styles.linkTop}>
-                                        О ПАЛАТЕ
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="/board" className={styles.linkTop}>
-                                        ОРГАНЫ УПРАВЛЕНИЯ
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="/services"
-                                        className={styles.linkTop}>
-                                        УСЛУГИ
-                                    </a>
-                                </li>
-                            </ul>
-                        )}
-                    </li>
 
                     {/* <li>
                         <a href="/about" className={styles.linkTop}>
@@ -78,20 +44,7 @@ const Header = () => {
                             УСЛУГИ
                         </a>
                     </li> */}
-                    <li>
-                        <a href="/contact" className={styles.linkTop}>
-                            КОНТАКТЫ
-                        </a>
-                    </li>
                 </ul>
-                <div>
-                    <a href="#" className={styles.lanRu}>
-                        RU
-                    </a>
-                    <a href="#" className={(styles.lanBlock, styles.lanEn)}>
-                        EN
-                    </a>
-                </div>
             </div>
             <div className={styles.headerBottom}>
                 <div className={styles.headerBottomWrapper}>
@@ -100,6 +53,44 @@ const Header = () => {
                     </a>
                     <div className={styles.wrapperBottom}>
                         <ul className={styles.listBottom}>
+                            <li className={styles.dropdown}>
+                                <button
+                                    className={styles.dropdownButton}
+                                    onClick={togglePndMenu}>
+                                    О ПАЛАТЕ
+                                </button>
+                                {isPndMenuOpen && (
+                                    <ul className={styles.dropdownMenu}>
+                                        <li>
+                                            <a
+                                                href="/about"
+                                                className={styles.linkTop}>
+                                                МИССИЯ
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="/board"
+                                                className={styles.linkTop}>
+                                                ОРГАНЫ УПРАВЛЕНИЯ
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="/services"
+                                                className={styles.linkTop}>
+                                                УСЛУГИ
+                                            </a>
+                                        </li>
+                                    </ul>
+                                )}
+                            </li>
+                            <li>
+                                <a href="/members" className={styles.linkTop}>
+                                    НАШИ ЭКСПЕРТЫ
+                                </a>
+                            </li>
+
                             <li>
                                 <a
                                     href="/courses"
@@ -133,10 +124,26 @@ const Header = () => {
                                     ВИДЕОРОЛИКИ
                                 </a>
                             </li>
+                            <li>
+                                <a href="/contact" className={styles.linkTop}>
+                                    КОНТАКТЫ
+                                </a>
+                            </li>
                         </ul>
                         <a className={styles.buttonHero} href="/contact">
                             ВСТУПИТЬ В ПАЛАТУ
                         </a>
+
+                        <div>
+                            <a href="#" className={styles.lanRu}>
+                                RU
+                            </a>
+                            <a
+                                href="#"
+                                className={(styles.lanBlock, styles.lanEn)}>
+                                EN
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
