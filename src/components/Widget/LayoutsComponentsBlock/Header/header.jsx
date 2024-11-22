@@ -109,13 +109,14 @@ const Header = () => {
                         </a>
 
                         <div>
-                            <a href="#" className={styles.lanRu}>
+                            <a href="/" className={styles.lanRu}>
                                 RU
                             </a>
-                            <a
-                                href="#"
-                                className={(styles.lanBlock, styles.lanEn)}>
+                            <a href="#" className={styles.lanEn}>
                                 EN
+                            </a>
+                            <a href="#" className={styles.lanRu}>
+                                KG
                             </a>
                         </div>
                     </div>
@@ -125,9 +126,7 @@ const Header = () => {
                 <a href="/">
                     <img src={logo} alt="main" />
                 </a>
-
                 <img src={burgerButton} alt="burger" onClick={changeStyle} />
-
                 <div
                     className={styles.containerPopUp}
                     style={{ display: isOpenPopUp }}>
