@@ -1,9 +1,9 @@
 import React from "react";
-import styles from "./membersGenerator.module.scss";
 import { Link } from "react-router-dom";
+import styles from "./membersGenerator.module.scss";
 // import clsx from "clsx";
 
-function MembersGenerator({ data, type }) {
+export default function MembersGenerator({ data, type }) {
     //деструктуризируем из объекта сам объект props, его ключи, data и type.
     return (
         <div className={styles.cardList}>
@@ -36,4 +36,4 @@ function MembersGenerator({ data, type }) {
     );
 }
 
-export default MembersGenerator;
+// export default MembersGenerator;

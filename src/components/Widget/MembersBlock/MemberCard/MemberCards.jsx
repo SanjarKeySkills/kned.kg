@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./memberCards.module.scss";
-import MembersGenerator from "../MembersGenerator/MembersGenerator.jsx";
+// import MembersGenerator from "../MembersGenerator/MembersGenerator.jsx";
+import MembersGenerator from "./MembersGenerator.jsx";
 import HonorMembersData from "./honorMembersData.js";
 import ActiveMembersData from "./activeMembersData.js";
 import AssociatedMembersData from "./associatedMembersData.js";
