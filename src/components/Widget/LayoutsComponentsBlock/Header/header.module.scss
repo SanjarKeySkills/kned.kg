@@ -21,7 +21,7 @@
 }
 
 .heroButton {
-    padding: 4px;
+    padding: 4px 8px;
     border: none;
     border-radius: 4px;
     background-color: #c69214;
@@ -35,16 +35,6 @@
     }
 }
 
-// .listTop {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     gap: 32px;
-//     li {
-//         list-style-type: none;
-//     }
-// }
-
 .navLink {
     color: #5d6267;
     font-style: normal;
@@ -53,6 +43,11 @@
         text-decoration: none;
         color: #447ac6;
     }
+}
+
+.lanBtnWraper {
+    display: flex;
+    align-items: center;
 }
 
 .lanRu {

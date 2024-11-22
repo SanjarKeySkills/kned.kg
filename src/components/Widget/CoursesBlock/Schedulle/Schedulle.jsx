@@ -19,7 +19,6 @@ const Schedulle = () => {
             <div className={styles.wrapperSchdulle}>
                 <h2>РАСПИСАНИЕ КУРСОВ</h2>
                 <span>2025 год</span>
-
                 <div>
                     <p className={styles.titleSchedulleWrapper}>
                         <b> Календарный план </b> <br /> проведения модулей

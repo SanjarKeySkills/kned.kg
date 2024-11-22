@@ -58,13 +58,6 @@
 
 // Table
 .infoSchedulle {
-    p {
-        font-size: 24px;
-        color: #ffffff;
-    }
-}
-
-.infoSchedulle {
     display: grid;
     justify-content: center;
     grid-template-columns: 20% 60%;
@@ -72,6 +65,10 @@
     grid-column-gap: 24px;
     grid-row-gap: 24px;
     color: #ffffff;
+    p {
+        font-size: 24px;
+    }
+
     .div1 {
         display: flex;
         align-items: center;
@@ -86,7 +83,7 @@
         justify-content: center;
         background-color: #ffc72c;
         border-radius: 8px;
-        padding: 24px;
+        padding: 16px;
     }
     .div3 {
         display: flex;

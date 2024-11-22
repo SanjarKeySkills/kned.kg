@@ -77,13 +77,13 @@ const Header = () => {
                         </li>
                         <ul className={styles.listBottom}>
                             <li>
-                                <a href="/members" className={styles.navLink}>
-                                    НАШИ ЭКСПЕРТЫ
+                                <a href="/about" className={styles.navLink}>
+                                    МИССИЯ
                                 </a>
                             </li>
                             <li>
-                                <a href="/about" className={styles.navLink}>
-                                    МИССИЯ
+                                <a href="/members" className={styles.navLink}>
+                                    НАШИ ЭКСПЕРТЫ
                                 </a>
                             </li>
                             <li>
@@ -107,8 +107,7 @@ const Header = () => {
                         <a className={styles.heroButton} href="/contact">
                             ВСТУПИТЬ В ПАЛАТУ
                         </a>
-
-                        <div>
+                        <div className={styles.lanBtnWraper}>
                             <a href="/" className={styles.lanRu}>
                                 RU
                             </a>
