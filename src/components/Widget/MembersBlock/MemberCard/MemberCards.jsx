@@ -8,6 +8,7 @@ import AssociatedMembersData from "./associatedMembersData.js";
 function MemberCards() {
     return (
         <>
+            <></>
             <div className={styles.membersItem}>
                 <h4 className={styles.membersItemWrapper}>
                     Почетные члены палаты
