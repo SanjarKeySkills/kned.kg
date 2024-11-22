@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./memberCards.module.scss";
-import MembersGenerator from "../MembersGenerator/MembersGenerator";
+import MembersGenerator from "../../../Widget/MembersBlock/MembersGenerator/MembersGenerator.jsx";
 import HonorMembersData from "./honorMembersData.js";
 import ActiveMembersData from "./activeMembersData.js";
 import AssociatedMembersData from "./associatedMembersData.js";
