@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./memberCards.module.scss";
-// import MembersGenerator from "../MembersGenerator/MembersGenerator.jsx";
 import MembersGenerator from "./MembersGenerator.jsx";
 import HonorMembersData from "./honorMembersData.js";
 import ActiveMembersData from "./activeMembersData.js";
@@ -10,25 +9,19 @@ function MemberCards() {
     return (
         <>
             <div className={styles.membersItem}>
-                <h4 className={styles.membersItemWrapper}>
-                    Почетные члены палаты
-                </h4>
+                <h4 className={styles.membersItemWrapper}>ПОЧЕТНЫЕ</h4>
                 <div className={styles.cardList}>
                     <MembersGenerator data={HonorMembersData} type="honor" />
                 </div>
             </div>
             <div className={styles.membersItem}>
-                <h4 className={styles.membersItemWrapper}>
-                    Действительные члены палаты
-                </h4>
+                <h4 className={styles.membersItemWrapper}>ДЕЙСТВИТЕЛЬНЫЕ</h4>
                 <div className={styles.cardList}>
                     <MembersGenerator data={ActiveMembersData} type="active" />
                 </div>
             </div>
             <div className={styles.membersItem}>
-                <h4 className={styles.membersItemWrapper}>
-                    Ассоциированные члены палаты
-                </h4>
+                <h4 className={styles.membersItemWrapper}>АССОЦИИРОВАННЫЕ</h4>
                 <div className={styles.cardList}>
                     <MembersGenerator
                         data={AssociatedMembersData}

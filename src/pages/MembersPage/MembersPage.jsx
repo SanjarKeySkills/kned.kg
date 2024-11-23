@@ -9,7 +9,7 @@ const MembersPage = () => {
             <HeroHeader />
             <div className={styles.welcome}>
                 <div className={styles.welcomeWrapper}>
-                    <h4>ЧЛЕНЫ ПАЛАТЫ</h4>
+                    <h4>ЭКСПЕРТЫ ПАЛАТЫ</h4>
                     <p>
                         Используя лучшие практики корпоративного управления,
                         члены Палаты повышают эффективность деятельности
