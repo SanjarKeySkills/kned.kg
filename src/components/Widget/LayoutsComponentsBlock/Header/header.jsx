@@ -12,11 +12,9 @@ const Header = () => {
     const togglePopUp = () => {
         setOpenPopUp((prev) => (prev === "none" ? "block" : "none"));
     };
-
     const togglePndMenu = () => {
         setPndMenuOpen((prev) => !prev);
     };
-
     const changeStyle = () => {
         if (isOpenPopUp === "none") {
             setOpenPopUp("block");
