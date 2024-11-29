@@ -76,4 +76,14 @@
         width: 100%;
         height: 100%; /* Обеспечиваем 100% высоту для мобильной версии */
     }
+    .leftArrow {
+        left: 16px;
+        width: 56px;
+        height: 48px;
+    }
+    .rightArrow {
+        right: 16px;
+        width: 56px;
+        height: 48px;
+    }
 }
