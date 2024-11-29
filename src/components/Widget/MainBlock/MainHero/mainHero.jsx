@@ -16,9 +16,6 @@ const VideoHero = () => {
                         ПАЛАТА НЕЗАВИСИМЫХ ДИРЕКТОРОВ <br /> КЫРГЫЗСКОЙ
                         РЕСПУБЛИКИ
                     </h3>
-                    {/* <a className={styles.mainHeroButton} href="/members">
-                        ЧЛЕНЫ ПАЛАТЫ
-                    </a> */}
                     <span>ДОВЕРЯЙТЕ УПРАВЛЕНИЕ ПРОФЕССИОНАЛАМ</span>
                 </div>
                 <video src={videoBg} loop muted ref={videoRef}></video>
