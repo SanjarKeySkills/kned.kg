@@ -1,5 +1,5 @@
 .newsPage {
-    width: 100%;
+    // width: 100%;
     padding-top: 40px;
     display: flex;
     flex-direction: column;
@@ -9,7 +9,6 @@
 }
 
 .newsPageContainer {
-    // width: 1440px;
     padding: 0px 56px 8px;
     display: flex;
     flex-direction: column;
@@ -67,9 +66,12 @@
     border-bottom: 4px solid #c69214;
 }
 
-@media (max-width: 1224px) {
+@media (max-width: 1320px) {
+    .newsPage {
+        padding-top: 24px;
+    }
     .newsPageContainer {
-        padding: 0px 24px 8px;
+        padding: 0px 16px 8px;
     }
 }
 
