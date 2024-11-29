@@ -15,7 +15,7 @@
     flex-direction: column;
     font-size: 24px;
     text-align: center;
-    padding: 0px 120px 96px;
+    padding: 0px 100px 96px;
     h4 {
         padding-top: 16px;
     }
@@ -59,6 +59,7 @@
 @media (max-width: 1024px) {
     .welcomeWrapper {
         font-size: 20px;
+        padding: 0px 64px 96px;
     }
     .cardsWrapper {
         width: 100%;
@@ -100,10 +101,14 @@
         flex-direction: column;
         gap: 80px;
     }
+    h4 {
+        padding-top: 0px;
+    }
 }
 
 @media (max-width: 425px) {
     .welcomeWrapper {
-        padding: 16px 8px 40px;
+        padding: 16px 0px 40px;
+        font-size: 16px;
     }
 }
