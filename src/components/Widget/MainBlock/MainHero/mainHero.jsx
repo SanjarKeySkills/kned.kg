@@ -12,11 +12,13 @@ const VideoHero = () => {
         <div className={styles.mainHero}>
             <div className={styles.mainHeroWrapper}>
                 <div className={styles.mainHeroContent}>
-                    <h3>
+                    <p className={styles.heroTitle}>
                         ПАЛАТА НЕЗАВИСИМЫХ ДИРЕКТОРОВ <br /> КЫРГЫЗСКОЙ
                         РЕСПУБЛИКИ
-                    </h3>
-                    <span>ДОВЕРЯЙТЕ УПРАВЛЕНИЕ ПРОФЕССИОНАЛАМ</span>
+                    </p>
+                    <p className={styles.heroMoto}>
+                        ДОВЕРЯЙТЕ УПРАВЛЕНИЕ ПРОФЕССИОНАЛАМ
+                    </p>
                 </div>
                 <video src={videoBg} loop muted ref={videoRef}></video>
             </div>

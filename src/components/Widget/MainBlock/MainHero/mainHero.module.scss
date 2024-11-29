@@ -21,23 +21,6 @@
     }
 }
 
-// .mainHeroButton {
-//     padding: 16px;
-//     background-color: #ffffff;
-//     width: 180px;
-//     font-size: 16px;
-//     text-align: center;
-//     font-family: "Lato", sans-serif;
-//     font-weight: 400;
-//     text-decoration: none;
-//     color: #000000;
-//     border-radius: 7px;
-//     z-index: 2;
-//     &:hover {
-//         background-color: #f5f5f5;
-//     }
-// }
-
 .mainHeroContent {
     position: absolute;
     top: 24%;
@@ -52,24 +35,29 @@
     font-weight: bold;
     font-size: 32px;
     color: #ffffff;
-    h3 {
+    .heroTitle {
         text-align: center;
-        max-width: 785px;
     }
-    span {
-        font-size: 20px;
+    .heroMoto {
+        font-size: 24px;
+        text-align: center;
     }
 }
 
 @media (max-width: 1024px) {
-    .mainHeroContent h1 {
-        max-width: 640px;
+    .mainHeroContent {
         font-size: 24px;
+        .heroMoto {
+            font-size: 20px;
+            text-align: center;
+        }
     }
     .mainHeroWrapper {
         height: 400px;
         video {
             height: 400px;
+            width: 100%;
+            left: 50%;
         }
     }
 }
@@ -78,9 +66,13 @@
     .mainHeroWrapper {
         margin: 120px auto 40px;
     }
-    .mainHeroContent h1 {
-        max-width: 500px;
-        font-size: 16px;
+    .mainHeroContent {
+        .heroTitle {
+            font-size: 16px;
+        }
+        .heroMoto {
+            font-size: 14px;
+        }
     }
     .mainHeroContent {
         padding: 144px 32px 0;
