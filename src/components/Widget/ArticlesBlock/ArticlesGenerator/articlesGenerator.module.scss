@@ -1,5 +1,4 @@
 .articleList {
-    width: 1440px;
     padding: 24px;
     font-family: "Lato", sans-serif;
     font-weight: 400;
@@ -13,7 +12,6 @@
 }
 
 .articleText {
-    max-width: 1200px;
     display: flex;
     flex-direction: row;
     gap: 32px;
@@ -30,6 +28,7 @@
 
 .authorImg {
     max-width: 320px;
+    border-radius: 8px;
 }
 
 .linkArticle {
@@ -37,5 +36,44 @@
 
     &:hover {
         text-decoration: underline;
+    }
+}
+
+@media (max-width: 1224px) {
+    .articleList {
+        padding: 16px;
+    }
+
+    .authorImg {
+        max-width: 280px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .articleList {
+        padding: 8px;
+    }
+    .articleText {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+    .authorImg {
+        max-width: 60%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .articleList {
+        padding: 0px;
+    }
+    .articleText {
+        gap: 16px;
+    }
+    .articleList {
+        h2 {
+            font-size: 18px;
+        }
     }
 }

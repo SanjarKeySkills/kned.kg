@@ -9,8 +9,8 @@
 }
 
 .newsPageContainer {
-    max-width: 1440px;
-    padding: 0px 164px 8px;
+    // width: 1440px;
+    padding: 0px 56px 8px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -69,13 +69,13 @@
 
 @media (max-width: 1224px) {
     .newsPageContainer {
-        padding: 0px 40px 8px;
+        padding: 0px 24px 8px;
     }
 }
 
 @media (max-width: 960px) {
     .newsPageContainer {
-        padding: 0px 44px 8px;
+        padding: 0px 32px 8px;
     }
     .newsImg {
         max-width: 440px;
