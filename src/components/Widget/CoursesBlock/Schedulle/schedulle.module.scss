@@ -1,6 +1,6 @@
 .schedulle {
     width: 100%;
-    padding: 32px 32px;
+    padding: 32px 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,7 +26,8 @@
     align-items: center;
     text-align: center;
     .titleAnnotation {
-        padding: 8px 40px;
+        padding: 0px 40px;
+        text-align: justify;
     }
 }
 
@@ -117,6 +118,12 @@
             font-size: 20px;
         }
     }
+    .titleSchedulle {
+        .titleAnnotation {
+            padding: 0px 8px;
+            text-align: center;
+        }
+    }
 
     .infoSchedulle {
         grid-template-columns: 30% 50%;
@@ -129,12 +136,15 @@
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 424px) {
     .schedulle {
         h2 {
             font-size: 16px;
         }
         span {
+            font-size: 16px;
+        }
+        p {
             font-size: 16px;
         }
     }
