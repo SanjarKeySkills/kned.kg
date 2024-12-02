@@ -9,7 +9,6 @@ const ImageCollectionPage = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
-
     const { id, type } = useParams();
     const [currentIndex, setCurrentIndex] = useState(0);
     const touchStartX = useRef(0);
@@ -20,6 +19,7 @@ const ImageCollectionPage = () => {
         saturday: businessSaturdayData,
         happening: BusinessEventData,
     };
+
     const event = mapEventData[type]?.find((item) => item.id === id);
     // ? - проверка корректного существования данных
     // Проверка на длину массива до рендеринга изображений

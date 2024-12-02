@@ -11,7 +11,7 @@ function NewsGenerator({ data, type }) {
                         <a href={`/bulletin/${type}/${bulletin.id}`}>
                             <img
                                 className={styles.newsImg}
-                                src={bulletin.image}
+                                src={bulletin.image1}
                                 alt={bulletin.name}
                             />
                             <p className={styles.newsTitle}>{bulletin.title}</p>

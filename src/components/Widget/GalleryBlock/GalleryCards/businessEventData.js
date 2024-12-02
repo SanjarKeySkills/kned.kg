@@ -31,22 +31,26 @@ const eventData = [
         annotation:
             "6 сентября 2024 года прошел второй этап тренингов по корпоративному управлению для тренеров ПНД КР по курсу IFC Корпоративный секретарь",
         calendar: "6 сентября 2024 года",
-        image: require("../../../../assets/eventData/ks_060924/ks_tot_2_11zon.png"),
+        image: require("../../../../assets/eventData/ks_060924/ks_tot_2.png"),
         images: [
             {
-                url: require("../../../../assets/eventData/ks_060924/ks_tot_2_11zon.png"),
+                url: require("../../../../assets/eventData/ks_060924/ks_tot_1.png"),
                 title: "img1",
             },
             {
-                url: require("../../../../assets/eventData/ks_060924/ks_tot_1_11zon.png"),
+                url: require("../../../../assets/eventData/ks_060924/ks_tot_2.png"),
                 title: "img2",
             },
             {
-                url: require("../../../../assets/eventData/ks_060924/ks_tot_3_11zon.png"),
+                url: require("../../../../assets/eventData/ks_060924/ks_tot_3.png"),
                 title: "img3",
             },
             {
-                url: require("../../../../assets/eventData/ks_060924/ks_tot_4_11zon.png"),
+                url: require("../../../../assets/eventData/ks_060924/ks_tot_4.png"),
+                title: "img4",
+            },
+            {
+                url: require("../../../../assets/eventData/ks_060924/ks_tot_5.png"),
                 title: "img4",
             },
         ],

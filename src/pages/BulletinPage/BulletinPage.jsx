@@ -4,13 +4,6 @@ import { useParams } from "react-router-dom";
 import HeroHeader from "../../components/Widget/LayoutsComponentsBlock/HeroHeader/heroHeader.jsx";
 import newsData from "../../components/Widget/NewsBlock/NewsCards/newsData.js";
 import FormatText from "../../components/Widget/FormatText/FormatText.jsx";
-import img1 from "../../assets/businessSaturdayData/bs_280924/volynetz_1_11zon.png";
-import img2 from "../../assets/businessSaturdayData/bs_280924/volynetz_2_11zon.png";
-import img3 from "../../assets/businessSaturdayData/bs_280924/volynetz_3_11zon.png";
-import img4 from "../../assets/businessSaturdayData/bs_280924/volynetz_4_11zon.png";
-import img5 from "../../assets/businessSaturdayData/bs_280924/volynetz_5_11zon.png";
-
-const images = [img1, img2, img3, img4, img5];
 
 const BulletinPage = () => {
     useEffect(() => {
@@ -19,13 +12,27 @@ const BulletinPage = () => {
 
     const { id } = useParams();
     const bulletin = newsData.find((bulletin) => bulletin.id === id);
-    // получаем ту news с такой id и ту новость приводим на нашу константу
-    // вместо type -  встанет массив newsData
 
+    // Массив изображений
+    const images = [
+        bulletin.image1,
+        bulletin.image2,
+        bulletin.image3,
+        bulletin.image4,
+        bulletin.image5,
+    ].filter((image) => image); //удаляем пустые значения
+
+    // вызов хуков
     const [currentIndex, setCurrentIndex] = useState(0);
     const touchStartX = useRef(0);
     const touchEndX = useRef(0);
 
+    // Проверка на пустой массив изображений.
+    if (images.length === 0) {
+        return <p>Альбом не найден</p>;
+    }
+
+    // Функции для слайдера
     const nextSlide = () => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
     };
@@ -34,6 +41,7 @@ const BulletinPage = () => {
             (prevIndex) => (prevIndex - 1 + images.length) % images.length
         );
     };
+
     const handleTouchStart = (e) => {
         touchStartX.current = e.touches[0].clientX;
     };
@@ -47,10 +55,10 @@ const BulletinPage = () => {
             prevSlide();
         }
     };
+
     return (
         <>
             <HeroHeader />
-
             <div className={styles.newsPage}>
                 <div className={styles.newsPageContainer}>
                     <a href="/news" className={styles.backToNewsBtn}>
@@ -71,30 +79,43 @@ const BulletinPage = () => {
                         <FormatText text={bulletin.information} />
                     </p>
 
+                    {/* Рендерим слайдер, если есть хотя бы одно изображение */}
+
                     <div
                         className={styles.bulletinSlider}
                         onTouchStart={handleTouchStart}
                         onTouchMove={handleTouchMove}
                         onTouchEnd={handleTouchEnd}>
-                        <img
-                            src={images[currentIndex]}
-                            alt={`Slide ${currentIndex}`}
-                            className={styles.newsImg}
-                        />
+                        {images[currentIndex] ? (
+                            <img
+                                src={images[currentIndex]}
+                                alt={`Slide ${currentIndex}`}
+                                className={styles.newsImg}
+                            />
+                        ) : (
+                            <p>Изображение не доступно</p>
+                        )}
                         <span className={styles.newsInscript}>
                             <FormatText text={bulletin.inscript} />
                         </span>
+                        {/* Отображаем кнопки, если изображений больше одного */}
                         <div className={styles.buttonWrapper}>
-                            <button
-                                onClick={prevSlide}
-                                className={styles.leftArrow}>
-                                ❮
-                            </button>
-                            <button
-                                onClick={nextSlide}
-                                className={styles.rightArrow}>
-                                ❯
-                            </button>
+                            {images.length > 1 && (
+                                // чтобы избежать рендеринга пустого элемента
+                                <button
+                                    onClick={prevSlide}
+                                    className={styles.leftArrow}>
+                                    ❮
+                                </button>
+                            )}
+                            {images.length > 1 && (
+                                // чтобы избежать рендеринга пустого элемента.
+                                <button
+                                    onClick={nextSlide}
+                                    className={styles.rightArrow}>
+                                    ❯
+                                </button>
+                            )}
                         </div>
                     </div>
                     <div className={styles.inlineList}></div>
