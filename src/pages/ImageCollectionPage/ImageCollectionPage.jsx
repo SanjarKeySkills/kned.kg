@@ -20,7 +20,6 @@ const ImageCollectionPage = () => {
         saturday: businessSaturdayData,
         happening: BusinessEventData,
     };
-
     const event = mapEventData[type]?.find((item) => item.id === id);
     // ? - проверка корректного существования данных
     // Проверка на длину массива до рендеринга изображений
