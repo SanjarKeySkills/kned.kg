@@ -50,8 +50,12 @@ const BulletinPage = () => {
     return (
         <>
             <HeroHeader />
+
             <div className={styles.newsPage}>
                 <div className={styles.newsPageContainer}>
+                    <a href="/news" className={styles.backToNewsBtn}>
+                        Венрутся к новостям
+                    </a>
                     <div className={styles.titleNewsWrapper}>
                         <h2 className={styles.newsTitle}>
                             <FormatText text={bulletin.title} />
@@ -102,6 +106,9 @@ const BulletinPage = () => {
                     <p className={styles.newsInformation}>
                         <FormatText text={bulletin.information3} />
                     </p>
+                    <a href="/news" className={styles.backToNewsBtn}>
+                        Венрутся к новостям
+                    </a>
                 </div>
             </div>
         </>

@@ -7,6 +7,19 @@
     font-size: 20px;
 }
 
+.backToNewsBtn {
+    border: none;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: #000;
+    font-size: 16px;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    text-decoration: none;
+}
+
 .newsPageContainer {
     padding: 0px 72px 8px;
     display: flex;
@@ -15,6 +28,7 @@
 }
 
 .titleNewsWrapper {
+    padding-top: 24px;
     border-bottom: 3px solid #e7ecef;
 }
 
@@ -78,6 +92,7 @@
 
 .newsInformation {
     text-align: justify;
+    padding-bottom: 32px;
 }
 
 .inlineList {
