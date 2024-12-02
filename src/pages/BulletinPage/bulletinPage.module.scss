@@ -18,6 +18,10 @@
     font-weight: 400;
     color: #ffffff;
     text-decoration: none;
+    &:hover {
+        background-color: #bb8916;
+        color: #ffffff;
+    }
 }
 
 .newsPageContainer {

@@ -62,7 +62,7 @@ const BulletinPage = () => {
             <div className={styles.newsPage}>
                 <div className={styles.newsPageContainer}>
                     <a href="/news" className={styles.backToNewsBtn}>
-                        Венрутся к новостям
+                        Вернуться к новостям
                     </a>
                     <div className={styles.titleNewsWrapper}>
                         <h2 className={styles.newsTitle}>
@@ -128,7 +128,7 @@ const BulletinPage = () => {
                         <FormatText text={bulletin.information3} />
                     </p>
                     <a href="/news" className={styles.backToNewsBtn}>
-                        Венрутся к новостям
+                        Вернуться к новостям
                     </a>
                 </div>
             </div>
