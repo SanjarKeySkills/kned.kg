@@ -1,26 +1,24 @@
 import React, { useState, useRef, useEffect } from "react";
-import styles from "./sliderCourse.module.scss";
-import bannerAnnoncement1 from "../../../../assets/bannerAnnoncement_kd.png";
-import bannerAnnoncement2 from "../../../../assets/bannerAnnoncement_ks.png";
-import bannerAnnoncement1_respocive from "../../../../assets/course_banners/banner_course_kd.png";
-import bannerAnnoncement2_respocive from "../../../../assets/course_banners/banner_course_ks.png";
+import styles from "./sliderCourseIfcBtn.module.scss";
+import SliderCourseKd from "../../../UI/ImgSliderCourse/ImgSliderCourseKd/imgSliderCourseKd.jsx";
+import SliderCourseKs from "../../../UI/ImgSliderCourse/ImgSliderCourseKs/imgSliderCourseKs.jsx";
+import SliderCourseResponciveKd from "../../../UI/ImgSliderCourse/ImgSliderCourseResponciveKd/ImgSliderCourseResponciveKd.jsx";
+import SliderCourseResponciveKs from "../../../UI/ImgSliderCourse/ImgSliderCourseResponciveKs/ImgSliderCourseResponciveKs.jsx";
 
 // window.innerWidth - определяет размер окна и условно рендерить нужное изображение в компоненте.
 // Использование медиазапросов CSS для скрытия нужных изображений.
 // условный рендеринг с использованием JavaScript.
-const images = [bannerAnnoncement1, bannerAnnoncement2];
-const images_responcive = [
-    bannerAnnoncement1_respocive,
-    bannerAnnoncement2_respocive,
+const banners = [<SliderCourseKd />, <SliderCourseKs />];
+const banners_responcive = [
+    <SliderCourseResponciveKd />,
+    <SliderCourseResponciveKs />,
 ];
 
-const CourseSlider = () => {
+const SliderTest = () => {
     // Индекс для мобильной и десктопной версии
     const [desktopIndex, setDesktopIndex] = useState(0);
     const [mobileIndex, setMobileIndex] = useState(0);
-    const [isMobile, setIsMobile] = useState(false); // Для проверки, мобильное ли устройство
-
-    // const [currentIndex, setCurrentIndex] = useState(0); // добавляем хук useState(false)
+    const [isMobile, setIsMobile] = useState(false);
 
     const touchStartX = useRef(0);
     const touchEndX = useRef(0);
@@ -39,29 +37,27 @@ const CourseSlider = () => {
     const nextSlide = () => {
         if (isMobile) {
             setMobileIndex(
-                (prevIndex) => (prevIndex + 1) % images_responcive.length
+                (prevIndex) => (prevIndex + 1) % banners_responcive.length
             );
         } else {
-            setDesktopIndex((prevIndex) => (prevIndex + 1) % images.length);
+            setDesktopIndex((prevIndex) => (prevIndex + 1) % banners.length);
         }
     };
 
     // Логика для перехода на предыдущий слайд
-
     const prevSlide = () => {
         if (isMobile) {
             setMobileIndex(
                 (prevIndex) =>
-                    (prevIndex - 1 + images_responcive.length) %
-                    images_responcive.length
+                    (prevIndex - 1 + banners_responcive.length) %
+                    banners_responcive.length
             );
         } else {
             setDesktopIndex(
-                (prevIndex) => (prevIndex - 1 + images.length) % images.length
+                (prevIndex) => (prevIndex - 1 + banners.length) % banners.length
             );
         }
     };
-
     // Логика для обработки свайпов на мобильных устройствах
     const handleTouchStart = (e) => {
         touchStartX.current = e.touches[0].clientX;
@@ -88,15 +84,12 @@ const CourseSlider = () => {
             <button onClick={prevSlide} className={styles.leftArrow}>
                 ❮
             </button>
-            <img
-                src={
-                    isMobile
-                        ? images_responcive[mobileIndex] // Для мобильной версии
-                        : images[desktopIndex] // Для десктопной версии
-                }
-                alt={`Slide ${isMobile ? mobileIndex : desktopIndex}`}
-                className={isMobile ? styles.slide_responcive : styles.slide}
-            />
+            {/* Условный рендеринг слайдов для мобильных и десктопных устройств */}
+            <div className={isMobile ? styles.slide_responcive : styles.slide}>
+                {isMobile
+                    ? banners_responcive[mobileIndex]
+                    : banners[desktopIndex]}
+            </div>
             <button onClick={nextSlide} className={styles.rightArrow}>
                 ❯
             </button>
@@ -104,15 +97,4 @@ const CourseSlider = () => {
     );
 };
 
-export default CourseSlider;
-
-/* <img
-                src={images[currentIndex]}
-                alt={`Slide ${currentIndex}`}
-                className={styles.slide}
-            />
-            <img
-                src={images_responcive[currentIndex]}
-                alt={`Slide ${currentIndex}`}
-                className={styles.slide_responcive}
-            /> */
+export default SliderTest;

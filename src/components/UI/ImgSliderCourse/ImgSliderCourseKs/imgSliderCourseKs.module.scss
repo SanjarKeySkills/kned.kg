@@ -1,0 +1,25 @@
+.imgSliderCourse {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgSliderCourseWrapper {
+    width: 1024px;
+    height: 280px;
+    background-image: url(../../../../assets/bannerAnnoncement_ks.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.ifc_logo {
+    width: 72px;
+    position: relative;
+    z-index: 3;
+    top: 60%;
+    left: 36%;
+    cursor: pointer;
+}

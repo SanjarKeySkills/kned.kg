@@ -1,0 +1,23 @@
+.ImgSliderCourseResponciveKs {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ImgSliderCourseResponciveKsWrapper {
+    width: 240px;
+    height: 480px;
+    background-image: url(../../../../assets/course_banners/banner_course_responcive_ks.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.ifc_logo {
+    width: 72%;
+    position: absolute;
+    z-index: 3;
+    top: 8%;
+    left: 16%;
+    cursor: pointer;
+}

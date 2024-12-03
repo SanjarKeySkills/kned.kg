@@ -1,0 +1,84 @@
+.slider {
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 900px;
+    height: 100%;
+    margin: 32px auto;
+}
+
+.slide {
+    width: 100%;
+    height: auto; /* Это работает для десктопа */
+}
+.slide_responcive {
+    max-width: 320px;
+    height: 100%; /* Переходим на полную высоту контейнера */
+    object-fit: cover; /* Заполняет контейнер, сохраняя пропорции изображения */
+    object-position: center; /* Выравнивание изображения по центру */
+}
+
+.buttonWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+}
+
+.leftArrow {
+    background: none;
+    border: none;
+    font-size: 32px;
+    cursor: pointer;
+    color: rgb(54, 54, 54);
+    background-color: #bfced6;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    left: -40px;
+    border-radius: 8px;
+}
+
+.rightArrow {
+    background: none;
+    border: none;
+    font-size: 32px;
+    cursor: pointer;
+    color: rgb(54, 54, 54);
+    background-color: #bfced6;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    right: -40px;
+    border-radius: 8px;
+}
+
+@media (max-width: 1024px) {
+    .leftArrow {
+        left: 16px;
+    }
+    .rightArrow {
+        right: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .slide_responcive {
+        width: 100%;
+        height: 100%; /* Обеспечиваем 100% высоту для мобильной версии */
+    }
+    .leftArrow {
+        left: 16px;
+        width: 56px;
+        height: 48px;
+    }
+    .rightArrow {
+        right: 16px;
+        width: 56px;
+        height: 48px;
+    }
+}
