@@ -1,7 +1,7 @@
 import React from "react";
 import MainHero from "../../components/Widget/MainBlock/MainHero/mainHero.jsx";
 import WelcomeBlock from "../../components/Widget/MainBlock/WelcomeBlock/welcomeBlock.jsx";
-import SliderCourse from "../../components/Widget/MainBlock/SliderCourse/sliderCourse.jsx";
+import SliderCourseIfcBtn from "../../components/Widget/SliderCourseIfcBtn/SliderCourseIfcBtn.jsx";
 import InfoTableBlock from "../../components/Widget/MainBlock/InfoTableBlock/infoTableBlock.jsx";
 import NewsBlock from "../../components/Widget/MainBlock/NewsBlock/newsBlock.jsx";
 import PartnersSlider from "../../components/Widget/MainBlock/PartnersSlider/partnersSlider.jsx";
@@ -12,7 +12,7 @@ const MainPage = () => {
         <>
             <MainHero />
             <WelcomeBlock />
-            <SliderCourse />
+            <SliderCourseIfcBtn />
             <InfoTableBlock />
             <NewsBlock />
             <PartnersSlider />

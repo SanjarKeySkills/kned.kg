@@ -1,9 +1,9 @@
 import React, { useState, useRef, useEffect } from "react";
 import styles from "./sliderCourseIfcBtn.module.scss";
-import SliderCourseKd from "../../../UI/ImgSliderCourse/ImgSliderCourseKd/imgSliderCourseKd.jsx";
-import SliderCourseKs from "../../../UI/ImgSliderCourse/ImgSliderCourseKs/imgSliderCourseKs.jsx";
-import SliderCourseResponciveKd from "../../../UI/ImgSliderCourse/ImgSliderCourseResponciveKd/ImgSliderCourseResponciveKd.jsx";
-import SliderCourseResponciveKs from "../../../UI/ImgSliderCourse/ImgSliderCourseResponciveKs/ImgSliderCourseResponciveKs.jsx";
+import SliderCourseKd from "../../UI/ImgSliderCourse/ImgSliderCourseKd/imgSliderCourseKd.jsx";
+import SliderCourseKs from "../../UI/ImgSliderCourse/ImgSliderCourseKs/imgSliderCourseKs.jsx";
+import SliderCourseResponciveKd from "../../UI/ImgSliderCourse/ImgSliderCourseResponciveKd/ImgSliderCourseResponciveKd.jsx";
+import SliderCourseResponciveKs from "../../UI/ImgSliderCourse/ImgSliderCourseResponciveKs/ImgSliderCourseResponciveKs.jsx";
 
 // window.innerWidth - определяет размер окна и условно рендерить нужное изображение в компоненте.
 // Использование медиазапросов CSS для скрытия нужных изображений.
