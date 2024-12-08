@@ -6,7 +6,7 @@ const CharterPage = () => {
     return (
         <div>
             <HeroHeader />
-            <div>
+            <div className={styles.charterPage}>
                 <p>
                     I. ОБЩИЕ ПОЛОЖЕНИЯ 1.1. Общественное Объединение «Палата
                     Независимых Директоров Кыргызской Республики» (далее –

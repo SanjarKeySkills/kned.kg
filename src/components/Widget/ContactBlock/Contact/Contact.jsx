@@ -190,7 +190,7 @@ const Contact = () => {
     const [successMessage, setSuccessMessage] = useState("");
 
     const scriptURL =
-        "https://script.google.com/macros/s/AKfycbxETZlq1ZE4bPuOrRSKL5EvebWGX6QvxPZrBuf18CR-n3c4FQuwzlbVEDagMA49MBs/exec";
+        "https://script.google.com/macros/s/AKfycbxyDZ4BqVFkBH_zOrX91ELD35BdjCQYoEivM1V1AK_WbPmqmgkBCeuKcfI3U2y6vu0R/exec";
 
     // Обработчик изменений в форме
     const handleInputChange = (e) => {

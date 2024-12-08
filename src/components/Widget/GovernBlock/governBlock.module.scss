@@ -82,7 +82,9 @@
         align-items: center;
     }
     .corpsecAndAuditorWrapper {
+        flex-direction: column;
         justify-content: center;
+        gap: 40px;
     }
     .presidiumWrapper {
         flex-direction: column;

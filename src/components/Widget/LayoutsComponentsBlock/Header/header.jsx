@@ -65,11 +65,11 @@ const Header = () => {
                                             ГАЛЛЕРЕЯ
                                         </a>
                                     </li>
-                                    <li>
+                                    {/* <li>
                                         <a href="#" className={styles.navLink}>
                                             ВИДЕОРОЛИКИ
                                         </a>
-                                    </li>
+                                    </li> */}
                                 </ul>
                             )}
                         </li>
@@ -157,11 +157,11 @@ const Header = () => {
                                     ГАЛЛЕРЕЯ
                                 </a>
                             </li>
-                            <li>
+                            {/* <li>
                                 <a href="#" className={styles.linkBottom}>
                                     ВИДЕОРОЛИКИ
                                 </a>
-                            </li>
+                            </li> */}
                         </ul>
                         <a className={styles.buttonHero} href="/contact">
                             ВСТУПИТЬ В ПАЛАТУ
