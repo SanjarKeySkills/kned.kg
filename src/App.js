@@ -16,7 +16,7 @@ import { NewsPage } from "./pages/NewsPage/NewsPage.async.jsx";
 import { BulletinPage } from "./pages/BulletinPage/BulletinPage.async.jsx";
 import { ArticlesPage } from "./pages/ArticlesPage/ArticlesPage.async.jsx";
 import { ArticlePage } from "./pages/ArticlePage/ArticlePage.async.jsx";
-import { CharterPage } from "./pages/CharterPage/";
+// import { CharterPage } from "./pages/CharterPage/";
 
 const App = () => {
     return (

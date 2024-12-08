@@ -168,7 +168,6 @@
 //
 //
 //
-
 import React, { useState } from "react";
 import styles from "./contact.module.scss";
 import Button from "../../../UI/Button/button.jsx";
@@ -176,19 +175,22 @@ import instLogo from "../../../../assets/instagram-logo_contact.svg";
 import facebookLogo from "../../../../assets/facebook-logo_contact.svg";
 
 const Contact = () => {
-    const [formData, setFormData] = useState({
+    // Начальные значения формы
+    const initialFormData = {
         name: "",
         email: "",
         phone: "",
         message: "",
         membership: "active", // Значение по умолчанию
-    });
-    const [loading, setLoading] = useState(false); // Для отображения загрузки при отправке
-    const [errorMessage, setErrorMessage] = useState(""); // Для ошибок
-    const [successMessage, setSuccessMessage] = useState(""); // Для успешных сообщений
+    };
+
+    const [formData, setFormData] = useState(initialFormData);
+    const [loading, setLoading] = useState(false);
+    const [errorMessage, setErrorMessage] = useState("");
+    const [successMessage, setSuccessMessage] = useState("");
 
     const scriptURL =
-        "https://script.google.com/macros/s/AKfycbyd1N8SX-qGRGTjN_maIQcK-VjGjNcTgS-9L0bhMfsKBZchyevfOeP4Xz3bTLCLIs8H/exec";
+        "https://script.google.com/macros/s/AKfycbxETZlq1ZE4bPuOrRSKL5EvebWGX6QvxPZrBuf18CR-n3c4FQuwzlbVEDagMA49MBs/exec";
 
     // Обработчик изменений в форме
     const handleInputChange = (e) => {
@@ -228,6 +230,10 @@ const Contact = () => {
                 setLoading(false);
                 setErrorMessage("Ошибка при отправке данных!");
                 alert("Error! Ошибка при отправке данных.");
+            })
+            .finally(() => {
+                // После отправки сбрасываем форму
+                setFormData(initialFormData);
             });
     };
 
@@ -247,7 +253,7 @@ const Contact = () => {
                     </div>
 
                     <div className={styles.contactFormButtonsAndSocial}>
-                        <a href="#" className={styles.sDarkLink}>
+                        <a href="/" className={styles.sDarkLink}>
                             Реквизиты
                         </a>
                         <a href="/about" className={styles.sDarkLink}>
@@ -355,7 +361,7 @@ const Contact = () => {
                         </div>
                         <div className={styles.buttonWrapper}>
                             <Button size="s" variant="outlined" type="submit">
-                                {loading ? "Отправка..." : "ОТПРАВИТЬ"}
+                                {loading ? "ОТПРАВКА..." : "ОТПРАВИТЬ"}
                             </Button>
                         </div>
                     </form>
