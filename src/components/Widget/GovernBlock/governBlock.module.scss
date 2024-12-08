@@ -61,6 +61,22 @@
     gap: 32px;
 }
 
+.constituentDdocuments {
+    margin: 0 auto;
+    ul {
+        display: flex;
+        flex-direction: row;
+        text-decoration: none;
+        li {
+            list-style-type: none;
+        }
+        a {
+            text-decoration: none;
+            color: #787878;
+        }
+    }
+}
+
 // Responce
 @media (max-width: 1152px) {
     .councilWrapper {
@@ -89,6 +105,14 @@
     .presidiumWrapper {
         flex-direction: column;
         gap: 32px;
+    }
+
+    .constituentDdocuments {
+        ul {
+            flex-direction: column;
+            gap: 40px;
+            font-size: 14px;
+        }
     }
 }
 

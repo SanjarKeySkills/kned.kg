@@ -17,6 +17,8 @@ import { BulletinPage } from "./pages/BulletinPage/BulletinPage.async.jsx";
 import { ArticlesPage } from "./pages/ArticlesPage/ArticlesPage.async.jsx";
 import { ArticlePage } from "./pages/ArticlePage/ArticlePage.async.jsx";
 import { CharterPage } from "./pages/СharterPage/CharterPage.async.jsx";
+import { MembershipRegulationsPage } from "./pages/MembershipRegulationsPage/MembershipRegulationsPage.async.jsx";
+import { GovernRegulationsPage } from "./pages/GovernRegulationsPage/GovernRegulationsPage.async.jsx";
 
 const App = () => {
     return (
@@ -147,6 +149,23 @@ const App = () => {
                             </Suspense>
                         }
                     />
+                    <Route
+                        path="/membershipRegulations"
+                        element={
+                            <Suspense fallback={<div>Loading...</div>}>
+                                <MembershipRegulationsPage />
+                            </Suspense>
+                        }
+                    />
+                    <Route
+                        path="/governRegulations"
+                        element={
+                            <Suspense fallback={<div>Loading...</div>}>
+                                <GovernRegulationsPage />
+                            </Suspense>
+                        }
+                    />
+
                     <Route
                         path="*"
                         element={

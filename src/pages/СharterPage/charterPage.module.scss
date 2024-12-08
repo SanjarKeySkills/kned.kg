@@ -1,0 +1,16 @@
+.charterPage {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    p {
+        text-align: justify;
+    }
+}
+
+.charterPageWrapper {
+    width: 1440px;
+    padding: 24px;
+}
