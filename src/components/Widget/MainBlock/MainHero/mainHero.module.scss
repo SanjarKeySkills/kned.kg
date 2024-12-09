@@ -1,12 +1,13 @@
 .mainHero {
     width: 100%;
     padding: 0 24px;
+    position: relative; //для кнопки 100vh
 }
 
 .mainHeroWrapper {
     position: relative;
     max-width: 1440px;
-    height: 480px;
+    height: 480px; // Высота блока с видео
     margin: 144px auto 40px;
     display: flex;
     justify-content: center;
@@ -22,10 +23,12 @@
 }
 
 .mainHeroContent {
-    position: absolute;
-    top: 24%;
-    left: 0;
     width: 100%;
+    position: absolute;
+    top: 50%; //для кнопки 100vh
+    left: 50%; //для кнопки 100vh
+    transform: translate(-50%, -50%); //для кнопки 100vh
+    text-align: center; //для кнопки 100vh
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,6 +44,23 @@
     .heroMoto {
         font-size: 24px;
         text-align: center;
+    }
+}
+
+.scrollButton {
+    position: fixed; /* Кнопка фиксируется внизу экрана */
+    bottom: 80px; /* Отступ от нижнего края */
+    right: 0%; /* Центрирование кнопки по горизонтали */
+    transform: translateX(-50%); /* Центрирование */
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 10;
+    transition: color 0.3s ease;
+
+    img {
+        width: 80px;
     }
 }
 
