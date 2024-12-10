@@ -7,16 +7,42 @@
 
 .imgPartnerSlideWrapper {
     width: 1024px;
-    height: 280px;
+    height: 240px;
     background-color: #ffffff;
     position: relative;
 }
 
-.ifc_logo {
-    width: 72px;
+.logoContaner {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 12px;
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #5d6267;
+}
+
+.partnerslogo {
+    width: 160px;
     position: relative;
     z-index: 3;
-    top: 60%;
-    left: 36%;
+    top: 0;
+    left: 0;
     cursor: pointer;
+    padding-bottom: 8px;
+}
+.partnersLogoLink {
+    width: 240px;
 }
