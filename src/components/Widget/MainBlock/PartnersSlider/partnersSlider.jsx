@@ -1,39 +1,36 @@
-import React from "react"; //  { useState, useRef }
+import React, { useState, useRef } from "react";
 import styles from "./partnersSlider.module.scss";
-import partnersLogo1 from "../../../../assets/partnersLogo1.png";
-import partnersLogo2 from "../../../../assets/partnersLogo2.png";
+import partnersSlide1 from "../../../UI/ImgSliderPartners/ImgSlide1/ImgSlide1.jsx";
+import partnersSlide2 from "../../../UI/ImgSliderPartners/ImgSlide2/ImgSlide2.jsx";
+import partnersSlide3 from "../../../UI/ImgSliderPartners/ImgSlide3/ImgSlide3.jsx";
+import partnersSlide4 from "../../../UI/ImgSliderPartners/ImgSlide4/ImgSlide4.jsx";
+import partnersSlide5 from "../../../UI/ImgSliderPartners/ImgSlide5/ImgSlide5.jsx";
+import partnersSlide6 from "../../../UI/ImgSliderPartners/ImgSlide6/ImgSlide6.jsx";
 
-const images = [partnersLogo1, partnersLogo2];
+const images = [
+    partnersSlide1,
+    partnersSlide2,
+    partnersSlide3,
+    partnersSlide4,
+    partnersSlide5,
+    partnersSlide6,
+];
 
 const PartnersSlider = () => {
+    const [desktopIndex, setDesktopIndex] = useState(0); // Состояние для индекса слайда
     const touchStartX = useRef(0);
     const touchEndX = useRef(0);
 
     // Логика для перехода к следующему слайду
     const nextSlide = () => {
-        if (isMobile) {
-            setMobileIndex(
-                (prevIndex) => (prevIndex + 1) % images_responcive.length
-            );
-        } else {
-            setDesktopIndex((prevIndex) => (prevIndex + 1) % images.length);
-        }
+        setDesktopIndex((prevIndex) => (prevIndex + 1) % images.length);
     };
 
     // Логика для перехода на предыдущий слайд
-
     const prevSlide = () => {
-        if (isMobile) {
-            setMobileIndex(
-                (prevIndex) =>
-                    (prevIndex - 1 + images_responcive.length) %
-                    images_responcive.length
-            );
-        } else {
-            setDesktopIndex(
-                (prevIndex) => (prevIndex - 1 + images.length) % images.length
-            );
-        }
+        setDesktopIndex(
+            (prevIndex) => (prevIndex - 1 + images.length) % images.length
+        );
     };
 
     // Логика для обработки свайпов на мобильных устройствах
@@ -61,15 +58,9 @@ const PartnersSlider = () => {
             <button onClick={prevSlide} className={styles.leftArrow}>
                 ❮
             </button>
-            <img
-                src={
-                    isMobile
-                        ? images_responcive[mobileIndex] // Для мобильной версии
-                        : images[desktopIndex] // Для десктопной версии
-                }
-                alt={`Slide ${isMobile ? mobileIndex : desktopIndex}`}
-                className={isMobile ? styles.slide_responcive : styles.slide}
-            />
+            <div className={styles.slide}>
+                {React.createElement(images[desktopIndex])}
+            </div>
             <button onClick={nextSlide} className={styles.rightArrow}>
                 ❯
             </button>
