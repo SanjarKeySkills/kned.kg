@@ -9,12 +9,6 @@ function MemberCards() {
     return (
         <>
             <div className={styles.membersItem}>
-                <h4 className={styles.membersItemWrapper}>ПОЧЕТНЫЕ</h4>
-                <div className={styles.cardList}>
-                    <MembersGenerator data={HonorMembersData} type="honor" />
-                </div>
-            </div>
-            <div className={styles.membersItem}>
                 <h4 className={styles.membersItemWrapper}>ДЕЙСТВИТЕЛЬНЫЕ</h4>
                 <div className={styles.cardList}>
                     <MembersGenerator data={ActiveMembersData} type="active" />
@@ -27,6 +21,12 @@ function MemberCards() {
                         data={AssociatedMembersData}
                         type="associated"
                     />
+                </div>
+            </div>
+            <div className={styles.membersItem}>
+                <h4 className={styles.membersItemWrapper}>ПОЧЕТНЫЕ</h4>
+                <div className={styles.cardList}>
+                    <MembersGenerator data={HonorMembersData} type="honor" />
                 </div>
             </div>
         </>

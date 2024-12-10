@@ -1,17 +1,13 @@
 .memberPage {
     width: 100%;
-    padding: 144px 24px 0;
+    padding: 144px 8px 0 16px;
     display: flex;
     justify-content: center;
 }
 
 .memberPageWrapper {
-    // padding: 0 56px 0 48px;
     padding-left: 48px;
     width: 1440px;
-    // display: flex;
-    // flex-direction: column;
-    // gap: 24px;
 }
 
 .memberTitle {
@@ -69,6 +65,9 @@
 }
 
 @media (max-width: 768px) {
+    .memberPageWrapper {
+        padding: 16px 8px 24px 24px;
+    }
     .memberName {
         font-size: 32px;
     }
@@ -86,5 +85,9 @@
         flex-direction: column;
         gap: 16px;
         padding: 24px 0 0;
+    }
+    .memberDataDescription {
+        padding: 16px;
+        font-size: 16px;
     }
 }
