@@ -7,6 +7,13 @@ import partnersSlide4 from "../../../UI/ImgSliderPartners/ImgSlide4/ImgSlide4.js
 import partnersSlide5 from "../../../UI/ImgSliderPartners/ImgSlide5/ImgSlide5.jsx";
 import partnersSlide6 from "../../../UI/ImgSliderPartners/ImgSlide6/ImgSlide6.jsx";
 
+import partnersSlide1_responcive from "../../../UI/ImgSliderPartners/ImgSlide1/ImgSlide1.jsx";
+import partnersSlide2_responcive from "../../../UI/ImgSliderPartners/ImgSlide2/ImgSlide2.jsx";
+import partnersSlide3_responcive from "../../../UI/ImgSliderPartners/ImgSlide3/ImgSlide3.jsx";
+import partnersSlide4_responcive from "../../../UI/ImgSliderPartners/ImgSlide4/ImgSlide4.jsx";
+import partnersSlide5_responcive from "../../../UI/ImgSliderPartners/ImgSlide5/ImgSlide5.jsx";
+import partnersSlide6_responcive from "../../../UI/ImgSliderPartners/ImgSlide6/ImgSlide6.jsx";
+
 const images = [
     partnersSlide1,
     partnersSlide2,
@@ -16,8 +23,16 @@ const images = [
     partnersSlide6,
 ];
 
+const partnersLogos_responcive = [];
+
+// window.innerWidth - определяет размер окна и условно рендерить нужное изображение в компоненте.
+// Использование медиазапросов CSS для скрытия нужных изображений.
+// условный рендеринг с использованием JavaScript.
 const PartnersSlider = () => {
+    // Индекс для мобильной и десктопной версии
     const [desktopIndex, setDesktopIndex] = useState(0); // Состояние для индекса слайда
+    const [mobileIndex, setMobileIndex] = useState(0);
+    const [isMobile, setIsMobile] = useState(false); // Для проверки, мобильное ли устройство
     const touchStartX = useRef(0);
     const touchEndX = useRef(0);
 

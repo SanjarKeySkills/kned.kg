@@ -1,5 +1,5 @@
 import React from "react";
-// import MainHero from "../../components/Widget/MainBlock/MainHero/mainHero.jsx";
+import MainHero from "../../components/Widget/MainBlock/MainHero/mainHero.jsx";
 // import WelcomeBlock from "../../components/Widget/MainBlock/WelcomeBlock/welcomeBlock.jsx";
 // import SliderCourseIfcBtn from "../../components/Widget/SliderCourseIfcBtn/SliderCourseIfcBtn.jsx";
 // import InfoTableBlock from "../../components/Widget/MainBlock/InfoTableBlock/infoTableBlock.jsx";
@@ -10,8 +10,8 @@ import React from "react";
 const MainPage = () => {
     return (
         <>
-            {/* <MainHero />
-            <WelcomeBlock />
+            <MainHero />
+            {/* <WelcomeBlock />
             <SliderCourseIfcBtn />
             <InfoTableBlock />
             <NewsBlock />
