@@ -6,13 +6,12 @@ import PartnersSlide3 from "../../../UI/ImgSliderPartners/ImgSlide3/ImgSlide3.js
 import PartnersSlide4 from "../../../UI/ImgSliderPartners/ImgSlide4/ImgSlide4.jsx";
 import PartnersSlide5 from "../../../UI/ImgSliderPartners/ImgSlide5/ImgSlide5.jsx";
 import PartnersSlide6 from "../../../UI/ImgSliderPartners/ImgSlide6/ImgSlide6.jsx";
-
-import PartnersSlide1_responcive from "../../../UI/ImgSliderPartners/ImgSlide1/ImgSlide1.jsx";
-import PartnersSlide2_responcive from "../../../UI/ImgSliderPartners/ImgSlide2/ImgSlide2.jsx";
-import PartnersSlide3_responcive from "../../../UI/ImgSliderPartners/ImgSlide3/ImgSlide3.jsx";
-import PartnersSlide4_responcive from "../../../UI/ImgSliderPartners/ImgSlide4/ImgSlide4.jsx";
-import PartnersSlide5_responcive from "../../../UI/ImgSliderPartners/ImgSlide5/ImgSlide5.jsx";
-import PartnersSlide6_responcive from "../../../UI/ImgSliderPartners/ImgSlide6/ImgSlide6.jsx";
+import PartnersSlide1_responcive from "../../../UI/ImgSliderPartners/ImgSlideResponcive1/ImgSlideResponcive1.jsx";
+import PartnersSlide2_responcive from "../../../UI/ImgSliderPartners/ImgSlideResponcive2/ImgSlideResponcive2.jsx";
+import PartnersSlide3_responcive from "../../../UI/ImgSliderPartners/ImgSlideResponcive3/ImgSlideResponcive3.jsx";
+import PartnersSlide4_responcive from "../../../UI/ImgSliderPartners/ImgSlideResponcive4/ImgSlideResponcive4.jsx";
+import PartnersSlide5_responcive from "../../../UI/ImgSliderPartners/ImgSlideResponcive5/ImgSlideResponcive5.jsx";
+import PartnersSlide6_responcive from "../../../UI/ImgSliderPartners/ImgSlideResponcive6/ImgSlideResponcive6.jsx";
 
 // window.innerWidth - определяет размер окна и условно рендерить нужное изображение в компоненте.
 // Использование медиазапросов CSS для скрытия нужных изображений.
@@ -35,10 +34,11 @@ const partnersLogos_responcive = [
 ];
 
 const PartnersSlider = () => {
-    // Индекс для мобильной и десктопной версии
+    // Индексы слайдов для мобильной и десктопной версии
     const [desktopIndex, setDesktopIndex] = useState(0); // Состояние для индекса слайда
     const [mobileIndex, setMobileIndex] = useState(0);
-    const [isMobile, setIsMobile] = useState(false); // Для проверки, мобильное ли устройство
+    // const [isMobile, setIsMobile] = useState(false); // Для проверки, мобильное ли устройство 1
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 800); // Для проверки, мобильное ли устройство
 
     const touchStartX = useRef(0);
     const touchEndX = useRef(0);
@@ -46,11 +46,11 @@ const PartnersSlider = () => {
     // Проверяем размер окна и обновляем состояние
     useEffect(() => {
         const handleResize = () => {
-            setIsMobile(window.innerWidth <= 768); // для мобильных устройств
+            setIsMobile(window.innerWidth <= 800); // Обновляем состояние isMobile при изменении размера окна
         };
-        window.addEventListener("resize", handleResize);
-        handleResize(); // Сразу вызываем для начальной инициализации
-        return () => window.removeEventListener("resize", handleResize);
+        window.addEventListener("resize", handleResize); // Подключаем обработчик события resize
+        handleResize(); // Сразу вызываем для начальной инициализации 1
+        return () => window.removeEventListener("resize", handleResize); // Очищаем обработчик при размонтировании
     }, []);
 
     // Логика для перехода к следующему слайду
@@ -78,6 +78,7 @@ const PartnersSlider = () => {
             );
         }
     };
+
     // Логика для обработки свайпов на мобильных устройствах
     const handleTouchStart = (e) => {
         touchStartX.current = e.touches[0].clientX;
@@ -105,10 +106,15 @@ const PartnersSlider = () => {
                 ❮
             </button>
             {/* Условный рендеринг слайдов для мобильных и десктопных устройств */}
-            <div className={isMobile ? styles.slide_responcive : styles.slide}>
-                {isMobile
-                    ? partnersLogos_responcive[mobileIndex]
-                    : images[desktopIndex]}
+            <div
+                className={isMobile ? styles.slide_responcive : styles.slide}
+                key={isMobile ? mobileIndex : desktopIndex} // Ключ для гарантированного ререндера
+            >
+                {
+                    isMobile
+                        ? partnersLogos_responcive[mobileIndex] // Для мобильной версии
+                        : images[desktopIndex] // Для десктопной версии
+                }
             </div>
             <button onClick={nextSlide} className={styles.rightArrow}>
                 ❯

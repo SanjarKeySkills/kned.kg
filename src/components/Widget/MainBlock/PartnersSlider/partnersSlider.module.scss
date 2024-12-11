@@ -11,6 +11,7 @@
         text-transform: uppercase;
     }
 }
+
 .slider {
     display: flex;
     flex-direction: column;
@@ -22,10 +23,12 @@
     max-height: 160px;
     margin: 16px auto 64px;
 }
+
 .slide {
     width: 100%;
     height: auto;
 }
+
 .leftArrow {
     padding: 0 32px 0;
     background: none;
@@ -41,6 +44,7 @@
     z-index: 1;
     transform: translateY(-50%);
 }
+
 .rightArrow {
     padding: 0 32px 0;
     background: none;
