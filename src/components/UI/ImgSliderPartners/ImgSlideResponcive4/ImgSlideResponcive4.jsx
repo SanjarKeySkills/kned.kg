@@ -1,8 +1,8 @@
 import React from "react";
-import styles from "../imgSliderPartnes.module.scss";
-import logo_1 from "../../../../assets/partnersLogo/qid.png";
-import logo_2 from "../../../../assets/partnersLogo/sbk.png";
-import logo_3 from "../../../../assets/partnersLogo/blank.png";
+import styles from "../imgSlideResponcive.module.scss";
+import logo_1 from "../../../../assets/partnersLogo/gfnkr.png";
+import logo_2 from "../../../../assets/partnersLogo/ibc.png";
+import logo_3 from "../../../../assets/partnersLogo/ifc.png";
 
 const ImgPartnersSlide = () => {
     return (
@@ -11,7 +11,7 @@ const ImgPartnersSlide = () => {
                 <div className={styles.imgPartnerSlideWrapper}>
                     <div className={styles.logoContaner}>
                         <a
-                            href="https://main.qid.kz/"
+                            href="https://fsa.gov.kg/"
                             className={styles.partnersLogoLink}>
                             <img
                                 src={logo_1}
@@ -20,7 +20,7 @@ const ImgPartnersSlide = () => {
                             />
                         </a>
                         <a
-                            href="https://ub.kg/en/"
+                            href="https://www.ibc.kg/"
                             className={styles.partnersLogoLink}>
                             <img
                                 src={logo_2}
@@ -28,13 +28,14 @@ const ImgPartnersSlide = () => {
                                 className={styles.partnerslogo}
                             />
                         </a>
-                        <a href="#" className={styles.partnersLogoLink}>
+                        <a
+                            href="https://www.ifc.org/en/home"
+                            className={styles.partnersLogoLink}>
                             <img
                                 src={logo_3}
                                 alt="logo_3"
                                 className={styles.partnerslogo}
                             />
-                            <span>ПАЛЛАДИУМ ИНТЕРНЭШНЛ</span>
                         </a>
                     </div>
                 </div>

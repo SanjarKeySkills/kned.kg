@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../imgSliderPartnes.module.scss";
+import styles from "../imgSlideResponcive.module.scss";
 import logo_1 from "../../../../assets/partnersLogo/qid.png";
 import logo_2 from "../../../../assets/partnersLogo/sbk.png";
 import logo_3 from "../../../../assets/partnersLogo/blank.png";
