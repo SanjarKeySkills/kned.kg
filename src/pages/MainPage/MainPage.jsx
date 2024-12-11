@@ -4,8 +4,8 @@ import WelcomeBlock from "../../components/Widget/MainBlock/WelcomeBlock/welcome
 import SliderCourseIfcBtn from "../../components/Widget/SliderCourseIfcBtn/SliderCourseIfcBtn.jsx";
 import InfoTableBlock from "../../components/Widget/MainBlock/InfoTableBlock/infoTableBlock.jsx";
 import NewsBlock from "../../components/Widget/MainBlock/NewsBlock/newsBlock.jsx";
-import CriteriaMember from "../../components/Widget/MainBlock/CriteriaMember/criteriaMembers.jsx";
 import PartnersSlider from "../../components/Widget/MainBlock/PartnersSlider/PartnersSlider.jsx";
+import CriteriaMember from "../../components/Widget/MainBlock/CriteriaMember/criteriaMembers.jsx";
 
 const MainPage = () => {
     return (
