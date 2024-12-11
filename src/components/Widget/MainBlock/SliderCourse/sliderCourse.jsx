@@ -47,7 +47,6 @@ const CourseSlider = () => {
     };
 
     // Логика для перехода на предыдущий слайд
-
     const prevSlide = () => {
         if (isMobile) {
             setMobileIndex(

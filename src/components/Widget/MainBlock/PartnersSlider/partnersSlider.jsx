@@ -33,19 +33,46 @@ const PartnersSlider = () => {
     const [desktopIndex, setDesktopIndex] = useState(0); // Состояние для индекса слайда
     const [mobileIndex, setMobileIndex] = useState(0);
     const [isMobile, setIsMobile] = useState(false); // Для проверки, мобильное ли устройство
+
+    // const [currentIndex, setCurrentIndex] = useState(0); // добавляем хук useState(false)
+
     const touchStartX = useRef(0);
     const touchEndX = useRef(0);
 
+    // Проверяем размер окна и обновляем состояние
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth <= 768); // для мобильных устройств
+        };
+        window.addEventListener("resize", handleResize);
+        handleResize(); // Сразу вызываем для начальной инициализации
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
     // Логика для перехода к следующему слайду
     const nextSlide = () => {
-        setDesktopIndex((prevIndex) => (prevIndex + 1) % images.length);
+        if (isMobile) {
+            setMobileIndex(
+                (prevIndex) => (prevIndex + 1) % partnersLogos_responcive.length
+            );
+        } else {
+            setDesktopIndex((prevIndex) => (prevIndex + 1) % images.length);
+        }
     };
 
     // Логика для перехода на предыдущий слайд
     const prevSlide = () => {
-        setDesktopIndex(
-            (prevIndex) => (prevIndex - 1 + images.length) % images.length
-        );
+        if (isMobile) {
+            setMobileIndex(
+                (prevIndex) =>
+                    (prevIndex - 1 + partnersLogos_responcive.length) %
+                    partnersLogos_responcive.length
+            );
+        } else {
+            setDesktopIndex(
+                (prevIndex) => (prevIndex - 1 + images.length) % images.length
+            );
+        }
     };
 
     // Логика для обработки свайпов на мобильных устройствах
@@ -70,12 +97,19 @@ const PartnersSlider = () => {
             onTouchStart={handleTouchStart}
             onTouchMove={handleTouchMove}
             onTouchEnd={handleTouchEnd}>
+            {/* Условный рендеринг изображения */}
             <button onClick={prevSlide} className={styles.leftArrow}>
                 ❮
             </button>
-            <div className={styles.slide}>
-                {React.createElement(images[desktopIndex])}
-            </div>
+            <img
+                src={
+                    isMobile
+                        ? partnersLogos_responcive[mobileIndex] // Для мобильной версии
+                        : images[desktopIndex] // Для десктопной версии
+                }
+                alt={`Slide ${isMobile ? mobileIndex : desktopIndex}`}
+                className={isMobile ? styles.slide_responcive : styles.slide}
+            />
             <button onClick={nextSlide} className={styles.rightArrow}>
                 ❯
             </button>
