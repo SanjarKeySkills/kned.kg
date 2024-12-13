@@ -1,12 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
 import styles from "./mainHero.module.scss";
-import videoBg from "../../../../assets/Business _ stock video footage by FINDSTORY.mp4";
+import videoBg from "../../../../assets/video/herovideo.mp4";
 import scrollButton from "../../../../assets/arrowScrollDown.png";
 
 const VideoHero = () => {
     const videoRef = useRef(null);
     const [isAtBottom, setIsAtBottom] = useState(false); // скролл в обе стороны
-
     useEffect(() => {
         videoRef.current.play();
     }, []);
