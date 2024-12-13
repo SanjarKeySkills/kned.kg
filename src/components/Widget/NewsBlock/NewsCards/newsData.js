@@ -1,3 +1,5 @@
+import { getGalleryPathById } from "../../../../server/api/galleries/id";
+
 const newsData = [
     {
         id: "1",
@@ -8,11 +10,11 @@ const newsData = [
         annotation3: "Важность активного слушания.",
         information:
             "28 сентября 2024 состоялась Деловая суббота, организованная при поддержке Программы IFC (Международная финансовая корпорация, входящая в группу Всемирного банка) в рамках региональной программы по развитию экологических, социальных и управленческих практик в Европе и Центральной Азии, финансируемой Правительством Швейцарии, Государственным секретариатом Швейцарии по экономическим вопросам (SECO).",
-        image1: require("../../../../assets/businessSaturdayData/bs_280924/volynetz_1.png"),
-        image2: require("../../../../assets/businessSaturdayData/bs_280924/volynetz_2.png"),
-        image3: require("../../../../assets/businessSaturdayData/bs_280924/volynetz_3.png"),
-        image4: require("../../../../assets/businessSaturdayData/bs_280924/volynetz_4.png"),
-        image5: require("../../../../assets/businessSaturdayData/bs_280924/volynetz_5.png"),
+        image1: getGalleryPathById(1),
+        image2: getGalleryPathById(2),
+        image3: getGalleryPathById(3),
+        image4: getGalleryPathById(4),
+        image5: getGalleryPathById(5),
         inscript:
             "Участники проявили большой интерес к методам преодоления корпоративных конфликтов",
         information2:

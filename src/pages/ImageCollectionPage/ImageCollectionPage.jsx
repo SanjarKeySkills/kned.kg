@@ -81,7 +81,7 @@ const ImageCollectionPage = () => {
                         <div className={styles.swipe}>
                             {images[currentIndex] ? (
                                 <img
-                                    src={images[currentIndex].url}
+                                    src={images[currentIndex].path}
                                     alt={images[currentIndex].title || "Album"}
                                 />
                             ) : (

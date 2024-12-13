@@ -1,3 +1,6 @@
+import { getGalleryList } from "../../../../server/api/galleries";
+import { getGalleryPathById } from "../../../../server/api/galleries/id";
+
 const businessSaturdayData = [
     {
         id: "3",
@@ -5,53 +8,8 @@ const businessSaturdayData = [
         annotation:
             "Тема: Управление конфликтами и спорами в советах директоров",
         calendar: "28 сентября 2024 года",
-        image: require("../../../../assets/businessSaturdayData/bs_280924/volynetz_5.png"),
-        images: [
-            {
-                url: require("../../../../assets/businessSaturdayData/bs_280924/volynetz_1.png"),
-                title: "img1",
-            },
-            {
-                url: require("../../../../assets/businessSaturdayData/bs_280924/volynetz_2.png"),
-                title: "img2",
-            },
-            {
-                url: require("../../../../assets/businessSaturdayData/bs_280924/volynetz_3.png"),
-                title: "img3",
-            },
-            {
-                url: require("../../../../assets/businessSaturdayData/bs_280924/volynetz_4.png"),
-                title: "img4",
-            },
-            {
-                url: require("../../../../assets/businessSaturdayData/bs_280924/volynetz_5.png"),
-                title: "img5",
-            },
-            {
-                url: require("../../../../assets/businessSaturdayData/bs_280924/volynetz_11.png"),
-                title: "img6",
-            },
-            {
-                url: require("../../../../assets/businessSaturdayData/bs_280924/volynetz_7.png"),
-                title: "img7",
-            },
-            {
-                url: require("../../../../assets/businessSaturdayData/bs_280924/volynetz_9.png"),
-                title: "img9",
-            },
-            {
-                url: require("../../../../assets/businessSaturdayData/bs_280924/volynetz_10.png"),
-                title: "img10",
-            },
-            {
-                url: require("../../../../assets/businessSaturdayData/bs_280924/volynetz_12.png"),
-                title: "img11",
-            },
-            {
-                url: require("../../../../assets/businessSaturdayData/bs_280924/volynetz_11.png"),
-                title: "img12",
-            },
-        ],
+        image: getGalleryPathById(5),
+        images: getGalleryList([1, 2, 3, 4, 5, 7, 9, 10, 11, 12]),
     },
     {
         id: "2",
