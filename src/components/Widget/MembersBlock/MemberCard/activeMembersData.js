@@ -385,7 +385,7 @@ const membersData = [
     },
     {
         id: "34",
-        name: "Галина Гороженко",
+        name: "Галина Горноженко",
         annotation:
             "Действительный член Палаты независимых директоров Кыргызской Республики. \n Генеральный директор медицинской клиники Nova Clinic.",
         image: require("../../../../assets/active_members/galina_gorozhenko.png"),
@@ -512,7 +512,7 @@ const membersData = [
     },
     {
         id: "45",
-        name: "Анар Носинова",
+        name: "Анара Носинова",
         annotation:
             "Имеется опыт 20 летней юридической практики, консалтинге международных проектов.",
         image: require("../../../../assets/active_members/anar_nosinova.png"),
@@ -547,7 +547,7 @@ const membersData = [
     },
     {
         id: "48",
-        name: "Керез Келишева",
+        name: "Керез Келишова",
         annotation:
             "Более 10-лет опыта работы в международных организациях частного сектора, в том числе опыт работы в консалтинговых компаниях",
         image: require("../../../../assets/active_members/kerez_kelisheva.png"),

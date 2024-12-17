@@ -114,7 +114,7 @@ const membersData = [
     },
     {
         id: "11",
-        name: "Салтанат Исмаилова",
+        name: "Салтанат Исманова",
         annotation: "Директор по развитию ОсОО «Кулун-Ата-Алайку»",
         image: require("../../../../assets/associated_members/saltanat_ismailova.png"),
         jobExp: "Директор по развитию ОсОО «Кулун-Ата-Алайку». Ведет предпринимательскую деятельность",

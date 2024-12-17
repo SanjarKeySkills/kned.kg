@@ -62,7 +62,7 @@ const Header = () => {
                                         <a
                                             href="/gallery"
                                             className={styles.navLink}>
-                                            ГАЛЛЕРЕЯ
+                                            ГАЛЕРЕЯ
                                         </a>
                                     </li>
                                     {/* <li>
@@ -154,7 +154,7 @@ const Header = () => {
                             </li>
                             <li>
                                 <a href="/gallery" className={styles.link}>
-                                    ГАЛЛЕРЕЯ
+                                    ГАЛЕРЕЯ
                                 </a>
                             </li>
                             {/* <li>
