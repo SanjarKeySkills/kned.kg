@@ -620,7 +620,7 @@ const membersData = [
     },
     {
         id: "55",
-        name: "Антон Дедикин",
+        name: "Антон Дидикин",
         annotation:
             "Более 10 лет управленческого опыта в бизнесе в Республике Казахстан и Российской Федерации.",
         image: require("../../../../assets/active_members/anton_dedikin.png"),
