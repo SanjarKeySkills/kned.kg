@@ -57,7 +57,6 @@ const MemberPage = () => {
                         {formatText(member.competence)}
                     </div>
                 </div>
-
                 <div className={styles.memberData}>
                     <div className={styles.memberDataTitle}>Сертификаты</div>
                     <div className={styles.memberDataDescription}>
