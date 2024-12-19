@@ -249,7 +249,7 @@ const Contact = () => {
                             Кыргызская Республика г.Бишкек,
                             <br /> ул. Исанова 105/3, 6 этаж, кабинет №2
                         </p>
-                        <p>+996 509 425 995, kned.org@gmail.com</p>
+                        <p>+996 (555) 888-242, kned.org@gmail.com</p>
                     </div>
 
                     <div className={styles.contactFormButtonsAndSocial}>
