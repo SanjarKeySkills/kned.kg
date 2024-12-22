@@ -19,7 +19,7 @@ const Footer = () => {
                         кабинет 2
                     </p>
                     <p>
-                        ++996 (555) 888-242
+                        +996 (555) 888-242
                         <tr />
                         <a href="#">kned.org@gmail.com</a>
                     </p>
@@ -27,30 +27,30 @@ const Footer = () => {
                 <div className={styles.footerList}>
                     <ul>
                         <li>
-                            <a href="#">О ПАЛАТЕ</a>
+                            <a href="/about">О ПАЛАТЕ</a>
                         </li>
                         <li>
-                            <a href="#">ЧЛЕНЫ ПАЛАТЫ</a>
+                            <a href="/members">ЧЛЕНЫ ПАЛАТЫ</a>
                         </li>
                         <li>
-                            <a href="#">УСЛУГИ</a>
+                            <a href="/services">УСЛУГИ</a>
                         </li>
                         <li>
-                            <a href="#">КОНТАКТЫ</a>
+                            <a href="/contact">КОНТАКТЫ</a>
                         </li>
                     </ul>
                     <ul>
                         <li>
-                            <a href="#">КУРСЫ И ТРЕНИНГИ</a>
+                            <a href="/courses">КУРСЫ И ТРЕНИНГИ</a>
                         </li>
                         <li>
-                            <a href="#">НОВОСТИ</a>
+                            <a href="/news">НОВОСТИ</a>
                         </li>
                         <li>
-                            <a href="#">СТАТЬИ</a>
+                            <a href="/articles">СТАТЬИ</a>
                         </li>
                         <li>
-                            <a href="#">ГАЛЛЕРЕЯ</a>
+                            <a href="/gallery">ГАЛЛЕРЕЯ</a>
                         </li>
                     </ul>
                 </div>
