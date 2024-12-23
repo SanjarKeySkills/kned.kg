@@ -14,7 +14,9 @@ const newsBlock = () => {
                             конфликтами и спорами в советах директоров".
                             Спикером выступил Алексей Волонец.
                         </p>
-                        <a href="#" className={styles.buttonReadNews}>
+                        <a
+                            href="/bulletin/type/1"
+                            className={styles.buttonReadNews}>
                             Читать дальше
                         </a>
                     </div>
@@ -27,7 +29,9 @@ const newsBlock = () => {
                             по устойчивым инструментам финансирования и
                             нефинансовой отчётности в Кыргызской Республике.
                         </p>
-                        <a href="#" className={styles.buttonReadNews}>
+                        <a
+                            href="/bulletin/type/3"
+                            className={styles.buttonReadNews}>
                             Читать дальше
                         </a>
                     </div>
@@ -40,7 +44,9 @@ const newsBlock = () => {
                             Арымкулова - учредитель и руководитель
                             консультационной компании FNT Consultants
                         </p>
-                        <a href="#" className={styles.buttonReadNews}>
+                        <a
+                            href="/bulletin/type/2"
+                            className={styles.buttonReadNews}>
                             Читать дальше
                         </a>
                     </div>
