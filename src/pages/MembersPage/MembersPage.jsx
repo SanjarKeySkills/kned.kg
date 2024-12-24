@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./MembersPage.module.scss";
 import HeroHeader from "../../components/Widget/LayoutsComponentsBlock/HeroHeader/heroHeader.jsx";
-import MemberCards from "../../components/Widget/MembersBlock/MemberCard/MemberCards.jsx";
+import MemberCards from "../../components/Widget/MembersBlock/MemberCards.jsx";
 
 const MembersPage = () => {
     return (
