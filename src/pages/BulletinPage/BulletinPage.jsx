@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import styles from "./bulletinPage.module.scss";
+import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import HeroHeader from "../../components/Widget/LayoutsComponentsBlock/HeroHeader/heroHeader.jsx";
 import newsData from "../../components/Widget/NewsBlock/NewsCards/newsData.js";
@@ -61,9 +62,9 @@ const BulletinPage = () => {
             <HeroHeader />
             <div className={styles.newsPage}>
                 <div className={styles.newsPageContainer}>
-                    <a href="/news" className={styles.backToNewsBtn}>
+                    <Link to="/news" className={styles.backToNewsBtn}>
                         Вернуться к новостям
-                    </a>
+                    </Link>
                     <div className={styles.titleNewsWrapper}>
                         <h2 className={styles.newsTitle}>
                             <FormatText text={bulletin.title} />
@@ -127,9 +128,9 @@ const BulletinPage = () => {
                     <p className={styles.newsInformation}>
                         <FormatText text={bulletin.information3} />
                     </p>
-                    <a href="/news" className={styles.backToNewsBtn}>
+                    <Link to="/news" className={styles.backToNewsBtn}>
                         Вернуться к новостям
-                    </a>
+                    </Link>
                 </div>
             </div>
         </>

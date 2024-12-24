@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import styles from "./memberPage.module.scss";
+import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import honorMembersData from "../../components/Widget/MembersBlock/honorMembersData.js";
 import activeMembersData from "../../components/Widget/MembersBlock/activeMembersData.js";
@@ -34,9 +35,9 @@ const MemberPage = () => {
 
     return (
         <div className={styles.memberPage}>
-            <a href="/members" className={styles.backToBtn}>
+            <Link href="/members" className={styles.backToBtn}>
                 ОБРАТНО
-            </a>
+            </Link>
             <div className={styles.memberPageWrapper}>
                 <div className={styles.memberTitle}>
                     <img src={member.image} alt="memberPageImage" />
