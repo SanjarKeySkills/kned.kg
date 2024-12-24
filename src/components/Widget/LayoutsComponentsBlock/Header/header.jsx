@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./header.module.scss";
+import { Link } from "react-router-dom";
 import logo from "../../../../assets/imageMainHeader.png";
 import burgerButton from "../../../../assets/burgerButton.svg";
 import arrowPopUp from "../../../../assets/arrowPopUp.svg";
@@ -25,9 +26,9 @@ const Header = () => {
         <div className={styles.header}>
             <div className={styles.headerBottom}>
                 <div className={styles.headerBottomWrapper}>
-                    <a href="/">
+                    <Link to="/">
                         <img src={logo} alt="main" />
-                    </a>
+                    </Link>
                     <div className={styles.wrapperBottom}>
                         <li className={styles.dropdown}>
                             <button
@@ -38,91 +39,89 @@ const Header = () => {
                             {isPndMenuOpen && (
                                 <ul className={styles.dropdownMenu}>
                                     <li>
-                                        <a
-                                            href="/services"
+                                        <Link
+                                            to="/services"
                                             className={styles.navLink}>
                                             УСЛУГИ
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li>
-                                        <a
-                                            href="/news"
+                                        <Link
+                                            to="/news"
                                             className={styles.navLink}>
                                             НОВОСТИ
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li>
-                                        <a
-                                            href="/articles"
+                                        <Link
+                                            to="/articles"
                                             className={styles.navLink}>
                                             ПУБЛИКАЦИИ
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li>
-                                        <a
-                                            href="/gallery"
+                                        <Link
+                                            to="/gallery"
                                             className={styles.navLink}>
                                             ГАЛЕРЕЯ
-                                        </a>
+                                        </Link>
                                     </li>
                                     {/* <li>
-                                        <a href="#" className={styles.navLink}>
+                                        <Link to="#" className={styles.navLink}>
                                             ВИДЕОРОЛИКИ
-                                        </a>
+                                        </Link>
                                     </li> */}
                                 </ul>
                             )}
                         </li>
                         <ul className={styles.listBottom}>
                             <li>
-                                <a href="/about" className={styles.navLink}>
+                                <Link to="/about" className={styles.navLink}>
                                     МИССИЯ
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="/members" className={styles.navLink}>
+                                <Link to="/members" className={styles.navLink}>
                                     НАШИ ЭКСПЕРТЫ
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="/board" className={styles.navLink}>
+                                <Link to="/board" className={styles.navLink}>
                                     ОРГАНЫ УПРАВЛЕНИЯ
-                                </a>
+                                </Link>
                             </li>
-
                             <li>
-                                <a href="/courses" className={styles.navLink}>
+                                <Link to="/courses" className={styles.navLink}>
                                     КУРСЫ И ТРЕНИНГИ
-                                </a>
+                                </Link>
                             </li>
-
                             <li>
-                                <a href="/contact" className={styles.navLink}>
+                                <Link to="/contact" className={styles.navLink}>
                                     КОНТАКТЫ
-                                </a>
+                                </Link>
                             </li>
                         </ul>
-                        <a className={styles.heroButton} href="/contact">
+                        <Link className={styles.heroButton} to="/contact">
                             ВСТУПИТЬ В ПАЛАТУ
-                        </a>
+                        </Link>
                         <div className={styles.lanBtnWraper}>
-                            <a href="/" className={styles.lanRu}>
+                            <Link to="/" className={styles.lanRu}>
                                 RU
-                            </a>
-                            <a href="#" className={styles.lanEn}>
+                            </Link>
+                            <Link to="#" className={styles.lanEn}>
                                 EN
-                            </a>
-                            <a href="#" className={styles.lanRu}>
+                            </Link>
+                            <Link to="#" className={styles.lanRu}>
                                 KG
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
             </div>
             <div className={styles.headerMobile}>
-                <a href="/">
+                <Link to="/">
                     <img src={logo} alt="main" />
-                </a>
+                </Link>
                 <img src={burgerButton} alt="burger" onClick={changeStyle} />
                 <div
                     className={styles.containerPopUp}
@@ -137,73 +136,76 @@ const Header = () => {
                         </div>
                         <ul className={styles.listTopPopUp}>
                             <li>
-                                <a href="/">НА ГЛАВНУЮ</a>
+                                <Link to="/">НА ГЛАВНУЮ</Link>
                             </li>
                             <li>
-                                <a href="/courses">КУРСЫ И ТРЕНИНГИ</a>
+                                <Link to="/courses">КУРСЫ И ТРЕНИНГИ</Link>
                             </li>
                             <li>
-                                <a href="/news" className={styles.link}>
+                                <Link to="/news" className={styles.link}>
                                     НОВОСТИ
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="/articles" className={styles.link}>
+                                <Link to="/articles" className={styles.link}>
                                     ПУБЛИКАЦИИ
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="/gallery" className={styles.link}>
+                                <Link to="/gallery" className={styles.link}>
                                     ГАЛЕРЕЯ
-                                </a>
+                                </Link>
                             </li>
                             {/* <li>
-                                <a href="#" className={styles.linkBottom}>
+                                <a to="#" className={styles.linkBottom}>
                                     ВИДЕОРОЛИКИ
                                 </a>
                             </li> */}
                         </ul>
-                        <a className={styles.buttonHero} href="/contact">
+                        <Link className={styles.buttonHero} to="/contact">
                             ВСТУПИТЬ В ПАЛАТУ
-                        </a>
+                        </Link>
                     </div>
                     <div className={styles.headerBottomPopUp}>
                         <ul className={styles.listBottomPopUp}>
                             <li>
-                                <a href="/members" className={styles.link}>
+                                <Link to="/members" className={styles.link}>
                                     НАШИ ЭКСПЕРТЫ
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="/about" className={styles.link}>
+                                <Link to="/about" className={styles.link}>
                                     О ПАЛАТЕ
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="/board" className={styles.linkTop}>
+                                <Link to="/board" className={styles.linkTop}>
                                     ОРГАНЫ УПРАВЛЕНИЯ
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="/services" className={styles.link}>
+                                <Link to="/services" className={styles.link}>
                                     УСЛУГИ
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="/contact" className={styles.link}>
+                                <Link to="/contact" className={styles.link}>
                                     КОНТАКТЫ
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                         <div>
-                            <a href="#" className={styles.lanRu}>
+                            <Link to="#" className={styles.lanRu}>
                                 RU
-                            </a>
-                            <a
-                                href="#"
+                            </Link>
+                            <Link
+                                to="#"
                                 className={(styles.lanBlock, styles.lanEn)}>
                                 EN
-                            </a>
+                            </Link>
+                            <Link to="#" className={styles.lanRu}>
+                                KG
+                            </Link>
                         </div>
                     </div>
                 </div>
