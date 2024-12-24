@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styles from "./newsBlock.module.scss";
 
 const newsBlock = () => {
@@ -14,11 +15,11 @@ const newsBlock = () => {
                             конфликтами и спорами в советах директоров".
                             Спикером выступил Алексей Волонец.
                         </p>
-                        <a
-                            href="/bulletin/type/1"
+                        <Link
+                            to="/bulletin/type/1"
                             className={styles.buttonReadNews}>
                             Читать дальше
-                        </a>
+                        </Link>
                     </div>
                     <div className={styles.newsCard}>
                         <div className={styles.imgNews2}></div>
@@ -29,11 +30,11 @@ const newsBlock = () => {
                             по устойчивым инструментам финансирования и
                             нефинансовой отчётности в Кыргызской Республике.
                         </p>
-                        <a
-                            href="/bulletin/type/3"
+                        <Link
+                            to="/bulletin/type/3"
                             className={styles.buttonReadNews}>
                             Читать дальше
-                        </a>
+                        </Link>
                     </div>
                     <div className={styles.newsCard}>
                         <div className={styles.imgNews3}></div>
@@ -44,16 +45,16 @@ const newsBlock = () => {
                             Арымкулова - учредитель и руководитель
                             консультационной компании FNT Consultants
                         </p>
-                        <a
-                            href="/bulletin/type/2"
+                        <Link
+                            to="/bulletin/type/2"
                             className={styles.buttonReadNews}>
                             Читать дальше
-                        </a>
+                        </Link>
                     </div>
                 </div>
-                <a href="/news" className={styles.buttomAllNews}>
+                <Link to="/news" className={styles.buttomAllNews}>
                     ПЕРЕЙТИ К НОВОСТЯМ
-                </a>
+                </Link>
             </div>
         </div>
     );
