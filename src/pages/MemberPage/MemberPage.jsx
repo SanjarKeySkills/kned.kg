@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import styles from "./memberPage.module.scss";
 import { useParams } from "react-router-dom";
-import honorMembersData from "../../components/Widget/MembersBlock/MemberCard/honorMembersData.js";
-import activeMembersData from "../../components/Widget/MembersBlock/MemberCard/activeMembersData.js";
-import associatedMembersData from "../../components/Widget/MembersBlock/MemberCard/associatedMembersData.js";
+import honorMembersData from "../../components/Widget/MembersBlock/honorMembersData.js";
+import activeMembersData from "../../components/Widget/MembersBlock/activeMembersData.js";
+import associatedMembersData from "../../components/Widget/MembersBlock/associatedMembersData.js";
 
 const MemberPage = () => {
     useEffect(() => {
@@ -37,7 +37,6 @@ const MemberPage = () => {
             <a href="/members" className={styles.backToBtn}>
                 ОБРАТНО
             </a>
-
             <div className={styles.memberPageWrapper}>
                 <div className={styles.memberTitle}>
                     <img src={member.image} alt="memberPageImage" />
