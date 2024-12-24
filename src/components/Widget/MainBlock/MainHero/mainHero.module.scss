@@ -1,6 +1,6 @@
 .mainHero {
     width: 100%;
-    padding: 0 24px;
+    padding: 0 64px;
     position: relative; //для кнопки 100vh
 }
 
@@ -49,8 +49,9 @@
 
 .scrollButton {
     position: fixed; /* Кнопка фиксируется внизу экрана */
-    bottom: 80px; /* Отступ от нижнего края */
-    right: 0%; /* Центрирование кнопки по горизонтали */
+    // bottom: 80px; /* Отступ от нижнего края */
+    bottom: 12%; /* Отступ от нижнего края */
+    right: 2%; /* Центрирование кнопки по горизонтали */
     transform: translateX(-50%); /* Центрирование */
     background-color: transparent;
     border: none;
@@ -58,7 +59,6 @@
     cursor: pointer;
     z-index: 10;
     transition: color 0.3s ease;
-
     img {
         width: 80px;
     }
