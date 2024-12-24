@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./course.module.scss";
+import { Link } from "react-router-dom";
 import imageLeft from "../../../../assets/courseLeft.svg";
 import imageRight from "../../../../assets/courseRight.svg";
 
@@ -12,18 +13,18 @@ const Course = () => {
                     <h2>
                         СЕРТИФИКАЦИОННЫЙ КУРС <br /> КОРПОРАТИВНЫЙ ДИРЕКТОР
                     </h2>
-                    <a href="/contact" className={styles.courseBtn}>
+                    <Link to="/contact" className={styles.courseBtn}>
                         ЗАПИСАТЬСЯ НА КУРС
-                    </a>
+                    </Link>
                 </div>
                 <div className={styles.courseInfo}>
                     <img src={imageRight} alt="img_of_course_IFC2" />
                     <h2>
                         СЕРТИФИКАЦИОННЫЙ КУРС <br /> КОРПОРАТИВНЫЙ СЕКРЕТАРЬ
                     </h2>
-                    <a href="/contact" className={styles.courseBtn}>
+                    <Link to="/contact" className={styles.courseBtn}>
                         ЗАПИСАТЬСЯ НА КУРС
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>
