@@ -6,9 +6,9 @@ import aalyUmankulov from "../../../assets/board/a.umankulov_ready.png";
 import chinaraMoldazhanova from "../../../assets/board/ch.moldazhanova_ready.png";
 import meerimAskarbekova from "../../../assets/board/m.askarbekova_ready.png";
 import gulnaraArymkulova from "../../../assets/board/g.arymkulova_ready.png";
-import seitekDushenaliev from "../../../assets/board/s.dushenaliev_ready.png";
-import aizhanMambetalieva from "../../../assets/board/a.mambetalieva_ready.png";
-import vacant from "../../../assets/board/vacant.png";
+import seitekDushenaliev from "../../../assets/active_members/seitek_dushenaliev.png";
+import nurdinSultanbaev from "../../../assets/active_members/nurdin_sultanbaev.png";
+import chynaraIbraimova from "../../../assets/active_members/chynara_ibraimova.png";
 import chUnursultan from "../../../assets/board/chUnursultan_ready.png";
 
 const governance = () => {
@@ -118,18 +118,21 @@ const governance = () => {
                     <div className={styles.governMember}>
                         <a href="#">
                             <img
-                                src={aizhanMambetalieva}
-                                alt="Ayzhan Mambetova"
+                                src={nurdinSultanbaev}
+                                alt="Nurdin Sultanbaev"
                             />
                         </a>
-                        <h3>Айжан Мамбеталиева</h3>
+                        <h3>Нурдин Султанбаев</h3>
                         <p>Вице-Президент Палаты</p>
                     </div>
                     <div className={styles.governMember}>
                         <a href="#">
-                            <img src={vacant} alt="vacant" />
+                            <img
+                                src={chynaraIbraimova}
+                                alt="Chynara Ibraimova"
+                            />
                         </a>
-                        <h3>Должность вакантна</h3>
+                        <h3>Чынара Ибраимова</h3>
                         <p>Вице-Президент Палаты</p>
                     </div>
                 </div>
