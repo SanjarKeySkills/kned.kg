@@ -71,7 +71,7 @@ const membersData = [
         name: "Аскар Калдаров",
         annotation:
             "Ассоциированный член Палаты Независимых Директоров Кыргызской Республики",
-        image: require("../../../../assets/associated_members/askar_kaldarov.png"),
+        image: require("../../../assets/associated_members/askar_kaldarov.png"),
         jobExp: "",
         edu: "",
         competence: "",
