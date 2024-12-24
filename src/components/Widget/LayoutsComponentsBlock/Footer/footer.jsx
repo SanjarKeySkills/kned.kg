@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./footer.module.scss";
+import { Link } from "react-router-dom";
 import footerLogo from "../../../../assets/footerLogo.svg";
 import instLogo from "../../../../assets/instagram-logo.svg";
 import facebookLogo from "../../../../assets/facebook-logo.svg";
@@ -27,30 +28,30 @@ const Footer = () => {
                 <div className={styles.footerList}>
                     <ul>
                         <li>
-                            <a href="/about">О ПАЛАТЕ</a>
+                            <Link to="/about">О ПАЛАТЕ</Link>
                         </li>
                         <li>
-                            <a href="/members">ЧЛЕНЫ ПАЛАТЫ</a>
+                            <Link to="/members">ЧЛЕНЫ ПАЛАТЫ</Link>
                         </li>
                         <li>
-                            <a href="/services">УСЛУГИ</a>
+                            <Link to="/services">УСЛУГИ</Link>
                         </li>
                         <li>
-                            <a href="/contact">КОНТАКТЫ</a>
+                            <Link to="/contact">КОНТАКТЫ</Link>
                         </li>
                     </ul>
                     <ul>
                         <li>
-                            <a href="/courses">КУРСЫ И ТРЕНИНГИ</a>
+                            <Link to="/courses">КУРСЫ И ТРЕНИНГИ</Link>
                         </li>
                         <li>
-                            <a href="/news">НОВОСТИ</a>
+                            <Link to="/news">НОВОСТИ</Link>
                         </li>
                         <li>
-                            <a href="/articles">СТАТЬИ</a>
+                            <Link to="/articles">СТАТЬИ</Link>
                         </li>
                         <li>
-                            <a href="/gallery">ГАЛЛЕРЕЯ</a>
+                            <Link to="/gallery">ГАЛЛЕРЕЯ</Link>
                         </li>
                     </ul>
                 </div>
@@ -62,20 +63,20 @@ const Footer = () => {
                         экспертов в области корпоративного управления.
                     </p>
                     <div className={styles.footerSocial}>
-                        <a href="#">
+                        <Link to="#">
                             <img
                                 src={instLogo}
                                 alt="Instagram"
                                 className={styles.socialLogo}
                             />
-                        </a>
-                        <a href="#">
+                        </Link>
+                        <Link to="#">
                             <img
                                 src={facebookLogo}
                                 alt="Facebook"
                                 className={styles.socialLogo}
                             />
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>
