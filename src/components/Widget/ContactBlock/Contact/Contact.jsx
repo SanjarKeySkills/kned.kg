@@ -170,6 +170,7 @@
 //
 import React, { useState } from "react";
 import styles from "./contact.module.scss";
+import { Link } from "react-router-dom";
 import Button from "../../../UI/Button/button.jsx";
 import instLogo from "../../../../assets/instagram-logo_contact.svg";
 import facebookLogo from "../../../../assets/facebook-logo_contact.svg";
@@ -253,29 +254,29 @@ const Contact = () => {
                     </div>
 
                     <div className={styles.contactFormButtonsAndSocial}>
-                        <a href="/" className={styles.sDarkLink}>
+                        <Link to="/" className={styles.sDarkLink}>
                             Реквизиты
-                        </a>
-                        <a href="/about" className={styles.sDarkLink}>
+                        </Link>
+                        <Link to="/about" className={styles.sDarkLink}>
                             О палате
-                        </a>
+                        </Link>
                     </div>
 
                     <div className={styles.contactSocial}>
-                        <a href="https://www.instagram.com/">
+                        <Link to="https://www.instagram.com/">
                             <img
                                 src={instLogo}
                                 alt="Instagram"
                                 className={styles.socialLogo}
                             />
-                        </a>
-                        <a href="https://www.facebook.com/">
+                        </Link>
+                        <Link to="https://www.facebook.com/">
                             <img
                                 src={facebookLogo}
                                 alt="Facebook"
                                 className={styles.socialLogo}
                             />
-                        </a>
+                        </Link>
                     </div>
                 </div>
                 <div className={styles.contactInput}>

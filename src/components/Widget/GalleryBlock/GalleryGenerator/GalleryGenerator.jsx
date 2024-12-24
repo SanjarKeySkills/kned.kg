@@ -15,13 +15,13 @@ function GalleryGenerator({ data, type }) {
                         <p className={styles.eventAnnotationName}>
                             {event.annotation}
                         </p>
-                        <a href={`/event/${type}/${event.id}`}>
+                        <Link to={`/event/${type}/${event.id}`}>
                             <img
                                 className={styles.eventImg}
                                 src={event.image}
                                 alt={event.name}
                             />
-                        </a>
+                        </Link>
                         <Link to={`/event/${type}/${event.id}`}>
                             ОТКРЫТЬ АЛЬБОМ
                         </Link>

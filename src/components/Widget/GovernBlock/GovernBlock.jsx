@@ -1,15 +1,16 @@
 import React from "react";
 import styles from "./governBlock.module.scss";
-import zhannaToktosunova from "../../../assets/board/zh.toktosunova_ready.png";
-import kubanychAbdraimov from "../../../assets/board/k.abdraimov_ready.png";
-import aalyUmankulov from "../../../assets/board/a.umankulov_ready.png";
-import chinaraMoldazhanova from "../../../assets/board/ch.moldazhanova_ready.png";
-import meerimAskarbekova from "../../../assets/board/m.askarbekova_ready.png";
-import gulnaraArymkulova from "../../../assets/board/g.arymkulova_ready.png";
+import { Link } from "react-router-dom";
+import zhannaToktosunova from "../../../assets/active_members/zhanna_toktosunova.png";
+import kubanychAbdraimov from "../../../assets/active_members/kubanych_abdraimov.png";
+import aalyUmankulov from "../../../assets/active_members/aaly_umakulov.png";
+import chinaraMoldazhanova from "../../../assets/active_members/chynara_moldazhanova.png";
+import meerimAskarbekova from "../../../assets/active_members/meerim_askarbekova.png";
+import gulnaraArymkulova from "../../../assets/active_members/gulnara_arymkulova.png";
 import seitekDushenaliev from "../../../assets/active_members/seitek_dushenaliev.png";
 import nurdinSultanbaev from "../../../assets/active_members/nurdin_sultanbaev.png";
 import chynaraIbraimova from "../../../assets/active_members/chynara_ibraimova.png";
-import chUnursultan from "../../../assets/board/chUnursultan_ready.png";
+import chUnursultan from "../../../assets/chUnursultan_ready.png";
 
 const governance = () => {
     return (
@@ -19,57 +20,57 @@ const governance = () => {
                 <div>
                     <div className={styles.councilWrapper}>
                         <div className={styles.div1}>
-                            <a href="#">
+                            <Link to="#">
                                 <img
                                     src={zhannaToktosunova}
                                     alt="Zhanna Toktosunova"
                                 />
-                            </a>
+                            </Link>
                             <div>
                                 <h3>Жанна Токтосунова</h3>
                                 <p>Председатель Совета Палаты</p>
                             </div>
                         </div>
                         <div className={styles.governMember}>
-                            <a href="#">
+                            <Link to="#">
                                 <img
                                     src={kubanychAbdraimov}
                                     alt="Kubanych Abdraimov"
                                 />
-                            </a>
+                            </Link>
                             <div>
                                 <h3>Кубаныч Абдраимов</h3>
                                 <p>Член Совета Палаты</p>
                             </div>
                         </div>
                         <div className={styles.governMember}>
-                            <a href="#">
+                            <Link to="#">
                                 <img src={aalyUmankulov} alt="Aaly Umankulov" />
-                            </a>
+                            </Link>
                             <div>
                                 <h3>Аалы Уманкулов</h3>
                                 <p>Член Совета Палаты</p>
                             </div>
                         </div>
                         <div className={styles.governMember}>
-                            <a href="#">
+                            <Link to="#">
                                 <img
                                     src={chinaraMoldazhanova}
                                     alt="Chinara Moldazhanova"
                                 />
-                            </a>
+                            </Link>
                             <div>
                                 <h3>Чинара Молдажанова</h3>
                                 <p>Член Совета Палаты</p>
                             </div>
                         </div>
                         <div className={styles.governMember}>
-                            <a href="#">
+                            <Link to="#">
                                 <img
                                     src={meerimAskarbekova}
                                     alt="Meerim Askarbekova"
                                 />
-                            </a>
+                            </Link>
                             <div>
                                 <h3>Мээрим Аскарбекова</h3>
                                 <p>Член Совета Палаты</p>
@@ -79,24 +80,24 @@ const governance = () => {
                 </div>
                 <div className={styles.corpsecAndAuditorWrapper}>
                     <div className={styles.governMember}>
-                        <a href="#">
+                        <Link to="#">
                             <img
                                 src={gulnaraArymkulova}
                                 alt="Gulnara Arymkulova"
                             />
-                        </a>
+                        </Link>
                         <div>
                             <h3>Гульнара Арымкулова</h3>
                             <p>Ревизор Палаты</p>
                         </div>
                     </div>
                     <div className={styles.governMember}>
-                        <a href="#">
+                        <Link to="#">
                             <img
                                 src={chUnursultan}
                                 alt="Cholponbay uulu Nursultan"
                             />
-                        </a>
+                        </Link>
                         <h3>Чолпонбай уулу Нурсултан</h3>
                         <p>Корпоративный секретарь Палаты</p>
                     </div>
@@ -104,34 +105,34 @@ const governance = () => {
                 <h2>ПРЕЗИДИУМ ПАЛАТЫ</h2>
                 <div className={styles.presidiumWrapper}>
                     <div className={styles.governMember}>
-                        <a href="#">
+                        <Link to="#">
                             <img
                                 src={seitekDushenaliev}
                                 alt="Seitek Dushenaliev"
                             />
-                        </a>
+                        </Link>
                         <div>
                             <h3>Сейтек Душеналиев</h3>
                             <p>Президент Палаты</p>
                         </div>
                     </div>
                     <div className={styles.governMember}>
-                        <a href="#">
+                        <Link to="#">
                             <img
                                 src={nurdinSultanbaev}
                                 alt="Nurdin Sultanbaev"
                             />
-                        </a>
+                        </Link>
                         <h3>Нурдин Султанбаев</h3>
                         <p>Вице-Президент Палаты</p>
                     </div>
                     <div className={styles.governMember}>
-                        <a href="#">
+                        <Link to="#">
                             <img
                                 src={chynaraIbraimova}
                                 alt="Chynara Ibraimova"
                             />
-                        </a>
+                        </Link>
                         <h3>Чынара Ибраимова</h3>
                         <p>Вице-Президент Палаты</p>
                     </div>
@@ -140,28 +141,28 @@ const governance = () => {
                 <div className={styles.constituentDdocuments}>
                     <ul>
                         <li>
-                            <a href="/charter">
+                            <Link to="/charter">
                                 УСТАВ <br /> ОБЩЕСТВЕННОГО ОБЪЕДИНЕНИЯ <br />
                                 «ПАЛАТА НЕЗАВИСИМЫХ ДИРЕКТОРОВ КЫРГЫЗСКОЙ
                                 РЕСПУБЛИКИ»
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="/membershipRegulations">
+                            <Link to="/membershipRegulations">
                                 ПОЛОЖЕНИЕ
                                 <br /> О ЧЛЕНСТВЕ ОБЩЕСТВЕННОГО ОБЪЕДИНЕНИЯ
                                 <br />
                                 «ПАЛАТА НЕЗАВИСИМЫХ ДИРЕКТОРОВ КЫРГЫЗСКОЙ
                                 РЕСПУБЛИКИ»
-                            </a>
+                            </Link>
                         </li>
                         <li>
-                            <a href="/governRegulations">
+                            <Link to="/governRegulations">
                                 ПОЛОЖЕНИЕ
                                 <br /> ОБ ОРГАНАХ УПРАВЛЕНИЯ <br />
                                 ОБЩЕСТВЕННОГО ОБЪЕДИНЕНИЯ <br /> «ПАЛАТА
                                 НЕЗАВИСИМЫХ ДИРЕКТОРОВ КЫРГЫЗСКОЙ РЕСПУБЛИКИ»
-                            </a>
+                            </Link>
                         </li>
                     </ul>
                 </div>
