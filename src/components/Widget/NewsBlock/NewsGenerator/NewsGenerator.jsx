@@ -1,6 +1,6 @@
 import React from "react";
 // import { Link } from "react-router-dom";
-import styles from "./newsGenerator.module.scss";
+import styles from "../../../../../src/components/Widget/NewsBlock/NewsGenerator/newsGenerator.module.scss";
 
 function NewsGenerator({ data, type }) {
     //деструктуризируем из объекта сам объект props и его ключи, data, и type.

@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./newsCards.module.scss";
-import NewsGenerator from "../NewsGenerator/NewsGenerator.jsx";
+import NewsGenerator from "../NewsGenerator/newsGenerator.jsx";
 import NewsData from "../NewsCards/newsData.js";
 
 const NewsCard = () => {
