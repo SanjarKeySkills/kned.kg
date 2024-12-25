@@ -115,6 +115,26 @@ const mockGalleries = [
         id: 29,
     },
     // ---
+    {
+        path: require("../../../assets/businessBreakfastData/021024/arymkulova_1.png"),
+        id: 30,
+    },
+    {
+        path: require("../../../assets/businessBreakfastData/021024/arymkulova_2.png"),
+        id: 31,
+    },
+    {
+        path: require("../../../assets/businessBreakfastData//021024/arymkulova_3.png"),
+        id: 32,
+    },
+    {
+        path: require("../../../assets/businessBreakfastData//021024/arymkulova_4.png"),
+        id: 33,
+    },
+    {
+        path: require("../../../assets/businessBreakfastData//021024/arymkulova_5.png"),
+        id: 34,
+    },
 ];
 
 export default mockGalleries;

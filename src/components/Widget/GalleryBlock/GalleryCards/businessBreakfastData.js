@@ -16,25 +16,8 @@ const businessBreakfastData = [
         annotation:
             "Спикер: Гульнара Арымкулова, Учредитель и руководитель консультационной компании FNT Consultants",
         calendar: "18 сентября 2024 года",
-        image: require("../../../../assets/businessBreakfastData/180924/arymkulova_1.png"),
-        images: [
-            {
-                url: require("../../../../assets/businessBreakfastData/180924/arymkulova_1.png"),
-                title: "img1",
-            },
-            {
-                url: require("../../../../assets/businessBreakfastData/180924/arymkulova_2.png"),
-                title: "img2",
-            },
-            {
-                url: require("../../../../assets/businessBreakfastData/180924/arymkulova_3.png"),
-                title: "img3",
-            },
-            {
-                url: require("../../../../assets/businessBreakfastData/180924/arymkulova_4.png"),
-                title: "img4",
-            },
-        ],
+        image: getGalleryPathById(30),
+        images: getGalleryList([30, 31, 32, 33, 34]),
     },
     {
         id: "2",
