@@ -17,50 +17,16 @@ const businessSaturdayData = [
         annotation:
             "Тема: Формирование и развитие института корпоративных секретарей: международная практика",
         calendar: "27 апреля 2024 года",
-        image: require("../../../../assets/businessSaturdayData/bs_270424/hall_gradislav2.png"),
-        images: [
-            {
-                url: require("../../../../assets/businessSaturdayData/bs_270424/hall_gradislav2.png"),
-                title: "img1",
-            },
-            {
-                url: require("../../../../assets/businessSaturdayData/bs_270424/hall_gradislav.png"),
-                title: "img2",
-            },
-            {
-                url: require("../../../../assets/businessSaturdayData/bs_270424/hall_gradislav3.png"),
-                title: "img3",
-            },
-            {
-                url: require("../../../../assets/businessSaturdayData/bs_270424/hall_gradislav4.png"),
-                title: "img4",
-            },
-        ],
+        image: getGalleryPathById(13),
+        images: getGalleryList([13, 14, 15, 16, 17]),
     },
     {
         id: "1",
         name: "Деловая суббота с Жардемом Курмангазиевым",
         annotation: "Тема: Корпоративная культура и корпоративное управление",
         calendar: "27 января 2024 года",
-        image: require("../../../../assets/businessSaturdayData/bs_270124/bs_zhardem_2.png"),
-        images: [
-            {
-                url: require("../../../../assets/businessSaturdayData/bs_270124/bs_zhardem_2.png"),
-                title: "img1",
-            },
-            {
-                url: require("../../../../assets/businessSaturdayData/bs_270124/bs_zhardem_1.png"),
-                title: "img2",
-            },
-            {
-                url: require("../../../../assets/businessSaturdayData/bs_270124/bs_zhardem_3.png"),
-                title: "img3",
-            },
-            {
-                url: require("../../../../assets/businessSaturdayData/bs_270124/bs_zhardem_4.png"),
-                title: "img4",
-            },
-        ],
+        image: getGalleryPathById(19),
+        images: getGalleryList([18, 19, 20, 21]),
     },
 ];
 

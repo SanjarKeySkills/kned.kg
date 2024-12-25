@@ -43,6 +43,45 @@ const mockGalleries = [
         path: require("../../../assets/businessSaturdayData/bs_280924/volynetz_11.png"),
         id: 12,
     },
+    // ---
+    {
+        path: require("../../../assets/businessSaturdayData/bs_270424/ahmetova_1.png"),
+        id: 13,
+    },
+    {
+        path: require("../../../assets/businessSaturdayData/bs_270424/ahmetova_2.png"),
+        id: 14,
+    },
+    {
+        path: require("../../../assets/businessSaturdayData/bs_270424/ahmetova_3.png"),
+        id: 15,
+    },
+    {
+        path: require("../../../assets/businessSaturdayData/bs_270424/ahmetova_4.png"),
+        id: 16,
+    },
+    {
+        path: require("../../../assets/businessSaturdayData/bs_270424/ahmetova_5.png"),
+        id: 17,
+    },
+    // ---
+    {
+        path: require("../../../assets/businessSaturdayData/bs_270124/kurmangziev_1.png"),
+        id: 18,
+    },
+    {
+        path: require("../../../assets/businessSaturdayData/bs_270124/kurmangziev_2.png"),
+        id: 19,
+    },
+    {
+        path: require("../../../assets/businessSaturdayData/bs_270124/kurmangziev_3.png"),
+        id: 20,
+    },
+    {
+        path: require("../../../assets/businessSaturdayData/bs_270124/kurmangziev_4.png"),
+        id: 21,
+    },
+    // ---
 ];
 
 export default mockGalleries;
