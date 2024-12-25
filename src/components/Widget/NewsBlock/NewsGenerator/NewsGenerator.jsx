@@ -1,5 +1,5 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import styles from "../../../../../src/components/Widget/NewsBlock/NewsGenerator/newsGenerator.module.scss";
 
 function NewsGenerator({ data, type }) {
@@ -9,14 +9,14 @@ function NewsGenerator({ data, type }) {
             <div className={styles.newsItem}>
                 {data.map((bulletin) => (
                     <div key={bulletin.id} className={styles.cardContainer}>
-                        <a href={`/bulletin/${type}/${bulletin.id}`}>
+                        <Link to={`/bulletin/${type}/${bulletin.id}`}>
                             <img
                                 className={styles.newsImg}
                                 src={bulletin.image1}
                                 alt={bulletin.name}
                             />
                             <p className={styles.newsTitle}>{bulletin.title}</p>
-                        </a>
+                        </Link>
                         {/* при клике перекидвает сначала на bulletin потом на type 
 						потом по id и после этого вся информция записывается в URL
 						и после этого начинается подгружаться компонент NewsPage
