@@ -20,27 +20,27 @@ const mockGalleries = [
         id: 5,
     },
     {
-        path: require("../../../assets/businessSaturdayData/bs_280924/volynetz_7.png"),
+        path: require("../../../assets/businessSaturdayData/bs_280924/volynetz_6.png"),
         id: 7,
     },
     {
-        path: require("../../../assets/businessSaturdayData/bs_280924/volynetz_8.jpg"),
+        path: require("../../../assets/businessSaturdayData/bs_280924/volynetz_7.jpg"),
         id: 8,
     },
     {
-        path: require("../../../assets/businessSaturdayData/bs_280924/volynetz_9.png"),
+        path: require("../../../assets/businessSaturdayData/bs_280924/volynetz_8.png"),
         id: 9,
     },
     {
-        path: require("../../../assets/businessSaturdayData/bs_280924/volynetz_10.png"),
+        path: require("../../../assets/businessSaturdayData/bs_280924/volynetz_9.png"),
         id: 10,
     },
     {
-        path: require("../../../assets/businessSaturdayData/bs_280924/volynetz_11.png"),
+        path: require("../../../assets/businessSaturdayData/bs_280924/volynetz_10.png"),
         id: 11,
     },
     {
-        path: require("../../../assets/businessSaturdayData/bs_280924/volynetz_12.png"),
+        path: require("../../../assets/businessSaturdayData/bs_280924/volynetz_11.png"),
         id: 12,
     },
 ];
