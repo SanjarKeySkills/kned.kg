@@ -135,6 +135,7 @@ const mockGalleries = [
         path: require("../../../assets/businessBreakfastData//021024/arymkulova_5.png"),
         id: 34,
     },
+    // ---
 ];
 
 export default mockGalleries;
