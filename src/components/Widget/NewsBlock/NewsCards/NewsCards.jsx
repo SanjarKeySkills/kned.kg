@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./newsCards.module.scss";
-import NewsGenerator from "../NewsGenerator/newsGenerator.jsx";
+import newsGenerator from "../NewsGenerator/newsGenerator.jsx";
 import NewsData from "../NewsCards/newsData.js";
 
 const NewsCard = () => {
@@ -10,7 +10,7 @@ const NewsCard = () => {
                 <div className={styles.newsItemWrapper}>
                     <p className={styles.newsTitle}>НОВОСТИ</p>
                     <div className={styles.newsCardList}>
-                        <NewsGenerator data={NewsData} type="type" />
+                        <newsGenerator data={NewsData} type="type" />
                     </div>
                 </div>
             </div>
