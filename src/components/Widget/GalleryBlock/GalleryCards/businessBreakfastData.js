@@ -25,21 +25,8 @@ const businessBreakfastData = [
         annotation:
             "Спикер: Бешимкулов Чынгыз, генеральный директорв ОсОО Capstone Consulting",
         calendar: "12 апреля 2024 года",
-        image: require("../../../../assets/businessBreakfastData/120424/capstone_1_11zon.png"),
-        images: [
-            {
-                url: require("../../../../assets/businessBreakfastData/120424/capstone_1_11zon.png"),
-                title: "img1",
-            },
-            {
-                url: require("../../../../assets/businessBreakfastData/120424/capstone_2_11zon.png"),
-                title: "img2 - это проблема",
-            },
-            {
-                url: require("../../../../assets/businessBreakfastData/120424/capstone_1_11zon.png"),
-                title: "img3",
-            },
-        ],
+        image: getGalleryPathById(36),
+        images: getGalleryList([35, 36]),
     },
     {
         id: "1",

@@ -124,18 +124,31 @@ const mockGalleries = [
         id: 31,
     },
     {
-        path: require("../../../assets/businessBreakfastData//021024/arymkulova_3.png"),
+        path: require("../../../assets/businessBreakfastData/021024/arymkulova_3.png"),
         id: 32,
     },
     {
-        path: require("../../../assets/businessBreakfastData//021024/arymkulova_4.png"),
+        path: require("../../../assets/businessBreakfastData/021024/arymkulova_4.png"),
         id: 33,
     },
     {
-        path: require("../../../assets/businessBreakfastData//021024/arymkulova_5.png"),
+        path: require("../../../assets/businessBreakfastData/021024/arymkulova_5.png"),
         id: 34,
     },
     // ---
+    {
+        path: require("../../../assets/businessBreakfastData/120424/capstone_1.png"),
+        id: 35,
+    },
+    {
+        path: require("../../../assets/businessBreakfastData/120424/capstone_2.png"),
+        id: 36,
+    },
+    // ---
+    {
+        path: require("../../../assets/businessBreakfastData/120424/capstone_2.png"),
+        id: 37,
+    },
 ];
 
 export default mockGalleries;
