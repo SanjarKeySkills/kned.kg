@@ -82,6 +82,39 @@ const mockGalleries = [
         id: 21,
     },
     // ---
+    {
+        path: require("../../../assets/businessBreakfastData/010224/abdraimov_moldokeeva_1.png"),
+        id: 22,
+    },
+    {
+        path: require("../../../assets/businessBreakfastData/010224/abdraimov_moldokeeva_2.png"),
+        id: 23,
+    },
+    {
+        path: require("../../../assets/businessBreakfastData/010224/abdraimov_moldokeeva_3.png"),
+        id: 24,
+    },
+    {
+        path: require("../../../assets/businessBreakfastData/010224/abdraimov_moldokeeva_4.png"),
+        id: 25,
+    },
+    {
+        path: require("../../../assets/businessBreakfastData/010224/abdraimov_moldokeeva_5.png"),
+        id: 26,
+    },
+    {
+        path: require("../../../assets/businessBreakfastData/010224/abdraimov_moldokeeva_6.jpg"),
+        id: 27,
+    },
+    {
+        path: require("../../../assets/businessBreakfastData/010224/abdraimov_moldokeeva_7.jpg"),
+        id: 28,
+    },
+    {
+        path: require("../../../assets/businessBreakfastData/010224/abdraimov_moldokeeva_8.jpg"),
+        id: 29,
+    },
+    // ---
 ];
 
 export default mockGalleries;
