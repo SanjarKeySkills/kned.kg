@@ -17,25 +17,8 @@ const eventData = [
         annotation:
             "19 июля 2024 года прошел выпускной слушателей первой сертификационной программы по КУ Корпоративный директор",
         calendar: "19 июля 2024 года",
-        image: require("../../../../assets/eventData/kd_190724/kd_sertifProg_6_11zon.png"),
-        images: [
-            {
-                url: require("../../../../assets/eventData/kd_190724/kd_sertifProg_6_11zon.png"),
-                title: "img1",
-            },
-            {
-                url: require("../../../../assets/eventData/kd_190724/kd_sertifProg_1_11zon.png"),
-                title: "img2",
-            },
-            {
-                url: require("../../../../assets/eventData/kd_190724/kd_sertifProg_2_11zon.png"),
-                title: "img3",
-            },
-            {
-                url: require("../../../../assets/eventData/kd_190724/kd_sertifProg_3_11zon.png"),
-                title: "img4",
-            },
-        ],
+        image: getGalleryPathById(47),
+        images: getGalleryList([47, 48, 49, 50, 51, 52]),
     },
     {
         id: "3",
