@@ -1,7 +1,6 @@
 .newsBlock {
     width: 100%;
 }
-
 .newsWrapper {
     max-width: 1440px;
     display: flex;
@@ -18,13 +17,11 @@
         font-style: normal;
     }
 }
-
 .newsCards {
     display: flex;
     justify-content: space-between;
     gap: 40px;
 }
-
 .newsCard {
     width: 100%;
     .imgNews1 {
@@ -35,7 +32,6 @@
         border-radius: 8px;
         height: 360px;
     }
-
     .imgNews2 {
         background: url("../../../../assets/businessBreakfastData/021024/ivanova_3.png");
         background-size: cover;
@@ -52,7 +48,6 @@
         border-radius: 8px;
         height: 360px;
     }
-
     p {
         height: 96px;
         font-family: "Lato", sans-serif;
@@ -84,7 +79,6 @@
         color: #ffffff;
     }
 }
-
 .buttonReadNews {
     border-radius: 8px;
     padding: 8px 16px;
@@ -101,7 +95,6 @@
         color: #ffffff;
     }
 }
-
 @media (max-width: 768px) {
     .newsCards {
         flex-direction: column;
