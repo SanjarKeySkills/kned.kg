@@ -56,11 +56,11 @@ const newsData = [
             "Немаловажную роль в отчетности ESG играют функции совета директоров в вопросах устойчивости.",
         information:
             "18 сентября 2024 года Палата независимых директоров Кыргызской Республики провела очередной деловой завтрак на тему: «ESG отчетность как инструмент стратегического анализа компании». Деловой завтрак проходил по традиции в Кофейне “Ant's Kitchen” (Эркиндик, 35). \n Спикером Делового завтрака выступила Арымкулова Гульнара - учредитель и руководитель консультационной компании FNT Consultants. \n Тематика презентации делового завтрака касалась непосредственно вопросов «ESG в структуре и функциях Совета директоров и оценки готовности советов директоров к ESG».",
-        image1: require("../../../../assets/businessBreakfastData/180924/arymkulova_1.png"),
-        image2: require("../../../../assets/businessBreakfastData/180924/arymkulova_2.png"),
-        image3: require("../../../../assets/businessBreakfastData/180924/arymkulova_3.png"),
-        image4: require("../../../../assets/businessBreakfastData/180924/arymkulova_4.png"),
-        image5: require("../../../../assets/businessBreakfastData/180924/arymkulova_5.png"),
+        image1: getGalleryPathById(1),
+        image2: getGalleryPathById(2),
+        image3: getGalleryPathById(3),
+        image4: getGalleryPathById(5),
+        image5: getGalleryPathById(6),
         inscript:
             "В рамках презентации озвучивались вопросы процесса подготовки отчетности \n для оценки соответствия советов директоров принципам ESG.",
         information2:

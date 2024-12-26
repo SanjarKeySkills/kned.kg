@@ -186,6 +186,31 @@ const mockGalleries = [
         path: require("../../../assets/eventData/060924/ks_tot_5.png"),
         id: 46,
     },
+    // ---
+    {
+        path: require("../../../assets/eventData/190724/kd_sertif_1.png"),
+        id: 47,
+    },
+    {
+        path: require("../../../assets/eventData/190724/kd_sertif_2.png"),
+        id: 48,
+    },
+    {
+        path: require("../../../assets/eventData/190724/kd_sertif_3.png"),
+        id: 49,
+    },
+    {
+        path: require("../../../assets/eventData/190724/kd_sertif_4.png"),
+        id: 50,
+    },
+    {
+        path: require("../../../assets/eventData/190724/kd_sertif_5.png"),
+        id: 51,
+    },
+    {
+        path: require("../../../assets/eventData/190724/kd_sertif_6.png"),
+        id: 52,
+    },
 ];
 
 export default mockGalleries;
