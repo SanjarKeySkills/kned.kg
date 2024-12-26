@@ -211,6 +211,11 @@ const mockGalleries = [
         path: require("../../../assets/eventData/190724/kd_sertif_6.png"),
         id: 52,
     },
+    // ---
+    {
+        path: require("../../../assets/eventData/010824/gulsaara_atanova.png"),
+        id: 53,
+    },
 ];
 
 export default mockGalleries;
