@@ -12,7 +12,7 @@ function NewsGenerator({ data, type }) {
                         <Link to={`/bulletin/${type}/${bulletin.id}`}>
                             <img
                                 className={styles.newsImg}
-                                src={bulletin.image1}
+                                src={bulletin.image}
                                 alt={bulletin.name}
                             />
                             <p className={styles.newsTitle}>{bulletin.title}</p>
