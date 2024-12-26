@@ -116,23 +116,23 @@ const mockGalleries = [
     },
     // ---
     {
-        path: require("../../../assets/businessBreakfastData/021024/arymkulova_1.png"),
+        path: require("../../../assets/businessBreakfastData/180924/arymkulova_1.png"),
         id: 30,
     },
     {
-        path: require("../../../assets/businessBreakfastData/021024/arymkulova_2.png"),
+        path: require("../../../assets/businessBreakfastData/180924/arymkulova_2.png"),
         id: 31,
     },
     {
-        path: require("../../../assets/businessBreakfastData/021024/arymkulova_3.png"),
+        path: require("../../../assets/businessBreakfastData/180924/arymkulova_3.png"),
         id: 32,
     },
     {
-        path: require("../../../assets/businessBreakfastData/021024/arymkulova_4.png"),
+        path: require("../../../assets/businessBreakfastData/180924/arymkulova_4.png"),
         id: 33,
     },
     {
-        path: require("../../../assets/businessBreakfastData/021024/arymkulova_5.png"),
+        path: require("../../../assets/businessBreakfastData/180924/arymkulova_5.png"),
         id: 34,
     },
     // ---
@@ -146,8 +146,24 @@ const mockGalleries = [
     },
     // ---
     {
-        path: require("../../../assets/businessBreakfastData/120424/capstone_2.png"),
+        path: require("../../../assets/businessBreakfastData/021024/ivanova_1.png"),
         id: 37,
+    },
+    {
+        path: require("../../../assets/businessBreakfastData/021024/ivanova_2.png"),
+        id: 38,
+    },
+    {
+        path: require("../../../assets/businessBreakfastData/021024/ivanova_3.png"),
+        id: 39,
+    },
+    {
+        path: require("../../../assets/businessBreakfastData/021024/ivanova_4.png"),
+        id: 40,
+    },
+    {
+        path: require("../../../assets/businessBreakfastData/021024/ivanova_5.png"),
+        id: 41,
     },
 ];
 
