@@ -1,59 +1,15 @@
+import { getGalleryList } from "../../../../server/api/galleries";
+import { getGalleryPathById } from "../../../../server/api/galleries/id";
+
 const eventData = [
-    {
-        id: "6",
-        name: "Тема: ESG в структуре и функциях Совета директоров. Оценка готовности Совета директоров к ESG",
-        annotation:
-            "Спикер: Гульнара Арымкулова, Учредитель и руководитель консультационной компании FNT Consultants ",
-        calendar: "18 сентября 2024 года",
-        image: require("../../../../assets/eventData/ks_290924/ks_ifc_1_11zon.png"),
-        images: [
-            {
-                url: require("../../../../assets/eventData/ks_290924/ks_ifc_1_11zon.png"),
-                title: "img1",
-            },
-            {
-                url: require("../../../../assets/eventData/ks_290924/ks_ifc_2_11zon.png"),
-                title: "img2",
-            },
-            {
-                url: require("../../../../assets/eventData/ks_290924/ks_ifc_3_11zon.png"),
-                title: "img3",
-            },
-            {
-                url: require("../../../../assets/eventData/ks_290924/ks_ifc_4_11zon.png"),
-                title: "img4",
-            },
-        ],
-    },
     {
         id: "5",
         name: "Тренинг для тренеров ПНД КР по программе IFC Корпоративный секретарь",
         annotation:
             "6 сентября 2024 года прошел второй этап тренингов по корпоративному управлению для тренеров ПНД КР по курсу IFC Корпоративный секретарь",
         calendar: "6 сентября 2024 года",
-        image: require("../../../../assets/eventData/ks_060924/ks_tot_2.png"),
-        images: [
-            {
-                url: require("../../../../assets/eventData/ks_060924/ks_tot_1.png"),
-                title: "img1",
-            },
-            {
-                url: require("../../../../assets/eventData/ks_060924/ks_tot_2.png"),
-                title: "img2",
-            },
-            {
-                url: require("../../../../assets/eventData/ks_060924/ks_tot_3.png"),
-                title: "img3",
-            },
-            {
-                url: require("../../../../assets/eventData/ks_060924/ks_tot_4.png"),
-                title: "img4",
-            },
-            {
-                url: require("../../../../assets/eventData/ks_060924/ks_tot_5.png"),
-                title: "img4",
-            },
-        ],
+        image: getGalleryPathById(42),
+        images: getGalleryList([42, 43, 44, 45, 46]),
     },
     {
         id: "4",

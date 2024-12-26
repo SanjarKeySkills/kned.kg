@@ -165,6 +165,27 @@ const mockGalleries = [
         path: require("../../../assets/businessBreakfastData/021024/ivanova_5.png"),
         id: 41,
     },
+    // ---
+    {
+        path: require("../../../assets/eventData/060924/ks_tot_1.png"),
+        id: 42,
+    },
+    {
+        path: require("../../../assets/eventData/060924/ks_tot_2.png"),
+        id: 43,
+    },
+    {
+        path: require("../../../assets/eventData/060924/ks_tot_3.png"),
+        id: 44,
+    },
+    {
+        path: require("../../../assets/eventData/060924/ks_tot_4.png"),
+        id: 45,
+    },
+    {
+        path: require("../../../assets/eventData/060924/ks_tot_5.png"),
+        id: 46,
+    },
 ];
 
 export default mockGalleries;
