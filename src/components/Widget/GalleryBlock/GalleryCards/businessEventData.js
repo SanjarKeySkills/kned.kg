@@ -35,25 +35,8 @@ const eventData = [
         annotation:
             "19 апреля 2024 года был проведен четвертый тренинг по программе Независимый директор. Успешная карьера",
         calendar: "19 апреля 2024 года",
-        image: require("../../../../assets/eventData/nduk_190424/nduk_1.png"),
-        images: [
-            {
-                url: require("../../../../assets/eventData/nduk_190424/nduk_1.png"),
-                title: "img1",
-            },
-            {
-                url: require("../../../../assets/eventData/nduk_190424/nduk_2.png"),
-                title: "img2",
-            },
-            {
-                url: require("../../../../assets/eventData/nduk_190424/nduk_3.png"),
-                title: "img3",
-            },
-            {
-                url: require("../../../../assets/eventData/nduk_190424/nduk_4.png"),
-                title: "img4",
-            },
-        ],
+        image: getGalleryPathById(69),
+        images: getGalleryList([69, 70, 71, 72, 73, 74]),
     },
     {
         id: "1",

@@ -279,6 +279,30 @@ const mockGalleries = [
         id: 68,
     },
     // ---
+    {
+        path: require("../../../assets/eventData/190424/nduk_1.png"),
+        id: 69,
+    },
+    {
+        path: require("../../../assets/eventData/190424/nduk_2.png"),
+        id: 70,
+    },
+    {
+        path: require("../../../assets/eventData/190424/nduk_3.png"),
+        id: 71,
+    },
+    {
+        path: require("../../../assets/eventData/190424/nduk_4.png"),
+        id: 72,
+    },
+    {
+        path: require("../../../assets/eventData/190424/nduk_5.png"),
+        id: 73,
+    },
+    {
+        path: require("../../../assets/eventData/190424/nduk_6.png"),
+        id: 74,
+    },
 ];
 
 export default mockGalleries;
