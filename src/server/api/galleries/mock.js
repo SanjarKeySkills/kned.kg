@@ -216,6 +216,27 @@ const mockGalleries = [
         path: require("../../../assets/eventData/010824/gulsaara_atanova.png"),
         id: 53,
     },
+    // ---
+    {
+        path: require("../../../assets/eventData/040324/ifc_meetup_1.png"),
+        id: 54,
+    },
+    {
+        path: require("../../../assets/eventData/040324/ifc_meetup_2.png"),
+        id: 55,
+    },
+    {
+        path: require("../../../assets/eventData/040324/ifc_meetup_3.png"),
+        id: 56,
+    },
+    {
+        path: require("../../../assets/eventData/040324/ifc_meetup_4.png"),
+        id: 57,
+    },
+    {
+        path: require("../../../assets/eventData/040324/ifc_meetup_5.png"),
+        id: 58,
+    },
 ];
 
 export default mockGalleries;
