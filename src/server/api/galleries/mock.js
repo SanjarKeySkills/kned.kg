@@ -237,6 +237,7 @@ const mockGalleries = [
         path: require("../../../assets/eventData/040324/ifc_meetup_5.png"),
         id: 58,
     },
+    // ---
 ];
 
 export default mockGalleries;
