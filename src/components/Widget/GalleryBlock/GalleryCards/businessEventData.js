@@ -78,22 +78,22 @@ const eventData = [
         annotation:
             "4 марта 2024 года прошла встреча членов от ПНД КР участвующих в программе ТоТ с IFC",
         calendar: "4 марта 2024 года",
-        image: require("../../../../assets/eventData/ifc_metup_040324/ifc_meetup_1_11zon.png"),
+        image: require("../../../../assets/eventData/ifc_metup_040324/ifc_meetup_1.png"),
         images: [
             {
-                url: require("../../../../assets/eventData/ifc_metup_040324/ifc_meetup_1_11zon.png"),
+                url: require("../../../../assets/eventData/ifc_metup_040324/ifc_meetup_1.png"),
                 title: "img1",
             },
             {
-                url: require("../../../../assets/eventData/ifc_metup_040324/ifc_meetup_2_11zon.png"),
+                url: require("../../../../assets/eventData/ifc_metup_040324/ifc_meetup_2.png"),
                 title: "img2",
             },
             {
-                url: require("../../../../assets/eventData/ifc_metup_040324/ifc_meetup_3_11zon.png"),
+                url: require("../../../../assets/eventData/ifc_metup_040324/ifc_meetup_3.png"),
                 title: "img3",
             },
             {
-                url: require("../../../../assets/eventData/ifc_metup_040324/ifc_meetup_4_11zon.png"),
+                url: require("../../../../assets/eventData/ifc_metup_040324/ifc_meetup_4.png"),
                 title: "img4",
             },
         ],
