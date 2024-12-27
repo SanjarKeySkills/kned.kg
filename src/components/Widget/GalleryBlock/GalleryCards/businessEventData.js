@@ -26,25 +26,8 @@ const eventData = [
         annotation:
             "21 мая 2024 года прошел двух дневный ToT тренинг для тренеров ПНД КР по программе IFC",
         calendar: "21 мая 2024 года",
-        image: require("../../../../assets/eventData/kd_220524/kd_kurs_1_11zon.png"),
-        images: [
-            {
-                url: require("../../../../assets/eventData/kd_220524/kd_kurs_1_11zon.png"),
-                title: "img1",
-            },
-            {
-                url: require("../../../../assets/eventData/kd_220524/kd_kurs_2_11zon.png"),
-                title: "img2",
-            },
-            {
-                url: require("../../../../assets/eventData/kd_220524/kd_kurs_3_11zon.png"),
-                title: "img3",
-            },
-            {
-                url: require("../../../../assets/eventData/kd_220524/kd_kurs_4_11zon.png"),
-                title: "img4",
-            },
-        ],
+        image: getGalleryPathById(59),
+        images: getGalleryList([59, 60, 61, 62, 63, 64, 65, 66, 67, 68]),
     },
     {
         id: "2",

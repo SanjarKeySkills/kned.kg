@@ -238,6 +238,47 @@ const mockGalleries = [
         id: 58,
     },
     // ---
+    {
+        path: require("../../../assets/eventData/220524/kd_kurs_1.png"),
+        id: 59,
+    },
+    {
+        path: require("../../../assets/eventData/220524/kd_kurs_2.png"),
+        id: 60,
+    },
+    {
+        path: require("../../../assets/eventData/220524/kd_kurs_3.png"),
+        id: 61,
+    },
+    {
+        path: require("../../../assets/eventData/220524/kd_kurs_4.png"),
+        id: 62,
+    },
+    {
+        path: require("../../../assets/eventData/220524/kd_kurs_5.png"),
+        id: 63,
+    },
+    {
+        path: require("../../../assets/eventData/220524/kd_kurs_6.png"),
+        id: 64,
+    },
+    {
+        path: require("../../../assets/eventData/220524/kd_kurs_7.png"),
+        id: 65,
+    },
+    {
+        path: require("../../../assets/eventData/220524/kd_kurs_8.png"),
+        id: 66,
+    },
+    {
+        path: require("../../../assets/eventData/220524/kd_kurs_9.png"),
+        id: 67,
+    },
+    {
+        path: require("../../../assets/eventData/220524/kd_kurs_10.png"),
+        id: 68,
+    },
+    // ---
 ];
 
 export default mockGalleries;
