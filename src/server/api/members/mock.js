@@ -1,12 +1,16 @@
 const mockMembers = [
     {
-        path: require("../../../assets/businessSaturdayData/280924/volynetz_1.png"),
+        path: require("../../../assets/active_members/seitek_dushenaliev.png"),
         id: 1,
     },
     {
-        path: require("../../../assets/businessSaturdayData/280924/volynetz_2.png"),
+        path: require("../../../assets/active_members/talant_omuraliev.png"),
         id: 2,
+    },
+    {
+        path: require("../../../assets/active_members/saltanat_tazhibaeva.png"),
+        id: 3,
     },
 ];
 
-export default mockGalleries;
+export default mockMembers;
