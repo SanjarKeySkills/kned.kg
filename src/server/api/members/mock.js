@@ -1,4 +1,4 @@
-const mockGalleries = [
+const mockMembers = [
     {
         path: require("../../../assets/businessSaturdayData/280924/volynetz_1.png"),
         id: 1,
