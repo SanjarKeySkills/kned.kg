@@ -1,14 +1,14 @@
-import mockGalleries from "./mock";
+import mockMembers from "./mock";
 
-const getGalleryById = (id) => {
-    return mockGalleries.find((gallery) => {
-        return id === gallery.id;
+const getMemberById = (id) => {
+    return mockMembers.find((member) => {
+        return id === member.id;
     });
 };
 
-const getGalleryPathById = (id) => {
-    const foundedGallery = getGalleryById(id);
-    return foundedGallery.path;
+const getMemberPathById = (id) => {
+    const foundedMember = getMemberById(id);
+    return foundedMember.path;
 };
 
-export { getGalleryById, getGalleryPathById };
+export { getMemberById, getMemberPathById };
