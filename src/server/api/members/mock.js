@@ -83,6 +83,18 @@ const mockMembers = [
         path: require("../../../assets/active_members/erkinbek_zhumabaev.png"),
         id: 21,
     },
+    {
+        path: require("../../../assets/active_members/gulbara_kudaibergenova.png"),
+        id: 22,
+    },
+    {
+        path: require("../../../assets/active_members/roman_polishev.png"),
+        id: 23,
+    },
+    {
+        path: require("../../../assets/active_members/gulchehra_kamchibekova.png"),
+        id: 24,
+    },
 ];
 
 export default mockMembers;
