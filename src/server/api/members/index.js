@@ -1,16 +1,16 @@
-import mockGalleries from "./mock";
+import mockMembers from "./mock";
 
-const getGalleryList = (ids) => {
+const getMemberList = (ids) => {
     console.log(
-        mockGalleries.filter((gallery) => {
-            return ids.includes(gallery.id);
+        mockMembers.filter((member) => {
+            return ids.includes(member.id);
         })
     );
 
-    return mockGalleries.filter((gallery) => {
-        return ids.includes(gallery.id);
+    return mockMembers.filter((member) => {
+        return ids.includes(member.id);
     });
 };
 
-export { getGalleryList };
+export { getMemberList };
 // потому что может быть несколько реализаций по какому списку
