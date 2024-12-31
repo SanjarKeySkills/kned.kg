@@ -131,6 +131,31 @@ const mockMembers = [
         path: require("../../../assets/active_members/arslanbek_knenbaev.png"),
         id: 33,
     },
+    {
+        path: require("../../../assets/active_members/galina_gorozhenko.png"),
+        id: 34,
+    },
+    {
+        path: require("../../../assets/active_members/munarbek_atchabarov.png"),
+        id: 35,
+    },
+    {
+        path: require("../../../assets/active_members/chynara_ibraimova.png"),
+        id: 36,
+    },
+    {
+        path: require("../../../assets/active_members/askar_sydykov.png"),
+        id: 37,
+    },
+
+    {
+        path: require("../../../assets/active_members/sovetbek_zakirov.png"),
+        id: 38,
+    },
+    {
+        path: require("../../../assets/active_members/cholponbek_ahmatov.png"),
+        id: 39,
+    },
 ];
 
 export default mockMembers;
