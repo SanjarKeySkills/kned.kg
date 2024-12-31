@@ -168,7 +168,6 @@ const mockMembers = [
         path: require("../../../assets/active_members/aibek_moldokadyrov.png"),
         id: 42,
     },
-
     {
         path: require("../../../assets/active_members/ermek_talasbaev.png"),
         id: 43,
@@ -180,6 +179,19 @@ const mockMembers = [
     {
         path: require("../../../assets/active_members/anar_nosinova.png"),
         id: 45,
+    },
+
+    {
+        path: require("../../../assets/active_members/oleg_raldugin.png"),
+        id: 46,
+    },
+    {
+        path: require("../../../assets/active_members/nurkamila_alicheva.png"),
+        id: 47,
+    },
+    {
+        path: require("../../../assets/active_members/talant_kerimbaev.png"),
+        id: 48,
     },
 ];
 
