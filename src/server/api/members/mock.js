@@ -180,7 +180,6 @@ const mockMembers = [
         path: require("../../../assets/active_members/anar_nosinova.png"),
         id: 45,
     },
-
     {
         path: require("../../../assets/active_members/oleg_raldugin.png"),
         id: 46,
@@ -192,6 +191,42 @@ const mockMembers = [
     {
         path: require("../../../assets/active_members/talant_kerimbaev.png"),
         id: 48,
+    },
+    {
+        path: require("../../../assets/active_members/kerez_kelisheva.png"),
+        id: 49,
+    },
+    {
+        path: require("../../../assets/active_members/shahida_nurhadzhieva.png"),
+        id: 50,
+    },
+    {
+        path: require("../../../assets/active_members/kubat_alymkulov.png"),
+        id: 51,
+    },
+    {
+        path: require("../../../assets/active_members/samatbek_dzhumashev.png"),
+        id: 52,
+    },
+    {
+        path: require("../../../assets/active_members/oleg_kudyakov.png"),
+        id: 53,
+    },
+    {
+        path: require("../../../assets/active_members/rinat_rahimov.png"),
+        id: 54,
+    },
+    {
+        path: require("../../../assets/active_members/anton_dedikin.png"),
+        id: 55,
+    },
+    {
+        path: require("../../../assets/active_members/zhumash_sydykov.png"),
+        id: 56,
+    },
+    {
+        path: require("../../../assets/active_members/asseta_krasnozhonova.png"),
+        id: 57,
     },
 ];
 
