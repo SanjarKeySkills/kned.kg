@@ -257,6 +257,14 @@ const mockMembers = [
         path: require("../../../assets/associated_members/askar_kaldarov.png"),
         id: 1007,
     },
+    {
+        path: require("../../../assets/associated_members/bolot_mambetkadyrov.png"),
+        id: 1008,
+    },
+    {
+        path: require("../../../assets/associated_members/aibek_buzurmankulov.png"),
+        id: 1009,
+    },
 ];
 
 export default mockMembers;
