@@ -28,7 +28,7 @@ const membersData = [
         id: "3",
         name: "Мирлан Турдубек уулу",
         annotation: "Двадцать лет в сфере логистики и международных перевозок.",
-        image: require("../../../assets/associated_members/mirlan_turdubek_uulu.png"),
+        image: getMemberPathById(1003),
         jobExp: "Двадцать лет в сфере логистики и международных перевозок. 2001 – 2005 - YEKAS Warehousing, Sea, Road, Air Transportations, Turkey. 2005 – 2006 - SAFIR Shipping & Forwarding Company, Turkey. 2006 – 2010 - LOGIMAR Logistics Services Company, Turkey. 2011 – 2013 - ADAL Food Logistics Services Company, Turkey. 2014 – 2015 - LOGIMAR Logistics Services Company, Turkey. 2015 – 2021 – GEFCO, Turkey. 2022 – «UBS TRANSIT», Кыргызстан.",
         edu: "Университет Мармара (Стамбул).",
         competence:
@@ -40,7 +40,7 @@ const membersData = [
         name: "Асель Мамытова",
         annotation:
             "Ассоциированный член Палаты Независимых Директоров Кыргызской Республики",
-        image: require("../../../assets/associated_members/asel_mamytova.png"),
+        image: getMemberPathById(1004),
         jobExp: "",
         edu: "",
         competence: "",
