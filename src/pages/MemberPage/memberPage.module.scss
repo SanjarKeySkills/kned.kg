@@ -1,6 +1,6 @@
 .memberPage {
-    // width: 100%;
-    width: 1440px;
+    width: 100%;
+    // width: 1440px;
     padding: 144px 24px 16px;
     display: flex;
     justify-content: center;
@@ -87,30 +87,31 @@
 // @media (max-width: 1024px) {
 // }
 
-// @media (max-width: 768px) {
-//     .memberPageWrapper {
-//         padding: 16px 8px 24px 24px;
-//     }
-//     .memberName {
-//         font-size: 32px;
-//     }
-//     .memberTitle {
-//         display: flex;
-//         flex-direction: column;
-//         gap: 32px;
-//         img {
-//             width: 240px;
-//             height: 240px;
-//         }
-//     }
-//     .memberData {
-//         display: flex;
-//         flex-direction: column;
-//         gap: 16px;
-//         padding: 24px 0 0;
-//     }
-//     .memberDataDescription {
-//         padding: 16px;
-//         font-size: 16px;
-//     }
-// }
+@media (max-width: 768px) {
+    .memberPageWrapper {
+        padding: 16px 8px 24px 24px;
+    }
+    .memberName {
+        font-size: 32px;
+    }
+    .memberTitle {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        img {
+            width: 240px;
+            height: 240px;
+        }
+    }
+
+    .memberData {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 24px 0 0;
+    }
+    .memberDataDescription {
+        padding: 16px;
+        font-size: 16px;
+    }
+}
