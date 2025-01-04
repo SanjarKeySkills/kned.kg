@@ -322,6 +322,10 @@ const mockMembers = [
         path: require("../../../assets/honored_members/u_sarbanov.png"),
         id: 2003,
     },
+    {
+        path: require("../../../assets/honored_members/u_sarbanov.png"),
+        id: 2004,
+    },
 ];
 
 export default mockMembers;
