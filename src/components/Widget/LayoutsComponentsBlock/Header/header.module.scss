@@ -6,19 +6,19 @@
     z-index: 7;
     font-family: "Lato", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     text-decoration: none;
 }
 
-.headerTop {
-    width: 100%;
-    padding: 8px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 32px;
-    background-color: #e7ecef;
-}
+// .headerTop {
+//     width: 100%;
+//     padding: 8px 0;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     gap: 32px;
+//     background-color: #e7ecef;
+// }
 
 .heroButton {
     padding: 4px 8px;
@@ -60,11 +60,11 @@
     text-decoration: none;
     background-color: #002345;
     color: #ffffff;
-
     &:hover {
         background-color: #447ac6;
     }
 }
+
 .lanEn {
     padding: 4px;
     border: none;
@@ -86,14 +86,18 @@
     top: 40px;
     left: 0;
     background-color: #ffffff;
-    .headerBottomWrapper {
-        max-width: 1440px;
-        margin: 0 auto;
-        padding: 24px 24px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
+}
+
+.headerBottomWrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 24px 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    // img {
+    //     max-width: 180px;
+    // }
 }
 
 // popUp menu на кнопки
@@ -107,7 +111,7 @@
     background: none;
     border: none;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 14px;
     &:hover {
         text-decoration: none;
         color: #447ac6;
@@ -259,10 +263,12 @@
     gap: 32px;
 }
 
-// @media (max-width: 1024px) {
-// }
-
-@media (max-width: 768px) {
+@media (max-width: 1290px) {
+    .headerBottomWrapper {
+        img {
+            max-width: 100%;
+        }
+    }
     .headerTop {
         display: none;
     }
@@ -273,3 +279,15 @@
         display: flex;
     }
 }
+
+// @media (max-width: 768px) {
+//     .headerTop {
+//         display: none;
+//     }
+//     .headerBottom {
+//         display: none;
+//     }
+//     .headerMobile {
+//         display: flex;
+//     }
+// }
