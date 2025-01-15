@@ -3,7 +3,7 @@ import styles from "./bulletinPage.module.scss";
 import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import HeroHeader from "../../components/Widget/LayoutsComponentsBlock/HeroHeader/heroHeader.jsx";
-// import newsData from "../../components/Widget/NewsBlock/NewsCards/newsData.js";
+import newsData from "../../components/Widget/NewsBlock/NewsCards/newsData.js";
 import FormatText from "../../components/Widget/FormatText/FormatText.jsx";
 import businessBreakfastData from "../../components/Widget/GalleryBlock/GalleryCards/businessBreakfastData.js";
 import businessSaturdayData from "../../components/Widget/GalleryBlock/GalleryCards/businessSaturdayData.js";
@@ -50,7 +50,6 @@ const BulletinPage = () => {
     // Проверка на пустой массив изображений.
     // return <p>Альбом не найден</p>;
     // }
-
     // Функции для слайдера
     const nextSlide = () => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -74,6 +73,10 @@ const BulletinPage = () => {
             prevSlide();
         }
     };
+
+    const bulletin = newsData.find((bulletinItem) => bulletinItem.id === id);
+    // получаем ту bulletin с такой id и ту новость приводим на нашу константу
+    // вместо type -  встанет массив newsData
 
     return (
         <>
