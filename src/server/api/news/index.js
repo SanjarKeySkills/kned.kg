@@ -1,7 +1,15 @@
 import mockNews from "./mock";
 
-const getNewsList = () => {
-    return mockNews;
+const getNewsList = (ids) => {
+    console.log(
+        mockNews.filter((bulletine) => {
+            return ids.includes(bulletine.id);
+        })
+    );
+
+    return mockNews.filter((bulletine) => {
+        return ids.includes(bulletine.id);
+    });
 };
 
 export { getNewsList };

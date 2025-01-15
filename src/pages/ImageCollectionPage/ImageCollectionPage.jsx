@@ -3,13 +3,15 @@ import styles from "./imageCollectionPage.module.scss";
 import { useParams } from "react-router-dom";
 import businessBreakfastData from "../../components/Widget/GalleryBlock/GalleryCards/businessBreakfastData.js";
 import businessSaturdayData from "../../components/Widget/GalleryBlock/GalleryCards/businessSaturdayData.js";
-import BusinessEventData from "../../components/Widget/GalleryBlock/GalleryCards/businessEventData.js";
+import businessEventData from "../../components/Widget/GalleryBlock/GalleryCards/businessEventData.js";
 
 const ImageCollectionPage = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
+
     const { id, type } = useParams();
+
     const [currentIndex, setCurrentIndex] = useState(0);
     const touchStartX = useRef(0);
     const touchEndX = useRef(0);
@@ -17,7 +19,7 @@ const ImageCollectionPage = () => {
     const mapEventData = {
         breakfast: businessBreakfastData,
         saturday: businessSaturdayData,
-        happening: BusinessEventData,
+        happening: businessEventData,
     };
 
     const event = mapEventData[type]?.find((item) => item.id === id);

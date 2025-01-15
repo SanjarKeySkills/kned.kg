@@ -1,11 +1,11 @@
 import mockMembers from "./mock";
 
 const getMemberList = (ids) => {
-    console.log(
-        mockMembers.filter((member) => {
-            return ids.includes(member.id);
-        })
-    );
+    // console.log(
+    //     mockMembers.filter((member) => {
+    //         return ids.includes(member.id);
+    //     })
+    // );
 
     return mockMembers.filter((member) => {
         return ids.includes(member.id);

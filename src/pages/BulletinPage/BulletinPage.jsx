@@ -120,11 +120,11 @@ const BulletinPage = () => {
                         </div>
                     </div>
                     <div className={styles.inlineList}></div>
-                    <div className={styles.line_grey}></div>
+                    {/* <div className={styles.line_grey}></div> */}
                     <p className={styles.newsInformation}>
                         <FormatText text={bulletin.information2} />
                     </p>
-                    <div className={styles.line_gold}></div>
+                    {/* <div className={styles.line_gold}></div> */}
                     <p className={styles.newsInformation}>
                         <FormatText text={bulletin.information3} />
                     </p>
