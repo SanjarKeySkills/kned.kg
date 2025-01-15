@@ -5,33 +5,52 @@ import { useParams } from "react-router-dom";
 import HeroHeader from "../../components/Widget/LayoutsComponentsBlock/HeroHeader/heroHeader.jsx";
 import newsData from "../../components/Widget/NewsBlock/NewsCards/newsData.js";
 import FormatText from "../../components/Widget/FormatText/FormatText.jsx";
+import businessBreakfastData from "../../components/Widget/GalleryBlock/GalleryCards/businessBreakfastData.js";
+import businessSaturdayData from "../../components/Widget/GalleryBlock/GalleryCards/businessSaturdayData.js";
+import businessEventData from "../../components/Widget/GalleryBlock/GalleryCards/businessEventData.js";
 
 const BulletinPage = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
 
-    const { id } = useParams();
-    const bulletin = newsData.find((bulletin) => bulletin.id === id);
-
-    // Массив изображений
-    const images = [
-        bulletin.image1,
-        bulletin.image2,
-        bulletin.image3,
-        bulletin.image4,
-        bulletin.image5,
-    ].filter((image) => image); //удаляем пустые значения
-
+    const { id, type } = useParams();
     // вызов хуков
     const [currentIndex, setCurrentIndex] = useState(0);
     const touchStartX = useRef(0);
     const touchEndX = useRef(0);
 
-    // Проверка на пустой массив изображений.
-    if (images.length === 0) {
+    const mapEventData = {
+        businessBreakfastData,
+        businessSaturdayData,
+        businessEventData,
+    };
+
+    const images = event.images;
+    console.log(event.images);
+
+    const event = mapEventData[type]?.find((item) => item.id === id);
+    // ? - проверка корректного существования данных
+    // Проверка на длину массива до рендеринга изображений
+    if (!event || !event.images || event.images.length === 0) {
+        // Проверка существования images[currentIndex] при рендере:
+        // Предотвращает попытку доступа к несуществующим элементам,
+        // если currentIndex случайно выходит за пределы массива.
         return <p>Альбом не найден</p>;
     }
+
+    // if (images.length === 0) {
+    // const images = [
+    //     bulletin.image1,
+    //     bulletin.image2,
+    //     bulletin.image3,
+    //     bulletin.image4,
+    //     bulletin.image5,
+    // ].filter((image) => image); //удаляем пустые значения
+
+    // Проверка на пустой массив изображений.
+    // return <p>Альбом не найден</p>;
+    // }
 
     // Функции для слайдера
     const nextSlide = () => {

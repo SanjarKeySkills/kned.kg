@@ -11,7 +11,7 @@ const ImageCollectionPage = () => {
     }, []);
 
     const { id, type } = useParams();
-
+    // вызов хуков
     const [currentIndex, setCurrentIndex] = useState(0);
     const touchStartX = useRef(0);
     const touchEndX = useRef(0);
