@@ -3,7 +3,7 @@ import styles from "./bulletinPage.module.scss";
 import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import HeroHeader from "../../components/Widget/LayoutsComponentsBlock/HeroHeader/heroHeader.jsx";
-import newsData from "../../components/Widget/NewsBlock/NewsCards/newsData.js";
+// import newsData from "../../components/Widget/NewsBlock/NewsCards/newsData.js";
 import FormatText from "../../components/Widget/FormatText/FormatText.jsx";
 import businessBreakfastData from "../../components/Widget/GalleryBlock/GalleryCards/businessBreakfastData.js";
 import businessSaturdayData from "../../components/Widget/GalleryBlock/GalleryCards/businessSaturdayData.js";
@@ -21,13 +21,10 @@ const BulletinPage = () => {
     const touchEndX = useRef(0);
 
     const mapEventData = {
-        businessBreakfastData,
-        businessSaturdayData,
-        businessEventData,
+        breakfast: businessBreakfastData,
+        saturday: businessSaturdayData,
+        happening: businessEventData,
     };
-
-    const images = event.images;
-    console.log(event.images);
 
     const event = mapEventData[type]?.find((item) => item.id === id);
     // ? - проверка корректного существования данных
@@ -39,6 +36,9 @@ const BulletinPage = () => {
         return <p>Альбом не найден</p>;
     }
 
+    const images = event.images;
+    console.log(event.images);
+
     // if (images.length === 0) {
     // const images = [
     //     bulletin.image1,
@@ -47,7 +47,6 @@ const BulletinPage = () => {
     //     bulletin.image4,
     //     bulletin.image5,
     // ].filter((image) => image); //удаляем пустые значения
-
     // Проверка на пустой массив изображений.
     // return <p>Альбом не найден</p>;
     // }

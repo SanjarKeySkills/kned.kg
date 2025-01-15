@@ -32,7 +32,7 @@ const ImageCollectionPage = () => {
         return <p>Альбом не найден</p>;
     }
 
-    console.log(event.images);
+    // console.log(event.images);
     const images = event.images;
 
     // для перехода к следующему изображению
