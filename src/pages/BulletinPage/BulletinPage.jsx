@@ -39,17 +39,6 @@ const BulletinPage = () => {
     const images = event.images;
     console.log(event.images);
 
-    // if (images.length === 0) {
-    // const images = [
-    //     bulletin.image1,
-    //     bulletin.image2,
-    //     bulletin.image3,
-    //     bulletin.image4,
-    //     bulletin.image5,
-    // ].filter((image) => image); //удаляем пустые значения
-    // Проверка на пустой массив изображений.
-    // return <p>Альбом не найден</p>;
-    // }
     // Функции для слайдера
     const nextSlide = () => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);

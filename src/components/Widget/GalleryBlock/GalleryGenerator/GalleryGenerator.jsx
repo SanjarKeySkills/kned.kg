@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function GalleryGenerator({ data, type }) {
     //деструктуризируем из объекта сам объект props
     // - и его ключи data, и type.
-    console.log(data);
+    // console.log(data);
     return (
         <div className={styles.eventList}>
             {data.map((event) => (

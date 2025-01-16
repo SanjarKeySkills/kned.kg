@@ -64,12 +64,13 @@ const ImageCollectionPage = () => {
             prevSlide();
         }
     };
-    console.log(
-        "Current Index:",
-        currentIndex,
-        "Image URL:",
-        images[currentIndex]?.url
-    );
+
+    // console.log(
+    //     "Current Index:",
+    //     currentIndex,
+    //     "Image URL:",
+    //     images[currentIndex]?.url
+    // );
 
     return (
         <div className={styles.imageCollectionPage}>
