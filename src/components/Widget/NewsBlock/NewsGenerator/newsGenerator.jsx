@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styles from "./newsGenerator.module.scss";
 
-function NewsGenerator({ data, type }) {
+export default function NewsGenerator({ data, type }) {
     //деструктуризируем из объекта сам объект props и его ключи, data, и type.
     return (
         <div className={styles.newsGenerator}>
@@ -13,7 +13,7 @@ function NewsGenerator({ data, type }) {
                             <img
                                 className={styles.newsImg}
                                 src={bulletin.image}
-                                alt={bulletin.name}
+                                alt={bulletin.title}
                             />
                             <p className={styles.newsTitle}>{bulletin.title}</p>
                         </Link>
@@ -27,5 +27,3 @@ function NewsGenerator({ data, type }) {
         </div>
     );
 }
-
-export default NewsGenerator;

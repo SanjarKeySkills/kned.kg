@@ -1,26 +1,9 @@
 .newsPage {
-    padding-top: 40px;
     display: flex;
     flex-direction: column;
     font-family: "Lato", sans-serif;
     font-weight: 400;
-    font-size: 20px;
-}
-
-.backToNewsBtn {
-    padding: 8px;
-    border-radius: 8px;
-    background-color: #000;
-    font-size: 16px;
-    text-align: center;
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    color: #ffffff;
-    text-decoration: none;
-    &:hover {
-        background-color: #bb8916;
-        color: #ffffff;
-    }
+    font-size: 18px;
 }
 
 .newsPageContainer {
@@ -36,20 +19,22 @@
 }
 
 .newsTitle {
+    font-size: 24px;
     font-weight: bold;
     padding-bottom: 24px;
 }
 
 .newsDate {
+    font-size: 12px;
     text-align: start;
     padding-bottom: 24px;
     color: #7f858a;
 }
 
 .newsAnnotationList {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
-    padding: 16px;
+    padding: 16px 0;
 }
 
 .bulletinSlider {
@@ -111,6 +96,7 @@
     margin: 0 auto;
 }
 .newsInscript {
+    margin: 0 auto;
     padding-bottom: 24px;
     font-size: 16px;
     color: #5d6267;

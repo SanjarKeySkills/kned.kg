@@ -68,7 +68,6 @@ const MemberPage = () => {
                         {formatText(member.sertif)}
                     </div>
                 </div>
-                <></>
             </div>
         </div>
     );
