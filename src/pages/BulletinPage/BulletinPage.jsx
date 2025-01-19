@@ -1,12 +1,8 @@
-import React, {
-    useEffect,
-    //  useState, useRef
-} from "react";
+import React, { useEffect, useState, useRef } from "react";
 import styles from "./bulletinPage.module.scss";
-// import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import HeroHeader from "../../components/Widget/LayoutsComponentsBlock/HeroHeader/heroHeader.jsx";
-import FormatText from "../../components/Widget/FormatText/FormatText.jsx";
+// import FormatText from "../../components/Widget/FormatText/FormatText.jsx";
 import newsData from "../../components/Widget/NewsBlock/NewsCards/newsData.js";
 
 const BulletinPage = () => {
@@ -15,115 +11,103 @@ const BulletinPage = () => {
     }, []);
 
     const { id } = useParams();
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const touchStartX = useRef(0);
+    const touchEndX = useRef(0);
 
-    // вызов хуков
-    // const [currentIndex, setCurrentIndex] = useState(0);
-    // const touchStartX = useRef(0);
-    // const touchEndX = useRef(0);
+    const news = newsData.find((item) => item.id === id);
+    if (!news || !news.images || news.images.length === 0) {
+        return <p>Альбом не найден</p>;
+    }
 
-    const bulletin = newsData.find((event) => event.id === id);
-    // ? - проверка корректного существования данных
-    // Проверка на длину массива до рендеринга изображений
-    // if (!event || !event.images || event.images.length === 0) {
-    //     // Проверка существования images[currentIndex] при рендере:
-    //     // Предотвращает попытку доступа к несуществующим элементам,
-    //     // если currentIndex случайно выходит за пределы массива.
-    //     return <p>Альбом не найден</p>;
-    // }
+    const images = news.images;
 
-    // const images = event.images;
+    // для перехода к следующему изображению
+    const nextSlide = () => {
+        setCurrentIndex((prevIndex) =>
+            prevIndex === images.length - 1 ? 0 : prevIndex + 1
+        );
+    };
 
-    // // Функции для слайдера
-    // const nextSlide = () => {
-    //     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    // };
-    // const prevSlide = () => {
-    //     setCurrentIndex(
-    //         (prevIndex) => (prevIndex - 1 + images.length) % images.length
-    //     );
-    // };
-    // const handleTouchStart = (e) => {
-    //     touchStartX.current = e.touches[0].clientX;
-    // };
-    // const handleTouchMove = (e) => {
-    //     touchEndX.current = e.touches[0].clientX;
-    // };
-    // const handleTouchEnd = () => {
-    //     if (touchStartX.current - touchEndX.current > 50) {
-    //         nextSlide();
-    //     } else if (touchStartX.current - touchEndX.current < -50) {
-    //         prevSlide();
-    //     }
-    // };
+    // для перехода к предыдущему изображению
+    const prevSlide = () => {
+        setCurrentIndex((prevIndex) =>
+            prevIndex === 0 ? images.length - 1 : prevIndex - 1
+        );
+    };
 
-    // const bulletin = newsData.find((bulletinItem) => bulletinItem.id === id);
-    // // получаем ту bulletin с такой id и ту новость приводим на нашу константу
-    // // вместо type -  встанет массив newsData
+    const handleTouchStart = (e) => {
+        touchStartX.current = e.touches[0].clientX;
+    };
+    const handleTouchMove = (e) => {
+        touchEndX.current = e.touches[0].clientX;
+    };
+
+    const handleTouchEnd = () => {
+        if (touchStartX.current - touchEndX.current > 50) {
+            nextSlide();
+        } else if (touchStartX.current - touchEndX.current < -50) {
+            prevSlide();
+        }
+    };
 
     return (
         <>
             <HeroHeader />
             <div className={styles.newsPage}>
                 <div className={styles.newsPageContainer}>
-                    <div className={styles.titleNewsWrapper}>
+                    <div
+                        onTouchStart={handleTouchStart}
+                        onTouchMove={handleTouchMove}
+                        onTouchEnd={handleTouchEnd}>
+                        <div>
+                            {images[currentIndex] ? (
+                                <img
+                                    src={news.images[currentIndex].path}
+                                    alt={
+                                        news.images[currentIndex].title ||
+                                        "Album"
+                                    }
+                                />
+                            ) : (
+                                <p>Изображение не доступно</p>
+                            )}
+                        </div>
+                    </div>
+                    <div className={styles.buttonWrapper}>
+                        {images.length > 1 && (
+                            <button
+                                onClick={prevSlide}
+                                className={styles.leftArrow}>
+                                ❮
+                            </button>
+                        )}
+                        {images.length > 1 && (
+                            <button
+                                onClick={nextSlide}
+                                className={styles.rightArrow}>
+                                ❯
+                            </button>
+                        )}
+                    </div>
+
+                    {/* <div className={styles.titleNewsWrapper}>
                         <h2 className={styles.newsTitle}>
                             <FormatText text={bulletin.title} />
                         </h2>
                         <p className={styles.newsDate}>{bulletin.date}</p>
-                    </div>
-                    <p className={styles.newsAnnotationList}>
+                    </div> */}
+                    {/* <p className={styles.newsAnnotationList}>
                         <FormatText text={bulletin.annotation} />
-                    </p>
-                    <p className={styles.newsInformation}>
+                    </p> */}
+                    {/* <p className={styles.newsInformation}>
                         <FormatText text={bulletin.information} />
-                    </p>
-                    {/* Рендерим слайдер, если есть хотя бы одно изображение */}
-                    {/* <div
-                        className={styles.bulletinSlider}
-                        onTouchStart={handleTouchStart}
-                        onTouchMove={handleTouchMove}
-                        onTouchEnd={handleTouchEnd}> */}
-                    {/* {images[currentIndex] ? (
-                            <img
-                                src={images[currentIndex]}
-                                alt={`Slide ${currentIndex}`}
-                                className={styles.newsImg}
-                            />
-                        ) : (
-                            <p>Изображение не доступно</p>
-                        )} */}
+                    </p> */}
+                    {/* Слайдер */}
 
-                    <img
-                        src={bulletin.image}
-                        alt="img"
-                        className={styles.newsImg}
-                    />
-
-                    {/* Отображаем кнопки, если изображений больше одного */}
-                    {/* <div className={styles.buttonWrapper}> */}
-                    {/* {images.length > 1 && (
-                                // чтобы избежать рендеринга пустого элемента
-                                <button
-                                    onClick={prevSlide}
-                                    className={styles.leftArrow}>
-                                    ❮
-                                </button>
-                            )} */}
-                    {/* {images.length > 1 && (
-                                // чтобы избежать рендеринга пустого элемента.
-                                <button
-                                    onClick={nextSlide}
-                                    className={styles.rightArrow}>
-                                    ❯
-                                </button>
-                            )} */}
-                    {/* </div> */}
-                    {/* </div> */}
-
-                    <div className={styles.inlineList}></div>
-                    <p className={styles.newsInformation}>
+                    {/* <p className={styles.newsInformation}>
                         <FormatText text={bulletin.information1} />
-                    </p>
+                    </p> */}
                 </div>
             </div>
         </>

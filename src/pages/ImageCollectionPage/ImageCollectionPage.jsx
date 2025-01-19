@@ -11,7 +11,6 @@ const ImageCollectionPage = () => {
     }, []);
 
     const { id, type } = useParams();
-    // вызов хуков
     const [currentIndex, setCurrentIndex] = useState(0);
     const touchStartX = useRef(0);
     const touchEndX = useRef(0);
@@ -32,7 +31,6 @@ const ImageCollectionPage = () => {
         return <p>Альбом не найден</p>;
     }
 
-    // console.log(event.images);
     const images = event.images;
 
     // для перехода к следующему изображению
@@ -52,7 +50,6 @@ const ImageCollectionPage = () => {
     const handleTouchStart = (e) => {
         touchStartX.current = e.touches[0].clientX;
     };
-
     const handleTouchMove = (e) => {
         touchEndX.current = e.touches[0].clientX;
     };
@@ -64,13 +61,6 @@ const ImageCollectionPage = () => {
             prevSlide();
         }
     };
-
-    // console.log(
-    //     "Current Index:",
-    //     currentIndex,
-    //     "Image URL:",
-    //     images[currentIndex]?.url
-    // );
 
     return (
         <div className={styles.imageCollectionPage}>
