@@ -4,7 +4,6 @@ import { useParams } from "react-router-dom";
 import HeroHeader from "../../components/Widget/LayoutsComponentsBlock/HeroHeader/heroHeader.jsx";
 import FormatText from "../../components/Widget/FormatText/FormatText.jsx";
 import newsData from "../../components/Widget/NewsBlock/NewsCards/newsData.js";
-// import { getGalleryList } from "../../server/api/galleries/id";
 import { getGalleryPathById } from "../../server/api/galleries/id";
 
 const BulletinPage = () => {
@@ -32,6 +31,7 @@ const BulletinPage = () => {
     const nextImage = () => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % galleryImages.length);
     };
+    // Оператор остатка от деления % используется, чтобы обеспечить цикличность. Когда индекс доходит до конца массива, он снова "перезапускается" с 0.
 
     const prevImage = () => {
         setCurrentIndex(
