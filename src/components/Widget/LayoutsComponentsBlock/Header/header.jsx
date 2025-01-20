@@ -8,8 +8,8 @@ import { useState } from "react";
 
 const Header = () => {
     const [isOpenPopUp, setOpenPopUp] = useState("none");
-
     const [isPndMenuOpen, setPndMenuOpen] = useState(false);
+
     const togglePopUp = () => {
         setOpenPopUp((prev) => (prev === "none" ? "block" : "none"));
     };
@@ -20,6 +20,11 @@ const Header = () => {
         if (isOpenPopUp === "none") {
             setOpenPopUp("block");
         } else setOpenPopUp("none");
+    };
+
+    // Функция для закрытия меню при клике на ссылку
+    const handleLinkClick = () => {
+        setPndMenuOpen(false);
     };
 
     return (
@@ -41,28 +46,36 @@ const Header = () => {
                                     <li>
                                         <Link
                                             to="/services"
-                                            className={styles.navLink}>
+                                            className={styles.navLink}
+                                            onClick={handleLinkClick} // Закрытие меню при клике
+                                        >
                                             УСЛУГИ
                                         </Link>
                                     </li>
                                     <li>
                                         <Link
                                             to="/news"
-                                            className={styles.navLink}>
+                                            className={styles.navLink}
+                                            onClick={handleLinkClick} // Закрытие меню при клике
+                                        >
                                             НОВОСТИ
                                         </Link>
                                     </li>
                                     <li>
                                         <Link
                                             to="/articles"
-                                            className={styles.navLink}>
+                                            className={styles.navLink}
+                                            onClick={handleLinkClick} // Закрытие меню при клике
+                                        >
                                             ПУБЛИКАЦИИ
                                         </Link>
                                     </li>
                                     <li>
                                         <Link
                                             to="/gallery"
-                                            className={styles.navLink}>
+                                            className={styles.navLink}
+                                            onClick={handleLinkClick} // Закрытие меню при клике
+                                        >
                                             ГАЛЕРЕЯ
                                         </Link>
                                     </li>
