@@ -81,6 +81,7 @@ const ImageCollectionPage = () => {
                                 <p>Изображение не доступно</p>
                             )}
                         </div>
+
                         <div className={styles.buttonWrapper}>
                             {images.length > 1 && (
                                 // чтобы избежать рендеринга пустого элемента

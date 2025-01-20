@@ -1,12 +1,8 @@
-import React, {
-    useState,
-    useEffect,
-    //  useRef
-} from "react";
+import React, { useState, useEffect, useRef } from "react";
 import styles from "./bulletinPage.module.scss";
 import { useParams } from "react-router-dom";
 import HeroHeader from "../../components/Widget/LayoutsComponentsBlock/HeroHeader/heroHeader.jsx";
-// import FormatText from "../../components/Widget/FormatText/FormatText.jsx";
+import FormatText from "../../components/Widget/FormatText/FormatText.jsx";
 import newsData from "../../components/Widget/NewsBlock/NewsCards/newsData.js";
 // import { getGalleryList } from "../../server/api/galleries/id";
 import { getGalleryPathById } from "../../server/api/galleries/id";
@@ -18,15 +14,15 @@ const BulletinPage = () => {
 
     const { id } = useParams(); // Receive id from URL parameters
     const [currentIndex, setCurrentIndex] = useState(0); // the index of current img
-    const [galleryImages, setGalleryImages] = useState(0); // the array of img for slider
-    // const touchStartX = useRef(0);
-    // const touchEndX = useRef(0);
+    const [galleryImages, setGalleryImages] = useState([]); // the array of img for slider
+    const touchStartX = useRef(0);
+    const touchEndX = useRef(0);
 
     // hiding the obj of the news by id
     const newsItem = newsData.find((item) => item.id === id);
-    // if (!news || !news.images || news.images.length === 0) {
-    //     return <p>Альбом не найден</p>;
-    // }
+    console.log(newsItem.information1);
+    console.log(newsItem.title);
+    console.log(newsItem.date);
 
     // if news was founded - initializing slider with img
     useEffect(() => {
@@ -47,104 +43,71 @@ const BulletinPage = () => {
         );
     };
 
-    // для перехода к предыдущему изображению
-    // const prevSlide = () => {
-    //     setCurrentIndex((prevIndex) =>
-    //         prevIndex === 0 ? images.length - 1 : prevIndex - 1
-    //     );
-    // };
+    const handleTouchStart = (e) => {
+        touchStartX.current = e.touches[0].clientX;
+    };
+    const handleTouchMove = (e) => {
+        touchEndX.current = e.touches[0].clientX;
+    };
 
-    // const handleTouchStart = (e) => {
-    //     touchStartX.current = e.touches[0].clientX;
-    // };
-    // const handleTouchMove = (e) => {
-    //     touchEndX.current = e.touches[0].clientX;
-    // };
-
-    // const handleTouchEnd = () => {
-    //     if (touchStartX.current - touchEndX.current > 50) {
-    //         nextSlide();
-    //     } else if (touchStartX.current - touchEndX.current < -50) {
-    //         prevSlide();
-    //     }
-    // };
+    const handleTouchEnd = () => {
+        if (touchStartX.current - touchEndX.current > 50) {
+            nextImage();
+        } else if (touchStartX.current - touchEndX.current < -50) {
+            prevImage();
+        }
+    };
 
     return (
         <>
             <HeroHeader />
             <div className={styles.newsPage}>
                 <div className={styles.newsPageContainer}>
-                    {/* <div
+                    <div className={styles.titleNewsWrapper}>
+                        <h2 className={styles.newsTitle}>
+                            <FormatText text={newsItem.title} />
+                        </h2>
+                        <p className={styles.newsDate}>{newsItem.date}</p>
+                    </div>
+                    <p className={styles.newsAnnotationList}>
+                        <FormatText text={newsItem.annotation} />
+                    </p>
+                    <p className={styles.newsInformation}>
+                        <FormatText text={newsItem.information} />
+                    </p>
+
+                    {/* Слайдер */}
+
+                    <div
                         onTouchStart={handleTouchStart}
                         onTouchMove={handleTouchMove}
-                        onTouchEnd={handleTouchEnd}>
-                        <div>
-                            {images[currentIndex] ? (
-                                <img
-                                    src={news.images[currentIndex].path}
-                                    alt={
-                                        news.images[currentIndex].title ||
-                                        "Album"
-                                    }
-                                />
-                            ) : (
-                                <p>Изображение не доступно</p>
-                            )}
-                        </div>
-                    </div>
-                    <div className={styles.buttonWrapper}>
-                        {images.length > 1 && (
-                            <button
-                                onClick={prevSlide}
-                                className={styles.leftArrow}>
-                                ❮
-                            </button>
-                        )}
-                        {images.length > 1 && (
-                            <button
-                                onClick={nextSlide}
-                                className={styles.rightArrow}>
-                                ❯
-                            </button>
-                        )}
-                    </div> */}
-
-                    <div className="slider">
+                        onTouchEnd={handleTouchEnd}
+                        className={styles.bulletinSlider}>
                         {galleryImages.length > 0 && (
-                            <div className="slider-container">
+                            <div>
                                 <img
                                     src={getGalleryPathById(
                                         galleryImages[currentIndex].id
                                     )}
                                     alt="gallery"
-                                    className="slider-image"
                                 />
                             </div>
                         )}
 
-                        <div className="slider-controls">
-                            <button onClick={prevImage}>{"<"}</button>
-                            <button onClick={nextImage}>{">"}</button>
+                        {/* Only show the buttons if there are more than one image */}
+                        <div className={styles.buttonWrapper}>
+                            {galleryImages.length > 2 && (
+                                <button onClick={prevImage}>❮</button>
+                            )}
+                            {galleryImages.length > 2 && (
+                                <button onClick={nextImage}>❯</button>
+                            )}
                         </div>
                     </div>
 
-                    {/* <div className={styles.titleNewsWrapper}>
-                        <h2 className={styles.newsTitle}>
-                            <FormatText text={bulletin.title} />
-                        </h2>
-                        <p className={styles.newsDate}>{bulletin.date}</p>
-                    </div> */}
-                    {/* <p className={styles.newsAnnotationList}>
-                        <FormatText text={bulletin.annotation} />
-                    </p> */}
-                    {/* <p className={styles.newsInformation}>
-                        <FormatText text={bulletin.information} />
-                    </p> */}
-                    {/* Слайдер */}
-
-                    {/* <p className={styles.newsInformation}>
-                        <FormatText text={bulletin.information1} />
-                    </p> */}
+                    <p className={styles.newsInformation}>
+                        <FormatText text={newsItem.information1} />
+                    </p>
                 </div>
             </div>
         </>
