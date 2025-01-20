@@ -50,7 +50,12 @@
     align-items: center;
 }
 
-.lanRu {
+.lan:focus {
+    background-color: #c69214;
+    outline: none;
+}
+
+.lan {
     padding: 4px;
     border: none;
     font-size: 12px;
@@ -58,28 +63,28 @@
     font-weight: bold;
     font-family: "Lato", sans-serif;
     text-decoration: none;
-    background-color: #002345;
+    background-color: #5d6267;
     color: #ffffff;
     &:hover {
-        background-color: #447ac6;
+        background-color: #c69214;
     }
 }
 
-.lanEn {
-    padding: 4px;
-    border: none;
-    font-size: 12px;
-    text-align: center;
-    font-weight: bold;
-    font-family: "Lato", sans-serif;
-    text-decoration: none;
-    background-color: #ffc72c;
-    color: #002345;
-    &:hover {
-        background-color: #c69214;
-        color: #ffffff;
-    }
-}
+// .lanEn {
+//     padding: 4px;
+//     border: none;
+//     font-size: 12px;
+//     text-align: center;
+//     font-weight: bold;
+//     font-family: "Lato", sans-serif;
+//     text-decoration: none;
+//     background-color: #ffc72c;
+//     color: #002345;
+//     &:hover {
+//         background-color: #c69214;
+//         color: #ffffff;
+//     }
+// }
 
 .headerBottom {
     width: 100%;

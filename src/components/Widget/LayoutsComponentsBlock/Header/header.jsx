@@ -105,13 +105,13 @@ const Header = () => {
                             ВСТУПИТЬ В ПАЛАТУ
                         </Link>
                         <div className={styles.lanBtnWraper}>
-                            <Link to="/" className={styles.lanRu}>
+                            <Link to="/" className={styles.lan}>
                                 RU
                             </Link>
-                            <Link to="#" className={styles.lanEn}>
+                            <Link to="#" className={styles.lan}>
                                 EN
                             </Link>
-                            <Link to="#" className={styles.lanRu}>
+                            <Link to="#" className={styles.lan}>
                                 KG
                             </Link>
                         </div>
@@ -194,16 +194,14 @@ const Header = () => {
                                 </Link>
                             </li>
                         </ul>
-                        <div>
-                            <Link to="#" className={styles.lanRu}>
+                        <div className={styles.lanBtnWraper}>
+                            <Link to="#" className={styles.lan}>
                                 RU
                             </Link>
-                            <Link
-                                to="#"
-                                className={(styles.lanBlock, styles.lanEn)}>
+                            <Link to="#" className={styles.lan}>
                                 EN
                             </Link>
-                            <Link to="#" className={styles.lanRu}>
+                            <Link to="#" className={styles.lan}>
                                 KG
                             </Link>
                         </div>
