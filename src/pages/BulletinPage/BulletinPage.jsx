@@ -20,9 +20,6 @@ const BulletinPage = () => {
 
     // hiding the obj of the news by id
     const newsItem = newsData.find((item) => item.id === id);
-    console.log(newsItem.information1);
-    console.log(newsItem.title);
-    console.log(newsItem.date);
 
     // if news was founded - initializing slider with img
     useEffect(() => {
@@ -90,6 +87,7 @@ const BulletinPage = () => {
                                         galleryImages[currentIndex].id
                                     )}
                                     alt="gallery"
+                                    className={styles.newsImg}
                                 />
                             </div>
                         )}
@@ -97,10 +95,18 @@ const BulletinPage = () => {
                         {/* Only show the buttons if there are more than one image */}
                         <div className={styles.buttonWrapper}>
                             {galleryImages.length > 2 && (
-                                <button onClick={prevImage}>❮</button>
+                                <button
+                                    onClick={prevImage}
+                                    className={styles.leftArrow}>
+                                    ❮
+                                </button>
                             )}
                             {galleryImages.length > 2 && (
-                                <button onClick={nextImage}>❯</button>
+                                <button
+                                    onClick={nextImage}
+                                    className={styles.rightArrow}>
+                                    ❯
+                                </button>
                             )}
                         </div>
                     </div>
