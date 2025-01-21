@@ -9,19 +9,19 @@ const Header = () => {
     const [isOpenPopUp, setOpenPopUp] = useState("none");
     const [isPndMenuOpen, setPndMenuOpen] = useState(false);
 
-    const togglePopUp = () => {
-        setOpenPopUp((prev) => (prev === "none" ? "block" : "none"));
-    };
+    // const togglePopUp = () => {
+    //     setOpenPopUp((prev) => (prev === "none" ? "block" : "none"));
+    // };
 
     const togglePndMenu = () => {
         setPndMenuOpen((prev) => !prev);
     };
 
-    // const changeStyle = () => {
-    //     if (isOpenPopUp === "none") {
-    //         setOpenPopUp("block");
-    //     } else setOpenPopUp("none");
-    // };
+    const changeStyle = () => {
+        if (isOpenPopUp === "none") {
+            setOpenPopUp("block");
+        } else setOpenPopUp("none");
+    };
 
     // Функция для закрытия меню при клике на ссылку
     const handleLinkClick = () => {
@@ -143,7 +143,7 @@ const Header = () => {
                     <img src={logo} alt="main" />
                 </Link>
                 {/* <img src={burgerButton} alt="burger" onClick={changeStyle} /> */}
-                <img src={burgerButton} alt="burger" onClick={togglePopUp} />
+                <img src={burgerButton} alt="burger" onClick={changeStyle} />
                 <div
                     className={styles.containerPopUp}
                     style={{ display: isOpenPopUp }}>
@@ -152,7 +152,7 @@ const Header = () => {
                             <img
                                 src={arrowPopUp}
                                 alt="arrow"
-                                onClick={togglePopUp}
+                                onClick={changeStyle}
                             />
                         </div>
                         <ul className={styles.listTopPopUp}>
@@ -204,7 +204,7 @@ const Header = () => {
                         </ul>
                         <Link
                             onClick={handlePopUpLinkClick}
-                            className={styles.buttonHero}
+                            className={styles.heroButton}
                             to="/contact">
                             ВСТУПИТЬ В ПАЛАТУ
                         </Link>
