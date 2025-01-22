@@ -1,13 +1,65 @@
 .corpdirBlock {
-    width: 1440px;
+    max-width: 1440px;
     padding: 0 24px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
 }
 
 .heroCorpdirBlock {
+    padding: 144px 96px 128px;
     width: 100%;
     margin-top: 144px;
-    background-color: #ffbb29;
+    background-color: #1e2db3;
+    background-image: url(../../../assets/courses/corpdir_hero_opacity.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 64%;
     border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+    h1 {
+        font-size: 48px;
+        font-weight: 700;
+        color: #ffbb29;
+    }
+    p {
+        font-size: 24px;
+        font-weight: 600;
+        color: #fff;
+    }
 }
 
+.heroCorpdirBlockBtnWrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    .headerBtnApply,
+    .headerBtnInfo {
+        color: #000;
+        font-weight: 600;
+        text-decoration: none;
+        padding: 24px 48px;
+        border-radius: 72px;
+        font-size: 16px;
+    }
+}
+.headerBtnApply {
+    background-color: #ffbb29;
+}
+
+.headerBtnInfo {
+    background-color: #fff;
+}
 // "/corpdir"
+
+// responcive
+
+@media (max-width: 868px) {
+    .heroCorpdirBlockBtnWrapper {
+        flex-direction: column;
+        gap: 24px;
+    }
+}
