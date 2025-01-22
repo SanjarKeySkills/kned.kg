@@ -42,11 +42,11 @@ const Header = () => {
                     </Link>
                     <div className={styles.wrapperBottom}>
                         <li className={styles.dropdown}>
-                            <button
+                            <Link
                                 className={styles.dropdownButton}
                                 onClick={togglePndMenu}>
                                 О ПАЛАТЕ
-                            </button>
+                            </Link>
                             {isPndMenuOpen && (
                                 <ul className={styles.dropdownMenu}>
                                     <li>
@@ -203,7 +203,7 @@ const Header = () => {
                             </li> */}
                         </ul>
                         <Link
-                            onClick={handlePopUpLinkClick}
+                            // onClick={handlePopUpLinkClick}
                             className={styles.heroButton}
                             to="/contact">
                             ВСТУПИТЬ В ПАЛАТУ
