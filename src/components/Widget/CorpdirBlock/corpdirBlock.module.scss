@@ -30,7 +30,6 @@
         color: #fff;
     }
 }
-
 .heroCorpdirBlockBtnWrapper {
     display: flex;
     flex-direction: row;
@@ -52,16 +51,24 @@
 .headerBtnInfo {
     background-color: #fff;
 }
-// "/corpdir"
 
 // responcive
+@media (max-width: 968px) {
+    .heroCorpdirBlockBtnWrapper {
+        .headerBtnApply,
+        .headerBtnInfo {
+            padding: 16px 24px;
+            font-size: 12px;
+        }
+    }
+}
 
 @media (max-width: 868px) {
     .heroCorpdirBlock {
-        padding: 96px 32px 86px;
+        padding: 96px 32px 64px;
         gap: 48px;
         h1 {
-            font-size: 24px;
+            font-size: 32px;
         }
         p {
             font-size: 16px;
@@ -69,14 +76,26 @@
     }
 
     .heroCorpdirBlockBtnWrapper {
-        flex-direction: column;
         gap: 24px;
+        .headerBtnApply,
+        .headerBtnInfo {
+            padding: 16px 24px;
+        }
     }
     .headerBtnApply {
         text-align: center;
     }
-
     .headerBtnInfo {
         text-align: center;
+    }
+}
+
+@media (max-width: 648px) {
+    .heroCorpdirBlockBtnWrapper {
+        flex-direction: column;
+        .headerBtnApply,
+        .headerBtnInfo {
+            padding: 16px 24px;
+        }
     }
 }

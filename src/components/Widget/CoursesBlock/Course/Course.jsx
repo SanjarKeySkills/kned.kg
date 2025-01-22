@@ -9,11 +9,16 @@ const Course = () => {
         <div className={styles.course}>
             <div className={styles.courseWrapper}>
                 <div className={styles.courseInfo}>
-                    <img src={imageLeft} alt="img_of_course_IFC1" />
+                    <Link to="/corpdir">
+                        <img src={imageLeft} alt="img_of_course_IFC1" />
+                    </Link>
+
                     <h2>
                         СЕРТИФИКАЦИОННЫЙ КУРС <br /> КОРПОРАТИВНЫЙ ДИРЕКТОР
                     </h2>
-                    <Link to="/contact" className={styles.courseBtn}>
+                    <Link
+                        to="https://forms.gle/SpiszP9pbvSdBGQF8"
+                        className={styles.courseBtn}>
                         ЗАПИСАТЬСЯ НА КУРС
                     </Link>
                 </div>

@@ -95,32 +95,50 @@ const Header = () => {
                         </li>
                         <ul className={styles.listBottom}>
                             <li>
-                                <Link to="/about" className={styles.navLink}>
+                                <Link
+                                    to="/about"
+                                    onClick={handleLinkClick}
+                                    className={styles.navLink}>
                                     МИССИЯ
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/members" className={styles.navLink}>
+                                <Link
+                                    to="/members"
+                                    onClick={handleLinkClick}
+                                    className={styles.navLink}>
                                     НАШИ ЭКСПЕРТЫ
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/board" className={styles.navLink}>
+                                <Link
+                                    to="/board"
+                                    onClick={handleLinkClick}
+                                    className={styles.navLink}>
                                     ОРГАНЫ УПРАВЛЕНИЯ
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/courses" className={styles.navLink}>
+                                <Link
+                                    to="/courses"
+                                    onClick={handleLinkClick}
+                                    className={styles.navLink}>
                                     КУРСЫ И ТРЕНИНГИ
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/contact" className={styles.navLink}>
+                                <Link
+                                    to="/contact"
+                                    onClick={handleLinkClick}
+                                    className={styles.navLink}>
                                     КОНТАКТЫ
                                 </Link>
                             </li>
                         </ul>
-                        <Link className={styles.heroButton} to="/contact">
+                        <Link
+                            onClick={handleLinkClick}
+                            className={styles.heroButton}
+                            to="/contact">
                             ВСТУПИТЬ В ПАЛАТУ
                         </Link>
                         <div className={styles.lanBtnWraper}>
