@@ -26,12 +26,12 @@ const Header = () => {
     // Функция для закрытия меню при клике на ссылку
     const handleLinkClick = () => {
         setPndMenuOpen(false); // Закрывает выпадающее меню "О ПАЛАТЕ"
-        setOpenPopUp("none"); // Закрывает адаптивное меню popUp
+        // setOpenPopUp("none"); // Закрывает адаптивное меню popUp
     };
     // Функция для закрытия адаптивного popUp меню при клике на ссылку
-    const handlePopUpLinkClick = () => {
-        setOpenPopUp("none"); // Закрытие адаптивного popUp меню
-    };
+    // const handlePopUpLinkClick = () => {
+    //     setOpenPopUp("none"); // Закрытие адаптивного popUp меню
+    // };
 
     return (
         <div className={styles.header}>
@@ -159,7 +159,7 @@ const Header = () => {
                             <li>
                                 <Link
                                     to="/"
-                                    onClick={handlePopUpLinkClick}
+                                    // onClick={handlePopUpLinkClick}
                                     className={styles.link}>
                                     НА ГЛАВНУЮ
                                 </Link>
@@ -167,7 +167,7 @@ const Header = () => {
                             <li>
                                 <Link
                                     to="/courses"
-                                    onClick={handlePopUpLinkClick}
+                                    // onClick={handlePopUpLinkClick}
                                     className={styles.link}>
                                     КУРСЫ И ТРЕНИНГИ
                                 </Link>
@@ -175,7 +175,7 @@ const Header = () => {
                             <li>
                                 <Link
                                     to="/news"
-                                    onClick={handlePopUpLinkClick}
+                                    // onClick={handlePopUpLinkClick}
                                     className={styles.link}>
                                     НОВОСТИ
                                 </Link>
@@ -183,7 +183,7 @@ const Header = () => {
                             <li>
                                 <Link
                                     to="/articles"
-                                    onClick={handlePopUpLinkClick}
+                                    // onClick={handlePopUpLinkClick}
                                     className={styles.link}>
                                     ПУБЛИКАЦИИ
                                 </Link>
@@ -191,7 +191,7 @@ const Header = () => {
                             <li>
                                 <Link
                                     to="/gallery"
-                                    onClick={handlePopUpLinkClick}
+                                    // onClick={handlePopUpLinkClick}
                                     className={styles.link}>
                                     ГАЛЕРЕЯ
                                 </Link>
@@ -214,7 +214,7 @@ const Header = () => {
                             <li>
                                 <Link
                                     to="/members"
-                                    onClick={handlePopUpLinkClick}
+                                    // onClick={handlePopUpLinkClick}
                                     className={styles.link}>
                                     НАШИ ЭКСПЕРТЫ
                                 </Link>
@@ -222,7 +222,7 @@ const Header = () => {
                             <li>
                                 <Link
                                     to="/about"
-                                    onClick={handlePopUpLinkClick}
+                                    // onClick={handlePopUpLinkClick}
                                     className={styles.link}>
                                     О ПАЛАТЕ
                                 </Link>
@@ -230,7 +230,7 @@ const Header = () => {
                             <li>
                                 <Link
                                     to="/board"
-                                    onClick={handlePopUpLinkClick}
+                                    // onClick={handlePopUpLinkClick}
                                     className={styles.linkTop}>
                                     ОРГАНЫ УПРАВЛЕНИЯ
                                 </Link>
@@ -238,7 +238,7 @@ const Header = () => {
                             <li>
                                 <Link
                                     to="/services"
-                                    onClick={handlePopUpLinkClick}
+                                    // onClick={handlePopUpLinkClick}
                                     className={styles.link}>
                                     УСЛУГИ
                                 </Link>
@@ -246,7 +246,7 @@ const Header = () => {
                             <li>
                                 <Link
                                     to="/contact"
-                                    onClick={handlePopUpLinkClick}
+                                    // onClick={handlePopUpLinkClick}
                                     className={styles.link}>
                                     КОНТАКТЫ
                                 </Link>
