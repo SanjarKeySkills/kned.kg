@@ -19,6 +19,7 @@ import { ArticlePage } from "./pages/ArticlePage/ArticlePage.async.jsx";
 import { CharterPage } from "./pages/СharterPage/CharterPage.async.jsx";
 import { MembershipRegulationsPage } from "./pages/MembershipRegulationsPage/MembershipRegulationsPage.async.jsx";
 import { GovernRegulationsPage } from "./pages/GovernRegulationsPage/GovernRegulationsPage.async.jsx";
+import { CorpdirPage } from "./pages/CorpdirPage/CorpdirPage.async.jsx";
 
 const App = () => {
     return (
@@ -162,6 +163,14 @@ const App = () => {
                         element={
                             <Suspense fallback={<div>Loading...</div>}>
                                 <GovernRegulationsPage />
+                            </Suspense>
+                        }
+                    />
+                    <Route
+                        path="/corpdir"
+                        element={
+                            <Suspense fallback={<div>Loading...</div>}>
+                                <CorpdirPage />
                             </Suspense>
                         }
                     />
