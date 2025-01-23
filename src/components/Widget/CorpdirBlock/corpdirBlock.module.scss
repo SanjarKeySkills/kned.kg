@@ -52,6 +52,55 @@
     background-color: #fff;
 }
 
+// CorpdirStudy
+
+.corpdirStudy {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 240px;
+}
+
+.corpdirStudyTitle {
+    padding: 32px 0 56px;
+}
+
+// ***
+.studyListItemWrapper {
+    position: relative;
+    z-index: 3;
+}
+
+.studyListItemLeft {
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 64px;
+    p {
+        text-align: end;
+    }
+}
+
+.studyListItemRight {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 0 48px 500px;
+    p {
+        text-align: start;
+    }
+}
+
+.studyListContent {
+    max-width: 400px;
+}
+
+.listScaleBackground {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 48%;
+}
+
 // responcive
 @media (max-width: 968px) {
     .heroCorpdirBlockBtnWrapper {
