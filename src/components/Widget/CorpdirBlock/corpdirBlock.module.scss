@@ -63,6 +63,7 @@
     padding: 32px 0 56px;
     text-align: center;
 }
+
 // list
 .studyList {
     max-width: 100%;
@@ -77,8 +78,8 @@
     z-index: 1;
 }
 .listItem:last-child {
+    padding: 0 20px 32px 48px;
     border-left: transparent;
-    padding: 0 20px 32px 32px;
 }
 .numbers {
     padding: 8px 16px;
@@ -97,51 +98,19 @@
 }
 
 // responcive
-@media (max-width: 1440px) {
-    // .studyList {
-    //     display: flex;
-    //     flex-direction: column;
-    //     .listItem:nth-child(even) {
-    //         // padding: 0 20px 32px 560px;
-    //         // border-right: 0.9px solid #5d6267;
-    //         border-left: transparent;
-    //         display: flex;
-    //         justify-content: flex-start;
-    //     }
-    //     .listItem:nth-child(odd) {
-    //         text-align: end;
-    //         // border-right: 0.9px solid #140c6f;
-    //         // border-right: transparent;
-    //         display: flex;
-    //         justify-content: flex-end;
-    //     }
-    // }
-
-    // .listItem {
-    //     padding: 0 48px 48px 20px;
-    //     max-width: 1024px;
-    //     display: flex;
-    //     flex-direction: column;
-    //     justify-content: center;
-    // }
-}
-
 @media (max-width: 968px) {
-    .heroCorpdirBlockBtnWrapper {
-        .headerBtnApply,
-        .headerBtnInfo {
-            padding: 16px 24px;
-            font-size: 12px;
-        }
+    .heroBtnApply,
+    .heroBtnInfo {
+        padding: 16px 24px;
+        font-size: 12px;
     }
 }
-
 @media (max-width: 868px) {
-    .corpdirStudyTitle {
+    .courseTitle {
         font-size: 20px;
         text-align: center;
     }
-    .heroCorpdirBlock {
+    .heroCourse {
         padding: 96px 32px 64px;
         gap: 48px;
         h1 {
@@ -152,21 +121,31 @@
         }
     }
 }
+.heroBtnWrapper {
+    gap: 24px;
+    .headerBtnApply,
+    .headerBtnInfo {
+        padding: 16px 24px;
+    }
+}
+.heroBtnApply {
+    text-align: center;
+}
+.heroBtnInfo {
+    text-align: center;
+}
 
-// .heroCorpdirBlockBtnWrapper {
-//     gap: 24px;
-//     .headerBtnApply,
-//     .headerBtnInfo {
-//         padding: 16px 24px;
-//     }
-// }
-// .headerBtnApply {
-//     text-align: center;
-// }
-// .headerBtnInfo {
-//     text-align: center;
-// }
+@media (max-width: 680px) {
+    .heroBtnWrapper {
+        flex-direction: column;
+        .heroBtnApply,
+        .heroBtnInfo {
+            padding: 16px 24px;
+        }
+    }
+}
 
+// ***
 // .studyListItemRight {
 //     padding: 0 0 48px 500px;
 //     display: flex;
@@ -182,15 +161,6 @@
 //     border-left: 0.9px solid #5d6267;
 //     z-index: 1;
 // }
-// @media (max-width: 680px) {
-//     .heroCorpdirBlockBtnWrapper {
-//         flex-direction: column;
-//         .headerBtnApply,
-//         .headerBtnInfo {
-//             padding: 16px 24px;
-//         }
-//     }
-// }
 
 // @media (max-width: 632px) {
 //     .studyListItemWrapper {
@@ -199,14 +169,6 @@
 //         }
 //         .studyListItemRight {
 //             padding: 0 0 48px 64px;
-//         }
-//     }
-// }
-
-// @media (max-width: 544px) {
-//     .studyListItemWrapper {
-//         .p {
-//             font-size: 12px;
 //         }
 //     }
 // }
