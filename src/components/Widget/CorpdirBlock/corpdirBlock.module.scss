@@ -1,4 +1,4 @@
-.corpdirBlock {
+.course {
     max-width: 1440px;
     padding: 0 24px;
     font-family: "Lato", sans-serif;
@@ -7,7 +7,7 @@
     text-decoration: none;
 }
 
-.heroCorpdirBlock {
+.heroCourse {
     padding: 144px 96px 128px;
     width: 100%;
     margin-top: 144px;
@@ -30,12 +30,12 @@
         color: #fff;
     }
 }
-.heroCorpdirBlockBtnWrapper {
+.heroBtnWrapper {
     display: flex;
     flex-direction: row;
     gap: 24px;
-    .headerBtnApply,
-    .headerBtnInfo {
+    .heroBtnApply,
+    .heroBtnInfo {
         color: #000;
         font-weight: 600;
         text-decoration: none;
@@ -44,64 +44,88 @@
         font-size: 16px;
     }
 }
-.headerBtnApply {
+.heroBtnApply {
     background-color: #ffbb29;
 }
-
-.headerBtnInfo {
+.heroBtnInfo {
     background-color: #fff;
 }
 
 // CorpdirStudy
-
-.corpdirStudy {
+.courseStudy {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 240px;
+    align-items: center;
 }
-
-.corpdirStudyTitle {
+.courseTitle {
     padding: 32px 0 56px;
+    text-align: center;
 }
-
-// ***
-.studyListItemWrapper {
+// list
+.studyList {
+    max-width: 100%;
     position: relative;
     z-index: 3;
 }
-
-.studyListItemLeft {
+.listItem {
+    padding: 0 20px 48px 48px;
     display: flex;
     justify-content: flex-start;
-    padding-bottom: 64px;
-    p {
-        text-align: end;
-    }
+    border-left: 0.9px solid #5d6267;
+    z-index: 1;
 }
-
-.studyListItemRight {
-    display: flex;
-    justify-content: flex-start;
-    padding: 0 0 48px 500px;
-    p {
-        text-align: start;
-    }
+.listItem:last-child {
+    border-left: transparent;
+    padding: 0 20px 32px 32px;
 }
-
-.studyListContent {
-    max-width: 400px;
-}
-
-.listScaleBackground {
-    z-index: 0;
+.numbers {
+    padding: 8px 16px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ffbb29;
+    color: #fff;
+    font-weight: 700;
     position: absolute;
-    top: 0;
-    left: 48%;
+    left: 20px;
+    z-index: 2;
+}
+.itemContent {
+    max-width: 100%;
 }
 
 // responcive
+@media (max-width: 1440px) {
+    // .studyList {
+    //     display: flex;
+    //     flex-direction: column;
+    //     .listItem:nth-child(even) {
+    //         // padding: 0 20px 32px 560px;
+    //         // border-right: 0.9px solid #5d6267;
+    //         border-left: transparent;
+    //         display: flex;
+    //         justify-content: flex-start;
+    //     }
+    //     .listItem:nth-child(odd) {
+    //         text-align: end;
+    //         // border-right: 0.9px solid #140c6f;
+    //         // border-right: transparent;
+    //         display: flex;
+    //         justify-content: flex-end;
+    //     }
+    // }
+
+    // .listItem {
+    //     padding: 0 48px 48px 20px;
+    //     max-width: 1024px;
+    //     display: flex;
+    //     flex-direction: column;
+    //     justify-content: center;
+    // }
+}
+
 @media (max-width: 968px) {
     .heroCorpdirBlockBtnWrapper {
         .headerBtnApply,
@@ -113,6 +137,10 @@
 }
 
 @media (max-width: 868px) {
+    .corpdirStudyTitle {
+        font-size: 20px;
+        text-align: center;
+    }
     .heroCorpdirBlock {
         padding: 96px 32px 64px;
         gap: 48px;
@@ -123,28 +151,62 @@
             font-size: 16px;
         }
     }
-
-    .heroCorpdirBlockBtnWrapper {
-        gap: 24px;
-        .headerBtnApply,
-        .headerBtnInfo {
-            padding: 16px 24px;
-        }
-    }
-    .headerBtnApply {
-        text-align: center;
-    }
-    .headerBtnInfo {
-        text-align: center;
-    }
 }
 
-@media (max-width: 648px) {
-    .heroCorpdirBlockBtnWrapper {
-        flex-direction: column;
-        .headerBtnApply,
-        .headerBtnInfo {
-            padding: 16px 24px;
-        }
-    }
-}
+// .heroCorpdirBlockBtnWrapper {
+//     gap: 24px;
+//     .headerBtnApply,
+//     .headerBtnInfo {
+//         padding: 16px 24px;
+//     }
+// }
+// .headerBtnApply {
+//     text-align: center;
+// }
+// .headerBtnInfo {
+//     text-align: center;
+// }
+
+// .studyListItemRight {
+//     padding: 0 0 48px 500px;
+//     display: flex;
+//     justify-content: flex-start;
+//     border-left: 0.9px solid #5d6267;
+//     z-index: 1;
+// }
+
+// .studyListItemLeft {
+//     padding: 0 0 56px 32px;
+//     display: flex;
+//     justify-content: flex-start;
+//     border-left: 0.9px solid #5d6267;
+//     z-index: 1;
+// }
+// @media (max-width: 680px) {
+//     .heroCorpdirBlockBtnWrapper {
+//         flex-direction: column;
+//         .headerBtnApply,
+//         .headerBtnInfo {
+//             padding: 16px 24px;
+//         }
+//     }
+// }
+
+// @media (max-width: 632px) {
+//     .studyListItemWrapper {
+//         .studyListItemLeft {
+//             padding: 0 0 40px 64px;
+//         }
+//         .studyListItemRight {
+//             padding: 0 0 48px 64px;
+//         }
+//     }
+// }
+
+// @media (max-width: 544px) {
+//     .studyListItemWrapper {
+//         .p {
+//             font-size: 12px;
+//         }
+//     }
+// }
