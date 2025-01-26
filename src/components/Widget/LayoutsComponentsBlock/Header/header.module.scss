@@ -1,99 +1,3 @@
-// Header popUp responcive
-.containerPopUp {
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    z-index: 4;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #fff;
-    .listTopPopUp {
-        padding-inline-start: 0;
-    }
-    li {
-        list-style-type: none;
-        font-size: 16px;
-        font-weight: 400;
-        text-decoration: none;
-    }
-    a {
-        text-decoration: none;
-        &:hover {
-            color: #447ac6;
-        }
-    }
-}
-
-// Top popUp responcive
-.wrapperTopPopUp {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 32px;
-}
-.arrowWrapper {
-    width: 100%;
-    display: flex;
-    justify-content: start;
-    padding: 32px 0 0 24px;
-}
-.listTopPopUp {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 24px;
-}
-// Bottom popUp responcive
-.wrapperBottomPopUp {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #e7ecef;
-    padding: 32px 0 88px;
-    gap: 24px;
-}
-.listBottomPopUp {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
-    padding-inline-start: 0;
-    a {
-        font-weight: 700;
-    }
-}
-
-// Bottom popUp lan-btn
-.lanBtnWraper {
-    display: flex;
-    align-items: center;
-}
-.lan {
-    padding: 4px;
-    border: none;
-    font-size: 12px;
-    text-align: center;
-    font-weight: bold;
-    font-family: "Lato", sans-serif;
-    text-decoration: none;
-    // background-color: #5d6267;
-    color: #ffffff;
-    &:hover {
-        background-color: #c69214;
-        color: #ffffff;
-    }
-}
-.lan:focus {
-    background-color: #c69214;
-    outline: none;
-}
-
-// Header desktop
 .header {
     width: 100%;
     position: fixed;
@@ -104,77 +8,18 @@
     font-weight: 400;
     font-size: 14px;
     text-decoration: none;
-    background-color: #fff;
-}
-.headerContainer {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 24px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.wrapperHeaderDesktop {
-    padding-bottom: 16px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 32px;
-    border-bottom: 2px solid #ffbb29;
-    ul {
-        padding-inline-start: 0px;
-    }
 }
 
-// Dropdown menu
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-.dropdownButton {
-    color: #5d6267;
-    text-decoration: none;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-}
-.dropdownContent {
-    display: none;
-    position: absolute;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 10;
-    padding: 8px;
-}
-.dropdownContent a {
-    display: block;
-}
-.dropdownContent a:hover {
-    background-color: #fff;
-}
-.dropdown:hover .dropdownContent {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-.dropdown:hover .dropdownButton {
-    background-color: #fff;
-}
-.navLink {
-    color: #5d6267;
-    font-style: normal;
-    text-decoration: none;
-    font-size: 16px;
-    list-style-type: none;
-    &:hover {
-        text-decoration: none;
-        color: #447ac6;
-    }
-}
+// .headerTop {
+//     width: 100%;
+//     padding: 8px 0;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     gap: 32px;
+//     background-color: #e7ecef;
+// }
 
-// popUp menu на кнопки
 .heroButton {
     padding: 4px 8px;
     border: none;
@@ -183,12 +28,148 @@
     text-align: center;
     text-decoration: none;
     font-size: 14px;
-    color: #fff;
+    color: #ffffff;
     &:hover {
         background: #ffbb29;
-        color: #fff;
+        color: #ffffff;
     }
 }
+
+.navLink {
+    color: #5d6267;
+    font-style: normal;
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+        color: #447ac6;
+    }
+}
+
+.lanBtnWraper {
+    display: flex;
+    align-items: center;
+}
+
+.lan:focus {
+    background-color: #c69214;
+    outline: none;
+}
+.lan {
+    padding: 4px;
+    border: none;
+    font-size: 12px;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Lato", sans-serif;
+    text-decoration: none;
+    background-color: #5d6267;
+    color: #ffffff;
+    &:hover {
+        background-color: #c69214;
+    }
+}
+// .lanEn {
+//     padding: 4px;
+//     border: none;
+//     font-size: 12px;
+//     text-align: center;
+//     font-weight: bold;
+//     font-family: "Lato", sans-serif;
+//     text-decoration: none;
+// background-color: #ffc72c;
+//     color: #002345;
+//     &:hover {
+//         background-color: #c69214;
+//         color: #ffffff;
+//     }
+// }
+
+.headerBottom {
+    width: 100%;
+    top: 40px;
+    left: 0;
+    background-color: #ffffff;
+}
+
+.headerBottomWrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 24px 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+// popUp menu на кнопки
+.dropdown {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+.dropdownButton {
+    color: #5d6267;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+}
+.dropdownContent {
+    padding: 16px;
+    text-decoration: none;
+    display: none;
+    position: absolute;
+    min-width: 128px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.dropdownContent .navLink:hover {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.dropdown:hover .dropdownContent {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-color: #ffffff;
+    text-decoration: none;
+}
+.dropdown:hover .dropdownButton {
+    text-decoration: none;
+}
+
+.dropdownMenu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 120%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 8px;
+}
+
+.dropdownMenu li {
+    list-style: none;
+    margin: 4px 0;
+}
+
+.dropdownMenu li a {
+    color: #333;
+    text-decoration: none;
+    padding: 4px 8px;
+    display: block;
+    font-size: 14px;
+}
+
+.dropdownMenu li a:hover {
+    background-color: #f0f0f0;
+    border-radius: 4px;
+}
+
 // popUp responcive
 .headerMobile {
     display: none;
