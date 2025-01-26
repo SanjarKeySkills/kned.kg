@@ -6,7 +6,7 @@ import burgerButton from "../../../../assets/burgerButton.svg";
 import arrowPopUp from "../../../../assets/arrowPopUp.svg";
 
 const Header = () => {
-    const [isOpenPopUp, setOpenPopUp] = useState("none");
+    const [isOpenPopUp, setOpenPopUp] = useState("none"); //burger
     const [isPndMenuOpen, setPndMenuOpen] = useState(false);
 
     // const togglePopUp = () => {
@@ -17,6 +17,7 @@ const Header = () => {
         setPndMenuOpen((prev) => !prev);
     };
 
+    //burger
     const changeStyle = () => {
         if (isOpenPopUp === "none") {
             setOpenPopUp("block");
@@ -42,56 +43,23 @@ const Header = () => {
                     </Link>
                     <div className={styles.wrapperBottom}>
                         <li className={styles.dropdown}>
-                            <Link
-                                className={styles.dropdownButton}
-                                onClick={togglePndMenu}>
+                            <Link className={styles.dropdownButton}>
                                 О ПАЛАТЕ
                             </Link>
-                            {isPndMenuOpen && (
-                                <ul className={styles.dropdownMenu}>
-                                    <li>
-                                        <Link
-                                            to="/services"
-                                            className={styles.navLink}
-                                            onClick={handleLinkClick} // Закрытие меню при клике
-                                        >
-                                            УСЛУГИ
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            to="/news"
-                                            className={styles.navLink}
-                                            onClick={handleLinkClick} // Закрытие меню при клике
-                                        >
-                                            НОВОСТИ
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            to="/articles"
-                                            className={styles.navLink}
-                                            onClick={handleLinkClick} // Закрытие меню при клике
-                                        >
-                                            ПУБЛИКАЦИИ
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            to="/gallery"
-                                            className={styles.navLink}
-                                            onClick={handleLinkClick} // Закрытие меню при клике
-                                        >
-                                            ГАЛЕРЕЯ
-                                        </Link>
-                                    </li>
-                                    {/* <li>
-                                        <Link to="#" className={styles.navLink}>
-                                            ВИДЕОРОЛИКИ
-                                        </Link>
-                                    </li> */}
-                                </ul>
-                            )}
+                            <div className={styles.dropdownContent}>
+                                <Link to="/services" className={styles.navLink}>
+                                    УСЛУГИ
+                                </Link>
+                                <Link to="/news" className={styles.navLink}>
+                                    НОВОСТИ
+                                </Link>
+                                <Link to="/articles" className={styles.navLink}>
+                                    ПУБЛИКАЦИИ
+                                </Link>
+                                <Link to="/gallery" className={styles.navLink}>
+                                    ГАЛЕРЕЯ
+                                </Link>
+                            </div>
                         </li>
                         <ul className={styles.listBottom}>
                             <li>
@@ -177,7 +145,7 @@ const Header = () => {
                             <li>
                                 <Link
                                     to="/"
-                                    // onClick={handlePopUpLinkClick}
+                                    onClick={changeStyle}
                                     className={styles.link}>
                                     НА ГЛАВНУЮ
                                 </Link>
@@ -185,7 +153,7 @@ const Header = () => {
                             <li>
                                 <Link
                                     to="/courses"
-                                    // onClick={handlePopUpLinkClick}
+                                    onClick={changeStyle}
                                     className={styles.link}>
                                     КУРСЫ И ТРЕНИНГИ
                                 </Link>
@@ -193,7 +161,7 @@ const Header = () => {
                             <li>
                                 <Link
                                     to="/news"
-                                    // onClick={handlePopUpLinkClick}
+                                    onClick={changeStyle}
                                     className={styles.link}>
                                     НОВОСТИ
                                 </Link>
@@ -201,7 +169,7 @@ const Header = () => {
                             <li>
                                 <Link
                                     to="/articles"
-                                    // onClick={handlePopUpLinkClick}
+                                    onClick={changeStyle}
                                     className={styles.link}>
                                     ПУБЛИКАЦИИ
                                 </Link>
@@ -209,7 +177,7 @@ const Header = () => {
                             <li>
                                 <Link
                                     to="/gallery"
-                                    // onClick={handlePopUpLinkClick}
+                                    onClick={changeStyle}
                                     className={styles.link}>
                                     ГАЛЕРЕЯ
                                 </Link>
@@ -220,19 +188,19 @@ const Header = () => {
                                 </a>
                             </li> */}
                         </ul>
-                        <Link
-                            // onClick={handlePopUpLinkClick}
+                        {/* <Link
+                            onClick={changeStyle}
                             className={styles.heroButton}
                             to="/contact">
                             ВСТУПИТЬ В ПАЛАТУ
-                        </Link>
+                        </Link> */}
                     </div>
                     <div className={styles.headerBottomPopUp}>
                         <ul className={styles.listBottomPopUp}>
                             <li>
                                 <Link
                                     to="/members"
-                                    // onClick={handlePopUpLinkClick}
+                                    onClick={changeStyle}
                                     className={styles.link}>
                                     НАШИ ЭКСПЕРТЫ
                                 </Link>
@@ -240,7 +208,7 @@ const Header = () => {
                             <li>
                                 <Link
                                     to="/about"
-                                    // onClick={handlePopUpLinkClick}
+                                    onClick={changeStyle}
                                     className={styles.link}>
                                     О ПАЛАТЕ
                                 </Link>
@@ -248,7 +216,7 @@ const Header = () => {
                             <li>
                                 <Link
                                     to="/board"
-                                    // onClick={handlePopUpLinkClick}
+                                    onClick={changeStyle}
                                     className={styles.linkTop}>
                                     ОРГАНЫ УПРАВЛЕНИЯ
                                 </Link>
@@ -256,7 +224,7 @@ const Header = () => {
                             <li>
                                 <Link
                                     to="/services"
-                                    // onClick={handlePopUpLinkClick}
+                                    onClick={changeStyle}
                                     className={styles.link}>
                                     УСЛУГИ
                                 </Link>
@@ -264,7 +232,7 @@ const Header = () => {
                             <li>
                                 <Link
                                     to="/contact"
-                                    // onClick={handlePopUpLinkClick}
+                                    onClick={changeStyle}
                                     className={styles.link}>
                                     КОНТАКТЫ
                                 </Link>

@@ -16,7 +16,7 @@ import { NewsPage } from "./pages/NewsPage/NewsPage.async.jsx";
 import { BulletinPage } from "./pages/BulletinPage/BulletinPage.async.jsx";
 import { ArticlesPage } from "./pages/ArticlesPage/ArticlesPage.async.jsx";
 import { ArticlePage } from "./pages/ArticlePage/ArticlePage.async.jsx";
-import { CharterPage } from "./pages/СharterPage/CharterPage.async.jsx";
+import { CharterPage } from "./pages/CharterPage/CharterPage.async.jsx";
 import { MembershipRegulationsPage } from "./pages/MembershipRegulationsPage/MembershipRegulationsPage.async.jsx";
 import { GovernRegulationsPage } from "./pages/GovernRegulationsPage/GovernRegulationsPage.async.jsx";
 import { CorpdirPage } from "./pages/CorpdirPage/CorpdirPage.async.jsx";
@@ -174,7 +174,6 @@ const App = () => {
                             </Suspense>
                         }
                     />
-
                     <Route
                         path="*"
                         element={
