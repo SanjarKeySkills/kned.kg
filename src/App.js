@@ -1,10 +1,10 @@
 import React, { Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
-<<<<<<< HEAD
-import DefaultLayout, {ContentFallback} from "./layout/DefaultLayout";
-=======
+// <<<<<<< HEAD
+// import DefaultLayout, {ContentFallback} from "./layout/DefaultLayout";
+// =======
 import DefaultLayout, { ContentFallback } from "./layout/DefaultLayout";
->>>>>>> b8e769465c6ae7e23584ce6e164fefccfb06c5e6
+// >>>>>>> b8e769465c6ae7e23584ce6e164fefccfb06c5e6
 import { MainPage } from "./pages/MainPage/MainPage.async.jsx";
 import { MemberPage } from "./pages/MemberPage/MemberPage.async.jsx";
 import { MembersPage } from "./pages/MembersPage/MembersPage.async.jsx";
@@ -177,7 +177,7 @@ const App = () => {
                                 <CorpdirPage />
                             </Suspense>
                         }
-                    />
+                    />*/}
 
                     <Route
                         path="*"
