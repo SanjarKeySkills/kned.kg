@@ -1,6 +1,6 @@
 import React, { Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
-import DefaultLayout from "./layout/DefaultLayout";
+import DefaultLayout, {ContentFallback} from "./layout/DefaultLayout";
 import { MainPage } from "./pages/MainPage/MainPage.async.jsx";
 import { MemberPage } from "./pages/MemberPage/MemberPage.async.jsx";
 import { MembersPage } from "./pages/MembersPage/MembersPage.async.jsx";
@@ -95,7 +95,7 @@ const App = () => {
                     <Route
                         path="/news"
                         element={
-                            <Suspense fallback={<div>Loading...</div>}>
+                            <Suspense fallback={<ContentFallback />}>
                                 <NewsPage />
                             </Suspense>
                         }
