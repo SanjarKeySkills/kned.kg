@@ -8,7 +8,7 @@
     position: relative;
     max-width: 1440px;
     height: 480px; // Высота блока с видео
-    margin: 144px auto 40px;
+    margin: 24px auto 24px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,7 +33,7 @@
     flex-direction: column;
     align-items: center;
     gap: 24px;
-    padding-top: 144px;
+    // padding-top: 144px;
     font-family: "Lato", sans-serif;
     font-weight: bold;
     font-size: 32px;
@@ -50,8 +50,8 @@
 .scrollButton {
     position: fixed; /* Кнопка фиксируется внизу экрана */
     // bottom: 80px; /* Отступ от нижнего края */
-    bottom: 12%; /* Отступ от нижнего края */
-    right: 2%; /* Центрирование кнопки по горизонтали */
+    bottom: 16%; /* Отступ от нижнего края */
+    right: 4%; /* Центрирование кнопки по горизонтали */
     transform: translateX(-50%); /* Центрирование */
     background-color: transparent;
     border: none;
@@ -90,7 +90,7 @@
 
 @media (max-width: 768px) {
     .mainHeroWrapper {
-        margin: 120px auto 40px;
+        margin: 0 16px 24px;
     }
     .mainHeroContent {
         .heroTitle {
@@ -101,7 +101,7 @@
         }
     }
     .mainHeroContent {
-        padding: 144px 32px 0;
+        padding: 32px 16px 0;
     }
     .scrollButton {
         display: none;
@@ -117,7 +117,7 @@
         max-width: 400px;
     }
     .mainHeroContent {
-        padding: 80px 16px 0;
+        padding: 24px 16px 0;
     }
     .mainHeroWrapper {
         height: 360px;

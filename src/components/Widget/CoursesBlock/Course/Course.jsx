@@ -12,7 +12,6 @@ const Course = () => {
                     <Link to="/corpdir">
                         <img src={imageLeft} alt="img_of_course_IFC1" />
                     </Link>
-
                     <h2>
                         СЕРТИФИКАЦИОННЫЙ КУРС <br /> КОРПОРАТИВНЫЙ ДИРЕКТОР
                     </h2>

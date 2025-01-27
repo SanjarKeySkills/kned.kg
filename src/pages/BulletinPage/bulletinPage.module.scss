@@ -56,7 +56,6 @@
     border: none;
     position: absolute;
     top: 40%;
-    // transform: translateX(-180%);
     z-index: 1;
     left: -8%;
     background: #7e8185;
@@ -71,7 +70,6 @@
     border: none;
     position: absolute;
     top: 40%;
-    // transform: translateY(-200%);
     z-index: 1;
     right: -8%;
     background: #7e8185;
@@ -80,38 +78,16 @@
 
 .newsInformation {
     text-align: justify;
-    padding-bottom: 32px;
+    padding: 24px 0 32px;
 }
 
-// .inlineList {
-//     padding: 24px 0 8px;
-//     display: flex;
-//     flex-direction: column;
-//     align-items: flex-start;
-//     list-style-type: none;
-//     margin: 0 auto;
-// }
 .newsImg {
     max-width: 800px;
-    height: 640px;
+    // height: 640px;
     margin: 0 auto;
+    border-radius: 8px;
+    // max-width: 700px;
 }
-// .newsInscript {
-//     margin: 0 auto;
-//     padding-bottom: 24px;
-//     font-size: 16px;
-//     color: #5d6267;
-// }
-// .line_grey {
-//     width: 56px;
-//     margin: 16px 0;
-//     border-bottom: 4px solid #7e8185;
-// }
-// .line_gold {
-//     width: 56px;
-//     margin: 16px 0;
-//     border-bottom: 4px solid #c69214;
-// }
 
 @media (max-width: 1320px) {
     .newsPage {
@@ -121,7 +97,7 @@
 
 @media (max-width: 960px) {
     .newsImg {
-        max-width: 440px;
+        max-width: 400px;
     }
     .leftArrow {
         font-size: 24px;
@@ -144,6 +120,9 @@
     .newsDate {
         font-size: 16px;
     }
+    .newsPageContainer {
+        padding: 0px 40px 8px;
+    }
     .newsTitle {
         font-size: 16px;
     }
@@ -155,7 +134,7 @@
         font-size: 16px;
     }
     .inlineList {
-        padding: 16px 0 0pxpx;
+        padding: 16px 0 0px;
     }
 
     .leftArrow {
@@ -166,22 +145,35 @@
     }
 
     .newsImg {
-        max-width: 440px;
+        max-width: 344px;
     }
     .backToNewsBtn {
         font-size: 12px;
     }
 }
-@media (max-width: 520px) {
+
+@media (max-width: 624px) {
     .newsPageContainer {
-        padding: 0px 48px 8px;
+        padding: 0px 24px 8px;
+    }
+    .bulletinSlider {
+        padding: 8px 8px 0;
     }
     .newsImg {
         max-width: 320px;
     }
 }
+
+@media (max-width: 520px) {
+    .newsPageContainer {
+        padding: 0px 24px 8px;
+    }
+    .newsImg {
+        max-width: 256px;
+    }
+}
 @media (max-width: 424px) {
     .newsImg {
-        max-width: 240px;
+        max-width: 208px;
     }
 }

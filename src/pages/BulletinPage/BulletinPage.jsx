@@ -64,17 +64,16 @@ const BulletinPage = () => {
                         <h2 className={styles.newsTitle}>
                             <FormatText text={newsItem.title} />
                         </h2>
-                        <p className={styles.newsDate}>{newsItem.date}</p>
+                        <div className={styles.newsDate}>{newsItem.date}</div>
                     </div>
-                    <p className={styles.newsAnnotationList}>
+                    <div className={styles.newsAnnotationList}>
                         <FormatText text={newsItem.annotation} />
-                    </p>
-                    <p className={styles.newsInformation}>
+                    </div>
+                    <div className={styles.newsInformation}>
                         <FormatText text={newsItem.information} />
-                    </p>
+                    </div>
 
                     {/* Слайдер */}
-
                     <div
                         onTouchStart={handleTouchStart}
                         onTouchMove={handleTouchMove}
@@ -110,10 +109,9 @@ const BulletinPage = () => {
                             )}
                         </div>
                     </div>
-
-                    <p className={styles.newsInformation}>
+                    <div className={styles.newsInformation}>
                         <FormatText text={newsItem.information1} />
-                    </p>
+                    </div>
                 </div>
             </div>
         </>
