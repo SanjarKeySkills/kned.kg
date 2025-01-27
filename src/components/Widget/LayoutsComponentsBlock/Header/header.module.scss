@@ -81,7 +81,7 @@
     font-weight: bold;
     font-family: "Lato", sans-serif;
     text-decoration: none;
-    // background-color: #5d6267;
+    background-color: #5d6267;
     color: #ffffff;
     &:hover {
         background-color: #c69214;
@@ -138,6 +138,7 @@
     font-size: 16px;
     border: none;
     cursor: pointer;
+    background-color: #fff;
 }
 .dropdownContent {
     display: none;
@@ -173,6 +174,17 @@
         color: #447ac6;
     }
 }
+=======
+// .headerTop {
+//     width: 100%;
+//     padding: 8px 0;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     gap: 32px;
+//     background-color: #e7ecef;
+// }
+>>>>>>> ad39467c286916f450993d3c4ae0efcd75ede0b5
 
 // popUp menu на кнопки
 .heroButton {
@@ -189,6 +201,7 @@
         color: #fff;
     }
 }
+
 // popUp responcive
 .headerMobile {
     display: none;
