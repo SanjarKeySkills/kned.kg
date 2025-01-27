@@ -74,7 +74,6 @@ const BulletinPage = () => {
                     </p>
 
                     {/* Слайдер */}
-
                     <div
                         onTouchStart={handleTouchStart}
                         onTouchMove={handleTouchMove}

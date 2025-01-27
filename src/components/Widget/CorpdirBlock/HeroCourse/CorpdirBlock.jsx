@@ -66,11 +66,6 @@ export default function Corpdir() {
                     </li>
                 </ul>
             </div>
-			<div>
-
-
-				
-			</div>
         </div>
     );
 }

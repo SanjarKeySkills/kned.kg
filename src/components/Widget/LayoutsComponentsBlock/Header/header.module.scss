@@ -81,7 +81,7 @@
     font-weight: bold;
     font-family: "Lato", sans-serif;
     text-decoration: none;
-    // background-color: #5d6267;
+    background-color: #5d6267;
     color: #ffffff;
     &:hover {
         background-color: #c69214;
@@ -138,6 +138,7 @@
     font-size: 16px;
     border: none;
     cursor: pointer;
+    background-color: #fff;
 }
 .dropdownContent {
     display: none;

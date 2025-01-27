@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./courseProgram.module.scss";
-import Button from "../../../UI/Button/button.jsx";
+import { Link } from "react-router-dom";
 
 const trainings = () => {
     return (
@@ -64,9 +64,11 @@ const trainings = () => {
                             </div>
                         </div>
                     </div>
-                    <Button size="course" variant="outlined">
+                    <Link
+                        to="https://forms.gle/SpiszP9pbvSdBGQF8"
+                        className={styles.courseBtn}>
                         ЗАПИСАТЬСЯ НА КУРС
-                    </Button>
+                    </Link>
                 </div>
 
                 <div className={styles.corpdir}>
@@ -121,9 +123,9 @@ const trainings = () => {
                             </p>
                         </div>
                     </div>
-                    <Button size="course" variant="outlined">
+                    <Link to="/contact" className={styles.courseBtn}>
                         ЗАПИСАТЬСЯ НА КУРС
-                    </Button>
+                    </Link>
                 </div>
             </div>
         </div>
