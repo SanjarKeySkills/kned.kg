@@ -5,81 +5,23 @@ import logo from "../../../../assets/imageMainHeader.png";
 import burgerButton from "../../../../assets/burgerButton.svg";
 import arrowPopUp from "../../../../assets/arrowPopUp.svg";
 
-const firstLinks = [
-    { to: "/", label: "НА ГЛАВНУЮ" },
-    { to: "/courses", label: "КУРСЫ И ТРЕНИНГИ" },
-    { to: "/members", label: "НАШИ ЭКСПЕРТЫ" },
-    { to: "/news", label: "НОВОСТИ" },
-    { to: "/gallery", label: "ГАЛЕРЕЯ" },
-];
-
-const secondLinks = [
-    { to: "/about", label: "О ПАЛАТЕ", className: styles.link },
-    { to: "/board", label: "ОРГАНЫ УПРАВЛЕНИЯ", className: styles.link },
-    { to: "/articles", label: "ПУБЛИКАЦИИ", className: styles.link },
-    { to: "/services", label: "УСЛУГИ", className: styles.link },
-    { to: "/contact", label: "КОНТАКТЫ", className: styles.link },
-];
-
-const HeaderMobileMenu = (props) => {
-    const { isOpenPopUp, togglePopup } = props;
-
-    const handlePopUpLinkClick = () => togglePopup(); // Закрытие адаптивного popUp меню
-
-    return (
-        <div
-            className={styles.containerPopUp}
-            style={{ display: isOpenPopUp ? "block" : "none" }}>
-            <div className={styles.wrapperTopPopUp}>
-                <div className={styles.arrowWrapper}>
-                    <img src={arrowPopUp} alt="arrow" onClick={togglePopup} />
-                </div>
-                <ul className={styles.listTopPopUp}>
-                    {firstLinks.map((link) => (
-                        <li key={link.to}>
-                            <Link
-                                to={link.to}
-                                onClick={handlePopUpLinkClick}
-                                className={styles.link}>
-                                {link.label}
-                            </Link>
-                        </li>
-                    ))}
-                </ul>
-            </div>
-            <div className={styles.wrapperBottomPopUp}>
-                <ul className={styles.listBottomPopUp}>
-                    {secondLinks.map((link) => (
-                        <li key={link.to}>
-                            <Link
-                                to={link.to}
-                                onClick={handlePopUpLinkClick}
-                                className={link.className}>
-                                {link.label}
-                            </Link>
-                        </li>
-                    ))}
-                </ul>
-                <div className={styles.lanBtnWraper}>
-                    <Link to="#" className={styles.lan}>
-                        RU
-                    </Link>
-                    <Link to="#" className={styles.lan}>
-                        EN
-                    </Link>
-                    <Link to="#" className={styles.lan}>
-                        KG
-                    </Link>
-                </div>
-            </div>
-        </div>
-    );
-};
-
 const Header = () => {
-    const [isOpenPopUp, setOpenPopUp] = useState(false);
+    const [isOpenPopUp, setOpenPopUp] = useState("none");
     const [isPndMenuOpen, setPndMenuOpen] = useState(false);
-    const togglePopup = () => setOpenPopUp(!isOpenPopUp);
+
+    // const togglePopUp = () => {
+    //     setOpenPopUp((prev) => (prev === "none" ? "block" : "none"));
+    // };
+
+    const togglePndMenu = () => {
+        setPndMenuOpen((prev) => !prev);
+    };
+
+    const changeStyle = () => {
+        if (isOpenPopUp === "none") {
+            setOpenPopUp("block");
+        } else setOpenPopUp("none");
+    };
 
     // Функция для закрытия меню при клике на ссылку
     const handleLinkClick = () => {
@@ -88,88 +30,123 @@ const Header = () => {
 
     return (
         <div className={styles.header}>
-            <div className={styles.headerContainer}>
-                <Link to="/">
-                    <img src={logo} alt="main" />
-                </Link>
-                <div className={styles.wrapperHeaderDesktop}>
-                    <div className={styles.dropdown}>
-                        <button className={styles.dropdownButton}>
-                            О ПАЛАТЕ
-                        </button>
-                        <div className={styles.dropdownContent}>
-                            <Link on to="/services" className={styles.navLink}>
-                                УСЛУГИ
+            <div className={styles.headerBottom}>
+                <div className={styles.headerBottomWrapper}>
+                    <Link to="/">
+                        <img src={logo} alt="main" />
+                    </Link>
+                    <div className={styles.wrapperBottom}>
+                        <li className={styles.dropdown}>
+                            <Link
+                                className={styles.dropdownButton}
+                                onClick={togglePndMenu}>
+                                О ПАЛАТЕ
                             </Link>
-                            <Link to="/news" className={styles.navLink}>
-                                НОВОСТИ
+                            {isPndMenuOpen && (
+                                <ul className={styles.dropdownMenu}>
+                                    <li>
+                                        <Link
+                                            to="/services"
+                                            className={styles.navLink}
+                                            onClick={handleLinkClick} // Закрытие меню при клике
+                                        >
+                                            УСЛУГИ
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            to="/news"
+                                            className={styles.navLink}
+                                            onClick={handleLinkClick} // Закрытие меню при клике
+                                        >
+                                            НОВОСТИ
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            to="/articles"
+                                            className={styles.navLink}
+                                            onClick={handleLinkClick} // Закрытие меню при клике
+                                        >
+                                            ПУБЛИКАЦИИ
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link
+                                            to="/gallery"
+                                            className={styles.navLink}
+                                            onClick={handleLinkClick} // Закрытие меню при клике
+                                        >
+                                            ГАЛЕРЕЯ
+                                        </Link>
+                                    </li>
+                                    {/* <li>
+                                        <Link to="#" className={styles.navLink}>
+                                            ВИДЕОРОЛИКИ
+                                        </Link>
+                                    </li> */}
+                                </ul>
+                            )}
+                        </li>
+                        <ul className={styles.listBottom}>
+                            <li>
+                                <Link
+                                    to="/about"
+                                    onClick={handleLinkClick}
+                                    className={styles.navLink}>
+                                    МИССИЯ
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    to="/members"
+                                    onClick={handleLinkClick}
+                                    className={styles.navLink}>
+                                    НАШИ ЭКСПЕРТЫ
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    to="/board"
+                                    onClick={handleLinkClick}
+                                    className={styles.navLink}>
+                                    ОРГАНЫ УПРАВЛЕНИЯ
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    to="/courses"
+                                    onClick={handleLinkClick}
+                                    className={styles.navLink}>
+                                    КУРСЫ И ТРЕНИНГИ
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    to="/contact"
+                                    onClick={handleLinkClick}
+                                    className={styles.navLink}>
+                                    КОНТАКТЫ
+                                </Link>
+                            </li>
+                        </ul>
+                        <Link
+                            onClick={handleLinkClick}
+                            className={styles.heroButton}
+                            to="/contact">
+                            ВСТУПИТЬ В ПАЛАТУ
+                        </Link>
+                        <div className={styles.lanBtnWraper}>
+                            <Link to="/" className={styles.lan}>
+                                RU
                             </Link>
-                            <Link to="/articles" className={styles.navLink}>
-                                ПУБЛИКАЦИИ
+                            <Link to="#" className={styles.lan}>
+                                EN
                             </Link>
-                            <Link to="/gallery" className={styles.navLink}>
-                                ГАЛЕРЕЯ
+                            <Link to="#" className={styles.lan}>
+                                KG
                             </Link>
                         </div>
-                    </div>
-                    <ul className={styles.listBottom}>
-                        <li>
-                            <Link
-                                to="/about"
-                                onClick={handleLinkClick}
-                                className={styles.navLink}>
-                                МИССИЯ
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                to="/members"
-                                onClick={handleLinkClick}
-                                className={styles.navLink}>
-                                НАШИ ЭКСПЕРТЫ
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                to="/board"
-                                onClick={handleLinkClick}
-                                className={styles.navLink}>
-                                ОРГАНЫ УПРАВЛЕНИЯ
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                to="/courses"
-                                onClick={handleLinkClick}
-                                className={styles.navLink}>
-                                КУРСЫ И ТРЕНИНГИ
-                            </Link>
-                        </li>
-                        <li>
-                            <Link
-                                to="/contact"
-                                onClick={handleLinkClick}
-                                className={styles.navLink}>
-                                КОНТАКТЫ
-                            </Link>
-                        </li>
-                    </ul>
-                    <Link
-                        onClick={handleLinkClick}
-                        className={styles.heroButton}
-                        to="/contact">
-                        ВСТУПИТЬ В ПАЛАТУ
-                    </Link>
-                    <div className={styles.lanBtnWraper}>
-                        <Link to="/" className={styles.lan}>
-                            RU
-                        </Link>
-                        <Link to="#" className={styles.lan}>
-                            EN
-                        </Link>
-                        <Link to="#" className={styles.lan}>
-                            KG
-                        </Link>
                     </div>
                 </div>
             </div>
@@ -178,11 +155,129 @@ const Header = () => {
                 <Link to="/">
                     <img src={logo} alt="main" />
                 </Link>
-                <img src={burgerButton} alt="burger" onClick={togglePopup} />
-                <HeaderMobileMenu
-                    isOpenPopUp={isOpenPopUp}
-                    togglePopup={togglePopup}
-                />
+                {/* <img src={burgerButton} alt="burger" onClick={changeStyle} /> */}
+                <img src={burgerButton} alt="burger" onClick={changeStyle} />
+                <div
+                    className={styles.containerPopUp}
+                    style={{ display: isOpenPopUp }}>
+                    <div className={styles.wrapperTopPopUp}>
+                        <div className={styles.arrowWrapper}>
+                            <img
+                                src={arrowPopUp}
+                                alt="arrow"
+                                onClick={changeStyle}
+                            />
+                        </div>
+                        <ul className={styles.listTopPopUp}>
+                            <li>
+                                <Link
+                                    to="/"
+                                    // onClick={handlePopUpLinkClick}
+                                    className={styles.link}>
+                                    НА ГЛАВНУЮ
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    to="/courses"
+                                    // onClick={handlePopUpLinkClick}
+                                    className={styles.link}>
+                                    КУРСЫ И ТРЕНИНГИ
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    to="/news"
+                                    // onClick={handlePopUpLinkClick}
+                                    className={styles.link}>
+                                    НОВОСТИ
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    to="/articles"
+                                    // onClick={handlePopUpLinkClick}
+                                    className={styles.link}>
+                                    ПУБЛИКАЦИИ
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    to="/gallery"
+                                    // onClick={handlePopUpLinkClick}
+                                    className={styles.link}>
+                                    ГАЛЕРЕЯ
+                                </Link>
+                            </li>
+                            {/* <li>
+                                <a to="#" className={styles.linkBottom}>
+                                    ВИДЕОРОЛИКИ
+                                </a>
+                            </li> */}
+                        </ul>
+                        <Link
+                            // onClick={handlePopUpLinkClick}
+                            className={styles.heroButton}
+                            to="/contact">
+                            ВСТУПИТЬ В ПАЛАТУ
+                        </Link>
+                    </div>
+                    <div className={styles.headerBottomPopUp}>
+                        <ul className={styles.listBottomPopUp}>
+                            <li>
+                                <Link
+                                    to="/members"
+                                    // onClick={handlePopUpLinkClick}
+                                    className={styles.link}>
+                                    НАШИ ЭКСПЕРТЫ
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    to="/about"
+                                    // onClick={handlePopUpLinkClick}
+                                    className={styles.link}>
+                                    О ПАЛАТЕ
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    to="/board"
+                                    // onClick={handlePopUpLinkClick}
+                                    className={styles.linkTop}>
+                                    ОРГАНЫ УПРАВЛЕНИЯ
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    to="/services"
+                                    // onClick={handlePopUpLinkClick}
+                                    className={styles.link}>
+                                    УСЛУГИ
+                                </Link>
+                            </li>
+                            <li>
+                                <Link
+                                    to="/contact"
+                                    // onClick={handlePopUpLinkClick}
+                                    className={styles.link}>
+                                    КОНТАКТЫ
+                                </Link>
+                            </li>
+                        </ul>
+                        <div className={styles.lanBtnWraper}>
+                            <Link to="#" className={styles.lan}>
+                                RU
+                            </Link>
+                            <Link to="#" className={styles.lan}>
+                                EN
+                            </Link>
+                            <Link to="#" className={styles.lan}>
+                                KG
+                            </Link>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     );

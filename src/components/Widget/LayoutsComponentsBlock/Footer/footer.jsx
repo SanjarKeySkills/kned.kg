@@ -21,7 +21,7 @@ const Footer = () => {
                     </p>
                     <p>
                         +996 (555) 888-242
-                        <tr />
+                        <br />
                         <a href="#">kned.org@gmail.com</a>
                     </p>
                 </div>

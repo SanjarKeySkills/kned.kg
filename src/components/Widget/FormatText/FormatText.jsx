@@ -5,9 +5,11 @@ const FormatText = ({ text }) => {
     return (
         <div>
             {text.split("\n").map((line, index) => (
-                <p key={index} className={styles.additionalSpace}>
+                <div key={index} className={styles.additionalSpace}>
                     {line.trim()}
-                </p>
+                    {/* {line || <br />} */}
+                    {/* Для пустых строк вставляем <br> */}
+                </div>
             ))}
         </div>
     );
