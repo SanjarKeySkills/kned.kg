@@ -1,10 +1,12 @@
 import React from "react";
-import Corpdir from "../../components/Widget/CorpdirBlock/CorpdirBlock.jsx";
+import HeroCourse from "../../components/Widget/CorpdirBlock/HeroCourse/HeroCourse.jsx";
+import Accordion from "../../components/Widget/CorpdirBlock/Accordion/Accordion.jsx";
 
 const CorpdirPage = () => {
     return (
         <div>
-            <Corpdir />
+            <HeroCourse />
+            <Accordion />
         </div>
     );
 };

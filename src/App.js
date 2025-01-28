@@ -1,10 +1,6 @@
 import React, { Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
-// <<<<<<< HEAD
-// import DefaultLayout, {ContentFallback} from "./layout/DefaultLayout";
-// =======
 import DefaultLayout, { ContentFallback } from "./layout/DefaultLayout";
-// >>>>>>> b8e769465c6ae7e23584ce6e164fefccfb06c5e6
 import { MainPage } from "./pages/MainPage/MainPage.async.jsx";
 import { MemberPage } from "./pages/MemberPage/MemberPage.async.jsx";
 import { MembersPage } from "./pages/MembersPage/MembersPage.async.jsx";
@@ -23,7 +19,7 @@ import { ArticlePage } from "./pages/ArticlePage/ArticlePage.async.jsx";
 import { CharterPage } from "./pages/CharterPage/CharterPage.async.jsx";
 import { MembershipRegulationsPage } from "./pages/MembershipRegulationsPage/MembershipRegulationsPage.async.jsx";
 import { GovernRegulationsPage } from "./pages/GovernRegulationsPage/GovernRegulationsPage.async.jsx";
-// import { CorpdirPage } from "./pages/CorpdirPage/CorpdirPage.async.jsx";
+import { CorpdirPage } from "./pages/CorpdirPage/CorpdirPage.async.jsx";
 
 const App = () => {
     return (
@@ -170,15 +166,14 @@ const App = () => {
                             </Suspense>
                         }
                     />
-                    {/* <Route
+                    <Route
                         path="/corpdir"
                         element={
                             <Suspense fallback={<div>Loading...</div>}>
                                 <CorpdirPage />
                             </Suspense>
                         }
-                    />*/}
-
+                    />
                     <Route
                         path="*"
                         element={
