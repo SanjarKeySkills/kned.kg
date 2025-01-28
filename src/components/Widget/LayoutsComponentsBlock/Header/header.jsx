@@ -21,6 +21,13 @@ const secondLinks = [
     { to: "/contact", label: "КОНТАКТЫ", className: styles.link },
 ];
 
+// const dropdownLinks = [
+//     { to: "/services", label: "УСЛУГИ" },
+//     { to: "/news", label: "НОВОСТИ" },
+//     { to: "/articles", label: "ПУБЛИКАЦИИ" },
+//     { to: "/gallery", label: "ГАЛЕРЕЯ" },
+// ];
+
 const HeaderMobileMenu = (props) => {
     const { isOpenPopUp, togglePopup } = props;
     const handlePopUpLinkClick = () => togglePopup(); // Закрытие адаптивного popUp меню
@@ -75,70 +82,43 @@ const HeaderMobileMenu = (props) => {
 const Header = () => {
     const [isOpenPopUp, setOpenPopUp] = useState(false);
     const [isPndMenuOpen, setPndMenuOpen] = useState(false);
-
     const togglePndMenu = () => setPndMenuOpen(!isPndMenuOpen);
     const togglePopup = () => setOpenPopUp(!isOpenPopUp);
-
     // Функция для закрытия меню при клике на ссылку
     const handleLinkClick = () => {
         setPndMenuOpen(false); // Закрывает выпадающее меню "О ПАЛАТЕ"
     };
-
     return (
         <div className={styles.header}>
-            <div className={styles.headerBottom}>
-                <div className={styles.headerBottomWrapper}>
+            <div className={styles.headerContainer}>
+                <div className={styles.wrapperHeaderDesktop}>
                     <Link to="/">
                         <img src={logo} alt="main" />
                     </Link>
-                    <div className={styles.wrapperBottom}>
+                    <div className={styles.wrapperNavbar}>
                         <li className={styles.dropdown}>
                             <Link
                                 className={styles.dropdownButton}
                                 onClick={togglePndMenu}>
                                 О ПАЛАТЕ
                             </Link>
-                            {isPndMenuOpen && (
-                                <ul className={styles.dropdownMenu}>
-                                    <li>
-                                        <Link
-                                            on
-                                            to="/services"
-                                            className={styles.navLink}
-                                            onClick={handleLinkClick} // Закрытие меню при клике
-                                        >
-                                            УСЛУГИ
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            to="/news"
-                                            className={styles.navLink}
-                                            onClick={handleLinkClick} // Закрытие меню при клике
-                                        >
-                                            НОВОСТИ
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            to="/articles"
-                                            className={styles.navLink}
-                                            onClick={handleLinkClick} // Закрытие меню при клике
-                                        >
-                                            ПУБЛИКАЦИИ
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link
-                                            to="/gallery"
-                                            className={styles.navLink}
-                                            onClick={handleLinkClick} // Закрытие меню при клике
-                                        >
-                                            ГАЛЕРЕЯ
-                                        </Link>
-                                    </li>
-                                </ul>
-                            )}
+                            <div className={styles.dropdownContent}>
+                                <Link
+                                    on
+                                    to="/services"
+                                    className={styles.navLink}>
+                                    УСЛУГИ
+                                </Link>
+                                <Link to="/news" className={styles.navLink}>
+                                    НОВОСТИ
+                                </Link>
+                                <Link to="/articles" className={styles.navLink}>
+                                    ПУБЛИКАЦИИ
+                                </Link>
+                                <Link to="/gallery" className={styles.navLink}>
+                                    ГАЛЕРЕЯ
+                                </Link>
+                            </div>
                         </li>
                         <ul className={styles.listBottom}>
                             <li>
