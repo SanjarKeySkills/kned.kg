@@ -50,52 +50,6 @@
     background-color: #fff;
 }
 
-// CorpdirStudy
-.courseStudy {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.courseTitle {
-    padding: 32px 0 56px;
-    text-align: center;
-}
-
-// list
-.studyList {
-    max-width: 100%;
-    position: relative;
-    z-index: 3;
-}
-.listItem {
-    padding: 0 20px 48px 48px;
-    display: flex;
-    justify-content: flex-start;
-    border-left: 0.9px solid #5d6267;
-    z-index: 1;
-}
-.listItem:last-child {
-    padding: 0 20px 32px 48px;
-    border-left: transparent;
-}
-.numbers {
-    padding: 8px 16px;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #ffbb29;
-    color: #fff;
-    font-weight: 700;
-    position: absolute;
-    left: 20px;
-    z-index: 2;
-}
-.itemContent {
-    max-width: 100%;
-}
-
 // responcive
 @media (max-width: 968px) {
     .heroBtnApply,
@@ -119,19 +73,19 @@
             font-size: 16px;
         }
     }
-}
-.heroBtnWrapper {
-    gap: 24px;
-    .headerBtnApply,
-    .headerBtnInfo {
-        padding: 16px 24px;
+    .heroBtnWrapper {
+        gap: 24px;
+        .headerBtnApply,
+        .headerBtnInfo {
+            padding: 16px 24px;
+        }
     }
-}
-.heroBtnApply {
-    text-align: center;
-}
-.heroBtnInfo {
-    text-align: center;
+    .heroBtnApply {
+        text-align: center;
+    }
+    .heroBtnInfo {
+        text-align: center;
+    }
 }
 
 @media (max-width: 680px) {
@@ -143,31 +97,3 @@
         }
     }
 }
-
-// ***
-// .studyListItemRight {
-//     padding: 0 0 48px 500px;
-//     display: flex;
-//     justify-content: flex-start;
-//     border-left: 0.9px solid #5d6267;
-//     z-index: 1;
-// }
-
-// .studyListItemLeft {
-//     padding: 0 0 56px 32px;
-//     display: flex;
-//     justify-content: flex-start;
-//     border-left: 0.9px solid #5d6267;
-//     z-index: 1;
-// }
-
-// @media (max-width: 632px) {
-//     .studyListItemWrapper {
-//         .studyListItemLeft {
-//             padding: 0 0 40px 64px;
-//         }
-//         .studyListItemRight {
-//             padding: 0 0 48px 64px;
-//         }
-//     }
-// }

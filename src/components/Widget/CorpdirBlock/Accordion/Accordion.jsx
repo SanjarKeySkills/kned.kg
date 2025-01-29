@@ -139,5 +139,3 @@ const Accordion = () => {
 };
 
 export default Accordion;
-
-// item, start, end, titleUp, contentUp, titleBottom, contentBottom;
