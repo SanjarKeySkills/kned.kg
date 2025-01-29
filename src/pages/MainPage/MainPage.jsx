@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import MainHero from "../../components/Widget/MainBlock/MainHero/mainHero.jsx";
 import WelcomeBlock from "../../components/Widget/MainBlock/WelcomeBlock/welcomeBlock.jsx";
 import SliderCourseIfcBtn from "../../components/Widget/SliderCourseIfcBtn/SliderCourseIfcBtn.jsx";
@@ -8,6 +8,10 @@ import NewsBlock from "../../components/Widget/MainBlock/NewsBlock/newsBlock.jsx
 import CriteriaMember from "../../components/Widget/MainBlock/CriteriaMember/criteriaMembers.jsx";
 
 const MainPage = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <>
             <MainHero />

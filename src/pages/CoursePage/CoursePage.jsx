@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import HeroHeader from "../../components/Widget/LayoutsComponentsBlock/HeroHeader/heroHeader.jsx";
 import Annotation from "../../components/Widget/CoursesBlock/Annotation/Annotation.jsx";
 import Course from "../../components/Widget/CoursesBlock/Course/Course.jsx";
@@ -8,6 +8,10 @@ import CourseProgram from "../../components/Widget/CoursesBlock/CourseProgram/Co
 // import Schedulle from "../../components/Widget/CoursesBlock/Schedulle/Schedulle.jsx";
 
 const CoursePage = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <div>
             <HeroHeader />

@@ -1,0 +1,108 @@
+// Accordion wrapper
+.accordionWrapper {
+    padding: 16px 144px 56px;
+    background-color: #ffc72c;
+    .title {
+        padding: 32px 0;
+        text-align: center;
+        font-family: "Lato", sans-serif;
+        font-weight: 700;
+        font-size: 32px;
+    }
+}
+
+// AccordionItem
+.accordionItem {
+    border-bottom: 8px solid #ffd768;
+    &:last-child {
+        border-bottom: none;
+    }
+}
+.accordionTitle {
+    padding: 24px;
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &:hover {
+        background-color: #fff;
+    }
+}
+.arrowAccordeon {
+    margin-left: 16px;
+}
+// Content
+.accordionContent {
+    padding: 8px 32px 24px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    color: #000;
+    background-color: #fff;
+    h3 {
+        text-align: center;
+        padding: 4px 0 8px;
+    }
+    h4 {
+        padding: 4px 0;
+    }
+    ul {
+        padding-bottom: 16px;
+    }
+    li {
+        line-height: 1.8;
+        font-size: 16px;
+    }
+}
+
+// --------------
+
+.accordion {
+    border-radius: 8px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+// Responcive
+@media (max-width: 768px) {
+    .accordionWrapper {
+        padding: 16px 64px 24px;
+        .title {
+            padding: 24px 0;
+            font-size: 24px;
+        }
+    }
+}
+
+@media (max-width: 624px) {
+    .accordionWrapper {
+        padding: 16px 32px 24px;
+        .title {
+            padding: 16px 0;
+            font-size: 18px;
+        }
+    }
+    .accordionContent {
+        padding: 4px 16px 16px;
+        h3 {
+            padding: 4px 0 8px;
+            font-size: 14px;
+        }
+        h4 {
+            padding: 4px 0;
+            font-size: 14px;
+        }
+        ul {
+            padding-bottom: 8px;
+            font-size: 14px;
+        }
+        li {
+            line-height: 1.4;
+            font-size: 14px;
+        }
+    }
+}

@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import HeroHeader from "../../components/Widget/LayoutsComponentsBlock/HeroHeader/heroHeader.jsx";
 import GalleryCards from "../../components/Widget/GalleryBlock/GalleryCards/GalleryCards.jsx";
 import styles from "../../pages/GalleryPage/galleryPage.module.scss";
 
 const GalleryPage = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <>
             <HeroHeader />
