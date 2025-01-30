@@ -18,3 +18,13 @@
     font-weight: 400;
     color: #000;
 }
+@media (max-width: 960px) {
+    .corpdirInfo {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+    .infoItem {
+        max-width: 560px;
+    }
+}

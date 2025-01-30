@@ -15,6 +15,7 @@ const CorpdirPage = () => {
         <div>
             <HeroCourse />
             <CorpdirInfo />
+
             <Participants />
             {/* <CorpdirAbout /> */}
             {/* <Accordion /> */}
