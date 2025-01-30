@@ -1,0 +1,40 @@
+.participants {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-decoration: none;
+}
+.participantsTitle {
+    width: 1440px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    font-size: 32px;
+}
+.participantsTitle {
+    text-align: center;
+}
+.itemWrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+}
+.participantsItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding: 16px;
+}
+.participantsImg {
+    max-height: 96px;
+}

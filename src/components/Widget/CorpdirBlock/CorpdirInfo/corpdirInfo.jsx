@@ -4,10 +4,6 @@ import imgInfo_1 from "../../../../assets/courses/assets cources/imgInfo_1.svg";
 import imgInfo_2 from "../../../../assets/courses/assets cources/imgInfo_2.svg";
 import imgInfo_3 from "../../../../assets/courses/assets cources/imgInfo_3.svg";
 import imgInfo_4 from "../../../../assets/courses/assets cources/imgInfo_4.svg";
-import course_1 from "../../../../assets/courses/assets cources/course_1.svg";
-import course_2 from "../../../../assets/courses/assets cources/course_2.svg";
-import course_3 from "../../../../assets/courses/assets cources/course_3.svg";
-import course_4 from "../../../../assets/courses/assets cources/course_4.svg";
 
 const corpdirInfo = () => {
     return (

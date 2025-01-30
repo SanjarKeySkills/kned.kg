@@ -3,6 +3,7 @@ import HeroCourse from "../../components/Widget/CorpdirBlock/HeroCourse/HeroCour
 import Accordion from "../../components/Widget/CorpdirBlock/Accordion/Accordion.jsx";
 import CorpdirInfo from "../../components/Widget/CorpdirBlock/CorpdirInfo/corpdirInfo.jsx";
 import CorpdirAbout from "../../components/Widget/CorpdirBlock/CorpdirAbout/CorpdirAbout.jsx";
+import Participants from "../../components/Widget/CorpdirBlock/Participants/Participants.jsx";
 
 const CorpdirPage = () => {
     useEffect(() => {
@@ -13,6 +14,7 @@ const CorpdirPage = () => {
         <div>
             <HeroCourse />
             <CorpdirInfo />
+            <Participants />
             <CorpdirAbout />
             <Accordion />
         </div>
