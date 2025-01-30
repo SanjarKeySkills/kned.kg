@@ -5,7 +5,7 @@ import imgInfo_2 from "../../../../assets/courses/assets cources/imgInfo_2.svg";
 import imgInfo_3 from "../../../../assets/courses/assets cources/imgInfo_3.svg";
 import imgInfo_4 from "../../../../assets/courses/assets cources/imgInfo_4.svg";
 
-const corpdirInfo = () => {
+const CorpdirInfo = () => {
     return (
         <div className={styles.corpdirInfo}>
             <div className={styles.infoItem}>
@@ -47,4 +47,4 @@ const corpdirInfo = () => {
     );
 };
 
-export default corpdirInfo;
+export default CorpdirInfo;
