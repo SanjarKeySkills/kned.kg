@@ -4,7 +4,6 @@ import DefaultLayout, { ContentFallback } from "./layout/DefaultLayout";
 import { MainPage } from "./pages/MainPage/MainPage.async.jsx";
 import { MemberPage } from "./pages/MemberPage/MemberPage.async.jsx";
 import { MembersPage } from "./pages/MembersPage/MembersPage.async.jsx";
-import { ErrorPage } from "./pages/ErrorPage/ErrorPage.async.jsx";
 import { AboutPage } from "./pages/AboutPage/AboutPage.async.jsx";
 import { ServicesPage } from "./pages/ServicesPage/ServicesPage.async.jsx";
 import { CoursePage } from "./pages/CoursePage/CoursePage.async.jsx";
@@ -20,6 +19,7 @@ import { CharterPage } from "./pages/CharterPage/CharterPage.async.jsx";
 import { MembershipRegulationsPage } from "./pages/MembershipRegulationsPage/MembershipRegulationsPage.async.jsx";
 import { GovernRegulationsPage } from "./pages/GovernRegulationsPage/GovernRegulationsPage.async.jsx";
 import { CorpdirPage } from "./pages/CorpdirPage/CorpdirPage.async.jsx";
+import { ErrorPage } from "./pages/ErrorPage/ErrorPage.async.jsx";
 
 const App = () => {
     return (
@@ -174,15 +174,15 @@ const App = () => {
                             </Suspense>
                         }
                     />
-                    <Route
-                        path="*"
-                        element={
-                            <Suspense fallback={<div>Loading...</div>}>
-                                <ErrorPage />
-                            </Suspense>
-                        }
-                    />
                 </Route>
+                <Route
+                    path="*"
+                    element={
+                        // <Suspense fallback={<div>Loading...</div>}>
+                        <ErrorPage />
+                        // </Suspense>
+                    }
+                />
             </Routes>
         </>
     );
