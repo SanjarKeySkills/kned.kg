@@ -67,7 +67,7 @@ const MemberPage = () => {
                 <div className={styles.memberData}>
                     <div className={styles.memberDataTitle}>LinkedIn</div>
                     <Link
-                        to={"https://kz.linkedin.com/in/kamaldin"}
+                        // to={"https://kz.linkedin.com/in/kamaldin"}
                         className={styles.memberDataDescription}>
                         {formatText(member.LinkedIn)}
                     </Link>

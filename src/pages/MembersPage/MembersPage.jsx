@@ -24,7 +24,6 @@ const MembersPage = () => {
                     </p>
                 </div>
             </div>
-
             <MemberCards />
         </>
     );
